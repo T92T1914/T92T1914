@@ -18,15 +18,17 @@ doing, and I like showing the work along the way.
 
 ## Systems engineering
 
-My long-term focus is a private software project involving real-time scheduling,
-concurrent processing, performance measurement, and analytical tooling. It is
-where I spend most of my project time, working through the details that make
-a system behave reliably as its state changes.
+My long-term project explores **human-like input performance**: how timing,
+workload, recovery, and technique interact as a system's state changes. It brings
+together behavioral modeling, input scheduling, concurrent planning, and measured
+feedback. It is where I spend most of my project time, working through the small
+details that shape the behavior of the whole system.
 
-The larger application stays private. A generalized concurrency design now has
-an independent public implementation in **adaptive-timing-engine**, with a new
-simulation, generated workloads, and its own tests. The four projects below
-are public and runnable.
+The application-specific implementation and original calibration data stay
+private. **adaptive-timing-engine** is a focused public companion: a generalized
+concurrency design plus a new timing simulation, generated workloads, and its
+own tests. It represents one part of the engineering, with the scope made
+explicit. The four projects below are public and runnable.
 
 ## Four projects to explore
 
@@ -86,12 +88,12 @@ actions, so a close decision stays visibly close.
 
 ### adaptive-timing-engine
 
-**Making timing decisions inspectable as demand and state change.**
+**Making humanized timing experiments inspectable.**
 
-A valid schedule can still fail when execution runs late. An older calculation
-can also finish after its input is obsolete. This standalone package explores
-both problems through a latest-request worker, resource-aware execution, and
-configurable timing and recovery policies.
+Humanized timing is more than adding random delay: variation interacts with
+workload, recovery, and execution constraints. This standalone simulation makes
+those interactions visible. A latest-request worker also addresses a systems
+failure: an older calculation finishing after its input has become obsolete.
 
 The offline trace explorer compares **48 paired cases**, switching one policy
 mechanism at a time. Generated workloads expose constraints, rejected work,
