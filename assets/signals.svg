@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="248" viewBox="0 0 1200 248" fill="none">
+  <title>Signals, decisions, and timing</title>
+  <desc>Decorative line art: a seasonal signal, a branching search, a probability distribution, and a processing workflow, connected across a dark cyan and magenta landscape. These are illustrative motifs, not measured data.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="248" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10182D"/><stop offset=".53" stop-color="#16132A"/><stop offset="1" stop-color="#0B2029"/>
+    </linearGradient>
+    <linearGradient id="spectrum" x1="40" y1="0" x2="1160" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF71CE"/><stop offset=".48" stop-color="#B967FF"/><stop offset="1" stop-color="#01CDFE"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#D9DAF7" stroke-opacity=".045"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="248" rx="18" fill="url(#background)"/>
+  <rect x="1" y="1" width="1198" height="246" rx="17" stroke="#7585AB" stroke-opacity=".22"/>
+  <rect x="24" y="24" width="1152" height="200" fill="url(#grid)"/>
+  <path d="M48 209H1152" stroke="url(#spectrum)" stroke-opacity=".4"/>
+  <g stroke="#8696BB" stroke-opacity=".24">
+    <path d="M312 46V189M600 46V189M888 46V189" stroke-dasharray="3 8"/>
+    <path d="M54 164H273M340 164H569M631 164H858M918 164H1144"/>
+  </g>
+  <!-- An irregular seasonal signal with a dotted continuation. -->
+  <path d="M56 147C76 151 81 123 97 128S117 168 138 156S157 76 180 86S198 153 221 136" stroke="#FF71CE" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M221 136C242 127 244 91 270 99" stroke="#FF71CE" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="4 7"/>
+  <circle cx="180" cy="86" r="6" fill="#FF71CE"/>
+  <circle cx="221" cy="136" r="4" fill="#0E1729" stroke="#FF71CE" stroke-width="2"/>
+  <!-- Search branches preserve distinct nodes through several choices. -->
+  <path d="M350 120L414 80L482 57M414 80L482 98M350 120L414 151L482 134M414 151L482 177M482 98L551 80M482 98L551 119" stroke="#B967FF" stroke-width="2" stroke-opacity=".55"/>
+  <path d="M350 120L414 80L482 98L551 80" stroke="#D5A7FF" stroke-width="3.5"/>
+  <g fill="#13192C" stroke="#B967FF" stroke-width="2">
+    <circle cx="350" cy="120" r="6"/><circle cx="414" cy="80" r="6"/><circle cx="414" cy="151" r="5"/>
+    <circle cx="482" cy="57" r="4"/><circle cx="482" cy="98" r="6"/><circle cx="482" cy="134" r="4"/>
+    <circle cx="482" cy="177" r="4"/><circle cx="551" cy="119" r="4"/>
+  </g>
+  <circle cx="551" cy="80" r="7" fill="#D5A7FF"/>
+  <!-- A distribution is a visual reference to probabilities, not a result. -->
+  <g fill="#9895FF">
+    <rect x="642" y="143" width="17" height="21" rx="3" opacity=".42"/>
+    <rect x="671" y="121" width="17" height="43" rx="3" opacity=".58"/>
+    <rect x="700" y="87" width="17" height="77" rx="3" opacity=".8"/>
+    <rect x="729" y="61" width="17" height="103" rx="3"/>
+    <rect x="758" y="96" width="17" height="68" rx="3" opacity=".8"/>
+    <rect x="787" y="125" width="17" height="39" rx="3" opacity=".58"/>
+    <rect x="816" y="148" width="17" height="16" rx="3" opacity=".42"/>
+  </g>
+  <path d="M632 181H847" stroke="#9895FF" stroke-opacity=".4" stroke-dasharray="2 8"/>
+  <!-- Independent processing stages converge on a shared result. -->
+  <g stroke="#01CDFE" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M962 86H989V120H1010M962 154H989V120M1052 120H1080" stroke-opacity=".6"/>
+    <rect x="924" y="69" width="38" height="34" rx="7" fill="#103344"/>
+    <rect x="924" y="137" width="38" height="34" rx="7" fill="#103344"/>
+    <rect x="1010" y="99" width="42" height="42" rx="7" fill="#124052"/>
+    <rect x="1080" y="95" width="50" height="50" rx="9" fill="#16495A"/>
+  </g>
+  <path d="M1092 120L1102 130L1118 111" stroke="#72DDF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 28H76M38 28V50M1162 198V220H1124" stroke="url(#spectrum)" stroke-width="2"/>
+</svg>

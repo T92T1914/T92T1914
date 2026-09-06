@@ -1,48 +1,93 @@
-CS student (AI/ML concentration) with six years in Air Force logistics behind it —
-household goods movement at a JPPSO, freight rates, storage, search-and-rescue
-support. Forecasting demand cycles was the job before it was the coursework.
+<img src="assets/signals.svg" alt="" width="1200">
 
-I build things that check their own work. The through-line across the projects
-below is that a number is not trusted until something independent reproduces it.
+# Trinidy Farris
 
-### Projects
+**I build software around things I care about.**
 
-**[freight-forecast](https://github.com/T92T1914/freight-forecast)** — monthly
-shipment volume forecasting served as a containerized API: scikit-learn, FastAPI,
-Docker, Kubernetes, Prometheus, Grafana.
-Beats its seasonal-naive baseline by 31% (226 vs 327 MAE on 24 held-out months),
-and the training script exits non-zero if it ever stops beating it, so a
-regression fails CI instead of shipping quietly.
+Six years in Air Force logistics. Now studying computer science with an AI/ML
+concentration. My projects connect that operational background with the systems,
+mathematics, and visual work that keep me curious.
 
-**[mcts-combat-engine](https://github.com/T92T1914/mcts-combat-engine)** —
-open-loop Monte Carlo Tree Search for stochastic, imperfect-information
-turn-based combat. Pure Python, zero dependencies, with an original example game
-so every claim in the README is runnable.
-Extracted and generalized from a larger private project where the same search
-core evaluated 400,000+ simulations per decision inside a one-second budget.
+I spend weeks at a time on these projects: building a version, finding what
+breaks, understanding why, and coming back with a better question. I learn by
+doing, and I like showing the work along the way.
 
-**[exact-blackjack-solver](https://github.com/T92T1914/exact-blackjack-solver)** —
-exact, composition-dependent blackjack solver: the true expected value of hit,
-stand, double and split by enumerating every continuation against the actual
-remaining shoe. No tables, no training, no simulation in the answer.
-The enumeration is cross-checked by an independent Monte Carlo harness, and the
-test suite pins the direction every rule change moves the EV, not magic constants.
+[Forecasting](#freight-forecast) · [Stochastic search](#mcts-combat-engine) ·
+[Probability](#exact-blackjack-solver) · [Current focus](#systems-engineering)
 
-### How I work
+## Systems engineering
 
-Two habits that show up in everything here:
+My long-term focus is a private software project involving real-time scheduling,
+concurrent processing, performance measurement, and analytical tooling. It is
+where I spend most of my project time, working through the details that make
+a system behave reliably as its state changes.
 
-- **Independent reproduction over code review.** On one project every material bug
-  was caught by two implementations disagreeing, and none by reading the code —
-  including a bug that appeared identically in an exact solver and its Monte Carlo
-  cross-check, which only surfaced because the two answers differed. That solver is
-  the one above.
-- **Negative results stay in the repo.** Reverted changes are documented where they
-  were made, with the measurement that killed them, so nobody spends a day
-  rediscovering why an idea does not work.
+The implementation stays private. This profile describes the work; the three
+projects below are public and runnable.
 
-### Currently
+## Three projects to explore
 
-- Extending the forecasting service — model monitoring beyond request metrics
-- A real-time input-scheduling problem with a sub-millisecond latency budget
-- Coursework toward the CS degree (AI/ML)
+### freight-forecast
+
+**From a logistics problem to a service you can inspect.**
+
+Seasonal demand is familiar territory from my time in logistics. I built a
+forecasting service around a simple test: can the model improve on using the
+same month last year, and can I show how the surrounding service behaves?
+
+The project covers chronological evaluation, a FastAPI service, Docker,
+Kubernetes, and Prometheus/Grafana monitoring. On **seeded synthetic data**, the
+model's mean absolute error is **226 moves versus 327** for the seasonal-naive
+baseline across 24 held-out months. That is a reproducible experiment, not a
+claim about operational shipment data.
+
+[Run a forecast](https://github.com/T92T1914/freight-forecast#quickstart) ·
+[See the deployment evidence](https://github.com/T92T1914/freight-forecast/blob/main/VERIFICATION.md) ·
+[Inspect a measured serving improvement](https://github.com/T92T1914/freight-forecast/blob/main/docs/serving-performance.md)
+
+### mcts-combat-engine
+
+**Making decisions when the same move can lead somewhere different.**
+
+A turn-based combat simulator gave me a place to explore stochastic search:
+sample possible futures, compare decisions, and see where a shallow search
+gets things wrong. The engine uses open-loop Monte Carlo Tree Search and
+optional parallel worker processes, in pure Python with no runtime dependencies.
+
+One detail worth reading: removing a card shifts list indexes, but a search
+tree's action must still mean the same card. The implementation preserves that
+identity across simulations and tests changing move availability. Seeded
+benchmarks include the cases that improved and the one that got worse.
+
+[Read one decision](https://github.com/T92T1914/mcts-combat-engine#reading-one-decision) ·
+[Explore the design decisions](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/design-decisions.md) ·
+[Compare the results](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/benchmark-results.md)
+
+### exact-blackjack-solver
+
+**Following a decision all the way down to the remaining cards.**
+
+Two hands can have the same total and still call for different decisions.
+This project calculates action values from the cards left in the shoe,
+using dynamic programming and memoization, then checks the calculations with
+an independent simulation harness.
+
+Hit, stand, and double are exactly enumerated within the supported model.
+**Split valuation is approximate**, with independent split hands and a shared
+resplit-budget approximation. The CLI shows the values and the margin between
+actions, so a close decision stays visibly close.
+
+[Walk through a hand](https://github.com/T92T1914/exact-blackjack-solver#a-worked-decision) ·
+[Explore the solver](https://github.com/T92T1914/exact-blackjack-solver#how-it-works) ·
+[Read the model limits](https://github.com/T92T1914/exact-blackjack-solver#what-this-does-not-prove)
+
+## What connects the work
+
+I like problems where an answer has to survive contact with the details:
+changing state, uncertain outcomes, timing, or a baseline that is harder to
+beat than expected. I keep examples, tests, measurements, and design notes
+close to the code so the interesting decisions are open to inspection.
+
+I am building toward software and MLOps work in logistics, defense, and
+operational technology. I am also going to keep making things because I want
+to see how far an idea can go.
