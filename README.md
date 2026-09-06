@@ -13,7 +13,8 @@ breaks, understanding why, and coming back with a better question. I learn by
 doing, and I like showing the work along the way.
 
 [Forecasting](#freight-forecast) · [Stochastic search](#mcts-combat-engine) ·
-[Probability](#exact-blackjack-solver) · [Current focus](#systems-engineering)
+[Probability](#exact-blackjack-solver) · [Adaptive timing](#adaptive-timing-engine) ·
+[Current focus](#systems-engineering)
 
 ## Systems engineering
 
@@ -22,10 +23,12 @@ concurrent processing, performance measurement, and analytical tooling. It is
 where I spend most of my project time, working through the details that make
 a system behave reliably as its state changes.
 
-The implementation stays private. This profile describes the work; the three
-projects below are public and runnable.
+The larger application stays private. A generalized concurrency design now has
+an independent public implementation in **adaptive-timing-engine**, with a new
+simulation, generated workloads, and its own tests. The four projects below
+are public and runnable.
 
-## Three projects to explore
+## Four projects to explore
 
 ### freight-forecast
 
@@ -80,6 +83,25 @@ actions, so a close decision stays visibly close.
 [Walk through a hand](https://github.com/T92T1914/exact-blackjack-solver#a-worked-decision) ·
 [Explore the solver](https://github.com/T92T1914/exact-blackjack-solver#how-it-works) ·
 [Read the model limits](https://github.com/T92T1914/exact-blackjack-solver#what-this-does-not-prove)
+
+### adaptive-timing-engine
+
+**Making timing decisions inspectable as demand and state change.**
+
+A valid schedule can still fail when execution runs late. An older calculation
+can also finish after its input is obsolete. This standalone package explores
+both problems through a latest-request worker, resource-aware execution, and
+configurable timing and recovery policies.
+
+The offline trace explorer compares **48 paired cases**, switching one policy
+mechanism at a time. Generated workloads expose constraints, rejected work,
+and deadline expiration. Under saturation at seed 42, the full policy admits
+**96 of 240** tasks; disabling variation admits **108**. That tradeoff stays
+visible. The parameters are synthetic, not a validated model of human behavior.
+
+[Run the trace explorer](https://github.com/T92T1914/adaptive-timing-engine#run-it) ·
+[Inspect the concurrency decisions](https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/design-decisions.md) ·
+[See the paired results](https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/evidence/results.md)
 
 ## What connects the work
 
