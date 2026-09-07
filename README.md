@@ -14,9 +14,25 @@ and I take pride in that. I like getting something working, finding the detail
 I missed, and figuring out why it matters. I learn by building, and I want
 people to be able to see the work behind the result.
 
+I am looking for early career software engineering opportunities, with a growing
+interest in MLOps and operational systems. My [LinkedIn profile](https://www.linkedin.com/in/t92t1914/)
+has my experience and education.
+
 [Forecasting](#freight-forecast) · [Stochastic search](#mcts-combat-engine) ·
 [Probability](#exact-blackjack-solver) · [Adaptive timing](#adaptive-timing-engine) ·
 [Current focus](#systems-engineering)
+
+## Start with a question
+
+You can inspect these examples in your browser before setting anything up.
+The project sections below also link to the code and local reproduction steps.
+
+| If you want to see how I approach... | Start here |
+| --- | --- |
+| Forecast evaluation and serving | [Freight Forecast: one forecast and its baseline](https://github.com/T92T1914/freight-forecast#quickstart) |
+| Concurrency and timing tradeoffs | [Adaptive Timing Engine: paired experiment results](https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/evidence/results.md) |
+| Decisions under uncertainty | [MCTS Combat Engine: one search decision](https://github.com/T92T1914/mcts-combat-engine#reading-one-decision) |
+| Numerical models and their limits | [Exact Blackjack Solver: a worked decision](https://github.com/T92T1914/exact-blackjack-solver#a-worked-decision) |
 
 ## Systems engineering
 
@@ -46,6 +62,12 @@ Kubernetes, and Prometheus/Grafana monitoring. On **seeded synthetic data**, the
 model's mean absolute error is **226 moves versus 327** for the seasonal baseline
 across 24 months held out from training. Those numbers describe this
 reproducible experiment. They are not a claim about operational shipment data.
+
+[![Recorded API request rates, latency, rejected requests, and forecast distribution in Grafana](https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/grafana-dashboard.png)](https://github.com/T92T1914/freight-forecast/blob/main/VERIFICATION.md)
+
+Recorded local container traffic from the project's monitoring check. The
+forecasts use synthetic data. The rejected requests include deliberately invalid
+inputs; the linked verification notes explain the setup.
 
 [Run a forecast](https://github.com/T92T1914/freight-forecast#quickstart) ·
 [See the deployment evidence](https://github.com/T92T1914/freight-forecast/blob/main/VERIFICATION.md) ·
