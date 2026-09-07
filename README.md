@@ -63,11 +63,11 @@ model's mean absolute error is **226 moves versus 327** for the seasonal baselin
 across 24 months held out from training. Those numbers describe this
 reproducible experiment. They are not a claim about operational shipment data.
 
-[![Recorded API request rates, latency, rejected requests, and forecast distribution in Grafana](https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/grafana-dashboard.png)](https://github.com/T92T1914/freight-forecast/blob/main/VERIFICATION.md)
+[![A model forecast and seasonal baseline compared with 24 months of synthetic shipment volumes](https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/freight-forecast-example.png)](https://github.com/T92T1914/freight-forecast/blob/main/docs/visual-example.md)
 
-Recorded local container traffic from the project's monitoring check. The
-forecasts use synthetic data. The rejected requests include deliberately invalid
-inputs; the linked verification notes explain the setup.
+The [recorded Grafana dashboard](https://github.com/T92T1914/freight-forecast/blob/main/docs/grafana-dashboard.png)
+shows the other side of this project: request rates, latency, rejected inputs,
+and forecast distributions under local container traffic.
 
 [Run a forecast](https://github.com/T92T1914/freight-forecast#quickstart) ·
 [See the deployment evidence](https://github.com/T92T1914/freight-forecast/blob/main/VERIFICATION.md) ·
@@ -89,6 +89,8 @@ must still mean the same card. The implementation preserves that identity and
 tests changing move availability. The benchmarks include the cases that
 improved and the one that got worse.
 
+[![A seeded search ranks Spark, Pass and Weakness Mark by mean shaped reward, with visits shown separately.](https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-example.png)](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/visual-example.md)
+
 [Read one decision](https://github.com/T92T1914/mcts-combat-engine#reading-one-decision) ·
 [Explore the design decisions](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/design-decisions.md) ·
 [Compare the results](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/benchmark-results.md)
@@ -105,6 +107,8 @@ Hit, stand, and double are exactly enumerated within the supported model.
 **Split valuation is approximate**, with independent split hands and an
 approximation for the shared resplit budget. The CLI shows the values and the
 margin between actions. If the difference is small, you can see that for yourself.
+
+[![Two hard 16 hands against a dealer ten have different exact hit and stand values.](https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/main/docs/blackjack-composition-example.png)](https://github.com/T92T1914/exact-blackjack-solver/blob/main/docs/visual-example.md)
 
 [Walk through a hand](https://github.com/T92T1914/exact-blackjack-solver#a-worked-decision) ·
 [Explore the solver](https://github.com/T92T1914/exact-blackjack-solver#how-it-works) ·
@@ -125,6 +129,8 @@ mechanism at a time. You can inspect the constraints, rejected work, and expired
 deadlines. Under saturation at seed 42, the full policy admits **96 of 240**
 tasks; disabling variation admits **108**. I kept that tradeoff visible. The
 parameters are synthetic and do not establish a validated model of human behavior.
+
+[![A controlled worker experiment reduces 101 requests to two calculations and rejects one obsolete result.](https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/main/docs/adaptive-timing-example.png)](https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/visual-example.md)
 
 [Run the trace explorer](https://github.com/T92T1914/adaptive-timing-engine#run-it) ·
 [Inspect the concurrency decisions](https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/design-decisions.md) ·
