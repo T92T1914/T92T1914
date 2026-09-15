@@ -36,11 +36,11 @@ The project sections below also link to the code and local reproduction steps.
 
 ## Systems engineering
 
-The project I spend the most time on explores **humanized input performance**.
-Timing is only one part of it. Workload, recovery, technique, and changing state
-all affect how the system behaves. I have spent months working through those
-interactions, using behavioral modeling, input scheduling, concurrent planning,
-and measured feedback.
+A lot of my time goes into **timing and scheduling**. I like the details
+that only show up once something is running: a plan that changes halfway
+through a calculation, work that arrives too late, or a result that looks
+right until I compare it with the trace. That has led me into concurrency,
+simulation and better ways to check what the system actually did.
 
 The application and original calibration data stay private. **Adaptive Timing
 Engine** is a public companion that lets me share one part of the engineering:
@@ -116,7 +116,7 @@ margin between actions. If the difference is small, you can see that for yoursel
 
 ### Adaptive Timing Engine
 
-**A way to see what humanized timing policies actually do.**
+**A way to see how timing policies behave under load.**
 
 Timing variation interacts with workload, recovery, and the limits on what can
 be executed. I built this standalone simulation to make those interactions
