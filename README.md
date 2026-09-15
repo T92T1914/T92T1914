@@ -24,15 +24,16 @@ has my experience and education.
 
 ## Start with a question
 
-You can inspect these examples in your browser before setting anything up.
-The project sections below also link to the code and local reproduction steps.
+You can explore these saved examples in your browser before setting anything up.
+They show recorded results with their assumptions and source revisions. The
+project sections below also link to the code and local reproduction steps.
 
 | If you want to see how I approach... | Start here |
 | --- | --- |
-| Forecast evaluation and serving | [Freight Forecast: one forecast and its baseline](https://github.com/T92T1914/freight-forecast#quickstart) |
-| Concurrency and timing tradeoffs | [Adaptive Timing Engine: paired experiment results](https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/evidence/results.md) |
-| Decisions under uncertainty | [MCTS Combat Engine: one search decision](https://github.com/T92T1914/mcts-combat-engine#reading-one-decision) |
-| Numerical models and their limits | [Exact Blackjack Solver: a worked decision](https://github.com/T92T1914/exact-blackjack-solver#a-worked-decision) |
+| Forecast evaluation and serving | [Freight Forecast: one forecast and its baseline](https://t92t1914.github.io/freight-forecast/) |
+| Concurrency and timing tradeoffs | [Adaptive Timing Engine: paired experiment results](https://t92t1914.github.io/adaptive-timing-engine/) |
+| Decisions under uncertainty | [MCTS Combat Engine: one search decision](https://t92t1914.github.io/mcts-combat-engine/) |
+| Numerical models and their limits | [Exact Blackjack Solver: a worked decision](https://t92t1914.github.io/exact-blackjack-solver/) |
 
 ## Systems engineering
 
