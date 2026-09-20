@@ -161,8 +161,14 @@ and source material. An interactive wind model and animated funnel study let
 you explore the ideas visually, with their assumptions stated. They are
 illustrations, not reconstructions of measured winds or a damage prediction.
 
+The El Reno damage explorer lets you inspect survey points, filter their
+recorded ratings, and follow each observation back to NWS. I keep the limits
+visible when the source does not establish an event match, an impact time,
+or the location of a photograph.
+
 [Explore the atlas](https://t92t1914.github.io/tornado-atlas/atlas.html) ·
 [Visit the El Reno exhibit](https://t92t1914.github.io/tornado-atlas/) ·
+[Inspect the damage map](https://t92t1914.github.io/tornado-atlas/#survey-explorer) ·
 [Read the source and verification notes](https://github.com/T92T1914/tornado-atlas)
 
 ## What connects the work
