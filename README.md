@@ -66,6 +66,12 @@ reproducible experiment. They are not a claim about operational shipment data.
 
 [![A model forecast and seasonal baseline compared with 24 months of synthetic shipment volumes](https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/freight-forecast-example.png)](https://github.com/T92T1914/freight-forecast/blob/main/docs/visual-example.md)
 
+I also added a [monthly refitting experiment](https://github.com/T92T1914/freight-forecast/blob/main/docs/backtesting.md)
+to check whether updating the model as new months arrive actually helps.
+It beats the seasonal baseline overall, but loses to it in 2023 and does worse
+than the original fixed model across the full test period. That was useful to
+find out. The report keeps each prediction so the result can be checked.
+
 The [recorded Grafana dashboard](https://github.com/T92T1914/freight-forecast/blob/main/docs/grafana-dashboard.png)
 shows the other side of this project: request rates, latency, rejected inputs,
 and forecast distributions under local container traffic.
