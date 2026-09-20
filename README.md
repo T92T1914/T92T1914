@@ -20,6 +20,7 @@ has my experience and education.
 
 [Forecasting](#freight-forecast) · [Stochastic search](#mcts-combat-engine) ·
 [Probability](#exact-blackjack-solver) · [Adaptive timing](#adaptive-timing-engine) ·
+[Tornado history](#tornado-atlas) ·
 [Current focus](#systems-engineering)
 
 ## Start with a question
@@ -34,6 +35,7 @@ project sections below also link to the code and local reproduction steps.
 | Concurrency and timing tradeoffs | [Adaptive Timing Engine: paired experiment results](https://t92t1914.github.io/adaptive-timing-engine/) |
 | Decisions under uncertainty | [MCTS Combat Engine: one search decision](https://t92t1914.github.io/mcts-combat-engine/) |
 | Numerical models and their limits | [Exact Blackjack Solver: a worked decision](https://t92t1914.github.io/exact-blackjack-solver/) |
+| Historical data and interactive visualization | [Tornado Atlas: explore the recorded paths](https://t92t1914.github.io/tornado-atlas/atlas.html) |
 
 ## Systems engineering
 
@@ -46,9 +48,9 @@ simulation and better ways to check what the system actually did.
 The application and original calibration data stay private. **Adaptive Timing
 Engine** is a public companion that lets me share one part of the engineering:
 a generalized concurrency design, a new timing simulation, generated workloads,
-and their own tests. The four projects below are public and runnable.
+and their own tests. The five projects below are public and runnable.
 
-## Four projects to explore
+## Five projects to explore
 
 ### Freight Forecast
 
@@ -142,6 +144,26 @@ parameters are synthetic and do not establish a validated model of human behavio
 [Run the trace explorer](https://github.com/T92T1914/adaptive-timing-engine#run-it) ·
 [Inspect the concurrency decisions](https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/design-decisions.md) ·
 [See the paired results](https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/evidence/results.md)
+
+### Tornado Atlas
+
+**A place to explore tornado history and the evidence behind it.**
+
+I have always been interested in tornadoes. I wanted a way to study where they
+went, what was documented, and what we can actually say about how they looked.
+This project is becoming an interactive museum, starting with a searchable
+atlas of NOAA records and a closer look at the 2013 El Reno tornado.
+
+The atlas covers records from **1950 through 2025**. Some records describe county
+segments of the same tornado, so I keep the record count separate from a count
+of individual tornadoes. The El Reno exhibit links the track, documented damage
+and source material. An interactive wind model and animated funnel study let
+you explore the ideas visually, with their assumptions stated. They are
+illustrations, not reconstructions of measured winds or a damage prediction.
+
+[Explore the atlas](https://t92t1914.github.io/tornado-atlas/atlas.html) ·
+[Visit the El Reno exhibit](https://t92t1914.github.io/tornado-atlas/) ·
+[Read the source and verification notes](https://github.com/T92T1914/tornado-atlas)
 
 ## What connects the work
 
