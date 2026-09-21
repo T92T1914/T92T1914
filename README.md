@@ -182,3 +182,18 @@ I am working toward software engineering and MLOps roles in logistics, defense,
 and operational technology. These projects also matter to me outside a job
 search. I enjoy making them, and I want this page to show the range of what
 I care about.
+
+## How the projects connect to my work
+
+My logistics background is the starting point for Freight Forecast. The other
+projects let me work on the software problems around it: making a decision
+under uncertainty, keeping background calculations current, checking numerical
+results, and turning a large source collection into something people can use.
+
+- **Backend and MLOps:** [Freight Forecast](https://t92t1914.github.io/freight-forecast/#engineering) connects evaluation, API boundaries and recorded service behavior.
+- **Algorithms and numerical software:** [MCTS](https://t92t1914.github.io/mcts-combat-engine/#engineering) and the [probability solver](https://t92t1914.github.io/exact-blackjack-solver/#engineering) show assumptions, compute budgets and checks behind a result.
+- **Concurrency and scheduling:** [Adaptive Timing Engine](https://t92t1914.github.io/adaptive-timing-engine/#engineering) makes obsolete work, resource limits and plan adoption inspectable.
+- **Data engineering and interfaces:** [Tornado Atlas](https://t92t1914.github.io/tornado-atlas/survey.html) connects preserved source records with a map, photographs and explanations that stay usable when external media fails.
+
+I am building evidence of those skills. The demos and simulations are not
+claims that I have deployed them in a live logistics or emergency operation.
