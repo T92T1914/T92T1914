@@ -166,9 +166,16 @@ recorded ratings, and follow each observation back to NWS. I keep the limits
 visible when the source does not establish an event match, an impact time,
 or the location of a photograph.
 
+The shared timeline connects the path, available radar and selected warning
+records, with timestamped links to original footage. A separate spatial replay
+lets you explore the route in three dimensions. Its freely orbiting camera and
+optional funnel symbol are illustrative; reconstructing the tornado's changing
+appearance from registered views is still ahead.
+
 [Explore the atlas](https://t92t1914.github.io/tornado-atlas/atlas.html) ·
 [Visit the El Reno exhibit](https://t92t1914.github.io/tornado-atlas/) ·
-[Inspect the damage map](https://t92t1914.github.io/tornado-atlas/#survey-explorer) ·
+[Inspect the damage map](https://t92t1914.github.io/tornado-atlas/survey.html) ·
+[Explore the spatial replay](https://t92t1914.github.io/tornado-atlas/reconstruction.html) ·
 [Read the source and verification notes](https://github.com/T92T1914/tornado-atlas)
 
 ## What connects the work
