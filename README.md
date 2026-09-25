@@ -74,6 +74,14 @@ It beats the seasonal baseline overall, but loses to it in 2023 and does worse
 than the original fixed model across the full test period. That was useful to
 find out. The report keeps each prediction so the result can be checked.
 
+I then tested the same model on the [BTS freight activity index](https://github.com/T92T1914/freight-forecast/blob/main/docs/real-data-evaluation.md),
+a national, seasonally adjusted measure of for-hire freight activity rather than
+shipment counts. I used 2010-2019 to choose the fitting policy and kept 2020-2025
+for the final comparison. It beat the same-month-last-year baseline overall,
+but lost to simply carrying forward the last observed value. These are revised
+historical values, and the experiment does not replay publication delays. It
+does not establish what I could have forecast with data available at the time.
+
 The [recorded Grafana dashboard](https://github.com/T92T1914/freight-forecast/blob/main/docs/grafana-dashboard.png)
 shows the other side of this project: request rates, latency, rejected inputs,
 and forecast distributions under local container traffic.
