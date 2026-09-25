@@ -106,6 +106,15 @@ must still mean the same card. The implementation preserves that identity and
 tests changing move availability. The benchmarks include the cases that
 improved and the one that got worse.
 
+I added a [more demanding comparison](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/comparison-results.md)
+with a policy that samples every legal action one round ahead, including
+healing and defense. I reused the same five environment seeds per scenario
+across three search and policy seed settings. The one-round policy won every
+duel condition. Search won more gauntlet
+and boss games, but left one duel unfinished at the round limit. I kept the
+individual results and work counts. The sample is small and the compute
+budgets differ, so this does not establish a general ranking or efficiency gain.
+
 [![A seeded search ranks Spark, Pass and Weakness Mark by mean shaped reward, with visits shown separately.](https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-example.png)](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/visual-example.md)
 
 [Read one decision](https://github.com/T92T1914/mcts-combat-engine#reading-one-decision) ·
@@ -176,9 +185,13 @@ or the location of a photograph.
 
 The shared timeline connects the path, available radar and selected warning
 records, with timestamped links to original footage. A separate spatial replay
-lets you explore the route in three dimensions. Its freely orbiting camera and
-optional funnel symbol are illustrative; reconstructing the tornado's changing
-appearance from registered views is still ahead.
+lets you explore the route in three dimensions and inspect recorded observer
+positions and bearings on the same clock. The marker holds the latest recorded
+position at or before the selected time and hides when that sample is more than
+90 seconds old. That is a display rule, and the camera
+samples stay separate from the footage. The freely orbiting camera and optional
+funnel symbol are illustrative. Reconstructing the tornado's changing appearance
+from registered views is still ahead.
 
 [Explore the atlas](https://t92t1914.github.io/tornado-atlas/atlas.html) ·
 [Visit the El Reno exhibit](https://t92t1914.github.io/tornado-atlas/) ·
