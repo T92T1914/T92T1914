@@ -115,6 +115,15 @@ and boss games, but left one duel unfinished at the round limit. I kept the
 individual results and work counts. The sample is small and the compute
 budgets differ, so this does not establish a general ranking or efficiency gain.
 
+I followed that with a [shared transition allowance](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/transition-comparison-results.md):
+each search policy can advance the simulator at most 300 times per decision.
+Under that protocol, MCTS won every duel and gauntlet condition and three or
+four of five boss games per seed setting. The one-round policy won fewer duels
+and gauntlets and no boss games. I kept unused allowances, stopping reasons
+and unfinished games in the report. Equal simulator
+allowances still do not mean equal processor time, and these five reused
+environments per scenario are a limited comparison.
+
 [![A seeded search ranks Spark, Pass and Weakness Mark by mean shaped reward, with visits shown separately.](https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-example.png)](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/visual-example.md)
 
 [Read one decision](https://github.com/T92T1914/mcts-combat-engine#reading-one-decision) ·
