@@ -1,4 +1,8 @@
-<img src="assets/signals.svg" alt="" width="1200">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-obscur.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/header-clair.svg">
+  <img src="assets/header-clair.svg" alt="Illustrative motifs for forecasting, search, probability, concurrent work and historical archives. These shapes do not represent measured results." width="1200">
+</picture>
 
 # Trinidy Farris
 
