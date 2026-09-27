@@ -165,6 +165,13 @@ deadlines. Under saturation at seed 42, the full policy admits **96 of 240**
 tasks; disabling variation admits **108**. I kept that tradeoff visible. The
 parameters are synthetic and do not establish a validated model of human behavior.
 
+You can [open the trace explorer](https://t92t1914.github.io/adaptive-timing-engine/explorer.html)
+without setup or download a self-contained HTML copy from the
+[demo page](https://t92t1914.github.io/adaptive-timing-engine/). Auto, Clair and
+Obscur preserve the selected workload, policy, seed, time window and trace export.
+This presents the retained experiment without rerunning it. Its evaluated source
+revision was not recorded, so the presentation keeps that gap explicit.
+
 [![A controlled worker experiment reduces 101 requests to two calculations and rejects one obsolete result.](https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/main/docs/adaptive-timing-example.png)](https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/visual-example.md)
 
 [Run the trace explorer](https://github.com/T92T1914/adaptive-timing-engine#run-it) ·
