@@ -88,6 +88,15 @@ but lost to simply carrying forward the last observed value. These are revised
 historical values, and the experiment does not replay publication delays. It
 does not establish what I could have forecast with data available at the time.
 
+A separate [interval study](https://t92t1914.github.io/freight-forecast/intervals.html)
+adds ranges around the saved predictions without fitting the models again.
+I compared fixed, rolling and adaptive residual ranges for all three predictors.
+For the last observed value, rolling ranges covered 65 of 72 months and adaptive
+ranges covered 66, compared with 62 for the fixed ranges. The extra coverage
+required wider ranges, and the interval score did not improve. These are
+retrospective results on an already examined period, not a guarantee for future
+releases or every kind of freight demand.
+
 The [recorded Grafana dashboard](https://github.com/T92T1914/freight-forecast/blob/main/docs/grafana-dashboard.png)
 shows the other side of this project: request rates, latency, rejected inputs,
 and forecast distributions under local container traffic.
@@ -130,7 +139,23 @@ and unfinished games in the report. Equal simulator
 allowances still do not mean equal processor time, and these five reused
 environments per scenario are a limited comparison.
 
-[![A seeded search ranks Spark, Pass and Weakness Mark by mean shaped reward, with visits shown separately.](https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-example.png)](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/visual-example.md)
+I also separated a [fixed work scaling study](https://t92t1914.github.io/mcts-combat-engine/parallel-scaling.html)
+from a [same forest execution control](https://t92t1914.github.io/mcts-combat-engine/same-forest.html).
+The control runs the same independently seeded trees sequentially and through
+worker processes. All six comparisons matched their work counts, statistics
+and ranked decisions. The parallel runs finished sooner in these observations,
+but one warm run took longer than its cold counterpart. I kept startup costs
+and that result visible. These single observations help isolate execution
+from changing the search structure. They do not establish better play or a
+general speedup.
+
+<a href="https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/visual-example.md">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-obscur.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-clair.png">
+    <img src="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-clair.png" alt="One recorded decision after 10,000 simulations. Spark has mean shaped reward 0.532, Pass 0.506 and Weakness Mark 0.495. Exact visits are 5,724, 2,445 and 1,831 respectively. Reward is not a win probability." width="480">
+  </picture>
+</a>
 
 [Read one decision](https://github.com/T92T1914/mcts-combat-engine#reading-one-decision) ·
 [Explore the design decisions](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/design-decisions.md) ·
@@ -149,7 +174,22 @@ Hit, stand, and double are exactly enumerated within the supported model.
 approximation for the shared resplit budget. The CLI shows the values and the
 margin between actions. If the difference is small, you can see that for yourself.
 
-[![Two hard 16 hands against a dealer ten have different exact hit and stand values.](https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/main/docs/blackjack-composition-example.png)](https://github.com/T92T1914/exact-blackjack-solver/blob/main/docs/visual-example.md)
+I built a separate [joint split reference](https://t92t1914.github.io/exact-blackjack-solver/joint-split.html)
+to check what changes when two hands share the remaining cards and the same
+dealer. Across 48 declared toy conditions, the largest difference was about
+0.032 units of the original bet. One best action set expanded from double to
+a double and split tie. That is useful evidence about these small cases, not
+a bound for a full shoe. The report also keeps the invalid first attempt,
+where a rank order mismatch made the two implementations compare different
+shoes, and the mapping regression added before the corrected run.
+
+<a href="https://github.com/T92T1914/exact-blackjack-solver/blob/main/docs/visual-example.md">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/main/docs/blackjack-composition-obscur.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/main/docs/blackjack-composition-clair.png">
+    <img src="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/main/docs/blackjack-composition-clair.png" alt="Two recorded hard 16 hands against a dealer ten. Ten and six prefers hit, while eight, five and three prefers stand. Both expected returns are negative. The exact hit and stand examples are separate from approximate split valuation." width="480">
+  </picture>
+</a>
 
 [Walk through a hand](https://github.com/T92T1914/exact-blackjack-solver#a-worked-decision) ·
 [Explore the solver](https://github.com/T92T1914/exact-blackjack-solver#how-it-works) ·
@@ -178,7 +218,21 @@ Obscur preserve the selected workload, policy, seed, time window and trace expor
 This presents the retained experiment without rerunning it. Its evaluated source
 revision was not recorded, so the presentation keeps that gap explicit.
 
-[![A controlled worker experiment reduces 101 requests to two calculations and rejects one obsolete result.](https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/main/docs/adaptive-timing-example.png)](https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/visual-example.md)
+The [causal scheduler and its comparison](https://t92t1914.github.io/adaptive-timing-engine/causal.html)
+take that work a step further. Announcements, updates and cancellations become
+available only when delivered. An obsolete calculation cannot replace the
+current plan, and dispatched work keeps its identity. Across 24 paired conditions,
+the causal policy dispatched fewer tasks in 9, the same number in 7 and more in 8.
+The policies differ in information and replanning behavior, so the report keeps
+those outcomes separate from a claim that causality alone caused an improvement.
+
+<a href="https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/visual-example.md">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/main/docs/adaptive-timing-obscur.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/main/docs/adaptive-timing-clair.png">
+    <img src="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/main/docs/adaptive-timing-clair.png" alt="Recorded worker example: 101 requests, two calculations, 99 replacements and one stale completion. The final result is payload 100 at revision 101." width="480">
+  </picture>
+</a>
 
 [Run the trace explorer](https://github.com/T92T1914/adaptive-timing-engine#run-it) ·
 [Inspect the concurrency decisions](https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/design-decisions.md) ·
