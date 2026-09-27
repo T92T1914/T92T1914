@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" fill="none">
+  <title>Systems, models and archives</title>
+  <desc>Illustrative motifs for forecasting, search, probability, concurrent work and historical archives. These shapes do not represent measured results.</desc>
+  <metadata>Appearance: obscur. Palette: https://github.com/T92T1914/clair-obscur-themes/blob/7a57fe750ff50205a17e1d342106a0d3f2777159/tokens.json. Renderer: scripts/render_header.py.</metadata>
+  <rect width="1200" height="240" rx="16" fill="#090909"/>
+  <rect x="24" y="28" width="224" height="184" rx="12" fill="#151515" stroke="#494949"/>
+  <rect x="256" y="28" width="224" height="184" rx="12" fill="#151515" stroke="#494949"/>
+  <rect x="488" y="28" width="224" height="184" rx="12" fill="#151515" stroke="#494949"/>
+  <rect x="720" y="28" width="224" height="184" rx="12" fill="#151515" stroke="#494949"/>
+  <rect x="952" y="28" width="224" height="184" rx="12" fill="#151515" stroke="#494949"/>
+  <g stroke="#494949" stroke-width="2">
+    <path d="M48 169H224M280 169H456M512 169H688M744 169H920M976 169H1152"/>
+  </g>
+  <g stroke="#b3c8d8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- A signal with a visibly provisional continuation. -->
+    <path d="M49 145C64 153 75 110 89 119S106 157 121 136S139 72 153 87S175 139 191 107"/>
+    <path d="M191 107C202 88 210 77 223 84" stroke-dasharray="3 9"/>
+    <circle cx="153" cy="87" r="6" fill="#b3c8d8" stroke="#151515" stroke-width="2"/>
+    <!-- Distinct search branches, with one path emphasized. -->
+    <path d="M285 119L337 81L391 66M337 81L391 103L445 83M285 119L337 147L391 130M337 147L391 158M391 103L445 133" stroke="#494949"/>
+    <path d="M285 119L337 81L391 103L445 83"/>
+    <g fill="#151515">
+      <circle cx="285" cy="119" r="6"/><circle cx="337" cy="81" r="6"/>
+      <circle cx="391" cy="103" r="6"/><circle cx="445" cy="83" r="6"/>
+    </g>
+    <!-- A distribution without a fabricated scale or numeric claim. -->
+    <g fill="#b3c8d8" stroke="none">
+      <rect x="518" y="145" width="17" height="20" rx="3"/>
+      <rect x="543" y="121" width="17" height="44" rx="3"/>
+      <rect x="568" y="85" width="17" height="80" rx="3"/>
+      <rect x="593" y="65" width="17" height="100" rx="3"/>
+      <rect x="618" y="94" width="17" height="71" rx="3"/>
+      <rect x="643" y="131" width="17" height="34" rx="3"/>
+      <rect x="668" y="151" width="17" height="14" rx="3"/>
+    </g>
+    <!-- Concurrent work converges without a success badge. -->
+    <path d="M778 81H817V116H857M778 151H817V116M887 116H916" stroke="#bcbcbc"/>
+    <g fill="#252525">
+      <rect x="744" y="66" width="34" height="30" rx="5"/>
+      <rect x="744" y="136" width="34" height="30" rx="5"/>
+      <rect x="857" y="98" width="36" height="36" rx="5"/>
+    </g>
+    <!-- Source cards connect to an archive record. -->
+    <path d="M1015 89H1045V121H1078M1015 153H1045V121" stroke="#bcbcbc"/>
+    <g fill="#252525">
+      <rect x="980" y="66" width="35" height="44" rx="4"/>
+      <rect x="980" y="132" width="35" height="44" rx="4"/>
+      <rect x="1078" y="87" width="67" height="70" rx="5"/>
+    </g>
+    <path d="M1092 105H1129M1092 121H1129M1092 137H1115" stroke-width="3"/>
+  </g>
+</svg>
