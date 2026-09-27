@@ -66,7 +66,13 @@ model's mean absolute error is **226 moves versus 327** for the seasonal baselin
 across 24 months held out from training. Those numbers describe this
 reproducible experiment. They are not a claim about operational shipment data.
 
-[![A model forecast and seasonal baseline compared with 24 months of synthetic shipment volumes](https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/freight-forecast-example.png)](https://github.com/T92T1914/freight-forecast/blob/main/docs/visual-example.md)
+<a href="https://github.com/T92T1914/freight-forecast/blob/main/docs/visual-example.md">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/freight-forecast-obscur.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/freight-forecast-clair.png">
+    <img src="https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/freight-forecast-clair.png" alt="Recorded synthetic shipments over 24 test months. Model mean absolute error is 226 moves per month versus 327 for the seasonal baseline. Each prediction uses prior observations." width="480">
+  </picture>
+</a>
 
 I also added a [monthly refitting experiment](https://github.com/T92T1914/freight-forecast/blob/main/docs/backtesting.md)
 to check whether updating the model as new months arrive actually helps.
