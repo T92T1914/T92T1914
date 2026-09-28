@@ -46,7 +46,8 @@ def render(appearance):
   <rect width="1200" height="240" rx="16" fill="{c['canvas']}"/>
 {panels}
   <g stroke="{c['divider']}" stroke-width="2">
-    <path d="M48 169H224M280 169H456M512 169H688M744 169H920M976 169H1152"/>
+    <!-- Axes belong to the signal and distribution, not every motif. -->
+    <path d="M48 169H224M512 169H688"/>
   </g>
   <g stroke="{c['accent']}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
     <!-- A signal with a visibly provisional continuation. -->
@@ -61,7 +62,7 @@ def render(appearance):
       <circle cx="391" cy="103" r="6"/><circle cx="445" cy="83" r="6"/>
     </g>
     <!-- A distribution without a fabricated scale or numeric claim. -->
-    <g fill="{c['accent']}" stroke="none">
+    <g fill="{c['accent']}" fill-opacity="0.18" stroke-width="3">
       <rect x="518" y="145" width="17" height="20" rx="3"/>
       <rect x="543" y="121" width="17" height="44" rx="3"/>
       <rect x="568" y="85" width="17" height="80" rx="3"/>
@@ -70,12 +71,13 @@ def render(appearance):
       <rect x="643" y="131" width="17" height="34" rx="3"/>
       <rect x="668" y="151" width="17" height="14" rx="3"/>
     </g>
-    <!-- Concurrent work converges without a success badge. -->
-    <path d="M778 81H817V116H857M778 151H817V116M887 116H916" stroke="{c['muted']}"/>
+    <!-- Staggered work intervals share a time marker. -->
+    <path d="M748 85H916M748 121H916M748 157H916" stroke="{c['divider']}" stroke-width="2"/>
+    <path d="M832 66V174" stroke="{c['muted']}" stroke-width="3"/>
     <g fill="{c['control']}">
-      <rect x="744" y="66" width="34" height="30" rx="5"/>
-      <rect x="744" y="136" width="34" height="30" rx="5"/>
-      <rect x="857" y="98" width="36" height="36" rx="5"/>
+      <rect x="748" y="78" width="58" height="14" rx="7"/>
+      <rect x="790" y="114" width="66" height="14" rx="7"/>
+      <rect x="866" y="150" width="50" height="14" rx="7"/>
     </g>
     <!-- Source cards connect to an archive record. -->
     <path d="M1015 89H1045V121H1078M1015 153H1045V121" stroke="{c['muted']}"/>
