@@ -54,6 +54,20 @@ Engine** is a public companion that lets me share one part of the engineering:
 a generalized concurrency design, a new timing simulation, generated workloads,
 and their own tests. The five projects below are public and runnable.
 
+I also built [Heterogeneous Batch Runtime](https://github.com/T92T1914/heterogeneous-batch-runtime),
+a C++20 runtime with scalar, optimized CPU and optional CUDA paths. Its separate
+[image classifier](https://github.com/T92T1914/heterogeneous-batch-runtime/tree/main/examples/image_classifier)
+uses an ONNX Runtime session through C++ and the existing Timing resource owner.
+Requests keep their own input and output, and obsolete results remain separate
+from physically completed work. The core package does not need the inference
+dependencies.
+
+The [CPU inference comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/main/docs/inference-results.md)
+checks complete output tensors and retains session setup, reuse and memory
+observations. Reusing the C++ session was faster than creating it again, but the
+direct Python baseline was faster for every tested batch size. CUDA inference
+acceptance remains open. These results do not measure recognition accuracy.
+
 ## Five projects to explore
 
 ### Freight Forecast
@@ -102,6 +116,12 @@ ranges covered 66, compared with 62 for the fixed ranges. The extra coverage
 required wider ranges, and the interval score did not improve. These are
 retrospective results on an already examined period, not a guarantee for future
 releases or every kind of freight demand.
+
+The [prospective forecast ledger](https://t92t1914.github.io/freight-forecast/ledger.html)
+now keeps issuance, source vintage, later observations and corrections as
+separate records. It currently has zero real issuances. Its historical replay
+and synthetic examples are labeled separately, so neither becomes a forecast
+that was actually available before the outcome.
 
 The [recorded Grafana dashboard](https://github.com/T92T1914/freight-forecast/blob/main/docs/grafana-dashboard.png)
 shows the other side of this project: request rates, latency, rejected inputs,
@@ -190,6 +210,13 @@ a double and split tie. That is useful evidence about these small cases, not
 a bound for a full shoe. The report also keeps the invalid first attempt,
 where a rank order mismatch made the two implementations compare different
 shoes, and the mapping regression added before the corrected run.
+
+I also checked [cache ownership and reuse](https://github.com/T92T1914/exact-blackjack-solver/blob/main/docs/cache-results-2026-09-30.md)
+across 40 fresh interpreter sequences and 150 completed queries. Repeated inputs
+kept the same values bit for bit, and combined clearing reset all nine production
+tables. The report separates cache occupancy from process memory and keeps the
+substantial allocation-tracing overhead. The arithmetic and split limits stay
+unchanged.
 
 <a href="https://github.com/T92T1914/exact-blackjack-solver/blob/main/docs/visual-example.md">
   <picture>
@@ -280,6 +307,15 @@ position at or before the selected time and hides when that sample is more than
 samples stay separate from the footage. The freely orbiting camera and optional
 funnel symbol are illustrative. Reconstructing the tornado's changing appearance
 from registered views is still ahead.
+
+The [evidence dossiers](https://t92t1914.github.io/tornado-atlas/dossier.html)
+connect reviewed El Reno, Joplin and Blackwell material to exact source locators
+and credited creators. A local research desk detects conflicting edits and
+exports validated publication candidates without private notes. The
+[Joplin school-refuge account](https://t92t1914.github.io/tornado-atlas/joplin.html#school-refuge)
+follows NIST's observations while retaining the gaps about occupancy and use.
+Source records remain separate from unique tornadoes, and linked media is not
+automatically registered to an exact time or place.
 
 [Explore the atlas](https://t92t1914.github.io/tornado-atlas/atlas.html) ·
 [Visit the El Reno exhibit](https://t92t1914.github.io/tornado-atlas/) ·
