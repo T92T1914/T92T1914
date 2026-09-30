@@ -62,11 +62,14 @@ Requests keep their own input and output, and obsolete results remain separate
 from physically completed work. The core package does not need the inference
 dependencies.
 
-The [CPU inference comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/main/docs/inference-results.md)
-checks complete output tensors and retains session setup, reuse and memory
-observations. Reusing the C++ session was faster than creating it again, but the
-direct Python baseline was faster for every tested batch size. CUDA inference
-acceptance remains open. These results do not measure recognition accuracy.
+The [CPU comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/main/docs/inference-results.md)
+and [executed CUDA follow-up](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/main/docs/inference-cuda-results.md)
+check complete output tensors and retain session setup, reuse and memory
+observations. The CUDA run also records actual GPU operator placement. Reusing
+the C++ session reduced repeated call cost, but the direct Python CPU baseline
+was faster at every tested batch size in both collections. GPU sanitizer and
+hardware-counter acceptance remain open. These results do not measure
+recognition accuracy.
 
 ## Five projects to explore
 
