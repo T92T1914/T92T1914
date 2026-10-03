@@ -321,6 +321,7 @@ Source records remain separate from unique tornadoes, and linked media is not
 automatically registered to an exact time or place.
 
 [Explore the atlas](https://t92t1914.github.io/tornado-atlas/atlas.html) ·
+[Browse Japan source records](https://t92t1914.github.io/tornado-atlas/japan.html) ·
 [Visit the El Reno exhibit](https://t92t1914.github.io/tornado-atlas/) ·
 [Inspect the damage map](https://t92t1914.github.io/tornado-atlas/survey.html) ·
 [Explore the spatial replay](https://t92t1914.github.io/tornado-atlas/reconstruction.html) ·
