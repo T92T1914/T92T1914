@@ -320,12 +320,35 @@ follows NIST's observations while retaining the gaps about occupancy and use.
 Source records remain separate from unique tornadoes, and linked media is not
 automatically registered to an exact time or place.
 
+The [Joplin hospital account](https://t92t1914.github.io/tornado-atlas/joplin.html#hospital-envelope)
+uses NIST's photographs and findings to explain why a building can retain its
+frame while losing the systems that make it usable. The photographs keep their
+original colors and credits. Their enlargement and source routes work on the
+shared exhibit interface, without treating an unregistered photograph as a
+measured viewpoint or a complete reconstruction.
+
 [Explore the atlas](https://t92t1914.github.io/tornado-atlas/atlas.html) ·
 [Browse Japan source records](https://t92t1914.github.io/tornado-atlas/japan.html) ·
 [Visit the El Reno exhibit](https://t92t1914.github.io/tornado-atlas/) ·
 [Inspect the damage map](https://t92t1914.github.io/tornado-atlas/survey.html) ·
 [Explore the spatial replay](https://t92t1914.github.io/tornado-atlas/reconstruction.html) ·
 [Read the source and verification notes](https://github.com/T92T1914/tornado-atlas)
+
+### Clair and Obscur
+
+I also made [Clair and Obscur](https://t92t1914.github.io/clair-obscur-themes/),
+a shared theme family with warm paper and dark text for Clair, and layered
+charcoal with pale text for Obscur. The downloads include native browser
+candidates and self-contained client CSS, with a clear record of which
+formats were checked and which still need testing in the actual application.
+
+Chrome packages also serve as Edge and Brave candidates. Firefox has unsigned
+static-theme candidates, while Vivaldi and Opera GX use their own native
+formats. Equicord, Vencord and BetterDiscord have separate CSS choices.
+The browser color themes do not change native browser fonts, and the unofficial
+client targets are not endorsed by Discord. Package validation and the
+desktop/mobile preview do not establish complete native compatibility,
+restart persistence, signing or store approval.
 
 ## What connects the work
 
