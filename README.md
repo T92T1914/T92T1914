@@ -39,6 +39,7 @@ project sections below also link to the code and local reproduction steps.
 | Concurrency and timing tradeoffs | [Adaptive Timing Engine: paired experiment results](https://t92t1914.github.io/adaptive-timing-engine/) |
 | Decisions under uncertainty | [MCTS Combat Engine: one search decision](https://t92t1914.github.io/mcts-combat-engine/) |
 | Numerical models and their limits | [Exact Blackjack Solver: a worked decision](https://t92t1914.github.io/exact-blackjack-solver/) |
+| Native CPU/GPU interfaces and installed consumers | [Heterogeneous Batch Runtime: contracts and retained results](https://github.com/T92T1914/heterogeneous-batch-runtime) |
 | Historical data and interactive visualization | [Tornado Atlas: explore the recorded paths](https://t92t1914.github.io/tornado-atlas/atlas.html) |
 
 ## Systems engineering
@@ -70,6 +71,13 @@ the C++ session reduced repeated call cost, but the direct Python CPU baseline
 was faster at every tested batch size in both collections. GPU sanitizer and
 hardware-counter acceptance remain open. These results do not measure
 recognition accuracy.
+
+The installed CMake package also makes its compiled backends explicit. A consumer
+that requires CUDA rejects a CPU-only installation during discovery, while an
+optional request preserves CPU use. [The backend contract](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/main/docs/backend-discovery.md)
+separates a compiled capability from a working device. HIP and SYCL are not
+implemented. This is part of the C++ and heterogeneous-compute engineering
+I want to develop further for software and systems roles.
 
 ## Five projects to explore
 
@@ -327,6 +335,12 @@ original colors and credits. Their enlargement and source routes work on the
 shared exhibit interface, without treating an unregistered photograph as a
 measured viewpoint or a complete reconstruction.
 
+The [Joplin radar reading](https://t92t1914.github.io/tornado-atlas/joplin.html#radar-reading)
+adds seven NOAA/NIST snapshots with their original labels and colors. It explains
+why measurements above the city do not directly establish winds at a damaged
+building. The source record keeps clock labels, location limits and reuse
+status separate.
+
 [Explore the atlas](https://t92t1914.github.io/tornado-atlas/atlas.html) ·
 [Browse Japan source records](https://t92t1914.github.io/tornado-atlas/japan.html) ·
 [Visit the El Reno exhibit](https://t92t1914.github.io/tornado-atlas/) ·
@@ -378,6 +392,10 @@ show assumptions, compute budgets and checks behind a result.
 
 **Concurrency and scheduling.** [Adaptive Timing Engine](https://t92t1914.github.io/adaptive-timing-engine/#engineering)
 makes obsolete work, resource limits and plan adoption inspectable.
+
+**Native systems and heterogeneous compute.** [Heterogeneous Batch Runtime](https://github.com/T92T1914/heterogeneous-batch-runtime)
+connects C++20 interfaces, CPU/CUDA ownership, installed consumers and retained
+comparisons. The slower outcomes and unexecuted cross-vendor checks stay visible.
 
 **Data engineering and interfaces.** [Tornado Atlas](https://t92t1914.github.io/tornado-atlas/survey.html)
 connects preserved source records with a map, photographs and explanations that
