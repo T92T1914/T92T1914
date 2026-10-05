@@ -54,7 +54,7 @@ simulation and better ways to check what the system actually did.
 The application and original calibration data stay private. **Adaptive Timing
 Engine** is a public companion that lets me share one part of the engineering:
 a generalized concurrency design, a new timing simulation, generated workloads,
-and their own tests. The five projects below are public and runnable.
+and their own tests. The projects below are public and runnable.
 
 I also built [Heterogeneous Batch Runtime](https://github.com/T92T1914/heterogeneous-batch-runtime),
 a C++20 runtime with scalar, optimized CPU and optional CUDA paths. Its separate
@@ -80,7 +80,7 @@ separates a compiled capability from a working device. HIP and SYCL are not
 implemented. This is part of the C++ and heterogeneous-compute engineering
 I want to develop further for software and systems roles.
 
-## Five projects to explore
+## Projects to explore
 
 ### Freight Forecast
 
@@ -321,8 +321,8 @@ funnel symbol are illustrative. Reconstructing the tornado's changing appearance
 from registered views is still ahead.
 
 The [evidence dossiers](https://t92t1914.github.io/tornado-atlas/dossier.html)
-connect reviewed El Reno, Joplin and Blackwell material to exact source locators
-and credited creators. A local research desk detects conflicting edits and
+connect reviewed El Reno, Joplin, Blackwell and Tuscaloosa material to exact
+source locators and credited creators. A local research desk detects conflicting edits and
 exports validated publication candidates without private notes. The
 [Joplin school-refuge account](https://t92t1914.github.io/tornado-atlas/joplin.html#school-refuge)
 follows NIST's observations while retaining the gaps about occupancy and use.
