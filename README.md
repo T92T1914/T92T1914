@@ -18,9 +18,10 @@ and I take pride in that. I like getting something working, finding the detail
 I missed, and figuring out why it matters. I learn by building, and I want
 people to be able to see the work behind the result.
 
-I am looking for early career software engineering opportunities, with a growing
-interest in MLOps and operational systems. My [LinkedIn profile](https://www.linkedin.com/in/t92t1914/)
-has my experience and education.
+I am looking for early career software and systems engineering opportunities.
+I want to keep developing my C++, accelerated computing, concurrency and
+performance work through tests and measurements. My
+[LinkedIn profile](https://www.linkedin.com/in/t92t1914/) has my experience and education.
 
 [Forecasting](#freight-forecast) · [Stochastic search](#mcts-combat-engine) ·
 [Probability](#exact-blackjack-solver) · [Adaptive timing](#adaptive-timing-engine) ·
@@ -35,11 +36,11 @@ project sections below also link to the code and local reproduction steps.
 
 | If you want to see how I approach... | Start here |
 | --- | --- |
-| Forecast evaluation and serving | [Freight Forecast: one forecast and its baseline](https://t92t1914.github.io/freight-forecast/) |
+| Native CPU/GPU interfaces and installed consumers | [Heterogeneous Batch Runtime: contracts and retained results](https://github.com/T92T1914/heterogeneous-batch-runtime) |
 | Concurrency and timing tradeoffs | [Adaptive Timing Engine: paired experiment results](https://t92t1914.github.io/adaptive-timing-engine/) |
 | Decisions under uncertainty | [MCTS Combat Engine: one search decision](https://t92t1914.github.io/mcts-combat-engine/) |
 | Numerical models and their limits | [Exact Blackjack Solver: a worked decision](https://t92t1914.github.io/exact-blackjack-solver/) |
-| Native CPU/GPU interfaces and installed consumers | [Heterogeneous Batch Runtime: contracts and retained results](https://github.com/T92T1914/heterogeneous-batch-runtime) |
+| Forecast evaluation and serving | [Freight Forecast: one forecast and its baseline](https://t92t1914.github.io/freight-forecast/) |
 | Historical data and interactive visualization | [Tornado Atlas: explore the recorded paths](https://t92t1914.github.io/tornado-atlas/atlas.html) |
 
 ## Systems engineering
