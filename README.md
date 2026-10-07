@@ -36,7 +36,7 @@ project sections below also link to the code and local reproduction steps.
 
 | If you want to see how I approach... | Start here |
 | --- | --- |
-| Native CPU/GPU interfaces and installed consumers | [Heterogeneous Batch Runtime: contracts and retained results](https://github.com/T92T1914/heterogeneous-batch-runtime) |
+| Native CPU/GPU interfaces and installed consumers | [Heterogeneous Batch Runtime: contracts and retained results](https://t92t1914.github.io/heterogeneous-batch-runtime/) |
 | Concurrency and timing tradeoffs | [Adaptive Timing Engine: paired experiment results](https://t92t1914.github.io/adaptive-timing-engine/) |
 | Decisions under uncertainty | [MCTS Combat Engine: one search decision](https://t92t1914.github.io/mcts-combat-engine/) |
 | Numerical models and their limits | [Exact Blackjack Solver: a worked decision](https://t92t1914.github.io/exact-blackjack-solver/) |
