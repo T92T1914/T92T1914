@@ -26,7 +26,7 @@ performance work through tests and measurements. My
 [Forecasting](#freight-forecast) · [Stochastic search](#mcts-combat-engine) ·
 [Probability](#exact-blackjack-solver) · [Adaptive timing](#adaptive-timing-engine) ·
 [Tornado history](#tornado-atlas) ·
-[Current focus](#systems-engineering)
+[Systems engineering](#systems-engineering)
 
 ## Start with a question
 
@@ -38,25 +38,14 @@ project sections below also link to the code and local reproduction steps.
 | --- | --- |
 | Native CPU/GPU interfaces and installed consumers | [Heterogeneous Batch Runtime: contracts and retained results](https://t92t1914.github.io/heterogeneous-batch-runtime/) |
 | Concurrency and timing tradeoffs | [Adaptive Timing Engine: paired experiment results](https://t92t1914.github.io/adaptive-timing-engine/) |
-| Decisions under uncertainty | [MCTS Combat Engine: one search decision](https://t92t1914.github.io/mcts-combat-engine/) |
-| Numerical models and their limits | [Exact Blackjack Solver: a worked decision](https://t92t1914.github.io/exact-blackjack-solver/) |
+| Decisions under uncertainty | [MCTS Combat Engine: bounded decisions and root allocation](https://t92t1914.github.io/mcts-combat-engine/#root-allocation) |
+| Numerical models and their limits | [Exact Blackjack Solver: calculate and reuse a result](https://t92t1914.github.io/exact-blackjack-solver/#model-route) |
 | Forecast evaluation and serving | [Freight Forecast: one forecast and its baseline](https://t92t1914.github.io/freight-forecast/) |
 | Historical data and interactive visualization | [Tornado Atlas: explore the recorded paths](https://t92t1914.github.io/tornado-atlas/atlas.html) |
 
 ## Systems engineering
 
-A lot of my time goes into **timing and scheduling**. I like the details
-that only show up once something is running: a plan that changes halfway
-through a calculation, work that arrives too late, or a result that looks
-right until I compare it with the trace. That has led me into concurrency,
-simulation and better ways to check what the system actually did.
-
-The application and original calibration data stay private. **Adaptive Timing
-Engine** is a public companion that lets me share one part of the engineering:
-a generalized concurrency design, a new timing simulation, generated workloads,
-and their own tests. The projects below are public and runnable.
-
-I also built [Heterogeneous Batch Runtime](https://github.com/T92T1914/heterogeneous-batch-runtime),
+My main systems project is [Heterogeneous Batch Runtime](https://github.com/T92T1914/heterogeneous-batch-runtime),
 a C++20 runtime with scalar, optimized CPU and optional CUDA paths. Its separate
 [image classifier](https://github.com/T92T1914/heterogeneous-batch-runtime/tree/main/examples/image_classifier)
 uses an ONNX Runtime session through C++ and the existing Timing resource owner.
@@ -79,6 +68,23 @@ optional request preserves CPU use. [The backend contract](https://github.com/T9
 separates a compiled capability from a working device. HIP and SYCL are not
 implemented. This is part of the C++ and heterogeneous-compute engineering
 I want to develop further for software and systems roles.
+
+Runtime computation is currently frozen. Its retained results and runnable
+interfaces remain available; this presentation does not introduce another
+hardware or benchmark claim.
+
+A lot of my time goes into **timing and scheduling**. I like the details
+that only show up once something is running: a plan that changes halfway
+through a calculation, work that arrives too late, or a result that looks
+right until I compare it with the trace. That has led me into concurrency,
+simulation and better ways to check what the system actually did.
+
+The application and original calibration data stay private. **Adaptive Timing
+Engine** is a public companion that lets me share one part of the engineering:
+a generalized concurrency design, a new timing simulation, generated workloads,
+and their own tests. The projects below are public and runnable.
+
+Adaptive Timing remains supporting work with development stopped.
 
 ## Projects to explore
 
@@ -147,17 +153,54 @@ and forecast distributions under local container traffic.
 
 **What makes a good decision when the outcome can change?**
 
-A turn based combat simulator gave me a place to explore that question. The
-engine samples possible futures, compares decisions, and makes it possible to
-see where a shallow search gets things wrong. It uses open loop Monte Carlo
-Tree Search and optional parallel worker processes, in pure Python with no
-runtime dependencies.
+The pure Python engine samples possible futures in a turn based simulator.
+Physical card slots and targets keep their meaning as legal actions change.
+The installed engine stays separate from the companion that records bounded
+custom episodes, replays them without search and makes fresh saved state decisions.
 
-One detail I had to get right was what an action means as the state changes.
-Removing a card shifts list indexes, but the action stored in the search tree
-must still mean the same card. The implementation preserves that identity and
-tests changing move availability. The benchmarks include the cases that
-improved and the one that got worse.
+An [optional root allocation treatment](https://t92t1914.github.io/mcts-combat-engine/root-allocation.md)
+combines sequential halving sampling with its declared survivor first final
+selection. On sixteen controlled modeled states, each search used 32 simulations
+and 32 transitions at horizon one, with 4,096 independent replications per policy
+and state. Mean first action reference loss changed from 0.010989648244 under
+UCT to 0.005141135643 with the optional mode, an observed 53.2184 percent reduction
+on this frozen corpus. Two cases had fewer exact best action hits and five
+individual state uncertainty intervals included zero. Ordinary UCT remains the
+default. This does not establish full encounter improvement, calibrated win
+probability, identical trajectories or lower CPU time.
+
+<details>
+<summary>See all sixteen states in the frozen root allocation study</summary>
+
+<p>The figure retains both cases with fewer exact best action hits and all five
+state intervals that include zero. It shows the accepted horizon one study,
+with ordinary UCT still the default.</p>
+
+<a href="https://github.com/T92T1914/mcts-combat-engine/blob/0d516b9f8e779708f9139d67116198a87f9ced7f/docs/root-allocation.md">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/root-allocation-study-obscur.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/root-allocation-study-clair.png">
+    <img src="assets/root-allocation-study-clair.png" alt="Frozen sixteen-state horizon-one study at 32 simulations and transitions per search. Mean first-action reference loss changed from 0.010989648244 to 0.005141135643, an observed reduction of 53.2184 percent. Two cases had fewer exact-best hits and five state intervals include zero. UCT remains the default. This is not a search-time or full-encounter claim." width="640">
+  </picture>
+</a>
+
+<p><a href="https://github.com/T92T1914/mcts-combat-engine/blob/0d516b9f8e779708f9139d67116198a87f9ced7f/docs/root-allocation/results.json">Read the full deciding results</a>
+and <a href="assets/project-figures.json">figure source record</a>.
+The figure reuses saved evidence. It does not add a new experiment.</p>
+
+</details>
+
+The [separate installed companion](https://t92t1914.github.io/mcts-combat-engine/episode-companion.md)
+uses `decide_episode.py` with `--root-allocation sequential_halving --horizon 1 --sims 32`
+for that optional treatment. Its reports retain sampling phases, physical actions
+and actual work. Passive inspection reads saved reports without search.
+The [independent bounded reference](https://t92t1914.github.io/mcts-combat-engine/episode-reference.md)
+prices the declared objective rather than trusting the saved recommendation.
+
+A separate [request local reuse study](https://t92t1914.github.io/mcts-combat-engine/request-edge-reuse.md)
+measured 11.750789318023768 percent lower search time under its declared paired
+aggregate on one host. Two of thirty timing pairs were slower. That evidence
+concerns search time, not the PR57 decision loss result or complete command latency.
 
 I added a [more demanding comparison](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/comparison-results.md)
 with a policy that samples every legal action one round ahead, including
@@ -197,6 +240,7 @@ general speedup.
   </picture>
 </a>
 
+[Run optional root allocation](https://github.com/T92T1914/mcts-combat-engine#optional-root-allocation) ·
 [Read one decision](https://github.com/T92T1914/mcts-combat-engine#reading-one-decision) ·
 [Explore the design decisions](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/design-decisions.md) ·
 [Compare the results](https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/benchmark-results.md)
@@ -209,10 +253,38 @@ I wanted to follow that difference down to the cards left in the shoe. This
 solver calculates action values using dynamic programming and memoization,
 then checks the calculations with an independent simulation harness.
 
-Hit, stand, and double are exactly enumerated within the supported model.
-**Split valuation is approximate**, with independent split hands and an
-approximation for the shared resplit budget. The CLI shows the values and the
-margin between actions. If the difference is small, you can see that for yourself.
+The original/default path enumerates hit, stand and double within its
+supported model and approximates split hands independently with a shared resplit
+budget approximation. Separately selected bounded common shoe models preserve
+joint depletion, concealed dealer information and combined settlement. Post peek
+families and the original hand deferred second card family have different
+information and wager conventions. They are explicit models, not one switch
+that makes every split exact.
+
+The [complete H17 ace calculation](https://t92t1914.github.io/exact-blackjack-solver/ace-terminal-reuse.md)
+returns all four original action values for A,A against A at 82,780 entered states
+under the unchanged 100,000 cap. Hit is selected: stand is -0.6798596777892443,
+hit 0.027320589716584284, double -0.5874154851999279 and split
+-0.14916288883974643. This retained twenty card, negative peek request uses
+`common_shoe_bounded_ace_resplit` version 1, H17, DAS and one optional shared
+ace resplit. Split ace children receive one mandatory card. The result is not
+symbolic real arithmetic, a general speedup or a full shoe completion guarantee.
+
+<a href="https://github.com/T92T1914/exact-blackjack-solver/blob/c5fa104375fca65404cfdf2ddda015d9eb6a54a2/docs/ace-terminal-reuse.md">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ace-terminal-reuse-obscur.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/ace-terminal-reuse-clair.png">
+    <img src="assets/ace-terminal-reuse-clair.png" alt="One qualified cold H17 ace request completed all four original action values in 82,780 entered states under the unchanged 100,000-state cap. Original binary64 values were preserved. This is completion of one request, with no general latency or larger-shoe guarantee." width="900">
+  </picture>
+</a>
+
+The installed `bj-calculate` command publishes a successful reusable record.
+`bj-replay` recomputes it in an owned process, and the existing
+[local inspector](https://t92t1914.github.io/exact-blackjack-solver/#record-inspector)
+reads it without calculation or upload. The accepted Windows calculation used
+a five second wall allowance and a 256 MiB committed memory Job. Linux remains
+wall only with memory uncapped. Direct APIs remain caller owned. Replay agreement
+demonstrates reproduction by the selected engine, not independent mathematical proof.
 
 I built a separate [joint split reference](https://t92t1914.github.io/exact-blackjack-solver/joint-split.html)
 to check what changes when two hands share the remaining cards and the same
@@ -240,6 +312,7 @@ unchanged.
   </picture>
 </a>
 
+[Calculate and replay the H17 request](https://github.com/T92T1914/exact-blackjack-solver#a-complete-h17-ace-calculation) ·
 [Walk through a hand](https://github.com/T92T1914/exact-blackjack-solver#a-worked-decision) ·
 [Explore the solver](https://github.com/T92T1914/exact-blackjack-solver#how-it-works) ·
 [Read the model limits](https://github.com/T92T1914/exact-blackjack-solver#what-this-does-not-prove)
