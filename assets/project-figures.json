@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "purpose": "Saved project evidence rendered in Clair and Obscur. Raster exports preserve the verified Inter text. No new experiment was run.",
+  "sources": {
+    "mcts": {
+      "repository": "T92T1914/mcts-combat-engine",
+      "revision": "0d516b9f8e779708f9139d67116198a87f9ced7f",
+      "data": "docs/root-allocation/results.json",
+      "scope": "Sixteen modeled horizon-one states, 32 completed simulations and transitions per search, 4096 independent replications per policy and state; optional treatment with unchanged UCT default."
+    },
+    "solver": {
+      "repository": "T92T1914/exact-blackjack-solver",
+      "revision": "c5fa104375fca65404cfdf2ddda015d9eb6a54a2",
+      "figure_record": "docs/ace-terminal-reuse-figure.json",
+      "scope": "One qualified H17 ace calculation with complete original action values at 82,780 states under the unchanged 100,000 cap. Not a latency comparison or larger-shoe guarantee."
+    }
+  },
+  "files": [
+    {
+      "path": "assets/root-allocation-study-clair.png",
+      "sha256": "826dbc3f21b1dca986991fddc4588f82ad23dfd6f0bf176617f8f2b2ed3ed117",
+      "width": 640,
+      "height": 4600,
+      "project": "mcts"
+    },
+    {
+      "path": "assets/root-allocation-study-obscur.png",
+      "sha256": "59dffd160e7a1d08ed226821550d4990c1a7803f4c79341944f6c14e074dd0e9",
+      "width": 640,
+      "height": 4600,
+      "project": "mcts"
+    },
+    {
+      "path": "assets/ace-terminal-reuse-clair.png",
+      "sha256": "565af095c5e709fd290dc296dac8b49dd54c827538a3a73f0daa11f305cfe144",
+      "width": 1440,
+      "height": 720,
+      "project": "solver"
+    },
+    {
+      "path": "assets/ace-terminal-reuse-obscur.png",
+      "sha256": "45fb44d6215538211af85a3207146c636b73e998d0c74e6fd43a881458cfd518",
+      "width": 1440,
+      "height": 720,
+      "project": "solver"
+    }
+  ]
+}
