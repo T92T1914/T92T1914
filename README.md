@@ -170,8 +170,8 @@ chronological evaluation to a FastAPI service, containers and monitoring.
 Synthetic shipments and the separate Bureau of Transportation Statistics freight
 activity index stay distinct.
 On that index, carrying forward the last observation beat the learned model.
-The forecast ledger separates issuance, source revisions and corrections. It
-currently contains no real issued forecast.
+The forecast ledger separates issuance, source revisions and corrections. Its
+public example contains no real issued forecast.
 
 <a href="https://github.com/T92T1914/freight-forecast/blob/main/docs/visual-example.md">
   <picture>
