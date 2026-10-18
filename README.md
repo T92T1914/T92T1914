@@ -16,7 +16,7 @@ creative work that keep me curious.
 These are passion projects. I spend weeks at a time on them, sometimes months.
 I like getting something working, finding the detail I missed and figuring out
 why it matters. I am looking for early career software and systems engineering
-opportunities, especially work involving C++, Python and research tools.
+opportunities, especially work involving C++, Python, research tools and software assurance.
 
 ## Start with the work
 
@@ -33,13 +33,19 @@ My main systems project is a C++20 runtime with scalar, optimized CPU and option
 CUDA paths. Installed consumers can discover compiled backends without confusing
 them with a working device. A separate image classifier connects ONNX Runtime
 through C++. Each request owns its input and output, and an obsolete result
-cannot replace the current one while its underlying work finishes.
+cannot replace the current one while its underlying work finishes. Optional
+[model batching](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/5d51afd321fc56e1e316ec3ce202d03cd6279146/docs/model-batching.md)
+processes a nonempty batch of up to eight images in one invocation while serial
+remains the default.
 
 The retained inference comparisons check complete output tensors, session reuse
 and memory. Reusing the C++ session reduced repeated call cost, but the direct
 Python CPU baseline was faster at every tested batch size in both collections.
 The CUDA followup records GPU operator placement. These results do not measure
-recognition accuracy or establish general GPU superiority. GPU sanitizer and
+recognition accuracy or establish general GPU superiority. A later
+[batching study](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/5d51afd321fc56e1e316ec3ce202d03cd6279146/docs/batching-results.md)
+reduced complete request cost for two and eight images within each provider,
+with CPU still faster in every tested batch. GPU sanitizer and
 hardware counter acceptance remain open. HIP and SYCL are not implemented.
 
 [Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) ·
@@ -70,6 +76,9 @@ small declared workload. It owns worker lifetimes, bounds retained output and
 records incomplete or contradictory evidence. Recovery reads retained files
 without retrying or replacing trials. These operational controls do not establish
 better play, authenticate receipt origin or provide a hostile code sandbox.
+A separate [installed Linux consumer](https://github.com/T92T1914/mcts-combat-engine/blob/d075b7ea94d32de178d8e6e766ab7c66bf8b101e/docs/linux-managed-episode.md)
+records and replays through an existing local Docker daemon, with resource
+accounting limited to its owned container and descendants.
 
 [Explore the decisions](https://t92t1914.github.io/mcts-combat-engine/) ·
 [Read the encounter finding](https://github.com/T92T1914/mcts-combat-engine/blob/2a8d2ac354415d765542d61b195dd01baf9c475c/docs/encounter-outcomes.md) ·
@@ -117,6 +126,9 @@ with their own information and wager conventions.
 One H17 ace request, where the dealer hits soft 17, returns all four original
 action values at 82,780 states under the unchanged 100,000 state cap. This is one
 specific completion result, not a general speedup or a full shoe guarantee.
+[Completed settlement reuse](https://github.com/T92T1914/exact-blackjack-solver/blob/689a6ee94b8be3948ab384c869f3476a0e396773/docs/bounded-resplit-calculation.md#reuse-completed-settlement-states)
+also lets two declared sixteen card non ace requests finish after earlier refusal,
+without establishing lower latency or universal completion.
 Installed calculation and replay commands preserve reusable records. The browser
 inspector reads saved results without calculation or upload. Same engine replay
 and independent mathematical checks remain different kinds of evidence.
@@ -186,10 +198,13 @@ public example contains no real issued forecast.
 ### Adaptive Timing Engine
 
 [Adaptive Timing Engine](https://github.com/T92T1914/adaptive-timing-engine)
-examines scheduling when work becomes obsolete. Cancellation requests, physical
-completion and adoption of a result are separate events. The trace explorer
-makes generated workloads and rejected work inspectable. Those studies do not
-establish real time guarantees or a validated model of human behavior.
+examines scheduling when work becomes obsolete. An
+[installed consumer](https://github.com/T92T1914/adaptive-timing-engine/blob/9cadd27c8c72f07c371c54525671c0254a160f20/docs/revision-file.md)
+runs finite local revisions through CPU analysis, keeping physical completion
+separate from adoption of the current answer. Saved receipts can be checked
+without executing the work. The trace explorer retains its generated workloads.
+These studies do not establish real time guarantees or a validated model of
+human behavior.
 
 <a href="https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/visual-example.md">
   <picture>
@@ -206,7 +221,11 @@ establish real time guarantees or a validated model of human behavior.
 [Clair and Obscur](https://t92t1914.github.io/clair-obscur-themes/) is a shared
 visual theme family with downloadable packages and previews, installation guidance
 and recovery instructions. Package and browser preview checks remain separate from complete
-native compatibility, restart persistence, signing and store approval.
+native compatibility, restart persistence, signing and store approval. The shared
+palette also supplies a [Garmin watch face candidate](https://github.com/T92T1914/clair-obscur-themes/blob/d30039e1da98b670aeaeafdeb31ebc30868ac67a/docs/garmin-watchface.md)
+and [phone icons](https://github.com/T92T1914/clair-obscur-themes/blob/d30039e1da98b670aeaeafdeb31ebc30868ac67a/docs/samsung-icons.md).
+Watch checks cover the simulator, with physical watch acceptance and phone import
+still open.
 
 ## How I approach the work
 
