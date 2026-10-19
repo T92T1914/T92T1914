@@ -22,10 +22,10 @@ opportunities, especially work involving C++, Python, research tools and softwar
 
 | If you want to explore... | Start here |
 | --- | --- |
-| Native interfaces, ownership and performance | [Heterogeneous Batch Runtime](#heterogeneous-batch-runtime) |
-| Search, evaluation and controlled execution | [MCTS Combat Engine](#mcts-combat-engine) |
-| Numerical models and expensive state spaces | [Exact Blackjack Solver](#exact-blackjack-solver) |
-| Historical data and interactive visualization | [Tornado Atlas](#tornado-atlas) |
+| Native interfaces, ownership and performance | [Heterogeneous Batch Runtime](https://github.com/T92T1914/heterogeneous-batch-runtime) |
+| Search, evaluation and controlled execution | [MCTS Combat Engine](https://github.com/T92T1914/mcts-combat-engine) |
+| Numerical models and expensive state spaces | [Exact Blackjack Solver](https://github.com/T92T1914/exact-blackjack-solver) |
+| Historical data and interactive visualization | [Tornado Atlas](https://github.com/T92T1914/tornado-atlas) |
 
 ### Heterogeneous Batch Runtime
 
