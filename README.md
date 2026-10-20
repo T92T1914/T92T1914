@@ -23,6 +23,7 @@ opportunities, especially work involving C++, Python, research tools and softwar
 | If you want to explore... | Start here |
 | --- | --- |
 | Native interfaces, ownership and performance | [Heterogeneous Batch Runtime](https://github.com/T92T1914/heterogeneous-batch-runtime) |
+| PyTorch integration and native training operations | [Ragged Pooling for PyTorch](https://github.com/T92T1914/ragged-pool) |
 | Search, evaluation and controlled execution | [MCTS Combat Engine](https://github.com/T92T1914/mcts-combat-engine) |
 | Numerical models and expensive state spaces | [Exact Blackjack Solver](https://github.com/T92T1914/exact-blackjack-solver) |
 | Historical data and interactive visualization | [Tornado Atlas](https://github.com/T92T1914/tornado-atlas) |
@@ -52,6 +53,28 @@ hardware counter acceptance remain open. HIP and SYCL are not implemented.
 [Read the CPU comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-results.md) ·
 [Read the CUDA followup](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-cuda-results.md) ·
 [Inspect the backend contract](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/backend-discovery.md)
+
+### Ragged Pooling for PyTorch
+
+Groups of data do not always have the same length. This small PyTorch component
+combines each group into one vector using softmax weights. C++ handles the CPU
+forward and backward operations, and Python connects them to training. The package
+includes readable references, installed training examples, padded input with a
+declared compiled training path and a separate exported packed consumer.
+
+The studies use synthetic data and declared CPU environments. They do not establish
+a general performance advantage or real world model accuracy. CUDA and second
+derivatives are outside this version.
+
+[Inspect the component](https://github.com/T92T1914/ragged-pool) and
+[read the supported contract](https://github.com/T92T1914/ragged-pool/blob/18c0d8f3f9750dd18e97940bde905bec08e6176e/docs/contract.md).
+
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 680px)" srcset="https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur-narrow.png">
+  <source media="(max-width: 680px)" srcset="https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-clair-narrow.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur.png">
+  <img src="https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-clair.png" alt="Conceptual CPU pooling example. Groups with two, three and no items produce one summary vector per group using softmax weights. Empty groups produce zeros, and training sends gradients to values and scores. This illustration does not report a benchmark or model quality result." width="900">
+</picture>
 
 ### MCTS Combat Engine
 
@@ -222,10 +245,12 @@ human behavior.
 visual theme family with downloadable packages and previews, installation guidance
 and recovery instructions. Package and browser preview checks remain separate from complete
 native compatibility, restart persistence, signing and store approval. The shared
-palette also supplies a [Garmin watch face candidate](https://github.com/T92T1914/clair-obscur-themes/blob/d30039e1da98b670aeaeafdeb31ebc30868ac67a/docs/garmin-watchface.md)
-and [phone icons](https://github.com/T92T1914/clair-obscur-themes/blob/d30039e1da98b670aeaeafdeb31ebc30868ac67a/docs/samsung-icons.md).
-Watch checks cover the simulator, with physical watch acceptance and phone import
-still open.
+palette also supplies a [Garmin watch face candidate](https://github.com/T92T1914/clair-obscur-themes/blob/4574e0350dbb6fc626e4e07b606c177188166861/docs/garmin-watchface.md)
+and [phone icons](https://github.com/T92T1914/clair-obscur-themes/blob/4574e0350dbb6fc626e4e07b606c177188166861/docs/samsung-icons.md).
+An earlier watch version has simulator acceptance. The current watch source has
+its own unexecuted simulator and device checks. A scoped earlier phone theme was
+applied, while full icon assignment, launcher behavior and restoration remain
+separate checks.
 
 ## How I approach the work
 
