@@ -60,18 +60,19 @@ Groups of data do not always have the same length. This small PyTorch component
 combines each group into one vector using softmax weights. C++ handles the CPU
 forward and backward operations, and Python connects them to training. The package
 includes readable references, installed training examples and trusted model
-exports for packed and padded inputs. The packed eager CPU route also supports
-second order gradients, including a small input gradient penalty example.
-Padded and compiled training remain first order.
+exports for packed and padded inputs. The eager packed and padded CPU routes
+also support second order gradients, including small training examples with
+penalties on input gradients. Compiled training remains first order.
 
 The studies use synthetic data and declared CPU environments. They do not establish
 a general performance advantage or real world model accuracy. Third derivatives
 and GPU execution remain outside the accepted routes.
 
 [Inspect the component](https://github.com/T92T1914/ragged-pool) and
-[read the supported contract](https://github.com/T92T1914/ragged-pool/blob/9866e00e6de91a7de4ac12602bbc2598a73fa9ad/docs/contract.md),
-[second order boundary](https://github.com/T92T1914/ragged-pool/blob/9866e00e6de91a7de4ac12602bbc2598a73fa9ad/docs/second-order.md)
-and [trained padded export](https://github.com/T92T1914/ragged-pool/blob/9866e00e6de91a7de4ac12602bbc2598a73fa9ad/docs/padded-export.md).
+[read the supported contract](https://github.com/T92T1914/ragged-pool/blob/f2031fe8297df24c407413ac76856fc5feabe53b/docs/contract.md),
+[packed second order boundary](https://github.com/T92T1914/ragged-pool/blob/f2031fe8297df24c407413ac76856fc5feabe53b/docs/second-order.md),
+[padded second order boundary](https://github.com/T92T1914/ragged-pool/blob/f2031fe8297df24c407413ac76856fc5feabe53b/docs/padded-second-order.md)
+and [trained padded export](https://github.com/T92T1914/ragged-pool/blob/f2031fe8297df24c407413ac76856fc5feabe53b/docs/padded-export.md).
 
 <picture>
   <source media="(prefers-color-scheme: dark) and (max-width: 680px)" srcset="https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur-narrow.png">
