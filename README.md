@@ -59,15 +59,19 @@ hardware counter acceptance remain open. HIP and SYCL are not implemented.
 Groups of data do not always have the same length. This small PyTorch component
 combines each group into one vector using softmax weights. C++ handles the CPU
 forward and backward operations, and Python connects them to training. The package
-includes readable references, installed training examples, padded input with a
-declared compiled training path and a separate exported packed consumer.
+includes readable references, installed training examples and trusted model
+exports for packed and padded inputs. The packed eager CPU route also supports
+second order gradients, including a small input gradient penalty example.
+Padded and compiled training remain first order.
 
 The studies use synthetic data and declared CPU environments. They do not establish
-a general performance advantage or real world model accuracy. CUDA and second
-derivatives are outside this version.
+a general performance advantage or real world model accuracy. Third derivatives
+and GPU execution remain outside the accepted routes.
 
 [Inspect the component](https://github.com/T92T1914/ragged-pool) and
-[read the supported contract](https://github.com/T92T1914/ragged-pool/blob/18c0d8f3f9750dd18e97940bde905bec08e6176e/docs/contract.md).
+[read the supported contract](https://github.com/T92T1914/ragged-pool/blob/9866e00e6de91a7de4ac12602bbc2598a73fa9ad/docs/contract.md),
+[second order boundary](https://github.com/T92T1914/ragged-pool/blob/9866e00e6de91a7de4ac12602bbc2598a73fa9ad/docs/second-order.md)
+and [trained padded export](https://github.com/T92T1914/ragged-pool/blob/9866e00e6de91a7de4ac12602bbc2598a73fa9ad/docs/padded-export.md).
 
 <picture>
   <source media="(prefers-color-scheme: dark) and (max-width: 680px)" srcset="https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur-narrow.png">
@@ -182,9 +186,9 @@ and independent mathematical checks remain different kinds of evidence.
 
 I have always been interested in tornadoes. I wanted a way to study where they
 went, what was documented and what we can actually say about how they looked.
-Atlas combines a searchable NOAA record collection with four historical exhibits:
-El Reno, Joplin, Blackwell and Tuscaloosa. Maps, photographs and evidence dossiers
-connect observations to their sources.
+Atlas combines a searchable NOAA record collection with six historical exhibits:
+El Reno, Joplin, Blackwell, Tuscaloosa and Birmingham, Newcastle and Moore, and
+Udall. Maps, photographs and evidence dossiers connect observations to their sources.
 
 Reported times, camera observations and illustrative models remain separate.
 The local research desk exports reviewed publication candidates without private
