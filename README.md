@@ -9,7 +9,7 @@
 I build things because I want to understand how they work and how far I can take them.
 
 I am an Air Force veteran studying computer science with an AI/ML concentration.
-I expect to finish classes in January or February 2027 and graduate in April 2027.
+I expect to finish classes in December 2026 and graduate in February 2027.
 My projects connect my logistics background with the systems, mathematics and
 creative work that keep me curious.
 
