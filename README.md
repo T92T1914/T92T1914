@@ -64,15 +64,24 @@ exports for packed and padded inputs. The eager packed and padded CPU routes
 also support second order gradients, including small training examples with
 penalties on input gradients. Compiled training remains first order.
 
+An optional CUDA companion supports eager packed training in float32 and float64.
+The tested Windows RTX 4090 route passed installed gradient and model update
+checks and six native diagnostic runs. It remains first order, with no padded
+CUDA inputs, compile/export or graph capture. Broader device portability is
+unverified.
+
 The studies use synthetic data and declared CPU environments. They do not establish
 a general performance advantage or real world model accuracy. Third derivatives
-and GPU execution remain outside the accepted routes.
+remain outside the accepted routes.
 
 [Inspect the component](https://github.com/T92T1914/ragged-pool) and
 [read the supported contract](https://github.com/T92T1914/ragged-pool/blob/f2031fe8297df24c407413ac76856fc5feabe53b/docs/contract.md),
 [packed second order boundary](https://github.com/T92T1914/ragged-pool/blob/f2031fe8297df24c407413ac76856fc5feabe53b/docs/second-order.md),
 [padded second order boundary](https://github.com/T92T1914/ragged-pool/blob/f2031fe8297df24c407413ac76856fc5feabe53b/docs/padded-second-order.md)
 and [trained padded export](https://github.com/T92T1914/ragged-pool/blob/f2031fe8297df24c407413ac76856fc5feabe53b/docs/padded-export.md).
+The [CUDA contract](https://github.com/T92T1914/ragged-pool/blob/98a2748e8eca8fd03442c86e8504d9a03bd5c3bc/cuda/README.md)
+and [executed validation record](https://github.com/T92T1914/ragged-pool/blob/98a2748e8eca8fd03442c86e8504d9a03bd5c3bc/cuda/evidence/windows-sm89-20261021.json)
+describe the separate GPU route.
 
 <picture>
   <source media="(prefers-color-scheme: dark) and (max-width: 680px)" srcset="https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur-narrow.png">
