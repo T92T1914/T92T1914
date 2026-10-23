@@ -27,6 +27,7 @@ opportunities, especially work involving C++, Python, research tools and softwar
 | Search, evaluation and controlled execution | [MCTS Combat Engine](https://github.com/T92T1914/mcts-combat-engine) |
 | Numerical models and expensive state spaces | [Exact Blackjack Solver](https://github.com/T92T1914/exact-blackjack-solver) |
 | Historical data and interactive visualization | [Tornado Atlas](https://github.com/T92T1914/tornado-atlas) |
+| Application state, access and retry behavior | [Shipment Exception Workspace](https://github.com/T92T1914/shipment-exception-workspace) |
 
 ### Heterogeneous Batch Runtime
 
@@ -225,6 +226,17 @@ historical damage remain unfinished research goals.
 [Inspect the evidence dossiers](https://t92t1914.github.io/tornado-atlas/dossier.html)
 
 ## Supporting projects
+
+### Shipment Exception Workspace
+
+[Shipment Exception Workspace](https://github.com/T92T1914/shipment-exception-workspace)
+is a local shipment review demo built with React and TypeScript, FastAPI and
+PostgreSQL. Seeded organization members can assign and resolve exceptions, with
+changes and their history recorded in the same transaction. Stale edits are
+refused, and a retry can recover a committed result after a response is lost.
+
+The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/e722a336f87462423769192d455a57560f8895ae/README.md)
+use synthetic records. There is no carrier integration or production deployment.
 
 ### Freight Forecast
 
