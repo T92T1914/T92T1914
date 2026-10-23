@@ -69,10 +69,18 @@ The tested Windows RTX 4090 route passed installed gradient and model update
 checks and six native diagnostic runs on the eager consumer. A separate fixed
 shape `torch.compile` route uses `aot_eager` to capture forward and backward
 graphs and check matched training updates. Those graphs run with eager PyTorch,
-without optimized code generation or a speed claim. CUDA remains first order,
-without padded inputs, higher derivatives, export or CUDA graph capture. Dynamic
-shape compilation is outside the accepted route, and broader device portability
-is unverified. The compiled consumer has no new sanitizer result.
+without optimized code generation or a speed claim. The compiled consumer has no
+new sanitizer result.
+
+Separate bounded CUDA routes now cover padded inputs, dynamic training, trusted
+inference export and selected second derivatives. Later native derivative
+binaries have no new sanitizer qualification. CUDA graph capture and broader
+device portability remain outside the qualified scope.
+
+The Linux CPU examples use two responsive ranks for unequal batches, accumulated
+updates, continuation, clipping and shared numerical admission. These fixed
+synthetic consumers do not establish GPU distributed training or general crash
+recovery.
 
 The studies use synthetic data and declared CPU environments. They do not establish
 a general performance advantage or real world model accuracy. Third derivatives
@@ -83,10 +91,12 @@ remain outside the accepted routes.
 [packed second order boundary](https://github.com/T92T1914/ragged-pool/blob/f2031fe8297df24c407413ac76856fc5feabe53b/docs/second-order.md),
 [padded second order boundary](https://github.com/T92T1914/ragged-pool/blob/f2031fe8297df24c407413ac76856fc5feabe53b/docs/padded-second-order.md)
 and [trained padded export](https://github.com/T92T1914/ragged-pool/blob/f2031fe8297df24c407413ac76856fc5feabe53b/docs/padded-export.md).
-The [CUDA contract](https://github.com/T92T1914/ragged-pool/blob/fcbdb698cab1fc0549e9b27c7ec69b8e2cce69a4/cuda/README.md),
+The [CUDA contract](https://github.com/T92T1914/ragged-pool/blob/1cfc678d33bb34c036d8f0336ecfd986a6e97ea2/cuda/README.md),
 [eager validation record](https://github.com/T92T1914/ragged-pool/blob/98a2748e8eca8fd03442c86e8504d9a03bd5c3bc/cuda/evidence/windows-sm89-20261021.json)
 and [compiled validation record](https://github.com/T92T1914/ragged-pool/blob/fcbdb698cab1fc0549e9b27c7ec69b8e2cce69a4/cuda/evidence/compiled-windows-sm89-20261021.json)
 describe these separate GPU checks.
+
+The [Linux CPU training examples](https://github.com/T92T1914/ragged-pool/blob/1cfc678d33bb34c036d8f0336ecfd986a6e97ea2/docs/distributed-cpu.md) and [shared update admission](https://github.com/T92T1914/ragged-pool/blob/1cfc678d33bb34c036d8f0336ecfd986a6e97ea2/docs/distributed-admission.md) keep their separate contracts and controls.
 
 <picture>
   <source media="(prefers-color-scheme: dark) and (max-width: 680px)" srcset="https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur-narrow.png">
