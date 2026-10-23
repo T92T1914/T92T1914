@@ -282,3 +282,5 @@ These projects matter to me outside a job search. They are not claims of
 deployment in a live logistics or emergency operation.
 
 [My LinkedIn profile](https://www.linkedin.com/in/t92t1914/) has my experience and education.
+
+[Read in another language](TRANSLATION.md): browser translation help, with code and evidence kept exact.
