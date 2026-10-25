@@ -242,7 +242,14 @@ Participating tabs recheck the shared session, clear old account state after
 observed changes and discard delayed results from the previous context.
 Recovery does not automatically repeat uncertain writes.
 
-The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/0358990d67fa91430fe8bf504de487229bb2ad9d/README.md)
+A [local restore guide](https://github.com/T92T1914/shipment-exception-workspace/blob/b2ff568e49ef037a7a585f0ee39be79a11d81f6f/docs/backup-and-restore.md) records a trusted synthetic
+workspace restored through direct loopback into a separate empty database on
+the same cluster. Data and database structure matched before application
+startup, without initializing, migrating or seeding the target. That Windows x64
+result uses PostgreSQL 18.1, CPython 3.13.3 and the v0.8.0 wheel and tools. It does
+not establish production backups or disaster recovery.
+
+The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/64619f021ca01ddb4b25186adb1ae82b2221f0bd/README.md)
 use synthetic records. There is no carrier integration or production deployment.
 
 ### Freight Forecast
