@@ -238,7 +238,11 @@ history are recorded in the same transaction. Stale edits are refused, and a
 retry that is still authorized can recover a committed result after a response
 is lost.
 
-The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/adb489bd49f2123083d7df6ca5c50504de8e34fd/README.md)
+Participating tabs recheck the shared session, clear old account state after
+observed changes and discard delayed results from the previous context.
+Recovery does not automatically repeat uncertain writes.
+
+The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/ca9f36f19d3433833f6f260b9eb1f4b3ed40bb03/README.md)
 use synthetic records. There is no carrier integration or production deployment.
 
 ### Freight Forecast
