@@ -231,12 +231,14 @@ historical damage remain unfinished research goals.
 
 [Shipment Exception Workspace](https://github.com/T92T1914/shipment-exception-workspace)
 is a local shipment review demo built with React and TypeScript, FastAPI and
-PostgreSQL. Seeded organization members can create exceptions, search and filter
-the queue, then assign or resolve a selected record. Each change and its history
-are recorded in the same transaction. Stale edits are refused, and a retry can
-recover a committed result after a response is lost.
+PostgreSQL. Operators in the seeded organizations can create exceptions, search
+and filter the queue, then assign or resolve a selected record. Reviewers can
+inspect records and their history without changing them. Each change and its
+history are recorded in the same transaction. Stale edits are refused, and a
+retry that is still authorized can recover a committed result after a response
+is lost.
 
-The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/fc7e5ac7e56088f2f4c06f1c5bab16a89c08f7ea/README.md)
+The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/adb489bd49f2123083d7df6ca5c50504de8e34fd/README.md)
 use synthetic records. There is no carrier integration or production deployment.
 
 ### Freight Forecast
