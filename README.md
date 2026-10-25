@@ -242,7 +242,7 @@ Participating tabs recheck the shared session, clear old account state after
 observed changes and discard delayed results from the previous context.
 Recovery does not automatically repeat uncertain writes.
 
-The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/ca9f36f19d3433833f6f260b9eb1f4b3ed40bb03/README.md)
+The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/0358990d67fa91430fe8bf504de487229bb2ad9d/README.md)
 use synthetic records. There is no carrier integration or production deployment.
 
 ### Freight Forecast
