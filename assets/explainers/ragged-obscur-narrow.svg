@@ -90,7 +90,7 @@ z
    </g>
    <g id="text_1">
     <!-- 1  INPUT -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 180.686531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 186.583838) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-53e" d="M 2241 4656 
 L 2241 0 
@@ -199,7 +199,7 @@ z
    </g>
    <g id="text_2">
     <!-- Unequal groups -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 227.586094) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 240.559312) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-1a8" d="M 2384 -75 
 Q 1834 -75 1423 140 
@@ -554,7 +554,7 @@ z
    </g>
    <g id="text_3">
     <!-- 2  MECHANISM -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 342.101531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 348.025837) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-53f" d="M 419 0 
 L 419 600 
@@ -744,7 +744,7 @@ z
    </g>
    <g id="text_4">
     <!-- Softmax weights -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 389.358844) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 402.430612) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-18d" d="M 2053 -81 
 Q 1297 -81 850 276 
@@ -971,7 +971,7 @@ z
    </g>
    <g id="text_5">
     <!-- 3  RESULT -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 503.381531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 509.305837) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-541" d="M 2034 -63 
 Q 1544 -63 1164 104 
@@ -1057,7 +1057,7 @@ z
    </g>
    <g id="text_6">
     <!-- One vector per group -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 550.287844) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 563.289413) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-141" d="M 2450 -63 
 Q 1853 -63 1386 226 
@@ -1152,7 +1152,7 @@ z
    </g>
    <g id="text_7">
     <!-- Ragged Pooling for PyTorch -->
-    <g style="fill: #f4f4f4" transform="translate(43.2 47.104059) scale(0.3168 -0.3168)">
+    <g style="fill: #f4f4f4" transform="translate(43.2 52.526616) scale(0.3744 -0.3744)">
      <defs>
       <path id="Inter-Bold-180" d="M 422 0 
 L 422 4656 
@@ -1554,7 +1554,7 @@ z
    </g>
    <g id="text_8">
     <!-- CONCEPTUAL MECHANISM -->
-    <g style="fill: #b3c8d8" transform="translate(43.2 105.695072) scale(0.2016 -0.2016)">
+    <g style="fill: #b3c8d8" transform="translate(43.2 99.366103) scale(0.2016 -0.2016)">
      <defs>
       <path id="Inter-SemiBold-141" d="M 2463 -63 
 Q 1850 -63 1367 221 
@@ -1605,8 +1605,8 @@ z
     </g>
    </g>
    <g id="text_9">
-    <!-- First-order training illustration. Empty groups return zeros. -->
-    <g style="fill: #bcbcbc" transform="translate(43.2 645.215147) scale(0.2016 -0.2016)">
+    <!-- First-order training illustration. Empty groups -->
+    <g style="fill: #bcbcbc" transform="translate(43.2 650.590903) scale(0.2592 -0.2592)">
      <defs>
       <path id="Inter-Regular-89" d="M 563 0 
 L 563 4656 
@@ -1710,21 +1710,6 @@ Q 700 -1331 590 -1309
 Q 481 -1288 438 -1266 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-Regular-3fe" d="M 394 0 
-L 394 419 
-L 2353 2938 
-L 2353 2972 
-L 456 2972 
-L 456 3494 
-L 3078 3494 
-L 3078 3047 
-L 1175 556 
-L 1175 522 
-L 3141 522 
-L 3141 0 
-L 394 0 
-z
-" transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#Inter-Regular-89"/>
      <use xlink:href="#Inter-Regular-2b1" transform="translate(59.03125 0)"/>
@@ -1773,20 +1758,39 @@ z
      <use xlink:href="#Inter-Regular-393" transform="translate(1943.46875 0)"/>
      <use xlink:href="#Inter-Regular-34b" transform="translate(2002.59375 0)"/>
      <use xlink:href="#Inter-Regular-367" transform="translate(2063.828125 0)"/>
-     <use xlink:href="#Inter-Regular-6f1" transform="translate(2116.609375 0)"/>
-     <use xlink:href="#Inter-Regular-354" transform="translate(2144.734375 0)"/>
-     <use xlink:href="#Inter-Regular-266" transform="translate(2180.71875 0)"/>
-     <use xlink:href="#Inter-Regular-379" transform="translate(2239.015625 0)"/>
-     <use xlink:href="#Inter-Regular-393" transform="translate(2271.734375 0)"/>
-     <use xlink:href="#Inter-Regular-354" transform="translate(2330.859375 0)"/>
-     <use xlink:href="#Inter-Regular-305" transform="translate(2370.0625 0)"/>
-     <use xlink:href="#Inter-Regular-6f1" transform="translate(2429.140625 0)"/>
-     <use xlink:href="#Inter-Regular-3fe" transform="translate(2457.265625 0)"/>
-     <use xlink:href="#Inter-Regular-266" transform="translate(2511.015625 0)"/>
-     <use xlink:href="#Inter-Regular-354" transform="translate(2569.3125 0)"/>
-     <use xlink:href="#Inter-Regular-316" transform="translate(2605.296875 0)"/>
-     <use xlink:href="#Inter-Regular-367" transform="translate(2665.265625 0)"/>
-     <use xlink:href="#Inter-Regular-5de" transform="translate(2718.046875 0)"/>
+    </g>
+    <!-- return zeros. -->
+    <g style="fill: #bcbcbc" transform="translate(43.2 686.753859) scale(0.2592 -0.2592)">
+     <defs>
+      <path id="Inter-Regular-3fe" d="M 394 0 
+L 394 419 
+L 2353 2938 
+L 2353 2972 
+L 456 2972 
+L 456 3494 
+L 3078 3494 
+L 3078 3047 
+L 1175 556 
+L 1175 522 
+L 3141 522 
+L 3141 0 
+L 394 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Inter-Regular-354"/>
+     <use xlink:href="#Inter-Regular-266" transform="translate(35.984375 0)"/>
+     <use xlink:href="#Inter-Regular-379" transform="translate(94.28125 0)"/>
+     <use xlink:href="#Inter-Regular-393" transform="translate(127 0)"/>
+     <use xlink:href="#Inter-Regular-354" transform="translate(186.125 0)"/>
+     <use xlink:href="#Inter-Regular-305" transform="translate(225.328125 0)"/>
+     <use xlink:href="#Inter-Regular-6f1" transform="translate(284.40625 0)"/>
+     <use xlink:href="#Inter-Regular-3fe" transform="translate(312.53125 0)"/>
+     <use xlink:href="#Inter-Regular-266" transform="translate(366.28125 0)"/>
+     <use xlink:href="#Inter-Regular-354" transform="translate(424.578125 0)"/>
+     <use xlink:href="#Inter-Regular-316" transform="translate(460.5625 0)"/>
+     <use xlink:href="#Inter-Regular-367" transform="translate(520.53125 0)"/>
+     <use xlink:href="#Inter-Regular-5de" transform="translate(573.3125 0)"/>
     </g>
    </g>
   </g>

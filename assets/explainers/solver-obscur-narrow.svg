@@ -90,7 +90,7 @@ z
    </g>
    <g id="text_1">
     <!-- 1  INPUT -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 180.686531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 186.583838) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-53e" d="M 2241 4656 
 L 2241 0 
@@ -199,7 +199,7 @@ z
    </g>
    <g id="text_2">
     <!-- Hard 16 vs ten -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 230.652844) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 244.239412) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-a1" d="M 563 0 
 L 563 4656 
@@ -504,7 +504,7 @@ z
    </g>
    <g id="text_3">
     <!-- 2  MECHANISM -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 342.101531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 348.025837) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-53f" d="M 419 0 
 L 419 600 
@@ -694,7 +694,7 @@ z
    </g>
    <g id="text_4">
     <!-- Remaining cards -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 389.210344) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 402.252412) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-180" d="M 563 0 
 L 563 4656 
@@ -858,7 +858,7 @@ z
    </g>
    <g id="text_5">
     <!-- 3  RESULT -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 503.381531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 509.305837) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-541" d="M 2034 -63 
 Q 1544 -63 1164 104 
@@ -944,7 +944,7 @@ z
    </g>
    <g id="text_6">
     <!-- Hit / stand -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 552.171094) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 565.549313) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-5af" d="M 2163 4875 
 L 663 -700 
@@ -969,7 +969,7 @@ z
    </g>
    <g id="text_7">
     <!-- Exact Blackjack Solver -->
-    <g style="fill: #f4f4f4" transform="translate(43.2 47.289684) scale(0.3168 -0.3168)">
+    <g style="fill: #f4f4f4" transform="translate(43.2 52.745991) scale(0.3744 -0.3744)">
      <defs>
       <path id="Inter-Bold-5f" d="M 422 0 
 L 422 4656 
@@ -1320,7 +1320,7 @@ z
    </g>
    <g id="text_8">
     <!-- CONCEPTUAL MECHANISM -->
-    <g style="fill: #b3c8d8" transform="translate(43.2 105.695072) scale(0.2016 -0.2016)">
+    <g style="fill: #b3c8d8" transform="translate(43.2 99.366103) scale(0.2016 -0.2016)">
      <defs>
       <path id="Inter-SemiBold-141" d="M 2463 -63 
 Q 1850 -63 1367 221 
@@ -1371,8 +1371,8 @@ z
     </g>
    </g>
    <g id="text_9">
-    <!-- Exact hit/stand examples. The original split route is -->
-    <g style="fill: #bcbcbc" transform="translate(43.2 645.319097) scale(0.2016 -0.2016)">
+    <!-- Exact hit/stand examples. The original split route -->
+    <g style="fill: #bcbcbc" transform="translate(43.2 650.724553) scale(0.2592 -0.2592)">
      <defs>
       <path id="Inter-Regular-5f" d="M 563 0 
 L 563 4656 
@@ -1593,24 +1593,24 @@ z
      <use xlink:href="#Inter-Regular-393" transform="translate(2144.640625 0)"/>
      <use xlink:href="#Inter-Regular-379" transform="translate(2203.765625 0)"/>
      <use xlink:href="#Inter-Regular-266" transform="translate(2235.515625 0)"/>
-     <use xlink:href="#Inter-Regular-6f1" transform="translate(2293.8125 0)"/>
-     <use xlink:href="#Inter-Regular-2b1" transform="translate(2321.9375 0)"/>
-     <use xlink:href="#Inter-Regular-367" transform="translate(2346.15625 0)"/>
     </g>
-    <!-- approximate. -->
-    <g style="fill: #bcbcbc" transform="translate(43.2 672.165366) scale(0.2016 -0.2016)">
-     <use xlink:href="#Inter-Regular-1fb"/>
-     <use xlink:href="#Inter-Regular-34b" transform="translate(56.15625 0)"/>
-     <use xlink:href="#Inter-Regular-34b" transform="translate(117.390625 0)"/>
-     <use xlink:href="#Inter-Regular-354" transform="translate(178.625 0)"/>
-     <use xlink:href="#Inter-Regular-316" transform="translate(214.609375 0)"/>
-     <use xlink:href="#Inter-Regular-3e1" transform="translate(272.328125 0)"/>
-     <use xlink:href="#Inter-Regular-2b1" transform="translate(326.921875 0)"/>
-     <use xlink:href="#Inter-Regular-2fe" transform="translate(351.140625 0)"/>
-     <use xlink:href="#Inter-Regular-1fb" transform="translate(438.734375 0)"/>
-     <use xlink:href="#Inter-Regular-379" transform="translate(494.890625 0)"/>
-     <use xlink:href="#Inter-Regular-266" transform="translate(526.640625 0)"/>
-     <use xlink:href="#Inter-Regular-5de" transform="translate(584.9375 0)"/>
+    <!-- is approximate. -->
+    <g style="fill: #bcbcbc" transform="translate(43.2 685.241184) scale(0.2592 -0.2592)">
+     <use xlink:href="#Inter-Regular-2b1"/>
+     <use xlink:href="#Inter-Regular-367" transform="translate(24.21875 0)"/>
+     <use xlink:href="#Inter-Regular-6f1" transform="translate(77 0)"/>
+     <use xlink:href="#Inter-Regular-1fb" transform="translate(105.125 0)"/>
+     <use xlink:href="#Inter-Regular-34b" transform="translate(161.28125 0)"/>
+     <use xlink:href="#Inter-Regular-34b" transform="translate(222.515625 0)"/>
+     <use xlink:href="#Inter-Regular-354" transform="translate(283.75 0)"/>
+     <use xlink:href="#Inter-Regular-316" transform="translate(319.734375 0)"/>
+     <use xlink:href="#Inter-Regular-3e1" transform="translate(377.453125 0)"/>
+     <use xlink:href="#Inter-Regular-2b1" transform="translate(432.046875 0)"/>
+     <use xlink:href="#Inter-Regular-2fe" transform="translate(456.265625 0)"/>
+     <use xlink:href="#Inter-Regular-1fb" transform="translate(543.859375 0)"/>
+     <use xlink:href="#Inter-Regular-379" transform="translate(600.015625 0)"/>
+     <use xlink:href="#Inter-Regular-266" transform="translate(631.765625 0)"/>
+     <use xlink:href="#Inter-Regular-5de" transform="translate(690.0625 0)"/>
     </g>
    </g>
   </g>

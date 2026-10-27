@@ -291,7 +291,11 @@
           462.0,
           841.75,
           499.266796875
-        ]
+        ],
+        "main_label_pixels": 40,
+        "title_pixels": 50,
+        "footer_pixels": 28,
+        "height_rule": "Fixed 600px canvas with verified bounds"
       },
       "narrow": {
         "width": 960,
@@ -309,14 +313,14 @@
               "heading": [
                 88.0,
                 210.0,
-                247.0,
-                263.238
+                279.0,
+                273.886
               ],
               "body": [
                 88.0,
-                279.238,
-                361.969,
-                332.477
+                289.886,
+                418.562,
+                353.772
               ]
             }
           },
@@ -331,14 +335,14 @@
               "heading": [
                 88.0,
                 434.0,
-                386.0,
-                487.238
+                445.0,
+                497.886
               ],
               "body": [
                 88.0,
-                503.238,
-                454.0,
-                556.477
+                513.886,
+                525.0,
+                577.772
               ]
             }
           },
@@ -353,14 +357,14 @@
               "heading": [
                 88.0,
                 658.0,
-                283.297,
-                711.238
+                323.547,
+                721.886
               ],
               "body": [
                 88.0,
-                727.238,
-                364.203,
-                780.477
+                737.886,
+                420.625,
+                801.772
               ]
             }
           }
@@ -368,9 +372,13 @@
         "footer_bounds": [
           60.0,
           870.0,
-          841.75,
-          907.266796875
-        ]
+          848.640625,
+          965.82890625
+        ],
+        "main_label_pixels": 48,
+        "title_pixels": 52,
+        "footer_pixels": 36,
+        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
       }
     },
     "ragged": {
@@ -451,7 +459,11 @@
           462.0,
           839.15625,
           499.266796875
-        ]
+        ],
+        "main_label_pixels": 40,
+        "title_pixels": 50,
+        "footer_pixels": 28,
+        "height_rule": "Fixed 600px canvas with verified bounds"
       },
       "narrow": {
         "width": 960,
@@ -469,14 +481,14 @@
               "heading": [
                 88.0,
                 210.0,
-                247.0,
-                263.238
+                279.0,
+                273.886
               ],
               "body": [
                 88.0,
-                279.238,
-                390.344,
-                332.477
+                289.886,
+                447.203,
+                353.772
               ]
             }
           },
@@ -491,14 +503,14 @@
               "heading": [
                 88.0,
                 434.0,
-                386.0,
-                487.238
+                445.0,
+                497.886
               ],
               "body": [
                 88.0,
-                503.238,
-                402.531,
-                556.477
+                513.886,
+                465.031,
+                577.772
               ]
             }
           },
@@ -513,14 +525,14 @@
               "heading": [
                 88.0,
                 658.0,
-                283.297,
-                711.238
+                323.547,
+                721.886
               ],
               "body": [
                 88.0,
-                727.238,
-                493.172,
-                780.477
+                737.886,
+                573.797,
+                801.772
               ]
             }
           }
@@ -528,9 +540,13 @@
         "footer_bounds": [
           60.0,
           870.0,
-          839.15625,
-          907.266796875
-        ]
+          826.8125,
+          965.82890625
+        ],
+        "main_label_pixels": 48,
+        "title_pixels": 52,
+        "footer_pixels": 36,
+        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
       }
     },
     "mcts": {
@@ -611,7 +627,11 @@
           462.0,
           875.96875,
           499.266796875
-        ]
+        ],
+        "main_label_pixels": 40,
+        "title_pixels": 50,
+        "footer_pixels": 28,
+        "height_rule": "Fixed 600px canvas with verified bounds"
       },
       "narrow": {
         "width": 960,
@@ -629,14 +649,14 @@
               "heading": [
                 88.0,
                 210.0,
-                247.0,
-                263.238
+                279.0,
+                273.886
               ],
               "body": [
                 88.0,
-                279.238,
-                435.453,
-                332.477
+                289.886,
+                508.125,
+                353.772
               ]
             }
           },
@@ -651,14 +671,14 @@
               "heading": [
                 88.0,
                 434.0,
-                386.0,
-                487.238
+                445.0,
+                497.886
               ],
               "body": [
                 88.0,
-                503.238,
-                438.969,
-                556.477
+                513.886,
+                509.562,
+                577.772
               ]
             }
           },
@@ -673,14 +693,14 @@
               "heading": [
                 88.0,
                 658.0,
-                283.297,
-                711.238
+                323.547,
+                721.886
               ],
               "body": [
                 88.0,
-                727.238,
-                472.406,
-                780.477
+                737.886,
+                547.875,
+                801.772
               ]
             }
           }
@@ -688,9 +708,13 @@
         "footer_bounds": [
           60.0,
           870.0,
-          875.96875,
-          907.266796875
-        ]
+          883.25,
+          965.82890625
+        ],
+        "main_label_pixels": 48,
+        "title_pixels": 52,
+        "footer_pixels": 36,
+        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
       }
     },
     "solver": {
@@ -771,7 +795,11 @@
           462.0,
           917.703125,
           499.266796875
-        ]
+        ],
+        "main_label_pixels": 40,
+        "title_pixels": 50,
+        "footer_pixels": 28,
+        "height_rule": "Fixed 600px canvas with verified bounds"
       },
       "narrow": {
         "width": 960,
@@ -789,14 +817,14 @@
               "heading": [
                 88.0,
                 210.0,
-                247.0,
-                263.238
+                279.0,
+                273.886
               ],
               "body": [
                 88.0,
-                279.238,
-                355.953,
-                332.477
+                289.886,
+                412.734,
+                353.772
               ]
             }
           },
@@ -811,14 +839,14 @@
               "heading": [
                 88.0,
                 434.0,
-                386.0,
-                487.238
+                445.0,
+                497.886
               ],
               "body": [
                 88.0,
-                503.238,
-                403.156,
-                556.477
+                513.886,
+                463.969,
+                577.772
               ]
             }
           },
@@ -833,14 +861,14 @@
               "heading": [
                 88.0,
                 658.0,
-                283.297,
-                711.238
+                323.547,
+                721.886
               ],
               "body": [
                 88.0,
-                727.238,
-                282.203,
-                780.477
+                737.886,
+                322.234,
+                801.772
               ]
             }
           }
@@ -848,9 +876,13 @@
         "footer_bounds": [
           60.0,
           870.0,
-          737.0625,
-          944.53359375
-        ]
+          888.765625,
+          965.82890625
+        ],
+        "main_label_pixels": 48,
+        "title_pixels": 52,
+        "footer_pixels": 36,
+        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
       }
     },
     "atlas": {
@@ -931,7 +963,11 @@
           462.0,
           945.65625,
           499.266796875
-        ]
+        ],
+        "main_label_pixels": 40,
+        "title_pixels": 50,
+        "footer_pixels": 28,
+        "height_rule": "Fixed 600px canvas with verified bounds"
       },
       "narrow": {
         "width": 960,
@@ -949,14 +985,14 @@
               "heading": [
                 88.0,
                 210.0,
-                247.0,
-                263.238
+                279.0,
+                273.886
               ],
               "body": [
                 88.0,
-                279.238,
-                484.391,
-                332.477
+                289.886,
+                564.25,
+                353.772
               ]
             }
           },
@@ -971,14 +1007,14 @@
               "heading": [
                 88.0,
                 434.0,
-                386.0,
-                487.238
+                445.0,
+                497.886
               ],
               "body": [
                 88.0,
-                503.238,
-                413.281,
-                556.477
+                513.886,
+                480.141,
+                577.772
               ]
             }
           },
@@ -993,14 +1029,14 @@
               "heading": [
                 88.0,
                 658.0,
-                283.297,
-                711.238
+                323.547,
+                721.886
               ],
               "body": [
                 88.0,
-                727.238,
-                425.766,
-                780.477
+                737.886,
+                495.5,
+                801.772
               ]
             }
           }
@@ -1008,9 +1044,13 @@
         "footer_bounds": [
           60.0,
           870.0,
-          813.640625,
-          944.53359375
-        ]
+          753.5625,
+          965.82890625
+        ],
+        "main_label_pixels": 48,
+        "title_pixels": 52,
+        "footer_pixels": 36,
+        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
       }
     },
     "shipment": {
@@ -1091,7 +1131,11 @@
           462.0,
           857.5,
           499.266796875
-        ]
+        ],
+        "main_label_pixels": 40,
+        "title_pixels": 50,
+        "footer_pixels": 28,
+        "height_rule": "Fixed 600px canvas with verified bounds"
       },
       "narrow": {
         "width": 960,
@@ -1109,14 +1153,14 @@
               "heading": [
                 88.0,
                 210.0,
-                247.0,
-                263.238
+                279.0,
+                273.886
               ],
               "body": [
                 88.0,
-                279.238,
-                410.578,
-                332.477
+                289.886,
+                477.875,
+                353.772
               ]
             }
           },
@@ -1131,14 +1175,14 @@
               "heading": [
                 88.0,
                 434.0,
-                386.0,
-                487.238
+                445.0,
+                497.886
               ],
               "body": [
                 88.0,
-                503.238,
-                471.344,
-                556.477
+                513.886,
+                552.203,
+                577.772
               ]
             }
           },
@@ -1153,14 +1197,14 @@
               "heading": [
                 88.0,
                 658.0,
-                283.297,
-                711.238
+                323.547,
+                721.886
               ],
               "body": [
                 88.0,
-                727.238,
-                416.656,
-                780.477
+                737.886,
+                485.578,
+                801.772
               ]
             }
           }
@@ -1168,9 +1212,13 @@
         "footer_bounds": [
           60.0,
           870.0,
-          857.5,
-          907.266796875
-        ]
+          871.9375,
+          965.82890625
+        ],
+        "main_label_pixels": 48,
+        "title_pixels": 52,
+        "footer_pixels": 36,
+        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
       }
     },
     "freight": {
@@ -1251,7 +1299,11 @@
           462.0,
           883.765625,
           499.266796875
-        ]
+        ],
+        "main_label_pixels": 40,
+        "title_pixels": 50,
+        "footer_pixels": 28,
+        "height_rule": "Fixed 600px canvas with verified bounds"
       },
       "narrow": {
         "width": 960,
@@ -1269,14 +1321,14 @@
               "heading": [
                 88.0,
                 210.0,
-                247.0,
-                263.238
+                279.0,
+                273.886
               ],
               "body": [
                 88.0,
-                279.238,
-                413.203,
-                332.477
+                289.886,
+                479.234,
+                353.772
               ]
             }
           },
@@ -1291,14 +1343,14 @@
               "heading": [
                 88.0,
                 434.0,
-                386.0,
-                487.238
+                445.0,
+                497.886
               ],
               "body": [
                 88.0,
-                503.238,
-                432.344,
-                556.477
+                513.886,
+                501.203,
+                577.772
               ]
             }
           },
@@ -1313,14 +1365,14 @@
               "heading": [
                 88.0,
                 658.0,
-                283.297,
-                711.238
+                323.547,
+                721.886
               ],
               "body": [
                 88.0,
-                727.238,
-                406.766,
-                780.477
+                737.886,
+                471.5,
+                801.772
               ]
             }
           }
@@ -1328,9 +1380,13 @@
         "footer_bounds": [
           60.0,
           870.0,
-          883.765625,
-          907.266796875
-        ]
+          808.625,
+          965.82890625
+        ],
+        "main_label_pixels": 48,
+        "title_pixels": 52,
+        "footer_pixels": 36,
+        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
       }
     },
     "adaptive": {
@@ -1411,7 +1467,11 @@
           462.0,
           988.890625,
           499.266796875
-        ]
+        ],
+        "main_label_pixels": 40,
+        "title_pixels": 50,
+        "footer_pixels": 28,
+        "height_rule": "Fixed 600px canvas with verified bounds"
       },
       "narrow": {
         "width": 960,
@@ -1429,14 +1489,14 @@
               "heading": [
                 88.0,
                 210.0,
-                247.0,
-                263.238
+                279.0,
+                273.886
               ],
               "body": [
                 88.0,
-                279.238,
-                369.125,
-                332.477
+                289.886,
+                426.547,
+                353.772
               ]
             }
           },
@@ -1451,14 +1511,14 @@
               "heading": [
                 88.0,
                 434.0,
-                386.0,
-                487.238
+                445.0,
+                497.886
               ],
               "body": [
                 88.0,
-                503.238,
-                455.906,
-                556.477
+                513.886,
+                527.891,
+                577.772
               ]
             }
           },
@@ -1473,14 +1533,14 @@
               "heading": [
                 88.0,
                 658.0,
-                283.297,
-                711.238
+                323.547,
+                721.886
               ],
               "body": [
                 88.0,
-                727.238,
-                442.172,
-                780.477
+                737.886,
+                511.188,
+                801.772
               ]
             }
           }
@@ -1488,9 +1548,13 @@
         "footer_bounds": [
           60.0,
           870.0,
-          856.875,
-          944.53359375
-        ]
+          878.78125,
+          965.82890625
+        ],
+        "main_label_pixels": 48,
+        "title_pixels": 52,
+        "footer_pixels": 36,
+        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
       }
     },
     "themes": {
@@ -1571,7 +1635,11 @@
           462.0,
           809.625,
           499.266796875
-        ]
+        ],
+        "main_label_pixels": 40,
+        "title_pixels": 50,
+        "footer_pixels": 28,
+        "height_rule": "Fixed 600px canvas with verified bounds"
       },
       "narrow": {
         "width": 960,
@@ -1589,14 +1657,14 @@
               "heading": [
                 88.0,
                 210.0,
-                247.0,
-                263.238
+                279.0,
+                273.886
               ],
               "body": [
                 88.0,
-                279.238,
-                325.688,
-                332.477
+                289.886,
+                373.406,
+                353.772
               ]
             }
           },
@@ -1611,14 +1679,14 @@
               "heading": [
                 88.0,
                 434.0,
-                386.0,
-                487.238
+                445.0,
+                497.886
               ],
               "body": [
                 88.0,
-                503.238,
-                423.484,
-                556.477
+                513.886,
+                489.172,
+                577.772
               ]
             }
           },
@@ -1633,14 +1701,14 @@
               "heading": [
                 88.0,
                 658.0,
-                283.297,
-                711.238
+                323.547,
+                721.886
               ],
               "body": [
                 88.0,
-                727.238,
-                448.234,
-                780.477
+                737.886,
+                521.875,
+                801.772
               ]
             }
           }
@@ -1648,9 +1716,13 @@
         "footer_bounds": [
           60.0,
           870.0,
-          809.625,
-          907.266796875
-        ]
+          849.921875,
+          965.82890625
+        ],
+        "main_label_pixels": 48,
+        "title_pixels": 52,
+        "footer_pixels": 36,
+        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
       }
     },
     "calendar": {
@@ -1731,7 +1803,11 @@
           462.0,
           907.171875,
           499.266796875
-        ]
+        ],
+        "main_label_pixels": 40,
+        "title_pixels": 50,
+        "footer_pixels": 28,
+        "height_rule": "Fixed 600px canvas with verified bounds"
       },
       "narrow": {
         "width": 960,
@@ -1749,14 +1825,14 @@
               "heading": [
                 88.0,
                 210.0,
-                247.0,
-                263.238
+                279.0,
+                273.886
               ],
               "body": [
                 88.0,
-                279.238,
-                399.391,
-                332.477
+                289.886,
+                466.469,
+                353.772
               ]
             }
           },
@@ -1771,14 +1847,14 @@
               "heading": [
                 88.0,
                 434.0,
-                386.0,
-                487.238
+                445.0,
+                497.886
               ],
               "body": [
                 88.0,
-                503.238,
-                373.219,
-                556.477
+                513.886,
+                434.453,
+                577.772
               ]
             }
           },
@@ -1793,14 +1869,14 @@
               "heading": [
                 88.0,
                 658.0,
-                283.297,
-                711.238
+                323.547,
+                721.886
               ],
               "body": [
                 88.0,
-                727.238,
-                442.391,
-                780.477
+                737.886,
+                514.469,
+                801.772
               ]
             }
           }
@@ -1808,9 +1884,13 @@
         "footer_bounds": [
           60.0,
           870.0,
-          793.734375,
-          944.53359375
-        ]
+          749.25,
+          965.82890625
+        ],
+        "main_label_pixels": 48,
+        "title_pixels": 52,
+        "footer_pixels": 36,
+        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
       }
     }
   },
@@ -1844,49 +1924,49 @@
   "inputs_sha256_lf": {
     "assets/profile-explainers-input.json": "65725b6d57fed054058b9be4fdb1068e0f752a6bed86a846214b900d50adff63",
     "assets/profile-figure-tokens.json": "6d42e0e87513cbcfc5417b3862e805897c91dda9b3083af946a8e0af823eda87",
-    "scripts/render_project_explainers.py": "a38535f21cafef445bac7bd72a8867c1f37a4b14f5e8a72ff3d6bce1757d00fa",
+    "scripts/render_project_explainers.py": "654b2cfc4d6a2d01c8a03578c16625262b43926fa825313cba4ceb116defc5f2",
     "requirements-figures.txt": "3bc78c01a3305d85d889b7ae16b9022a5dc38e5fd705ab1aec26b7cd00988024"
   },
   "outputs_sha256": {
     "assets/explainers/runtime-obscur-wide.png": "6418028854518ad6b0a1cb18749ae8b26e726ec53fdbb6d579bc412f87d91518",
     "assets/explainers/runtime-obscur-wide.svg": "9c7e12cdf23fe5caae46f192990abb46363cfe53e772bc78dea8a8b89c6f1781",
-    "assets/explainers/runtime-obscur-narrow.png": "09c8bd6f17f1c911a937a9b0b35198bf2d67954e8ccc3812e240090642c43c5c",
-    "assets/explainers/runtime-obscur-narrow.svg": "fb80ed046a1bc80a22e561dd7cc1bd343ac05fa0961c442268fca3799b89e822",
+    "assets/explainers/runtime-obscur-narrow.png": "652942001a709d835e051813aa77c637acd1cefe5ad643ede1ca923d9904ccdc",
+    "assets/explainers/runtime-obscur-narrow.svg": "4e16b882ccc3aecc868095524d40bbca2c4ce7b46862ea2ec3e19551f16acf49",
     "assets/explainers/ragged-obscur-wide.png": "296e06b8265624c71c3525914a0c8943b206d209874b6cacbdea1494bafd278f",
     "assets/explainers/ragged-obscur-wide.svg": "3a9293ddd0657ccc0b08b19cc6455935aff1dfed9024f4ca2f653c936431cab5",
-    "assets/explainers/ragged-obscur-narrow.png": "5df8f28e16570b69896e4796c7a82426a7ed657634dc03af1a5e0b2d2935f41a",
-    "assets/explainers/ragged-obscur-narrow.svg": "1459871807cf2ccd29740c9ab124a4e543208086c2785fb0903bb6111a43df75",
+    "assets/explainers/ragged-obscur-narrow.png": "48cf1b84da6a140069a396e179c4711453d0352c9f6dd35d1e028ed8ead6bfe5",
+    "assets/explainers/ragged-obscur-narrow.svg": "f29be8a15797378fcc0c355de27db518cd748cb70aa1da50b2297e33d24c3aeb",
     "assets/explainers/mcts-obscur-wide.png": "951135844561ee1259c61f7ad392d42527a43ad4a49779435bfa27e993d53feb",
     "assets/explainers/mcts-obscur-wide.svg": "6ed89c9332b3dd603c21498aa5d71d71f84e0266f8678b10c8a07db23104dbc8",
-    "assets/explainers/mcts-obscur-narrow.png": "a9d1149d7c5bbb255b23ea9307305be9ee41eb9a0aa9112872f8011685fa223c",
-    "assets/explainers/mcts-obscur-narrow.svg": "150bf4b82f1f9ed86d7ad6fde5fc2cdbbdc39aa32dc5c8625ede4385692f1a53",
+    "assets/explainers/mcts-obscur-narrow.png": "e65a49a260f00bd2b022e540eae339923a26ef3c220c360c559edcb3d0cdd8b4",
+    "assets/explainers/mcts-obscur-narrow.svg": "c15d31140ff92406258c513edead98d1e71d83ad665393d266e4c5d596a5c102",
     "assets/explainers/solver-obscur-wide.png": "7d4d1470ded56f16ce2f7c184976a710fead88cb6fb7091c537d0713d10161f8",
     "assets/explainers/solver-obscur-wide.svg": "e5cc732391ade9a5fddcfd75a47926610b0d642000c3df26777d4524a88054a4",
-    "assets/explainers/solver-obscur-narrow.png": "f55b11adff06aff9a180fa428b19974d879eacaf30017576131c18381a085658",
-    "assets/explainers/solver-obscur-narrow.svg": "dd95e9a4fdf11c43dc047b40a3c9641c15f362904acf43701e10e1422624b3f2",
+    "assets/explainers/solver-obscur-narrow.png": "5dd78a520c7776d5171da6c13222b22940007894a379f0e719b59ed3c6a38d77",
+    "assets/explainers/solver-obscur-narrow.svg": "b36df202affbeb583c2b681c4c579f0684216c7602c76d2f60b0127641dbc31a",
     "assets/explainers/atlas-obscur-wide.png": "f34828240ba5a574d73139ef40493afa6923561aad0be7deae3ac1bbf1ed4f40",
     "assets/explainers/atlas-obscur-wide.svg": "6341aa9e441a5c4cd3d7f60734812aadeaaee2b586fdda335f597f2f8c59e37b",
-    "assets/explainers/atlas-obscur-narrow.png": "625f03877ce048e9417295136b7d0f1f880994bb911e76feea53f9e55b19746f",
-    "assets/explainers/atlas-obscur-narrow.svg": "fad66de28a2f6a984ceffcf636b85e2a5a82bf4d40a02bdb8467ec3196f740ac",
+    "assets/explainers/atlas-obscur-narrow.png": "142e2d1f7758a8fe89dd7e18308d8cd08aff3611439155ce698d14570b1904de",
+    "assets/explainers/atlas-obscur-narrow.svg": "06e89aba8822f4f7519f1e28eedd493c6df4afd755379e74afe60a825f5c9c8c",
     "assets/explainers/shipment-obscur-wide.png": "a7948b62b23cfbdf5cbf53c4fb078ee8af34b15240f8e9b4f5ca1ace18c0bb8a",
     "assets/explainers/shipment-obscur-wide.svg": "25227a0ec461310b0f42eae4543cbb0ccf244074a3c1f1430d4e324b015ea432",
-    "assets/explainers/shipment-obscur-narrow.png": "4224d0a649140a1f2b2446212f26700ba1a9cf9551e802c5db0e3bbbcff58bc9",
-    "assets/explainers/shipment-obscur-narrow.svg": "8d7e157f54cd4588b0cecace8a3a51e5d13b14b4918cb82a120f311aa624b7c1",
+    "assets/explainers/shipment-obscur-narrow.png": "90d23d484abcd4adf1641b597f3c75566be726acfd2b4d06c9b51f3a80285464",
+    "assets/explainers/shipment-obscur-narrow.svg": "a247050fa7f1ff607ab64854a1ab1caeedf7a832aa508f482531e457f51d2168",
     "assets/explainers/freight-obscur-wide.png": "23e14c23a4a0371a6be9732c761facb95d1111390b2356e08e7c9bb83a23b3f2",
     "assets/explainers/freight-obscur-wide.svg": "4e84b6bf35843b4788d5650725adf258e68a92513eeec5e11dbd874da6252544",
-    "assets/explainers/freight-obscur-narrow.png": "ee5aba8323c141413b89caa41e7bb6090e6a62eac11ae95f177243672dc9772b",
-    "assets/explainers/freight-obscur-narrow.svg": "7e8489f1e2c2584a19ef6da407f2cc1c3bd6f24638ebc63353f3131d31f2a207",
+    "assets/explainers/freight-obscur-narrow.png": "b81939615a85be4d6fc9a0edafebfcdf12da8a9c3f43e11cce99fdfd8896196f",
+    "assets/explainers/freight-obscur-narrow.svg": "1f7438c951c194c9ecda04a88d84231f23ff494f3532a8ad8b406021622b1a4e",
     "assets/explainers/adaptive-obscur-wide.png": "166ae334f9ec476e72acd8e49e2fb2dc63170d1ca67d45124844a55ef20fe418",
     "assets/explainers/adaptive-obscur-wide.svg": "df8580e175dd53edd8e79880d2d9a148186b5ff26bea7aeef971e2bb045203e7",
-    "assets/explainers/adaptive-obscur-narrow.png": "409232714e5bd0c3e5ffb3edb08c88548b895a5aece1ba0f2ca3d6a7c9dd7d19",
-    "assets/explainers/adaptive-obscur-narrow.svg": "81356ebc1e2e6cf7b42f0db4534310a56619399196ce47814802f9af9f8312f4",
+    "assets/explainers/adaptive-obscur-narrow.png": "bcc36ef603bfcfd2219edbc0dc9f2969876d82a114edefdcdd0aad0c2d6fd48c",
+    "assets/explainers/adaptive-obscur-narrow.svg": "f788c60e21fe0ec64ec7c87df6beca3a492271694ad23638bc2d4c6e08f46d5a",
     "assets/explainers/themes-obscur-wide.png": "51cc94bc3059f63f333c5178a6e8fc68b0dcecb0649f783a67b82252655d7df6",
     "assets/explainers/themes-obscur-wide.svg": "234b8767ea4dad056cbd12d2e7b062450bb92b4122763fc270a681fc268a398e",
-    "assets/explainers/themes-obscur-narrow.png": "a44ecd0d4bcda3a01322c1d28322c9fbe51c9a482d50a1d09a13544c88a7dd76",
-    "assets/explainers/themes-obscur-narrow.svg": "2a2a038744aa34c447a6e7eab79f99105daa1dfc237e4b566e745760df2d001e",
+    "assets/explainers/themes-obscur-narrow.png": "143ad0d2e9300535af332dc035b24e7f99bff28de1f3be3f646b010bd282a246",
+    "assets/explainers/themes-obscur-narrow.svg": "906cffd6c2f306006542977615c3496c3dc87356d3427a43a8dad0a4f45be015",
     "assets/explainers/calendar-obscur-wide.png": "4e0b0a045db1bf7e630b346e7dd457cd636f69616c25befebdd6302f4d79a330",
     "assets/explainers/calendar-obscur-wide.svg": "0c9682f507b723bbfb5c255bfad1a7f40ef4838be8a871b93407db31c3a284e2",
-    "assets/explainers/calendar-obscur-narrow.png": "227b9f41e7438f07a77ab4c6a53867ce20ed70e116589a066c0e0af54203495e",
-    "assets/explainers/calendar-obscur-narrow.svg": "73a36923390f8819f7616cbb32d11cec32b893b3da273f2f45eb2a91dfcf5ce8"
+    "assets/explainers/calendar-obscur-narrow.png": "5fe2026e69c9b3f7aa00105fb6f2a3e95794da9b237ec4f4cfe4634444e5482a",
+    "assets/explainers/calendar-obscur-narrow.svg": "42d6cd4c280f9d39a4d979317b9deffa1ec01f6ac942ccd08bd9c7b7a4bee0bb"
   }
 }

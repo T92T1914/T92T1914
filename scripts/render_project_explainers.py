@@ -136,17 +136,25 @@ def draw(project, roles, fonts, *, narrow):
             lines.append(line)
         label.set_text("\n".join(lines))
 
-    title = text(60, 24, project["title"], 44 if narrow else 50, "Bold")
+    main_size = 48 if narrow else 40
+    title_size = 52 if narrow else 50
+    footer_size = 36 if narrow else 28
+    title = text(60, 24, project["title"], title_size, "Bold")
     eyebrow = text(60, 118 if narrow else 125, "CONCEPTUAL MECHANISM", 28,
                    "SemiBold", "accent")
     panels = []
     for index, body in enumerate(project["cards"]):
         heading = text(0, 0, f"{index + 1}  " + ("INPUT", "MECHANISM", "RESULT")[index],
-                       40, "SemiBold", "accent")
-        label = text(0, 0, body, 40)
+                       main_size, "SemiBold", "accent")
+        label = text(0, 0, body, main_size)
         panels.append({"heading": heading, "body": label})
-    footer = text(60, 0, project["footer"], 28, role="muted")
+    footer = text(60, 0, project["footer"], footer_size, role="muted")
     figure.canvas.draw()
+    first_panel = 190 if narrow else 200
+    if narrow:
+        wrap(title, width - 120)
+        eyebrow.set_position((60, box_bounds(title)[3] + 16))
+        first_panel = max(first_panel, math.ceil(box_bounds(eyebrow)[3] + 24))
     for panel in panels:
         wrap(panel["body"], 784 if narrow else 464)
     wrap(footer, width - 120)
@@ -157,7 +165,7 @@ def draw(project, roles, fonts, *, narrow):
         for panel in panels)))
     for index, panel in enumerate(panels):
         x = 60 if narrow else 60 + index * 580
-        y = 190 + index * (panel_height + 24) if narrow else 200
+        y = first_panel + index * (panel_height + 24) if narrow else first_panel
         w = 840 if narrow else 520
         axes.add_patch(FancyBboxPatch((x, y), w, panel_height,
                                       boxstyle="round,pad=0,rounding_size=14",
@@ -176,9 +184,14 @@ def draw(project, roles, fonts, *, narrow):
                 a, b = (x + w + 8, y + panel_height / 2), (x + w + 52, y + panel_height / 2)
             axes.add_patch(FancyArrowPatch(a, b, arrowstyle="-|>", mutation_scale=22,
                                            linewidth=2, color=roles["muted"]))
-    bottom = (190 + 3 * panel_height + 48) if narrow else (200 + panel_height)
+    bottom = (first_panel + 3 * panel_height + 48) if narrow else (first_panel + panel_height)
     footer.set_position((60, bottom + 32))
     figure.canvas.draw()
+    if narrow:
+        height = max(height, math.ceil(box_bounds(footer)[3] + 32))
+        figure.set_size_inches(width / 100, height / 100, forward=False)
+        axes.set_ylim(height, 0)
+        figure.canvas.draw()
     geometry = []
     for panel in panels:
         measured = {}
@@ -200,7 +213,7 @@ def draw(project, roles, fonts, *, narrow):
             raise ValueError(project["id"] + ": canvas overflow " + label.get_text() + str(bounds))
     if box_bounds(title)[3] + 12 > box_bounds(eyebrow)[1]:
         raise ValueError(project["id"] + ": title/eyebrow overlap")
-    if box_bounds(eyebrow)[3] + 12 > (190 if narrow else 200):
+    if box_bounds(eyebrow)[3] + 12 > first_panel:
         raise ValueError(project["id"] + ": eyebrow/panel overlap")
     footer_bounds = box_bounds(footer)
     metadata = {"project": project, "kind": "conceptual profile rendition",
@@ -216,7 +229,11 @@ def draw(project, roles, fonts, *, narrow):
     svg_path.write_bytes(svg_path.read_bytes().replace(b"\r\n", b"\n"))
     plt.close(figure)
     return {"width": width, "height": height, "panel_height": panel_height,
-            "panel_geometry": geometry, "footer_bounds": footer_bounds}
+            "panel_geometry": geometry, "footer_bounds": footer_bounds,
+            "main_label_pixels": main_size, "title_pixels": title_size,
+            "footer_pixels": footer_size,
+            "height_rule": ("Starts at 1000px and expands from measured footer bounds with 32px padding"
+                            if narrow else "Fixed 600px canvas with verified bounds")}
 
 
 def main():

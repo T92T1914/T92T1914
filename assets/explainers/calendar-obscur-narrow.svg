@@ -90,7 +90,7 @@ z
    </g>
    <g id="text_1">
     <!-- 1  INPUT -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 180.686531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 186.583838) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-53e" d="M 2241 4656 
 L 2241 0 
@@ -199,7 +199,7 @@ z
    </g>
    <g id="text_2">
     <!-- Title + local time -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 230.855344) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 244.482412) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-19b" d="M 306 4131 
 L 306 4656 
@@ -461,7 +461,7 @@ z
    </g>
    <g id="text_3">
     <!-- 2  MECHANISM -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 342.101531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 348.025837) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-53f" d="M 419 0 
 L 419 600 
@@ -651,7 +651,7 @@ z
    </g>
    <g id="text_4">
     <!-- Validate + save -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 392.135344) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 405.762412) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-1c8" d="M 1875 0 
 L 163 4656 
@@ -766,7 +766,7 @@ z
    </g>
    <g id="text_5">
     <!-- 3  RESULT -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 503.381531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 509.305837) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-541" d="M 2034 -63 
 Q 1544 -63 1164 104 
@@ -852,7 +852,7 @@ z
    </g>
    <g id="text_6">
     <!-- Local JSON + CSV -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 553.212844) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 566.799413) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-119" d="M 563 0 
 L 563 4656 
@@ -1036,7 +1036,7 @@ z
    </g>
    <g id="text_7">
     <!-- Calendar Tracker AI -->
-    <g style="fill: #f4f4f4" transform="translate(43.2 49.871109) scale(0.3168 -0.3168)">
+    <g style="fill: #f4f4f4" transform="translate(43.2 55.796766) scale(0.3744 -0.3744)">
      <defs>
       <path id="Inter-Bold-49" d="M 2456 -63 
 Q 1834 -63 1346 218 
@@ -1307,7 +1307,7 @@ z
    </g>
    <g id="text_8">
     <!-- CONCEPTUAL MECHANISM -->
-    <g style="fill: #b3c8d8" transform="translate(43.2 105.695072) scale(0.2016 -0.2016)">
+    <g style="fill: #b3c8d8" transform="translate(43.2 99.366103) scale(0.2016 -0.2016)">
      <defs>
       <path id="Inter-SemiBold-141" d="M 2463 -63 
 Q 1850 -63 1367 221 
@@ -1358,8 +1358,8 @@ z
     </g>
    </g>
    <g id="text_9">
-    <!-- Single-writer coursework app. No online calendar or AI -->
-    <g style="fill: #bcbcbc" transform="translate(43.2 645.215147) scale(0.2016 -0.2016)">
+    <!-- Single-writer coursework app. No online -->
+    <g style="fill: #bcbcbc" transform="translate(43.2 650.590903) scale(0.2592 -0.2592)">
      <defs>
       <path id="Inter-Regular-305" d="M 1056 2094 
 L 1056 0 
@@ -1556,33 +1556,6 @@ Q 1344 206 1220 82
 Q 1097 -41 922 -41 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-Regular-2" d="M 163 0 
-L 1853 4656 
-L 2541 4656 
-L 4253 0 
-L 3628 0 
-L 3163 1300 
-L 1244 1300 
-L 794 0 
-L 163 0 
-z
-M 1425 1819 
-L 2978 1819 
-L 2641 2763 
-Q 2556 2997 2450 3336 
-Q 2344 3675 2194 4181 
-Q 2047 3666 1937 3322 
-Q 1828 2978 1753 2763 
-L 1425 1819 
-z
-" transform="scale(0.015625)"/>
-      <path id="Inter-Regular-c5" d="M 1156 4656 
-L 1156 0 
-L 563 0 
-L 563 4656 
-L 1156 4656 
-z
-" transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#Inter-Regular-18d"/>
      <use xlink:href="#Inter-Regular-2b1" transform="translate(64.15625 0)"/>
@@ -1623,32 +1596,61 @@ z
      <use xlink:href="#Inter-Regular-2b1" transform="translate(1765.40625 0)"/>
      <use xlink:href="#Inter-Regular-305" transform="translate(1789.625 0)"/>
      <use xlink:href="#Inter-Regular-266" transform="translate(1848.703125 0)"/>
-     <use xlink:href="#Inter-Regular-6f1" transform="translate(1907 0)"/>
-     <use xlink:href="#Inter-Regular-24a" transform="translate(1935.125 0)"/>
-     <use xlink:href="#Inter-Regular-1fb" transform="translate(1993.234375 0)"/>
-     <use xlink:href="#Inter-Regular-2e0" transform="translate(2049.390625 0)"/>
-     <use xlink:href="#Inter-Regular-266" transform="translate(2073.609375 0)"/>
-     <use xlink:href="#Inter-Regular-305" transform="translate(2131.90625 0)"/>
-     <use xlink:href="#Inter-Regular-255" transform="translate(2190.984375 0)"/>
-     <use xlink:href="#Inter-Regular-1fb" transform="translate(2252.21875 0)"/>
-     <use xlink:href="#Inter-Regular-354" transform="translate(2308.375 0)"/>
-     <use xlink:href="#Inter-Regular-6f1" transform="translate(2346.015625 0)"/>
-     <use xlink:href="#Inter-Regular-316" transform="translate(2374.140625 0)"/>
-     <use xlink:href="#Inter-Regular-354" transform="translate(2434.109375 0)"/>
-     <use xlink:href="#Inter-Regular-6f1" transform="translate(2471.75 0)"/>
-     <use xlink:href="#Inter-Regular-2" transform="translate(2499.875 0)"/>
-     <use xlink:href="#Inter-Regular-c5" transform="translate(2568.875 0)"/>
     </g>
-    <!-- service. -->
-    <g style="fill: #bcbcbc" transform="translate(43.2 674.104191) scale(0.2016 -0.2016)">
-     <use xlink:href="#Inter-Regular-367"/>
-     <use xlink:href="#Inter-Regular-266" transform="translate(52.78125 0)"/>
-     <use xlink:href="#Inter-Regular-354" transform="translate(111.078125 0)"/>
-     <use xlink:href="#Inter-Regular-3d4" transform="translate(150.28125 0)"/>
-     <use xlink:href="#Inter-Regular-2b1" transform="translate(206.484375 0)"/>
-     <use xlink:href="#Inter-Regular-24a" transform="translate(230.703125 0)"/>
-     <use xlink:href="#Inter-Regular-266" transform="translate(287.828125 0)"/>
-     <use xlink:href="#Inter-Regular-5de" transform="translate(346.125 0)"/>
+    <!-- calendar or AI service. -->
+    <g style="fill: #bcbcbc" transform="translate(43.2 687.721809) scale(0.2592 -0.2592)">
+     <defs>
+      <path id="Inter-Regular-2" d="M 163 0 
+L 1853 4656 
+L 2541 4656 
+L 4253 0 
+L 3628 0 
+L 3163 1300 
+L 1244 1300 
+L 794 0 
+L 163 0 
+z
+M 1425 1819 
+L 2978 1819 
+L 2641 2763 
+Q 2556 2997 2450 3336 
+Q 2344 3675 2194 4181 
+Q 2047 3666 1937 3322 
+Q 1828 2978 1753 2763 
+L 1425 1819 
+z
+" transform="scale(0.015625)"/>
+      <path id="Inter-Regular-c5" d="M 1156 4656 
+L 1156 0 
+L 563 0 
+L 563 4656 
+L 1156 4656 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Inter-Regular-24a"/>
+     <use xlink:href="#Inter-Regular-1fb" transform="translate(58.109375 0)"/>
+     <use xlink:href="#Inter-Regular-2e0" transform="translate(114.265625 0)"/>
+     <use xlink:href="#Inter-Regular-266" transform="translate(138.484375 0)"/>
+     <use xlink:href="#Inter-Regular-305" transform="translate(196.78125 0)"/>
+     <use xlink:href="#Inter-Regular-255" transform="translate(255.859375 0)"/>
+     <use xlink:href="#Inter-Regular-1fb" transform="translate(317.09375 0)"/>
+     <use xlink:href="#Inter-Regular-354" transform="translate(373.25 0)"/>
+     <use xlink:href="#Inter-Regular-6f1" transform="translate(410.890625 0)"/>
+     <use xlink:href="#Inter-Regular-316" transform="translate(439.015625 0)"/>
+     <use xlink:href="#Inter-Regular-354" transform="translate(498.984375 0)"/>
+     <use xlink:href="#Inter-Regular-6f1" transform="translate(536.625 0)"/>
+     <use xlink:href="#Inter-Regular-2" transform="translate(564.75 0)"/>
+     <use xlink:href="#Inter-Regular-c5" transform="translate(633.75 0)"/>
+     <use xlink:href="#Inter-Regular-6f1" transform="translate(660.609375 0)"/>
+     <use xlink:href="#Inter-Regular-367" transform="translate(688.734375 0)"/>
+     <use xlink:href="#Inter-Regular-266" transform="translate(741.515625 0)"/>
+     <use xlink:href="#Inter-Regular-354" transform="translate(799.8125 0)"/>
+     <use xlink:href="#Inter-Regular-3d4" transform="translate(839.015625 0)"/>
+     <use xlink:href="#Inter-Regular-2b1" transform="translate(895.21875 0)"/>
+     <use xlink:href="#Inter-Regular-24a" transform="translate(919.4375 0)"/>
+     <use xlink:href="#Inter-Regular-266" transform="translate(976.5625 0)"/>
+     <use xlink:href="#Inter-Regular-5de" transform="translate(1034.859375 0)"/>
     </g>
    </g>
   </g>

@@ -90,7 +90,7 @@ z
    </g>
    <g id="text_1">
     <!-- 1  INPUT -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 180.686531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 186.583838) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-53e" d="M 2241 4656 
 L 2241 0 
@@ -199,7 +199,7 @@ z
    </g>
    <g id="text_2">
     <!-- Casey, expect v2 -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 227.840344) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 240.864412) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-49" d="M 2447 -63 
 Q 1850 -63 1383 226 
@@ -536,7 +536,7 @@ z
    </g>
    <g id="text_3">
     <!-- 2  MECHANISM -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 342.101531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 348.025837) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-53f" d="M 419 0 
 L 419 600 
@@ -726,7 +726,7 @@ z
    </g>
    <g id="text_4">
     <!-- Commit v3 + receipt -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 389.379094) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 402.454912) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-316" d="M 1916 -75 
 Q 1441 -75 1083 150 
@@ -900,7 +900,7 @@ z
    </g>
    <g id="text_5">
     <!-- 3  RESULT -->
-    <g style="fill: #b3c8d8" transform="translate(63.36 503.381531) scale(0.288 -0.288)">
+    <g style="fill: #b3c8d8" transform="translate(63.36 509.305837) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-SemiBold-541" d="M 2034 -63 
 Q 1544 -63 1164 104 
@@ -986,7 +986,7 @@ z
    </g>
    <g id="text_6">
     <!-- Retry same intent -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 550.602844) scale(0.288 -0.288)">
+    <g style="fill: #f4f4f4" transform="translate(63.36 563.667412) scale(0.3456 -0.3456)">
      <defs>
       <path id="Inter-Regular-180" d="M 563 0 
 L 563 4656 
@@ -1055,7 +1055,7 @@ z
    </g>
    <g id="text_7">
     <!-- Shipment Exception Workspace -->
-    <g style="fill: #f4f4f4" transform="translate(43.2 47.289684) scale(0.3168 -0.3168)">
+    <g style="fill: #f4f4f4" transform="translate(43.2 52.745991) scale(0.3744 -0.3744)">
      <defs>
       <path id="Inter-Bold-18d" d="M 2128 -69 
 Q 1288 -69 786 317 
@@ -1505,7 +1505,7 @@ z
    </g>
    <g id="text_8">
     <!-- CONCEPTUAL MECHANISM -->
-    <g style="fill: #b3c8d8" transform="translate(43.2 105.695072) scale(0.2016 -0.2016)">
+    <g style="fill: #b3c8d8" transform="translate(43.2 99.366103) scale(0.2016 -0.2016)">
      <defs>
       <path id="Inter-SemiBold-141" d="M 2463 -63 
 Q 1850 -63 1367 221 
@@ -1556,8 +1556,8 @@ z
     </g>
    </g>
    <g id="text_9">
-    <!-- A lost reply follows the commit. Later resolution reaches v4. -->
-    <g style="fill: #bcbcbc" transform="translate(43.2 645.397847) scale(0.2016 -0.2016)">
+    <!-- A lost reply follows the commit. Later resolution -->
+    <g style="fill: #bcbcbc" transform="translate(43.2 650.825803) scale(0.2592 -0.2592)">
      <defs>
       <path id="Inter-Regular-2" d="M 163 0 
 L 1853 4656 
@@ -1696,27 +1696,6 @@ Q 2575 272 2298 114
 Q 2022 -44 1678 -44 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-Regular-542" d="M 375 947 
-L 375 1431 
-L 2413 4656 
-L 3134 4656 
-L 3134 1469 
-L 3766 1469 
-L 3766 947 
-L 3134 947 
-L 3134 0 
-L 2566 0 
-L 2566 947 
-L 375 947 
-z
-M 2569 1469 
-L 2569 3913 
-L 2531 3913 
-L 1009 1506 
-L 1009 1469 
-L 2569 1469 
-z
-" transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#Inter-Regular-2"/>
      <use xlink:href="#Inter-Regular-6f1" transform="translate(69 0)"/>
@@ -1767,18 +1746,43 @@ z
      <use xlink:href="#Inter-Regular-2b1" transform="translate(2098.921875 0)"/>
      <use xlink:href="#Inter-Regular-316" transform="translate(2123.140625 0)"/>
      <use xlink:href="#Inter-Regular-305" transform="translate(2183.109375 0)"/>
-     <use xlink:href="#Inter-Regular-6f1" transform="translate(2242.1875 0)"/>
-     <use xlink:href="#Inter-Regular-354" transform="translate(2270.3125 0)"/>
-     <use xlink:href="#Inter-Regular-266" transform="translate(2306.296875 0)"/>
-     <use xlink:href="#Inter-Regular-1fb" transform="translate(2365.578125 0)"/>
-     <use xlink:href="#Inter-Regular-24a" transform="translate(2421.734375 0)"/>
-     <use xlink:href="#Inter-Regular-29e" transform="translate(2478.859375 0)"/>
-     <use xlink:href="#Inter-Regular-266" transform="translate(2537.984375 0)"/>
-     <use xlink:href="#Inter-Regular-367" transform="translate(2596.28125 0)"/>
-     <use xlink:href="#Inter-Regular-6f1" transform="translate(2649.0625 0)"/>
-     <use xlink:href="#Inter-Regular-3d4" transform="translate(2677.1875 0)"/>
-     <use xlink:href="#Inter-Regular-542" transform="translate(2733.390625 0)"/>
-     <use xlink:href="#Inter-Regular-5de" transform="translate(2794.609375 0)"/>
+    </g>
+    <!-- reaches v4. -->
+    <g style="fill: #bcbcbc" transform="translate(43.2 687.411984) scale(0.2592 -0.2592)">
+     <defs>
+      <path id="Inter-Regular-542" d="M 375 947 
+L 375 1431 
+L 2413 4656 
+L 3134 4656 
+L 3134 1469 
+L 3766 1469 
+L 3766 947 
+L 3134 947 
+L 3134 0 
+L 2566 0 
+L 2566 947 
+L 375 947 
+z
+M 2569 1469 
+L 2569 3913 
+L 2531 3913 
+L 1009 1506 
+L 1009 1469 
+L 2569 1469 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Inter-Regular-354"/>
+     <use xlink:href="#Inter-Regular-266" transform="translate(35.984375 0)"/>
+     <use xlink:href="#Inter-Regular-1fb" transform="translate(95.265625 0)"/>
+     <use xlink:href="#Inter-Regular-24a" transform="translate(151.421875 0)"/>
+     <use xlink:href="#Inter-Regular-29e" transform="translate(208.546875 0)"/>
+     <use xlink:href="#Inter-Regular-266" transform="translate(267.671875 0)"/>
+     <use xlink:href="#Inter-Regular-367" transform="translate(325.96875 0)"/>
+     <use xlink:href="#Inter-Regular-6f1" transform="translate(378.75 0)"/>
+     <use xlink:href="#Inter-Regular-3d4" transform="translate(406.875 0)"/>
+     <use xlink:href="#Inter-Regular-542" transform="translate(463.078125 0)"/>
+     <use xlink:href="#Inter-Regular-5de" transform="translate(524.296875 0)"/>
     </g>
    </g>
   </g>

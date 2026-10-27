@@ -53,10 +53,10 @@ hardware counter acceptance remain open. HIP and SYCL are not implemented.
 [Read the CUDA followup](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-cuda-results.md) ·
 [Inspect the backend contract](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/backend-discovery.md)
 
-<a href="https://t92t1914.github.io/heterogeneous-batch-runtime/"><picture>
-  <source media="(max-width: 680px)" srcset="assets/explainers/runtime-obscur-narrow.png" width="960" height="1000">
-  <img src="assets/explainers/runtime-obscur-wide.png" alt="Conceptual masked sum: values and a mask enter an owned request, and the uncancelled computation returns 7.0. Cancellation intent alone does not establish physical completion." width="900" height="300">
-</picture></a>
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/explainers/runtime-obscur-narrow.png">
+  <img src="assets/explainers/runtime-obscur-wide.png" alt="Conceptual masked sum: values and a mask enter an owned request, and the uncancelled computation returns 7.0. Cancellation intent alone does not establish physical completion." width="900">
+</picture>
 
 For values `[2, -3, 5]` and mask `[1, 0, 1]`, the ordinary uncancelled sum is
 `7.0`. Running storage stays owned until physical return. This conceptual
@@ -109,10 +109,10 @@ describe these separate GPU checks.
 
 The [Linux CPU training examples](https://github.com/T92T1914/ragged-pool/blob/1cfc678d33bb34c036d8f0336ecfd986a6e97ea2/docs/distributed-cpu.md) and [shared update admission](https://github.com/T92T1914/ragged-pool/blob/1cfc678d33bb34c036d8f0336ecfd986a6e97ea2/docs/distributed-admission.md) keep their separate contracts and controls.
 
-<a href="https://t92t1914.github.io/ragged-pool/"><picture>
-  <source media="(max-width: 680px)" srcset="assets/explainers/ragged-obscur-narrow.png" width="960" height="1000">
-  <img src="assets/explainers/ragged-obscur-wide.png" alt="Conceptual pooling route: unequal groups receive softmax weights and produce one vector per group. Empty groups return zero vectors. This is a first-order training illustration, separate from broader qualified routes." width="900" height="300">
-</picture></a>
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/explainers/ragged-obscur-narrow.png">
+  <img src="assets/explainers/ragged-obscur-wide.png" alt="Conceptual pooling route: unequal groups receive softmax weights and produce one vector per group. Empty groups return zero vectors. This is a first-order training illustration, separate from broader qualified routes." width="900">
+</picture>
 
 In this conceptual example, weights `[0.25, 0.75]` combine `[2, 0]` and `[0, 4]`
 into `[0.5, 3]`. Empty groups return zeros. The illustration explains the first-order
@@ -154,10 +154,10 @@ accounting limited to its owned container and descendants.
 [Read the encounter finding](https://github.com/T92T1914/mcts-combat-engine/blob/2a8d2ac354415d765542d61b195dd01baf9c475c/docs/encounter-outcomes.md) ·
 [Use the managed consumer](https://github.com/T92T1914/mcts-combat-engine/blob/2a8d2ac354415d765542d61b195dd01baf9c475c/docs/managed-encounters.md)
 
-<a href="https://t92t1914.github.io/mcts-combat-engine/"><picture>
-  <source media="(max-width: 680px)" srcset="assets/explainers/mcts-obscur-narrow.png" width="960" height="1000">
-  <img src="assets/explainers/mcts-obscur-wide.png" alt="Conceptual search route using a retained decision: a saved modeled state receives 10,000 simulations and selects Spark at mean shaped reward 0.532. The reward is not a win probability." width="900" height="300">
-</picture></a>
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/explainers/mcts-obscur-narrow.png">
+  <img src="assets/explainers/mcts-obscur-wide.png" alt="Conceptual search route using a retained decision: a saved modeled state receives 10,000 simulations and selects Spark at mean shaped reward 0.532. The reward is not a win probability." width="900">
+</picture>
 
 The retained decision ranks Spark at mean shaped reward `0.532` after `10,000`
 simulations. This compact explanation reuses that one modeled decision. It adds no
@@ -224,10 +224,10 @@ and independent mathematical checks remain different kinds of evidence.
 [Calculate and replay the H17 request](https://github.com/T92T1914/exact-blackjack-solver#a-complete-h17-ace-calculation) ·
 [Read the completion evidence](https://github.com/T92T1914/exact-blackjack-solver/blob/259aa8aedf84510887d8dbf3e5bf928c1447458a/docs/ace-terminal-reuse.md)
 
-<a href="https://t92t1914.github.io/exact-blackjack-solver/#model-route"><picture>
-  <source media="(max-width: 680px)" srcset="assets/explainers/solver-obscur-narrow.png" width="960" height="1000">
-  <img src="assets/explainers/solver-obscur-wide.png" alt="Conceptual composition route: hard 16 against a dealer ten is evaluated with the cards remaining. The retained examples hit ten and six, but stand on eight, five and three. Exact hit and stand are separate from the original approximate split path." width="900" height="300">
-</picture></a>
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/explainers/solver-obscur-narrow.png">
+  <img src="assets/explainers/solver-obscur-wide.png" alt="Conceptual composition route: hard 16 against a dealer ten is evaluated with the cards remaining. The retained examples hit ten and six, but stand on eight, five and three. Exact hit and stand are separate from the original approximate split path." width="900">
+</picture>
 
 The retained six-deck examples hit `10 + 6` and stand on `8 + 5 + 3` against a
 dealer ten. Both expected returns remain negative. These exact hit/stand examples
@@ -276,10 +276,10 @@ historical damage remain unfinished research goals.
 [Explore the record collection](https://t92t1914.github.io/tornado-atlas/atlas.html) ·
 [Inspect the evidence dossiers](https://t92t1914.github.io/tornado-atlas/dossier.html)
 
-<a href="https://t92t1914.github.io/tornado-atlas/"><picture>
-  <source media="(max-width: 680px)" srcset="assets/explainers/atlas-obscur-narrow.png" width="960" height="1000">
-  <img src="assets/explainers/atlas-obscur-wide.png" alt="Conceptual evidence route: a credited observation carries time and viewpoint limits into evidence and replay. Unknowns stay explicit, and observation stays separate from illustration." width="900" height="300">
-</picture></a>
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/explainers/atlas-obscur-narrow.png">
+  <img src="assets/explainers/atlas-obscur-wide.png" alt="Conceptual evidence route: a credited observation carries time and viewpoint limits into evidence and replay. Unknowns stay explicit, and observation stays separate from illustration." width="900">
+</picture>
 
 A source's clock and viewpoint inform what can be said about a historical event.
 A clock claim alone does not register changing appearance. Unknowns remain
@@ -327,10 +327,10 @@ not establish production backups or disaster recovery.
 The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/618aa4f18394064004318ea3619ae2412d609c8c/README.md)
 use synthetic records. There is no carrier integration or production deployment.
 
-<a href="https://t92t1914.github.io/shipment-exception-workspace/"><picture>
-  <source media="(max-width: 680px)" srcset="assets/explainers/shipment-obscur-narrow.png" width="960" height="1000">
-  <img src="assets/explainers/shipment-obscur-wide.png" alt="Conceptual retry route from the installed synthetic walkthrough. Casey assignment expects version 2 and commits version 3 with history and a receipt. Its response is lost, a still-authorized same-intent retry adds no event, and later resolution reaches version 4." width="900" height="300">
-</picture></a>
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/explainers/shipment-obscur-narrow.png">
+  <img src="assets/explainers/shipment-obscur-wide.png" alt="Conceptual retry route from the installed synthetic walkthrough. Casey assignment expects version 2 and commits version 3 with history and a receipt. Its response is lost, a still-authorized same-intent retry adds no event, and later resolution reaches version 4." width="900">
+</picture>
 
 Casey assignment commits version 3, its history event and saved response together.
 When that reply is lost, a still-authorized retry with the original key and body
@@ -351,10 +351,10 @@ On that index, carrying forward the last observation beat the learned model.
 The forecast ledger separates issuance, source revisions and corrections. Its
 public example contains no real issued forecast.
 
-<a href="https://t92t1914.github.io/freight-forecast/"><picture>
-  <source media="(max-width: 680px)" srcset="assets/explainers/freight-obscur-narrow.png" width="960" height="1000">
-  <img src="assets/explainers/freight-obscur-wide.png" alt="Conceptual forecasting route: earlier months supply features, later months test the predictions and the model returns a monthly forecast. On the separate BTS index, carrying forward the last observation beat the learned model." width="900" height="300">
-</picture></a>
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/explainers/freight-obscur-narrow.png">
+  <img src="assets/explainers/freight-obscur-wide.png" alt="Conceptual forecasting route: earlier months supply features, later months test the predictions and the model returns a monthly forecast. On the separate BTS index, carrying forward the last observation beat the learned model." width="900">
+</picture>
 
 Earlier observations supply the features and later months test the predictions.
 This conceptual route keeps the synthetic series separate from the BTS index,
@@ -389,10 +389,10 @@ without executing the work. The trace explorer retains its generated workloads.
 These studies do not establish real time guarantees or a validated model of
 human behavior.
 
-<a href="https://t92t1914.github.io/adaptive-timing-engine/"><picture>
-  <source media="(max-width: 680px)" srcset="assets/explainers/adaptive-obscur-narrow.png" width="960" height="1000">
-  <img src="assets/explainers/adaptive-obscur-wide.png" alt="Conceptual scheduling route: a newer revision arrives, older physical work may finish and only the current answer is adopted. Physical completion and current-answer adoption remain separate." width="900" height="300">
-</picture></a>
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/explainers/adaptive-obscur-narrow.png">
+  <img src="assets/explainers/adaptive-obscur-wide.png" alt="Conceptual scheduling route: a newer revision arrives, older physical work may finish and only the current answer is adopted. Physical completion and current-answer adoption remain separate." width="900">
+</picture>
 
 A newer request can replace waiting work without claiming that an older running
 calculation has stopped. The retained worker example computes payloads `0` and
@@ -429,10 +429,10 @@ its own unexecuted simulator and device checks. A scoped earlier phone theme was
 applied, while full icon assignment, launcher behavior and restoration remain
 separate checks.
 
-<a href="https://t92t1914.github.io/clair-obscur-themes/"><picture>
-  <source media="(max-width: 680px)" srcset="assets/explainers/themes-obscur-narrow.png" width="960" height="1000">
-  <img src="assets/explainers/themes-obscur-wide.png" alt="Conceptual theme route: named surface, text and focus roles map into platform packages and previews. Preview checks and native installation acceptance remain separate." width="900" height="300">
-</picture></a>
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/explainers/themes-obscur-narrow.png">
+  <img src="assets/explainers/themes-obscur-wide.png" alt="Conceptual theme route: named surface, text and focus roles map into platform packages and previews. Preview checks and native installation acceptance remain separate." width="900">
+</picture>
 
 Named surface, text and focus roles map to each platform's package. A working
 preview does not establish native installation, restart persistence or complete
@@ -449,10 +449,10 @@ edits, deletes and searches local events, saves JSON and exports a new CSV.
 It is a single-writer coursework application without online calendar integration,
 time-zone handling or an AI service.
 
-<a href="https://t92t1914.github.io/calendar-tracker-ai/"><picture>
-  <source media="(max-width: 680px)" srcset="assets/explainers/calendar-obscur-narrow.png" width="960" height="1000">
-  <img src="assets/explainers/calendar-obscur-wide.png" alt="Conceptual local calendar route: a title and local date/time are validated and saved to schema-1 JSON, then inspected or exported to a new CSV. This is a local single-writer program, not an online calendar or AI service." width="900" height="300">
-</picture></a>
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/explainers/calendar-obscur-narrow.png">
+  <img src="assets/explainers/calendar-obscur-wide.png" alt="Conceptual local calendar route: a title and local date/time are validated and saved to schema-1 JSON, then inspected or exported to a new CSV. This is a local single-writer program, not an online calendar or AI service." width="900">
+</picture>
 
 A validated event goes into schema-1 JSON, and export writes a separate new CSV.
 The browser page explains this local program rather than running a calendar service.

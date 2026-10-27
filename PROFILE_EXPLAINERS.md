@@ -41,9 +41,12 @@ paths are not distributed. PNG labels use those actual glyphs, and SVG labels
 are outlined from the same files. The committed input and output check does not
 import plotting libraries, load fonts or execute any of the projects.
 
-The fixed wide edition is 1800 by 600 pixels and the narrow edition is 960 by
-1000 pixels. Cards use measured wrapping and text bounds. The narrow main labels
-are configured at 40 pixels rather than shrinking a desktop poster. Obscur stays
+The fixed wide edition is 1800 by 600 pixels. The narrow edition is 960 pixels
+wide, starts at 1000 pixels high and expands when the measured footer needs more
+room. The rendering record supplies its actual height. Cards and the title use
+measured wrapping and text bounds. Narrow main labels are configured at 48 pixels,
+with a 52-pixel title and 36-pixel footnote. Wide main labels remain at 40 pixels.
+Obscur stays
 opaque under either GitHub appearance. GitHub controls the surrounding page.
 The profile's [Clair header alternate](assets/header-clair.svg) and retained
 project figures remain available. The original MCTS study stays collapsed, with
