@@ -117,7 +117,7 @@ The [Linux CPU training examples](https://github.com/T92T1914/ragged-pool/blob/1
 In this conceptual example, weights `[0.25, 0.75]` combine `[2, 0]` and `[0, 4]`
 into `[0.5, 3]`. Empty groups return zeros. The illustration explains the first-order
 training mechanism, while the supported derivative boundaries remain above.
-[Explore the project](https://t92t1914.github.io/ragged-pool/) ·
+[Explore the project: source and setup](https://github.com/T92T1914/ragged-pool) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/ragged-obscur-wide.png) ·
 [Detailed Obscur diagram](https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur.png) ·
@@ -336,7 +336,7 @@ Casey assignment commits version 3, its history event and saved response togethe
 When that reply is lost, a still-authorized retry with the original key and body
 recovers the saved response without another event. Later resolution reaches
 version 4. This conceptual explanation follows the installed walkthrough.
-[Explore the static project page](https://t92t1914.github.io/shipment-exception-workspace/) ·
+[Explore the project: source and setup](https://github.com/T92T1914/shipment-exception-workspace) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/shipment-obscur-wide.png)
 
@@ -455,8 +455,8 @@ time-zone handling or an AI service.
 </picture>
 
 A validated event goes into schema-1 JSON, and export writes a separate new CSV.
-The browser page explains this local program rather than running a calendar service.
-[Explore the project](https://t92t1914.github.io/calendar-tracker-ai/) ·
+The repository includes the local setup and version history.
+[Explore the project: source and setup](https://github.com/T92T1914/calendar-tracker-ai) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/calendar-obscur-wide.png)
 
