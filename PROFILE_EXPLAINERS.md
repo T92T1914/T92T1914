@@ -10,6 +10,10 @@ source revision and paths for each explanation. The
 [rendering record](assets/profile-explainers.json) records the model, pinned
 palette adapter, actual font identities, measured layout and output hashes.
 
+The model's `page` field records the profile's current reader destination. That
+can be a published project webpage or the repository's source and setup. Source,
+release and standalone webpage publication remain separate records.
+
 | Project | Read the mechanism or retained evidence |
 | --- | --- |
 | Runtime | [Owned requests and physical return](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e84f4acdca294309f3e36c586a3872e85558f8de/docs/contracts.md) |

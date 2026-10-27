@@ -43,8 +43,13 @@ def read_model():
             raise ValueError("Each mechanism needs three cards and public sources")
         if not project["essential_text"] or not project["footer"]:
             raise ValueError("Keep the mechanism and its limit in ordinary text")
-        if not project["page"].startswith("https://t92t1914.github.io/"):
-            raise ValueError("Use the established public project page route")
+        repository = project["repository"]
+        reader_route = project["page"].split("#", 1)[0]
+        if reader_route not in (
+            f"https://t92t1914.github.io/{repository}/",
+            f"https://github.com/T92T1914/{repository}",
+        ):
+            raise ValueError("Use this project's public webpage or source route")
     return model
 
 

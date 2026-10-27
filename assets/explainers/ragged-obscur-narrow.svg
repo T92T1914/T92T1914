@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:description>{"kind": "conceptual profile rendition", "new_project_execution": false, "project": {"cards": ["Unequal groups", "Softmax weights", "One vector per group"], "essential_text": "Weights [0.25, 0.75] combine [2, 0] and [0, 4] into [0.5, 3]. Empty groups return zero vectors. This conceptual training route does not describe every qualified derivative composition.", "footer": "First-order training illustration. Empty groups return zeros.", "id": "ragged", "page": "https://t92t1914.github.io/ragged-pool/", "repository": "ragged-pool", "source_paths": ["README.md", "docs/contract.md"], "source_revision": "ddf8002cfd351723ff7a9e6c7471a966b8fe33db", "title": "Ragged Pooling for PyTorch"}}</dc:description>
+    <dc:description>{"kind": "conceptual profile rendition", "new_project_execution": false, "project": {"cards": ["Unequal groups", "Softmax weights", "One vector per group"], "essential_text": "Weights [0.25, 0.75] combine [2, 0] and [0, 4] into [0.5, 3]. Empty groups return zero vectors. This conceptual training route does not describe every qualified derivative composition.", "footer": "First-order training illustration. Empty groups return zeros.", "id": "ragged", "page": "https://github.com/T92T1914/ragged-pool", "repository": "ragged-pool", "source_paths": ["README.md", "docs/contract.md"], "source_revision": "ddf8002cfd351723ff7a9e6c7471a966b8fe33db", "title": "Ragged Pooling for PyTorch"}}</dc:description>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
