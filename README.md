@@ -198,13 +198,13 @@ and independent mathematical checks remain different kinds of evidence.
   </picture>
 </a>
 
-<a href="https://github.com/T92T1914/exact-blackjack-solver/blob/main/docs/visual-example.md">
+<a href="https://github.com/T92T1914/exact-blackjack-solver/blob/4f2128eb9692bade742e6684ddc27919b2c63633/docs/visual-example.md">
   <picture>
-    <source media="(min-width: 1024px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/main/docs/blackjack-composition-obscur-wide.png">
-    <source media="(min-width: 1024px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/main/docs/blackjack-composition-clair-wide.png">
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/main/docs/blackjack-composition-obscur.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/main/docs/blackjack-composition-clair.png">
-    <img src="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/main/docs/blackjack-composition-clair.png" alt="Two recorded hard 16 hands against a dealer ten. Ten and six prefers hit, while eight, five and three prefers stand. Both expected returns are negative. The exact hit and stand examples are separate from approximate split valuation." width="900">
+    <source media="(min-width: 1024px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/4f2128eb9692bade742e6684ddc27919b2c63633/docs/blackjack-composition-obscur-wide.png">
+    <source media="(min-width: 1024px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/4f2128eb9692bade742e6684ddc27919b2c63633/docs/blackjack-composition-clair-wide.png">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/4f2128eb9692bade742e6684ddc27919b2c63633/docs/blackjack-composition-obscur.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/4f2128eb9692bade742e6684ddc27919b2c63633/docs/blackjack-composition-clair.png">
+    <img src="https://raw.githubusercontent.com/T92T1914/exact-blackjack-solver/4f2128eb9692bade742e6684ddc27919b2c63633/docs/blackjack-composition-clair.png" alt="Two recorded hard 16 hands against a dealer ten. Ten and six prefers hit, while eight, five and three prefers stand. Both expected returns are negative. The exact hit and stand examples are separate from the original approximate split path." width="900">
   </picture>
 </a>
 
@@ -242,6 +242,18 @@ Participating tabs recheck the shared session, clear old account state after
 observed changes and discard delayed results from the previous context.
 Recovery does not automatically repeat uncertain writes.
 
+The [v0.9.0 release](https://github.com/T92T1914/shipment-exception-workspace/releases/tag/v0.9.0)
+provides the installable application with its built frontend. The
+[operator walkthrough](https://github.com/T92T1914/shipment-exception-workspace/blob/618aa4f18394064004318ea3619ae2412d609c8c/docs/operator-walkthrough.md)
+shows creation, a competing edit, stale-version refusal and recovery after a
+deliberately interrupted committed response. The
+[installation guide](https://github.com/T92T1914/shipment-exception-workspace/blob/618aa4f18394064004318ea3619ae2412d609c8c/docs/install.md)
+describes the supported local PostgreSQL route.
+
+A separate public reviewer mode refuses business writes and receipt replay on
+the server. Local HTTPS staging passed. A public hosted URL and provider restart
+acceptance remain unfinished, so the installed walkthrough is the available demo.
+
 A [local restore guide](https://github.com/T92T1914/shipment-exception-workspace/blob/b2ff568e49ef037a7a585f0ee39be79a11d81f6f/docs/backup-and-restore.md) records a trusted synthetic
 workspace restored through direct loopback into a separate empty database on
 the same cluster. Data and database structure matched before application
@@ -249,7 +261,7 @@ startup, without initializing, migrating or seeding the target. That Windows x64
 result uses PostgreSQL 18.1, CPython 3.13.3 and the v0.8.0 wheel and tools. It does
 not establish production backups or disaster recovery.
 
-The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/64619f021ca01ddb4b25186adb1ae82b2221f0bd/README.md)
+The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/618aa4f18394064004318ea3619ae2412d609c8c/README.md)
 use synthetic records. There is no carrier integration or production deployment.
 
 ### Freight Forecast
