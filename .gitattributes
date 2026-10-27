@@ -1,0 +1,3 @@
+# Keep the new conceptual output receipt stable under Windows Git checkout.
+assets/profile-explainers.json text eol=lf
+assets/explainers/*-obscur-*.svg text eol=lf

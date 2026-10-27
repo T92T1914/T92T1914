@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "kind": "Compact conceptual mechanisms derived from retained public project sources, not new trials",
+  "projects": [
+    {
+      "id": "runtime",
+      "title": "Heterogeneous Batch Runtime",
+      "repository": "heterogeneous-batch-runtime",
+      "source_revision": "e84f4acdca294309f3e36c586a3872e85558f8de",
+      "source_paths": ["README.md", "docs/contracts.md", "src/runtime.cpp"],
+      "cards": ["Values + mask", "Own input + output", "7.0 after return"],
+      "footer": "Cancellation intent does not establish physical completion.",
+      "essential_text": "For values [2, -3, 5] and mask [1, 0, 1], the ordinary uncancelled sum is 7.0. Running storage stays owned until physical return.",
+      "page": "https://t92t1914.github.io/heterogeneous-batch-runtime/"
+    },
+    {
+      "id": "ragged",
+      "title": "Ragged Pooling for PyTorch",
+      "repository": "ragged-pool",
+      "source_revision": "ddf8002cfd351723ff7a9e6c7471a966b8fe33db",
+      "source_paths": ["README.md", "docs/contract.md"],
+      "cards": ["Unequal groups", "Softmax weights", "One vector per group"],
+      "footer": "First-order training illustration. Empty groups return zeros.",
+      "essential_text": "Weights [0.25, 0.75] combine [2, 0] and [0, 4] into [0.5, 3]. Empty groups return zero vectors. This conceptual training route does not describe every qualified derivative composition.",
+      "page": "https://github.com/T92T1914/ragged-pool"
+    },
+    {
+      "id": "mcts",
+      "title": "MCTS Combat Engine",
+      "repository": "mcts-combat-engine",
+      "source_revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+      "source_paths": ["docs/visual-example.md", "docs/visual-example-data.json"],
+      "cards": ["Saved model state", "10,000 simulations", "Spark: reward 0.532"],
+      "footer": "Retained shaped reward, not win probability or a new search.",
+      "essential_text": "The retained decision ranks Spark at mean shaped reward 0.532 after 10,000 simulations. This is one modeled decision, not an encounter win rate.",
+      "page": "https://t92t1914.github.io/mcts-combat-engine/"
+    },
+    {
+      "id": "solver",
+      "title": "Exact Blackjack Solver",
+      "repository": "exact-blackjack-solver",
+      "source_revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+      "source_paths": ["docs/visual-example.md", "docs/visual-example-data.json"],
+      "cards": ["Hard 16 vs ten", "Remaining cards", "Hit / stand"],
+      "footer": "Exact hit/stand examples. The original split route is approximate.",
+      "essential_text": "In the retained six-deck examples, hit 10 + 6 and stand on 8 + 5 + 3 against a dealer ten. Both expected returns remain negative. These exact hit/stand examples are separate from the original approximate split route.",
+      "page": "https://t92t1914.github.io/exact-blackjack-solver/#model-route"
+    },
+    {
+      "id": "atlas",
+      "title": "Tornado Atlas",
+      "repository": "tornado-atlas",
+      "source_revision": "24baed6b9160932c654c4f99af1c39081494acf9",
+      "source_paths": ["README.md", "docs/archive-dossiers.md", "docs/reconstruction-plan.md"],
+      "cards": ["Credited observation", "Time + viewpoint", "Evidence + replay"],
+      "footer": "Unknowns stay explicit. Observation and illustration stay separate.",
+      "essential_text": "A credited source carries its clock, viewpoint and uncertainty into the evidence route. A source clock alone does not register historical appearance, and an illustrative model is labeled separately.",
+      "page": "https://t92t1914.github.io/tornado-atlas/"
+    },
+    {
+      "id": "shipment",
+      "title": "Shipment Exception Workspace",
+      "repository": "shipment-exception-workspace",
+      "source_revision": "67d10a531371b1f37b8dfbb7d4ed4fa5bdd3093c",
+      "source_paths": ["README.md", "docs/operator-walkthrough.md", "docs/DESIGN.md"],
+      "cards": ["Casey, expect v2", "Commit v3 + receipt", "Retry same intent"],
+      "footer": "A lost reply follows the commit. Later resolution reaches v4.",
+      "essential_text": "After version 2, Casey assignment commits version 3 with its history event and saved response. A still-authorized retry of the original key and body recovers that response without another event. A later resolution reaches version 4. Current server authorization remains authoritative.",
+      "page": "https://github.com/T92T1914/shipment-exception-workspace"
+    },
+    {
+      "id": "freight",
+      "title": "Freight Forecast",
+      "repository": "freight-forecast",
+      "source_revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+      "source_paths": ["README.md", "docs/visual-example.md"],
+      "cards": ["Past months only", "Chronological test", "Monthly forecast"],
+      "footer": "On the separate BTS index, carrying the last observation won.",
+      "essential_text": "Earlier observations supply the forecast features, and later months test the predictions. The synthetic series and BTS index remain separate. On BTS, carrying forward the last observation beat the learned model.",
+      "page": "https://t92t1914.github.io/freight-forecast/"
+    },
+    {
+      "id": "adaptive",
+      "title": "Adaptive Timing Engine",
+      "repository": "adaptive-timing-engine",
+      "source_revision": "0e63441b6ce772244c507054bf9d10539ba4475a",
+      "source_paths": ["docs/visual-example.md", "docs/visual-example-data.json", "docs/revision-file.md"],
+      "cards": ["Newer revision", "Older work finishes", "Adopt current only"],
+      "footer": "Physical completion and adoption of the current answer are separate.",
+      "essential_text": "A newer request can replace waiting work without claiming that an older running calculation has stopped. The retained worker example computes payloads 0 and 100 and rejects the obsolete result, retaining payload 100 at revision 101.",
+      "page": "https://t92t1914.github.io/adaptive-timing-engine/"
+    },
+    {
+      "id": "themes",
+      "title": "Clair and Obscur",
+      "repository": "clair-obscur-themes",
+      "source_revision": "bfe50ba72860da600cd3923a9a454c79c158ba37",
+      "source_paths": ["README.md", "docs/acceptance.md", "tokens.json", "tokens-monochrome.json"],
+      "cards": ["Shared roles", "Platform mapping", "Preview + package"],
+      "footer": "Preview checks and native acceptance remain separate.",
+      "essential_text": "Named surface, text and focus roles map to each platform's package. Preview behavior does not establish native installation, restart persistence or complete host compatibility.",
+      "page": "https://t92t1914.github.io/clair-obscur-themes/"
+    },
+    {
+      "id": "calendar",
+      "title": "Calendar Tracker AI",
+      "repository": "calendar-tracker-ai",
+      "source_revision": "8a42a32aa73dcdc9582773c960da5b43297dd3ea",
+      "source_paths": ["README.md", "calendar_tracker.py", "test_calendar_tracker.py"],
+      "cards": ["Title + local time", "Validate + save", "Local JSON + CSV"],
+      "footer": "Single-writer coursework app. No online calendar or AI service.",
+      "essential_text": "The local text-menu application validates an event, saves schema-1 JSON and exports a new CSV. It does not connect to an online calendar, handle time zones or supply an AI service.",
+      "page": "https://github.com/T92T1914/calendar-tracker-ai"
+    }
+  ]
+}
