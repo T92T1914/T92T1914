@@ -40,7 +40,7 @@
         ],
         "footer": "First-order training illustration. Empty groups return zeros.",
         "essential_text": "Weights [0.25, 0.75] combine [2, 0] and [0, 4] into [0.5, 3]. Empty groups return zero vectors. This conceptual training route does not describe every qualified derivative composition.",
-        "page": "https://github.com/T92T1914/ragged-pool"
+        "page": "https://t92t1914.github.io/ragged-pool/"
       },
       {
         "id": "mcts",
@@ -114,7 +114,7 @@
         ],
         "footer": "A lost reply follows the commit. Later resolution reaches v4.",
         "essential_text": "After version 2, Casey assignment commits version 3 with its history event and saved response. A still-authorized retry of the original key and body recovers that response without another event. A later resolution reaches version 4. Current server authorization remains authoritative.",
-        "page": "https://github.com/T92T1914/shipment-exception-workspace"
+        "page": "https://t92t1914.github.io/shipment-exception-workspace/"
       },
       {
         "id": "freight",
@@ -190,7 +190,7 @@
         ],
         "footer": "Single-writer coursework app. No online calendar or AI service.",
         "essential_text": "The local text-menu application validates an event, saves schema-1 JSON and exports a new CSV. It does not connect to an online calendar, handle time zones or supply an AI service.",
-        "page": "https://github.com/T92T1914/calendar-tracker-ai"
+        "page": "https://t92t1914.github.io/calendar-tracker-ai/"
       }
     ]
   },
@@ -1922,7 +1922,7 @@
     "fonttools": "4.63.0"
   },
   "inputs_sha256_lf": {
-    "assets/profile-explainers-input.json": "3ca2862293cd1d80a85b499bd35691202167a50d936fd5d66796d6d03a8ccd73",
+    "assets/profile-explainers-input.json": "65725b6d57fed054058b9be4fdb1068e0f752a6bed86a846214b900d50adff63",
     "assets/profile-figure-tokens.json": "6d42e0e87513cbcfc5417b3862e805897c91dda9b3083af946a8e0af823eda87",
     "scripts/render_project_explainers.py": "cd36a33b7ef5b13658dd3d7ab15b7ad6dec1a3f954e1dfcdebdecd408353337b",
     "requirements-figures.txt": "3bc78c01a3305d85d889b7ae16b9022a5dc38e5fd705ab1aec26b7cd00988024"
@@ -1932,10 +1932,10 @@
     "assets/explainers/runtime-obscur-wide.svg": "9c7e12cdf23fe5caae46f192990abb46363cfe53e772bc78dea8a8b89c6f1781",
     "assets/explainers/runtime-obscur-narrow.png": "652942001a709d835e051813aa77c637acd1cefe5ad643ede1ca923d9904ccdc",
     "assets/explainers/runtime-obscur-narrow.svg": "4e16b882ccc3aecc868095524d40bbca2c4ce7b46862ea2ec3e19551f16acf49",
-    "assets/explainers/ragged-obscur-wide.png": "afcadc497cc3eb7ee48eaad7da514102547a9ba8f268fb9b5b724331c43ef7c7",
-    "assets/explainers/ragged-obscur-wide.svg": "39c43eedbe667f1332a18880d53171f6f5c432178805391534a7baf031cc4485",
-    "assets/explainers/ragged-obscur-narrow.png": "93e481364351070e2fea1736ca7a4a6e257ae0de2170f2608fe602bd212f90e6",
-    "assets/explainers/ragged-obscur-narrow.svg": "cd3810ae3d2c17c6d2de0fcd562fbb9b5dcd128278d6a966eb1b759d0fa230c1",
+    "assets/explainers/ragged-obscur-wide.png": "296e06b8265624c71c3525914a0c8943b206d209874b6cacbdea1494bafd278f",
+    "assets/explainers/ragged-obscur-wide.svg": "3a9293ddd0657ccc0b08b19cc6455935aff1dfed9024f4ca2f653c936431cab5",
+    "assets/explainers/ragged-obscur-narrow.png": "48cf1b84da6a140069a396e179c4711453d0352c9f6dd35d1e028ed8ead6bfe5",
+    "assets/explainers/ragged-obscur-narrow.svg": "f29be8a15797378fcc0c355de27db518cd748cb70aa1da50b2297e33d24c3aeb",
     "assets/explainers/mcts-obscur-wide.png": "951135844561ee1259c61f7ad392d42527a43ad4a49779435bfa27e993d53feb",
     "assets/explainers/mcts-obscur-wide.svg": "6ed89c9332b3dd603c21498aa5d71d71f84e0266f8678b10c8a07db23104dbc8",
     "assets/explainers/mcts-obscur-narrow.png": "e65a49a260f00bd2b022e540eae339923a26ef3c220c360c559edcb3d0cdd8b4",
@@ -1948,10 +1948,10 @@
     "assets/explainers/atlas-obscur-wide.svg": "6341aa9e441a5c4cd3d7f60734812aadeaaee2b586fdda335f597f2f8c59e37b",
     "assets/explainers/atlas-obscur-narrow.png": "142e2d1f7758a8fe89dd7e18308d8cd08aff3611439155ce698d14570b1904de",
     "assets/explainers/atlas-obscur-narrow.svg": "06e89aba8822f4f7519f1e28eedd493c6df4afd755379e74afe60a825f5c9c8c",
-    "assets/explainers/shipment-obscur-wide.png": "0a21c8fa83b8f32ca299c00bc963711ef3ca3fea7d98c801d726620c473f1d57",
-    "assets/explainers/shipment-obscur-wide.svg": "beb68cd98773bf8a00d5d511af91d056311a21f32502f7bf10b2392e5aecede5",
-    "assets/explainers/shipment-obscur-narrow.png": "1c558361d3bff3c75d790bfa5244b26c92d618ded0c05ea8aa4f52d61664f83f",
-    "assets/explainers/shipment-obscur-narrow.svg": "88169d29c474f11188e1d34e2f3620604c6f748a51bcca8d6a89911a072f1c2b",
+    "assets/explainers/shipment-obscur-wide.png": "a7948b62b23cfbdf5cbf53c4fb078ee8af34b15240f8e9b4f5ca1ace18c0bb8a",
+    "assets/explainers/shipment-obscur-wide.svg": "25227a0ec461310b0f42eae4543cbb0ccf244074a3c1f1430d4e324b015ea432",
+    "assets/explainers/shipment-obscur-narrow.png": "90d23d484abcd4adf1641b597f3c75566be726acfd2b4d06c9b51f3a80285464",
+    "assets/explainers/shipment-obscur-narrow.svg": "a247050fa7f1ff607ab64854a1ab1caeedf7a832aa508f482531e457f51d2168",
     "assets/explainers/freight-obscur-wide.png": "23e14c23a4a0371a6be9732c761facb95d1111390b2356e08e7c9bb83a23b3f2",
     "assets/explainers/freight-obscur-wide.svg": "4e84b6bf35843b4788d5650725adf258e68a92513eeec5e11dbd874da6252544",
     "assets/explainers/freight-obscur-narrow.png": "b81939615a85be4d6fc9a0edafebfcdf12da8a9c3f43e11cce99fdfd8896196f",
@@ -1964,9 +1964,9 @@
     "assets/explainers/themes-obscur-wide.svg": "234b8767ea4dad056cbd12d2e7b062450bb92b4122763fc270a681fc268a398e",
     "assets/explainers/themes-obscur-narrow.png": "143ad0d2e9300535af332dc035b24e7f99bff28de1f3be3f646b010bd282a246",
     "assets/explainers/themes-obscur-narrow.svg": "906cffd6c2f306006542977615c3496c3dc87356d3427a43a8dad0a4f45be015",
-    "assets/explainers/calendar-obscur-wide.png": "ad00c6248da4bef21bc44168c1e36a4608450f23ae9fae438e9736373388eedf",
-    "assets/explainers/calendar-obscur-wide.svg": "b4767b3c8676eca454744e0c3aa5b4f4f87c0ab76f21c856bf06aa8188d0fa31",
-    "assets/explainers/calendar-obscur-narrow.png": "c157d64686575763aa897ca86e48a210cbf40dd9bf69cdfd97deebe8632d48be",
-    "assets/explainers/calendar-obscur-narrow.svg": "fdb79929eeba87ea3f3bb02629fda5b634c216c12c958a91115460ec78e2e447"
+    "assets/explainers/calendar-obscur-wide.png": "4e0b0a045db1bf7e630b346e7dd457cd636f69616c25befebdd6302f4d79a330",
+    "assets/explainers/calendar-obscur-wide.svg": "0c9682f507b723bbfb5c255bfad1a7f40ef4838be8a871b93407db31c3a284e2",
+    "assets/explainers/calendar-obscur-narrow.png": "5fe2026e69c9b3f7aa00105fb6f2a3e95794da9b237ec4f4cfe4634444e5482a",
+    "assets/explainers/calendar-obscur-narrow.svg": "42d6cd4c280f9d39a4d979317b9deffa1ec01f6ac942ccd08bd9c7b7a4bee0bb"
   }
 }

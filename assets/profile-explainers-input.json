@@ -22,7 +22,7 @@
       "cards": ["Unequal groups", "Softmax weights", "One vector per group"],
       "footer": "First-order training illustration. Empty groups return zeros.",
       "essential_text": "Weights [0.25, 0.75] combine [2, 0] and [0, 4] into [0.5, 3]. Empty groups return zero vectors. This conceptual training route does not describe every qualified derivative composition.",
-      "page": "https://github.com/T92T1914/ragged-pool"
+      "page": "https://t92t1914.github.io/ragged-pool/"
     },
     {
       "id": "mcts",
@@ -66,7 +66,7 @@
       "cards": ["Casey, expect v2", "Commit v3 + receipt", "Retry same intent"],
       "footer": "A lost reply follows the commit. Later resolution reaches v4.",
       "essential_text": "After version 2, Casey assignment commits version 3 with its history event and saved response. A still-authorized retry of the original key and body recovers that response without another event. A later resolution reaches version 4. Current server authorization remains authoritative.",
-      "page": "https://github.com/T92T1914/shipment-exception-workspace"
+      "page": "https://t92t1914.github.io/shipment-exception-workspace/"
     },
     {
       "id": "freight",
@@ -110,7 +110,7 @@
       "cards": ["Title + local time", "Validate + save", "Local JSON + CSV"],
       "footer": "Single-writer coursework app. No online calendar or AI service.",
       "essential_text": "The local text-menu application validates an event, saves schema-1 JSON and exports a new CSV. It does not connect to an online calendar, handle time zones or supply an AI service.",
-      "page": "https://github.com/T92T1914/calendar-tracker-ai"
+      "page": "https://t92t1914.github.io/calendar-tracker-ai/"
     }
   ]
 }
