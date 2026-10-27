@@ -55,7 +55,7 @@ hardware counter acceptance remain open. HIP and SYCL are not implemented.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/runtime-obscur-narrow.png">
-  <img src="assets/explainers/runtime-obscur-wide.png" alt="Conceptual masked sum: values and a mask enter an owned request, and the uncancelled computation returns 7.0. Cancellation intent alone does not establish physical completion." width="900">
+  <img src="assets/explainers/runtime-obscur-wide.png" alt="Masked cells omit -3 and sum 2 plus 5 to 7.0. A separate ownership rail extends through cancellation intent until physical return." width="900">
 </picture>
 
 For values `[2, -3, 5]` and mask `[1, 0, 1]`, the ordinary uncancelled sum is
@@ -111,7 +111,7 @@ The [Linux CPU training examples](https://github.com/T92T1914/ragged-pool/blob/1
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/ragged-obscur-narrow.png">
-  <img src="assets/explainers/ragged-obscur-wide.png" alt="Conceptual pooling route: unequal groups receive softmax weights and produce one vector per group. Empty groups return zero vectors. This is a first-order training illustration, separate from broader qualified routes." width="900">
+  <img src="assets/explainers/ragged-obscur-wide.png" alt="Unequal groups feed softmax-weighted vector summaries. An empty group returns zeros, and the conceptual first-order gradient arrow returns to values and scores." width="900">
 </picture>
 
 In this conceptual example, weights `[0.25, 0.75]` combine `[2, 0]` and `[0, 4]`
@@ -156,7 +156,7 @@ accounting limited to its owned container and descendants.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/mcts-obscur-narrow.png">
-  <img src="assets/explainers/mcts-obscur-wide.png" alt="Conceptual search route using a retained decision: a saved modeled state receives 10,000 simulations and selects Spark at mean shaped reward 0.532. The reward is not a win probability." width="900">
+  <img src="assets/explainers/mcts-obscur-wide.png" alt="Retained action-reward bars and separate visit counts for one 10000-simulation modeled decision. Spark has mean shaped reward 0.532, not a win probability." width="900">
 </picture>
 
 The retained decision ranks Spark at mean shaped reward `0.532` after `10,000`
@@ -226,7 +226,7 @@ and independent mathematical checks remain different kinds of evidence.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/solver-obscur-narrow.png">
-  <img src="assets/explainers/solver-obscur-wide.png" alt="Conceptual composition route: hard 16 against a dealer ten is evaluated with the cards remaining. The retained examples hit ten and six, but stand on eight, five and three. Exact hit and stand are separate from the original approximate split path." width="900">
+  <img src="assets/explainers/solver-obscur-wide.png" alt="Two hard-16 hands against a dealer ten have different remaining-card compositions and exact hit/stand expected returns. Hit 10 plus 6 and stand on 8 plus 5 plus 3; both returns remain negative." width="900">
 </picture>
 
 The retained six-deck examples hit `10 + 6` and stand on `8 + 5 + 3` against a
@@ -278,7 +278,7 @@ historical damage remain unfinished research goals.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/atlas-obscur-narrow.png">
-  <img src="assets/explainers/atlas-obscur-wide.png" alt="Conceptual evidence route: a credited observation carries time and viewpoint limits into evidence and replay. Unknowns stay explicit, and observation stays separate from illustration." width="900">
+  <img src="assets/explainers/atlas-obscur-wide.png" alt="A source record links to an observation passport with independent intake, assertion, time, spatial, availability and rights fields. Clock roles and procedural illustration remain separate from documentary evidence." width="900">
 </picture>
 
 A source's clock and viewpoint inform what can be said about a historical event.
@@ -329,7 +329,7 @@ use synthetic records. There is no carrier integration or production deployment.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/shipment-obscur-narrow.png">
-  <img src="assets/explainers/shipment-obscur-wide.png" alt="Conceptual retry route from the installed synthetic walkthrough. Casey assignment expects version 2 and commits version 3 with history and a receipt. Its response is lost, a still-authorized same-intent retry adds no event, and later resolution reaches version 4." width="900">
+  <img src="assets/explainers/shipment-obscur-wide.png" alt="Operator and server sequence: an expected-version-2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit; an authorized same-key/body retry returns the historical response without another event." width="900">
 </picture>
 
 Casey assignment commits version 3, its history event and saved response together.
@@ -353,7 +353,7 @@ public example contains no real issued forecast.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/freight-obscur-narrow.png">
-  <img src="assets/explainers/freight-obscur-wide.png" alt="Conceptual forecasting route: earlier months supply features, later months test the predictions and the model returns a monthly forecast. On the separate BTS index, carrying forward the last observation beat the learned model." width="900">
+  <img src="assets/explainers/freight-obscur-wide.png" alt="Retained 24-month held-out synthetic time series compares observations, model and seasonal baseline with a separate mean-absolute-error comparison. The BTS result is separate." width="900">
 </picture>
 
 Earlier observations supply the features and later months test the predictions.
@@ -391,7 +391,7 @@ human behavior.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/adaptive-obscur-narrow.png">
-  <img src="assets/explainers/adaptive-obscur-wide.png" alt="Conceptual scheduling route: a newer revision arrives, older physical work may finish and only the current answer is adopted. Physical completion and current-answer adoption remain separate." width="900">
+  <img src="assets/explainers/adaptive-obscur-wide.png" alt="Retained worker example separates incoming requests, physical computation and answer adoption. Payload 0 returns stale; latest payload 100 is computed and adopted at revision 101. There are two computations and 99 waiting replacements." width="900">
 </picture>
 
 A newer request can replace waiting work without claiming that an older running
@@ -431,7 +431,7 @@ separate checks.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/themes-obscur-narrow.png">
-  <img src="assets/explainers/themes-obscur-wide.png" alt="Conceptual theme route: named surface, text and focus roles map into platform packages and previews. Preview checks and native installation acceptance remain separate." width="900">
+  <img src="assets/explainers/themes-obscur-wide.png" alt="Chrome adapter mapping shows canvas to frame, panel to toolbar and text to tab_text, followed by distinct package, browser-preview and native-acceptance boundaries." width="900">
 </picture>
 
 Named surface, text and focus roles map to each platform's package. A working
@@ -451,7 +451,7 @@ time-zone handling or an AI service.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/calendar-obscur-narrow.png">
-  <img src="assets/explainers/calendar-obscur-wide.png" alt="Conceptual local calendar route: a title and local date/time are validated and saved to schema-1 JSON, then inspected or exported to a new CSV. This is a local single-writer program, not an online calendar or AI service." width="900">
+  <img src="assets/explainers/calendar-obscur-wide.png" alt="A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before in-memory adoption; failed writes retain the prior state." width="900">
 </picture>
 
 A validated event goes into schema-1 JSON, and export writes a separate new CSV.

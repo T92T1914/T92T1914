@@ -1,9 +1,9 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "new_project_execution": false,
   "model": {
     "schema_version": 1,
-    "kind": "Compact conceptual mechanisms derived from retained public project sources, not new trials",
+    "kind": "Project-specific conceptual diagrams and unchanged retained figure editions. No new underlying project execution.",
     "projects": [
       {
         "id": "runtime",
@@ -15,14 +15,13 @@
           "docs/contracts.md",
           "src/runtime.cpp"
         ],
-        "cards": [
-          "Values + mask",
-          "Own input + output",
-          "7.0 after return"
-        ],
         "footer": "Cancellation intent does not establish physical completion.",
         "essential_text": "For values [2, -3, 5] and mask [1, 0, 1], the ordinary uncancelled sum is 7.0. Running storage stays owned until physical return.",
-        "page": "https://t92t1914.github.io/heterogeneous-batch-runtime/"
+        "page": "https://t92t1914.github.io/heterogeneous-batch-runtime/",
+        "composition": "mask cells and storage lifetime",
+        "renderer": "project-specific",
+        "figure_class": "conceptual mechanism",
+        "alt": "Masked cells omit -3 and sum 2 plus 5 to 7.0. A separate ownership rail extends through cancellation intent until physical return."
       },
       {
         "id": "ragged",
@@ -33,14 +32,39 @@
           "README.md",
           "docs/contract.md"
         ],
-        "cards": [
-          "Unequal groups",
-          "Softmax weights",
-          "One vector per group"
-        ],
         "footer": "First-order training illustration. Empty groups return zeros.",
         "essential_text": "Weights [0.25, 0.75] combine [2, 0] and [0, 4] into [0.5, 3]. Empty groups return zero vectors. This conceptual training route does not describe every qualified derivative composition.",
-        "page": "https://t92t1914.github.io/ragged-pool/"
+        "page": "https://t92t1914.github.io/ragged-pool/",
+        "composition": "grouped vectors and gradient return",
+        "renderer": "reuse",
+        "figure_class": "conceptual mechanism",
+        "reused_artifacts": {
+          "wide.png": {
+            "repository": "ragged-pool",
+            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "path": "docs/ragged-pool-obscur.png",
+            "sha256": "108403fa1d1eef675d70ceb583d33c55d52fdbb26e787da1b1ba3e9038e2f229"
+          },
+          "wide.svg": {
+            "repository": "ragged-pool",
+            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "path": "docs/ragged-pool-obscur.svg",
+            "sha256": "8831e61ed7075b2aeceac58a4b000e5e617a55c619bace5daf2aac1d33a81cdd"
+          },
+          "narrow.png": {
+            "repository": "ragged-pool",
+            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "path": "docs/ragged-pool-obscur-narrow.png",
+            "sha256": "9cf0b7b0f0ba676fc2331f0d4af531d6d9b22038be7b19550cff7e2a6eb941b1"
+          },
+          "narrow.svg": {
+            "repository": "ragged-pool",
+            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "path": "docs/ragged-pool-obscur-narrow.svg",
+            "sha256": "22c8410d9417cf123d4f0b0fabf1d4560103006bb246e2c4a8f39223219ee4a0"
+          }
+        },
+        "alt": "Unequal groups feed softmax-weighted vector summaries. An empty group returns zeros, and the conceptual first-order gradient arrow returns to values and scores."
       },
       {
         "id": "mcts",
@@ -51,14 +75,39 @@
           "docs/visual-example.md",
           "docs/visual-example-data.json"
         ],
-        "cards": [
-          "Saved model state",
-          "10,000 simulations",
-          "Spark: reward 0.532"
-        ],
         "footer": "Retained shaped reward, not win probability or a new search.",
         "essential_text": "The retained decision ranks Spark at mean shaped reward 0.532 after 10,000 simulations. This is one modeled decision, not an encounter win rate.",
-        "page": "https://t92t1914.github.io/mcts-combat-engine/"
+        "page": "https://t92t1914.github.io/mcts-combat-engine/",
+        "composition": "reward bars and separate visits",
+        "renderer": "reuse",
+        "figure_class": "retained numerical figure",
+        "reused_artifacts": {
+          "wide.png": {
+            "repository": "mcts-combat-engine",
+            "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+            "path": "docs/mcts-decision-obscur-wide.png",
+            "sha256": "92d8d1b625ef19955a971eef9a3279c6d1b6d61ccdec4e2fca3a6f0ba517a79b"
+          },
+          "wide.svg": {
+            "repository": "mcts-combat-engine",
+            "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+            "path": "docs/mcts-decision-obscur-wide.svg",
+            "sha256": "5d58c87608a8b4415d39698cdf81e2b18f57318db47b73cf13ae62c0d62fbda3"
+          },
+          "narrow.png": {
+            "repository": "mcts-combat-engine",
+            "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+            "path": "docs/mcts-decision-obscur.png",
+            "sha256": "9c1ecb602abb369d48c4823b86c275764ba46fe59e96ed81778d08b3d829f732"
+          },
+          "narrow.svg": {
+            "repository": "mcts-combat-engine",
+            "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+            "path": "docs/mcts-decision-obscur.svg",
+            "sha256": "903d528061098e1223502a56eb0509152ac435f195f7af8666f30c5f247f00c4"
+          }
+        },
+        "alt": "Retained action-reward bars and separate visit counts for one 10000-simulation modeled decision. Spark has mean shaped reward 0.532, not a win probability."
       },
       {
         "id": "solver",
@@ -69,14 +118,39 @@
           "docs/visual-example.md",
           "docs/visual-example-data.json"
         ],
-        "cards": [
-          "Hard 16 vs ten",
-          "Remaining cards",
-          "Hit / stand"
-        ],
         "footer": "Exact hit/stand examples. The original split route is approximate.",
         "essential_text": "In the retained six-deck examples, hit 10 + 6 and stand on 8 + 5 + 3 against a dealer ten. Both expected returns remain negative. These exact hit/stand examples are separate from the original approximate split route.",
-        "page": "https://t92t1914.github.io/exact-blackjack-solver/#model-route"
+        "page": "https://t92t1914.github.io/exact-blackjack-solver/#model-route",
+        "composition": "paired composition and expected-return comparison",
+        "renderer": "reuse",
+        "figure_class": "retained numerical figure",
+        "reused_artifacts": {
+          "wide.png": {
+            "repository": "exact-blackjack-solver",
+            "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+            "path": "docs/blackjack-composition-obscur-wide.png",
+            "sha256": "a53111c32b57e1961576cf0799ba298f7b23723186feea0870a85dd8efa8a503"
+          },
+          "wide.svg": {
+            "repository": "exact-blackjack-solver",
+            "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+            "path": "docs/blackjack-composition-obscur-wide.svg",
+            "sha256": "1dc0445b52208ec81fdc330a50cd0dcf3489a50013380da7b6a5c8866ac19461"
+          },
+          "narrow.png": {
+            "repository": "exact-blackjack-solver",
+            "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+            "path": "docs/blackjack-composition-obscur.png",
+            "sha256": "cdb1aacf8b3bb2b84cda0a058f34344bed6a449a2f3992168e38c34032434e5a"
+          },
+          "narrow.svg": {
+            "repository": "exact-blackjack-solver",
+            "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+            "path": "docs/blackjack-composition-obscur.svg",
+            "sha256": "538b3bfc37051607f89d36488ca33e677b5d5753c90e2d5f552c5613db8d65d4"
+          }
+        },
+        "alt": "Two hard-16 hands against a dealer ten have different remaining-card compositions and exact hit/stand expected returns. Hit 10 plus 6 and stand on 8 plus 5 plus 3; both returns remain negative."
       },
       {
         "id": "atlas",
@@ -88,14 +162,13 @@
           "docs/archive-dossiers.md",
           "docs/reconstruction-plan.md"
         ],
-        "cards": [
-          "Credited observation",
-          "Time + viewpoint",
-          "Evidence + replay"
-        ],
         "footer": "Unknowns stay explicit. Observation and illustration stay separate.",
         "essential_text": "A credited source carries its clock, viewpoint and uncertainty into the evidence route. A source clock alone does not register historical appearance, and an illustrative model is labeled separately.",
-        "page": "https://t92t1914.github.io/tornado-atlas/"
+        "page": "https://t92t1914.github.io/tornado-atlas/",
+        "composition": "evidence passport and clock boundary",
+        "renderer": "project-specific",
+        "figure_class": "conceptual mechanism",
+        "alt": "A source record links to an observation passport with independent intake, assertion, time, spatial, availability and rights fields. Clock roles and procedural illustration remain separate from documentary evidence."
       },
       {
         "id": "shipment",
@@ -107,14 +180,13 @@
           "docs/operator-walkthrough.md",
           "docs/DESIGN.md"
         ],
-        "cards": [
-          "Casey, expect v2",
-          "Commit v3 + receipt",
-          "Retry same intent"
-        ],
         "footer": "A lost reply follows the commit. Later resolution reaches v4.",
         "essential_text": "After version 2, Casey assignment commits version 3 with its history event and saved response. A still-authorized retry of the original key and body recovers that response without another event. A later resolution reaches version 4. Current server authorization remains authoritative.",
-        "page": "https://t92t1914.github.io/shipment-exception-workspace/"
+        "page": "https://t92t1914.github.io/shipment-exception-workspace/",
+        "composition": "atomic transaction and lost-reply sequence",
+        "renderer": "project-specific",
+        "figure_class": "conceptual mechanism",
+        "alt": "Operator and server sequence: an expected-version-2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit; an authorized same-key/body retry returns the historical response without another event."
       },
       {
         "id": "freight",
@@ -125,14 +197,39 @@
           "README.md",
           "docs/visual-example.md"
         ],
-        "cards": [
-          "Past months only",
-          "Chronological test",
-          "Monthly forecast"
-        ],
         "footer": "On the separate BTS index, carrying the last observation won.",
         "essential_text": "Earlier observations supply the forecast features, and later months test the predictions. The synthetic series and BTS index remain separate. On BTS, carrying forward the last observation beat the learned model.",
-        "page": "https://t92t1914.github.io/freight-forecast/"
+        "page": "https://t92t1914.github.io/freight-forecast/",
+        "composition": "held-out curves and baseline comparison",
+        "renderer": "reuse",
+        "figure_class": "retained numerical figure",
+        "reused_artifacts": {
+          "wide.png": {
+            "repository": "freight-forecast",
+            "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+            "path": "docs/freight-forecast-obscur-wide.png",
+            "sha256": "9bb19c8ac5b3517dc7bb7d48ebc6959482d057bb6ccec2a5d0d8e43c473238be"
+          },
+          "wide.svg": {
+            "repository": "freight-forecast",
+            "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+            "path": "docs/freight-forecast-obscur-wide.svg",
+            "sha256": "fcbfb285d54e452e7d41b8d4c10a39374dd97f9f9f1071fe8bf0a1af83f4c4f5"
+          },
+          "narrow.png": {
+            "repository": "freight-forecast",
+            "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+            "path": "docs/freight-forecast-obscur.png",
+            "sha256": "549814372e328363ab6e539cb2972e266d1aea75a35f9e41482f9c7d91489a27"
+          },
+          "narrow.svg": {
+            "repository": "freight-forecast",
+            "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+            "path": "docs/freight-forecast-obscur.svg",
+            "sha256": "c9dffaa95a84e3b1acfec1ef078bd3217e0b41fe06f8b3acff525e35981b07f3"
+          }
+        },
+        "alt": "Retained 24-month held-out synthetic time series compares observations, model and seasonal baseline with a separate mean-absolute-error comparison. The BTS result is separate."
       },
       {
         "id": "adaptive",
@@ -144,14 +241,13 @@
           "docs/visual-example-data.json",
           "docs/revision-file.md"
         ],
-        "cards": [
-          "Newer revision",
-          "Older work finishes",
-          "Adopt current only"
-        ],
         "footer": "Physical completion and adoption of the current answer are separate.",
         "essential_text": "A newer request can replace waiting work without claiming that an older running calculation has stopped. The retained worker example computes payloads 0 and 100 and rejects the obsolete result, retaining payload 100 at revision 101.",
-        "page": "https://t92t1914.github.io/adaptive-timing-engine/"
+        "page": "https://t92t1914.github.io/adaptive-timing-engine/",
+        "composition": "revision lanes and adoption gate",
+        "renderer": "project-specific",
+        "figure_class": "conceptual mechanism",
+        "alt": "Retained worker example separates incoming requests, physical computation and answer adoption. Payload 0 returns stale; latest payload 100 is computed and adopted at revision 101. There are two computations and 99 waiting replacements."
       },
       {
         "id": "themes",
@@ -162,16 +258,16 @@
           "README.md",
           "docs/acceptance.md",
           "tokens.json",
-          "tokens-monochrome.json"
-        ],
-        "cards": [
-          "Shared roles",
-          "Platform mapping",
-          "Preview + package"
+          "tokens-monochrome.json",
+          "themeforge/chrome.py"
         ],
         "footer": "Preview checks and native acceptance remain separate.",
         "essential_text": "Named surface, text and focus roles map to each platform's package. Preview behavior does not establish native installation, restart persistence or complete host compatibility.",
-        "page": "https://t92t1914.github.io/clair-obscur-themes/"
+        "page": "https://t92t1914.github.io/clair-obscur-themes/",
+        "composition": "semantic role to host-field mappings",
+        "renderer": "project-specific",
+        "figure_class": "conceptual mechanism",
+        "alt": "Chrome adapter mapping shows canvas to frame, panel to toolbar and text to tab_text, followed by distinct package, browser-preview and native-acceptance boundaries."
       },
       {
         "id": "calendar",
@@ -183,14 +279,13 @@
           "calendar_tracker.py",
           "test_calendar_tracker.py"
         ],
-        "cards": [
-          "Title + local time",
-          "Validate + save",
-          "Local JSON + CSV"
-        ],
         "footer": "Single-writer coursework app. No online calendar or AI service.",
         "essential_text": "The local text-menu application validates an event, saves schema-1 JSON and exports a new CSV. It does not connect to an online calendar, handle time zones or supply an AI service.",
-        "page": "https://t92t1914.github.io/calendar-tracker-ai/"
+        "page": "https://t92t1914.github.io/calendar-tracker-ai/",
+        "composition": "event to JSON and CSV documents",
+        "renderer": "project-specific",
+        "figure_class": "conceptual mechanism",
+        "alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before in-memory adoption; failed writes retain the prior state."
       }
     ]
   },
@@ -216,1681 +311,2625 @@
     "runtime": {
       "wide": {
         "width": 1800,
-        "height": 600,
-        "panel_height": 230,
-        "panel_geometry": [
+        "height": 1301,
+        "composition": "mask cells and storage lifetime",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              220,
-              552,
-              410
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                220.0,
-                247.0,
-                273.238
-              ],
-              "body": [
-                88.0,
-                289.238,
-                361.969,
-                342.477
-              ]
-            }
+            "text": "Heterogeneous Batch Runtime",
+            "size": 54,
+            "bounds": [
+              60.0,
+              30.0,
+              863.625,
+              107.09871093750007
+            ]
           },
           {
-            "padded_panel": [
-              668,
-              220,
-              1132,
-              410
-            ],
-            "labels": {
-              "heading": [
-                668.0,
-                220.0,
-                966.0,
-                273.238
-              ],
-              "body": [
-                668.0,
-                289.238,
-                1034.0,
-                342.477
-              ]
-            }
+            "text": "MASK CELLS AND STORAGE LIFETIME",
+            "size": 30,
+            "bounds": [
+              60.0,
+              142.09871093750007,
+              621.359375,
+              184.93132812500016
+            ]
           },
           {
-            "padded_panel": [
-              1248,
-              220,
-              1712,
-              410
-            ],
-            "labels": {
-              "heading": [
-                1248.0,
-                220.0,
-                1443.297,
-                273.238
-              ],
-              "body": [
-                1248.0,
-                289.238,
-                1524.203,
-                342.477
-              ]
-            }
+            "text": "Ordinary uncancelled sum",
+            "size": 40,
+            "bounds": [
+              60.0,
+              244.93132812500016,
+              567.140625,
+              302.0414843750002
+            ]
+          },
+          {
+            "text": "values",
+            "size": 40,
+            "bounds": [
+              60.0,
+              349.93132812500016,
+              181.8125,
+              407.0414843750002
+            ]
+          },
+          {
+            "text": "mask",
+            "size": 40,
+            "bounds": [
+              60.0,
+              464.93132812500016,
+              160.0,
+              522.0414843750002
+            ]
+          },
+          {
+            "text": "2",
+            "size": 50,
+            "bounds": [
+              365.0,
+              351.93132812500016,
+              396.0,
+              423.31902343750016
+            ]
+          },
+          {
+            "text": "1",
+            "size": 50,
+            "bounds": [
+              370.0,
+              466.93132812500016,
+              391.0,
+              538.3190234375002
+            ]
+          },
+          {
+            "text": "-3",
+            "size": 50,
+            "bounds": [
+              535.0,
+              351.93132812500016,
+              589.640625,
+              423.31902343750016
+            ]
+          },
+          {
+            "text": "0",
+            "size": 50,
+            "bounds": [
+              540.0,
+              466.93132812500016,
+              573.0,
+              538.3190234375002
+            ]
+          },
+          {
+            "text": "5",
+            "size": 50,
+            "bounds": [
+              705.0,
+              351.93132812500016,
+              736.0,
+              423.31902343750016
+            ]
+          },
+          {
+            "text": "1",
+            "size": 50,
+            "bounds": [
+              710.0,
+              466.93132812500016,
+              731.0,
+              538.3190234375002
+            ]
+          },
+          {
+            "text": "2 + 5 = 7.0",
+            "size": 66,
+            "bounds": [
+              1120.0,
+              404.93132812500016,
+              1451.8125,
+              499.1630859375002
+            ]
+          },
+          {
+            "text": "A separate ownership rule",
+            "size": 40,
+            "bounds": [
+              60.0,
+              654.9313281250002,
+              568.015625,
+              712.0414843750002
+            ]
+          },
+          {
+            "text": "Input and output storage stay owned",
+            "size": 44,
+            "bounds": [
+              125.0,
+              829.9313281250002,
+              885.359375,
+              892.7525000000002
+            ]
+          },
+          {
+            "text": "Admit",
+            "size": 40,
+            "bounds": [
+              60.0,
+              999.9313281250002,
+              171.0,
+              1057.0414843750002
+            ]
+          },
+          {
+            "text": "Cancel intent",
+            "size": 40,
+            "bounds": [
+              845.0,
+              999.9313281250002,
+              1093.609375,
+              1057.0414843750002
+            ]
+          },
+          {
+            "text": "Physical return",
+            "size": 40,
+            "bounds": [
+              1470.0,
+              999.9313281250002,
+              1752.78125,
+              1057.0414843750002
+            ]
+          },
+          {
+            "text": "Cancel intent does not end the storage lifetime.",
+            "size": 44,
+            "bounds": [
+              60.0,
+              1104.9313281250002,
+              1041.875,
+              1167.7525
+            ]
+          },
+          {
+            "text": "Cancellation intent does not establish physical completion.",
+            "size": 30,
+            "bounds": [
+              60.0,
+              1217.7525,
+              885.703125,
+              1260.5851171875001
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          462.0,
-          841.75,
-          499.266796875
+        "shapes": [
+          [
+            330,
+            329.93132812500016,
+            470,
+            424.93132812500016
+          ],
+          [
+            330,
+            444.93132812500016,
+            470,
+            539.9313281250002
+          ],
+          [
+            500,
+            329.93132812500016,
+            640,
+            424.93132812500016
+          ],
+          [
+            500,
+            444.93132812500016,
+            640,
+            539.9313281250002
+          ],
+          [
+            670,
+            329.93132812500016,
+            810,
+            424.93132812500016
+          ],
+          [
+            670,
+            444.93132812500016,
+            810,
+            539.9313281250002
+          ],
+          [
+            100,
+            809.9313281250002,
+            1700,
+            904.9313281250002
+          ]
         ],
         "main_label_pixels": 40,
-        "title_pixels": 50,
-        "footer_pixels": 28,
-        "height_rule": "Fixed 600px canvas with verified bounds"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       },
       "narrow": {
         "width": 960,
-        "height": 1000,
-        "panel_height": 200,
-        "panel_geometry": [
+        "height": 1691,
+        "composition": "mask cells and storage lifetime",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              210,
-              872,
-              370
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                210.0,
-                279.0,
-                273.886
-              ],
-              "body": [
-                88.0,
-                289.886,
-                418.562,
-                353.772
-              ]
-            }
+            "text": "Heterogeneous Batch Runtime",
+            "size": 56,
+            "bounds": [
+              60.0,
+              30.0,
+              891.546875,
+              109.95421875000011
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              434,
-              872,
-              594
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                434.0,
-                445.0,
-                497.886
-              ],
-              "body": [
-                88.0,
-                513.886,
-                525.0,
-                577.772
-              ]
-            }
+            "text": "MASK CELLS AND STORAGE LIFETIME",
+            "size": 30,
+            "bounds": [
+              60.0,
+              144.9542187500001,
+              621.359375,
+              187.7868359375002
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              658,
-              872,
-              818
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                658.0,
-                323.547,
-                721.886
-              ],
-              "body": [
-                88.0,
-                737.886,
-                420.625,
-                801.772
-              ]
-            }
+            "text": "Ordinary uncancelled sum",
+            "size": 48,
+            "bounds": [
+              60.0,
+              247.7868359375002,
+              668.171875,
+              316.31902343750016
+            ]
+          },
+          {
+            "text": "values",
+            "size": 40,
+            "bounds": [
+              60.0,
+              352.7868359375002,
+              181.8125,
+              409.89699218750025
+            ]
+          },
+          {
+            "text": "mask",
+            "size": 40,
+            "bounds": [
+              60.0,
+              467.7868359375002,
+              160.0,
+              524.8969921875002
+            ]
+          },
+          {
+            "text": "2",
+            "size": 50,
+            "bounds": [
+              265.0,
+              354.7868359375002,
+              296.0,
+              426.1745312500002
+            ]
+          },
+          {
+            "text": "1",
+            "size": 50,
+            "bounds": [
+              270.0,
+              469.7868359375002,
+              291.0,
+              541.1745312500002
+            ]
+          },
+          {
+            "text": "-3",
+            "size": 50,
+            "bounds": [
+              435.0,
+              354.7868359375002,
+              489.640625,
+              426.1745312500002
+            ]
+          },
+          {
+            "text": "0",
+            "size": 50,
+            "bounds": [
+              440.0,
+              469.7868359375002,
+              473.0,
+              541.1745312500002
+            ]
+          },
+          {
+            "text": "5",
+            "size": 50,
+            "bounds": [
+              605.0,
+              354.7868359375002,
+              636.0,
+              426.1745312500002
+            ]
+          },
+          {
+            "text": "1",
+            "size": 50,
+            "bounds": [
+              610.0,
+              469.7868359375002,
+              631.0,
+              541.1745312500002
+            ]
+          },
+          {
+            "text": "2 + 5 = 7.0",
+            "size": 66,
+            "bounds": [
+              170.0,
+              642.7868359375002,
+              501.8125,
+              737.0185937500003
+            ]
+          },
+          {
+            "text": "A separate ownership rule",
+            "size": 48,
+            "bounds": [
+              60.0,
+              797.7868359375002,
+              665.84375,
+              866.3190234375002
+            ]
+          },
+          {
+            "text": "Input + output storage\nstay owned",
+            "size": 42,
+            "bounds": [
+              125.0,
+              972.7868359375002,
+              569.59375,
+              1092.7181640625001
+            ]
+          },
+          {
+            "text": "Admit",
+            "size": 38,
+            "bounds": [
+              60.0,
+              1227.7868359375002,
+              163.0,
+              1282.0414843750002
+            ]
+          },
+          {
+            "text": "Cancel\nintent",
+            "size": 38,
+            "bounds": [
+              350.0,
+              1227.7868359375002,
+              474.0,
+              1336.2961328125002
+            ]
+          },
+          {
+            "text": "Physical\nreturn",
+            "size": 38,
+            "bounds": [
+              650.0,
+              1227.7868359375002,
+              797.8125,
+              1336.2961328125002
+            ]
+          },
+          {
+            "text": "Cancel intent does not end the storage\nlifetime.",
+            "size": 42,
+            "bounds": [
+              60.0,
+              1377.7868359375002,
+              831.1875,
+              1497.7181640625001
+            ]
+          },
+          {
+            "text": "Cancellation intent does not establish physical\ncompletion.",
+            "size": 36,
+            "bounds": [
+              60.0,
+              1547.7181640625001,
+              848.640625,
+              1650.5164453125
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          870.0,
-          848.640625,
-          965.82890625
+        "shapes": [
+          [
+            230,
+            332.7868359375002,
+            370,
+            427.7868359375002
+          ],
+          [
+            230,
+            447.7868359375002,
+            370,
+            542.7868359375002
+          ],
+          [
+            400,
+            332.7868359375002,
+            540,
+            427.7868359375002
+          ],
+          [
+            400,
+            447.7868359375002,
+            540,
+            542.7868359375002
+          ],
+          [
+            570,
+            332.7868359375002,
+            710,
+            427.7868359375002
+          ],
+          [
+            570,
+            447.7868359375002,
+            710,
+            542.7868359375002
+          ],
+          [
+            100,
+            952.7868359375002,
+            860,
+            1117.7868359375002
+          ]
         ],
         "main_label_pixels": 48,
-        "title_pixels": 52,
-        "footer_pixels": 36,
-        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       }
     },
     "ragged": {
       "wide": {
-        "width": 1800,
-        "height": 600,
-        "panel_height": 230,
-        "panel_geometry": [
-          {
-            "padded_panel": [
-              88,
-              220,
-              552,
-              410
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                220.0,
-                247.0,
-                273.238
-              ],
-              "body": [
-                88.0,
-                289.238,
-                390.344,
-                342.477
-              ]
-            }
+        "width": 1600,
+        "height": 1120,
+        "kind": "conceptual mechanism",
+        "composition": "grouped vectors and gradient return",
+        "reused_exact_bytes": true,
+        "provenance": {
+          "wide.png": {
+            "repository": "ragged-pool",
+            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "path": "docs/ragged-pool-obscur.png",
+            "sha256": "108403fa1d1eef675d70ceb583d33c55d52fdbb26e787da1b1ba3e9038e2f229"
           },
-          {
-            "padded_panel": [
-              668,
-              220,
-              1132,
-              410
-            ],
-            "labels": {
-              "heading": [
-                668.0,
-                220.0,
-                966.0,
-                273.238
-              ],
-              "body": [
-                668.0,
-                289.238,
-                982.531,
-                342.477
-              ]
-            }
-          },
-          {
-            "padded_panel": [
-              1248,
-              220,
-              1712,
-              410
-            ],
-            "labels": {
-              "heading": [
-                1248.0,
-                220.0,
-                1443.297,
-                273.238
-              ],
-              "body": [
-                1248.0,
-                289.238,
-                1653.172,
-                342.477
-              ]
-            }
+          "wide.svg": {
+            "repository": "ragged-pool",
+            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "path": "docs/ragged-pool-obscur.svg",
+            "sha256": "8831e61ed7075b2aeceac58a4b000e5e617a55c619bace5daf2aac1d33a81cdd"
           }
-        ],
-        "footer_bounds": [
-          60.0,
-          462.0,
-          839.15625,
-          499.266796875
-        ],
-        "main_label_pixels": 40,
-        "title_pixels": 50,
-        "footer_pixels": 28,
-        "height_rule": "Fixed 600px canvas with verified bounds"
+        }
       },
       "narrow": {
-        "width": 960,
-        "height": 1000,
-        "panel_height": 200,
-        "panel_geometry": [
-          {
-            "padded_panel": [
-              88,
-              210,
-              872,
-              370
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                210.0,
-                279.0,
-                273.886
-              ],
-              "body": [
-                88.0,
-                289.886,
-                447.203,
-                353.772
-              ]
-            }
+        "width": 900,
+        "height": 1590,
+        "kind": "conceptual mechanism",
+        "composition": "grouped vectors and gradient return",
+        "reused_exact_bytes": true,
+        "provenance": {
+          "narrow.png": {
+            "repository": "ragged-pool",
+            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "path": "docs/ragged-pool-obscur-narrow.png",
+            "sha256": "9cf0b7b0f0ba676fc2331f0d4af531d6d9b22038be7b19550cff7e2a6eb941b1"
           },
-          {
-            "padded_panel": [
-              88,
-              434,
-              872,
-              594
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                434.0,
-                445.0,
-                497.886
-              ],
-              "body": [
-                88.0,
-                513.886,
-                465.031,
-                577.772
-              ]
-            }
-          },
-          {
-            "padded_panel": [
-              88,
-              658,
-              872,
-              818
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                658.0,
-                323.547,
-                721.886
-              ],
-              "body": [
-                88.0,
-                737.886,
-                573.797,
-                801.772
-              ]
-            }
+          "narrow.svg": {
+            "repository": "ragged-pool",
+            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "path": "docs/ragged-pool-obscur-narrow.svg",
+            "sha256": "22c8410d9417cf123d4f0b0fabf1d4560103006bb246e2c4a8f39223219ee4a0"
           }
-        ],
-        "footer_bounds": [
-          60.0,
-          870.0,
-          826.8125,
-          965.82890625
-        ],
-        "main_label_pixels": 48,
-        "title_pixels": 52,
-        "footer_pixels": 36,
-        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
+        }
       }
     },
     "mcts": {
       "wide": {
         "width": 1800,
-        "height": 600,
-        "panel_height": 230,
-        "panel_geometry": [
-          {
-            "padded_panel": [
-              88,
-              220,
-              552,
-              410
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                220.0,
-                247.0,
-                273.238
-              ],
-              "body": [
-                88.0,
-                289.238,
-                435.453,
-                342.477
-              ]
-            }
+        "height": 1160,
+        "kind": "retained numerical figure",
+        "composition": "reward bars and separate visits",
+        "reused_exact_bytes": true,
+        "provenance": {
+          "wide.png": {
+            "repository": "mcts-combat-engine",
+            "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+            "path": "docs/mcts-decision-obscur-wide.png",
+            "sha256": "92d8d1b625ef19955a971eef9a3279c6d1b6d61ccdec4e2fca3a6f0ba517a79b"
           },
-          {
-            "padded_panel": [
-              668,
-              220,
-              1132,
-              410
-            ],
-            "labels": {
-              "heading": [
-                668.0,
-                220.0,
-                966.0,
-                273.238
-              ],
-              "body": [
-                668.0,
-                289.238,
-                1018.969,
-                342.477
-              ]
-            }
-          },
-          {
-            "padded_panel": [
-              1248,
-              220,
-              1712,
-              410
-            ],
-            "labels": {
-              "heading": [
-                1248.0,
-                220.0,
-                1443.297,
-                273.238
-              ],
-              "body": [
-                1248.0,
-                289.238,
-                1632.406,
-                342.477
-              ]
-            }
+          "wide.svg": {
+            "repository": "mcts-combat-engine",
+            "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+            "path": "docs/mcts-decision-obscur-wide.svg",
+            "sha256": "5d58c87608a8b4415d39698cdf81e2b18f57318db47b73cf13ae62c0d62fbda3"
           }
-        ],
-        "footer_bounds": [
-          60.0,
-          462.0,
-          875.96875,
-          499.266796875
-        ],
-        "main_label_pixels": 40,
-        "title_pixels": 50,
-        "footer_pixels": 28,
-        "height_rule": "Fixed 600px canvas with verified bounds"
+        }
       },
       "narrow": {
         "width": 960,
-        "height": 1000,
-        "panel_height": 200,
-        "panel_geometry": [
-          {
-            "padded_panel": [
-              88,
-              210,
-              872,
-              370
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                210.0,
-                279.0,
-                273.886
-              ],
-              "body": [
-                88.0,
-                289.886,
-                508.125,
-                353.772
-              ]
-            }
+        "height": 1960,
+        "kind": "retained numerical figure",
+        "composition": "reward bars and separate visits",
+        "reused_exact_bytes": true,
+        "provenance": {
+          "narrow.png": {
+            "repository": "mcts-combat-engine",
+            "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+            "path": "docs/mcts-decision-obscur.png",
+            "sha256": "9c1ecb602abb369d48c4823b86c275764ba46fe59e96ed81778d08b3d829f732"
           },
-          {
-            "padded_panel": [
-              88,
-              434,
-              872,
-              594
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                434.0,
-                445.0,
-                497.886
-              ],
-              "body": [
-                88.0,
-                513.886,
-                509.562,
-                577.772
-              ]
-            }
-          },
-          {
-            "padded_panel": [
-              88,
-              658,
-              872,
-              818
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                658.0,
-                323.547,
-                721.886
-              ],
-              "body": [
-                88.0,
-                737.886,
-                547.875,
-                801.772
-              ]
-            }
+          "narrow.svg": {
+            "repository": "mcts-combat-engine",
+            "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+            "path": "docs/mcts-decision-obscur.svg",
+            "sha256": "903d528061098e1223502a56eb0509152ac435f195f7af8666f30c5f247f00c4"
           }
-        ],
-        "footer_bounds": [
-          60.0,
-          870.0,
-          883.25,
-          965.82890625
-        ],
-        "main_label_pixels": 48,
-        "title_pixels": 52,
-        "footer_pixels": 36,
-        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
+        }
       }
     },
     "solver": {
       "wide": {
         "width": 1800,
-        "height": 600,
-        "panel_height": 230,
-        "panel_geometry": [
-          {
-            "padded_panel": [
-              88,
-              220,
-              552,
-              410
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                220.0,
-                247.0,
-                273.238
-              ],
-              "body": [
-                88.0,
-                289.238,
-                355.953,
-                342.477
-              ]
-            }
+        "height": 1280,
+        "kind": "retained numerical figure",
+        "composition": "paired composition and expected-return comparison",
+        "reused_exact_bytes": true,
+        "provenance": {
+          "wide.png": {
+            "repository": "exact-blackjack-solver",
+            "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+            "path": "docs/blackjack-composition-obscur-wide.png",
+            "sha256": "a53111c32b57e1961576cf0799ba298f7b23723186feea0870a85dd8efa8a503"
           },
-          {
-            "padded_panel": [
-              668,
-              220,
-              1132,
-              410
-            ],
-            "labels": {
-              "heading": [
-                668.0,
-                220.0,
-                966.0,
-                273.238
-              ],
-              "body": [
-                668.0,
-                289.238,
-                983.156,
-                342.477
-              ]
-            }
-          },
-          {
-            "padded_panel": [
-              1248,
-              220,
-              1712,
-              410
-            ],
-            "labels": {
-              "heading": [
-                1248.0,
-                220.0,
-                1443.297,
-                273.238
-              ],
-              "body": [
-                1248.0,
-                289.238,
-                1442.203,
-                342.477
-              ]
-            }
+          "wide.svg": {
+            "repository": "exact-blackjack-solver",
+            "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+            "path": "docs/blackjack-composition-obscur-wide.svg",
+            "sha256": "1dc0445b52208ec81fdc330a50cd0dcf3489a50013380da7b6a5c8866ac19461"
           }
-        ],
-        "footer_bounds": [
-          60.0,
-          462.0,
-          917.703125,
-          499.266796875
-        ],
-        "main_label_pixels": 40,
-        "title_pixels": 50,
-        "footer_pixels": 28,
-        "height_rule": "Fixed 600px canvas with verified bounds"
+        }
       },
       "narrow": {
         "width": 960,
-        "height": 1000,
-        "panel_height": 200,
-        "panel_geometry": [
-          {
-            "padded_panel": [
-              88,
-              210,
-              872,
-              370
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                210.0,
-                279.0,
-                273.886
-              ],
-              "body": [
-                88.0,
-                289.886,
-                412.734,
-                353.772
-              ]
-            }
+        "height": 2080,
+        "kind": "retained numerical figure",
+        "composition": "paired composition and expected-return comparison",
+        "reused_exact_bytes": true,
+        "provenance": {
+          "narrow.png": {
+            "repository": "exact-blackjack-solver",
+            "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+            "path": "docs/blackjack-composition-obscur.png",
+            "sha256": "cdb1aacf8b3bb2b84cda0a058f34344bed6a449a2f3992168e38c34032434e5a"
           },
-          {
-            "padded_panel": [
-              88,
-              434,
-              872,
-              594
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                434.0,
-                445.0,
-                497.886
-              ],
-              "body": [
-                88.0,
-                513.886,
-                463.969,
-                577.772
-              ]
-            }
-          },
-          {
-            "padded_panel": [
-              88,
-              658,
-              872,
-              818
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                658.0,
-                323.547,
-                721.886
-              ],
-              "body": [
-                88.0,
-                737.886,
-                322.234,
-                801.772
-              ]
-            }
+          "narrow.svg": {
+            "repository": "exact-blackjack-solver",
+            "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+            "path": "docs/blackjack-composition-obscur.svg",
+            "sha256": "538b3bfc37051607f89d36488ca33e677b5d5753c90e2d5f552c5613db8d65d4"
           }
-        ],
-        "footer_bounds": [
-          60.0,
-          870.0,
-          888.765625,
-          965.82890625
-        ],
-        "main_label_pixels": 48,
-        "title_pixels": 52,
-        "footer_pixels": 36,
-        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
+        }
       }
     },
     "atlas": {
       "wide": {
         "width": 1800,
-        "height": 600,
-        "panel_height": 230,
-        "panel_geometry": [
+        "height": 1519,
+        "composition": "evidence passport and clock boundary",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              220,
-              552,
-              410
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                220.0,
-                247.0,
-                273.238
-              ],
-              "body": [
-                88.0,
-                289.238,
-                484.391,
-                342.477
-              ]
-            }
+            "text": "Tornado Atlas",
+            "size": 54,
+            "bounds": [
+              60.0,
+              30.0,
+              426.828125,
+              107.09871093750007
+            ]
           },
           {
-            "padded_panel": [
-              668,
-              220,
-              1132,
-              410
-            ],
-            "labels": {
-              "heading": [
-                668.0,
-                220.0,
-                966.0,
-                273.238
-              ],
-              "body": [
-                668.0,
-                289.238,
-                993.281,
-                342.477
-              ]
-            }
+            "text": "EVIDENCE PASSPORT AND CLOCK BOUNDARY",
+            "size": 30,
+            "bounds": [
+              60.0,
+              142.09871093750007,
+              745.4375,
+              184.93132812500016
+            ]
           },
           {
-            "padded_panel": [
-              1248,
-              220,
-              1712,
-              410
-            ],
-            "labels": {
-              "heading": [
-                1248.0,
-                220.0,
-                1443.297,
-                273.238
-              ],
-              "body": [
-                1248.0,
-                289.238,
-                1585.766,
-                342.477
-              ]
-            }
+            "text": "A credited source record",
+            "size": 40,
+            "bounds": [
+              84.0,
+              266.93132812500016,
+              562.109375,
+              324.0414843750002
+            ]
+          },
+          {
+            "text": "Locator, creator and inspection\ncoverage.",
+            "size": 36,
+            "bounds": [
+              84.0,
+              339.0414843750002,
+              616.15625,
+              441.83976562500015
+            ]
+          },
+          {
+            "text": "Evidence passport",
+            "size": 48,
+            "bounds": [
+              878.0,
+              272.93132812500016,
+              1316.40625,
+              341.4635156250001
+            ]
+          },
+          {
+            "text": "Independent fields, not one verified badge",
+            "size": 32,
+            "bounds": [
+              878.0,
+              352.93132812500016,
+              1527.0,
+              398.61945312500006
+            ]
+          },
+          {
+            "text": "Intake",
+            "size": 42,
+            "bounds": [
+              878.0,
+              434.93132812500016,
+              998.265625,
+              494.89699218750013
+            ]
+          },
+          {
+            "text": "Assertion",
+            "size": 42,
+            "bounds": [
+              878.0,
+              511.93132812500016,
+              1065.65625,
+              571.8969921875001
+            ]
+          },
+          {
+            "text": "Time registration",
+            "size": 42,
+            "bounds": [
+              878.0,
+              588.9313281250002,
+              1213.296875,
+              648.8969921875001
+            ]
+          },
+          {
+            "text": "Spatial registration",
+            "size": 42,
+            "bounds": [
+              878.0,
+              665.9313281250002,
+              1250.703125,
+              725.8969921875001
+            ]
+          },
+          {
+            "text": "Availability",
+            "size": 42,
+            "bounds": [
+              878.0,
+              742.9313281250002,
+              1090.78125,
+              802.8969921875001
+            ]
+          },
+          {
+            "text": "Rights",
+            "size": 42,
+            "bounds": [
+              878.0,
+              819.9313281250002,
+              1001.59375,
+              879.8969921875001
+            ]
+          },
+          {
+            "text": "Clock roles",
+            "size": 46,
+            "bounds": [
+              60.0,
+              574.9313281250002,
+              307.984375,
+              640.6080078125001
+            ]
+          },
+          {
+            "text": "Capture time\nPublication time\nPlayer-relative time",
+            "size": 40,
+            "bounds": [
+              60.0,
+              654.9313281250002,
+              421.625,
+              826.2617968750001
+            ]
+          },
+          {
+            "text": "A clock alone does not register a\nviewpoint.",
+            "size": 38,
+            "bounds": [
+              60.0,
+              844.9313281250002,
+              647.0,
+              953.4406250000002
+            ]
+          },
+          {
+            "text": "Time and viewpoint may remain unknown.",
+            "size": 46,
+            "bounds": [
+              60.0,
+              994.9313281250002,
+              993.8125,
+              1060.6080078125
+            ]
+          },
+          {
+            "text": "Documentary evidence",
+            "size": 40,
+            "bounds": [
+              84.0,
+              1127.6080078125,
+              533.09375,
+              1184.7181640625001
+            ]
+          },
+          {
+            "text": "Inspect the dossier and unresolved context.",
+            "size": 36,
+            "bounds": [
+              84.0,
+              1199.7181640625001,
+              830.421875,
+              1251.1173046875
+            ]
+          },
+          {
+            "text": "Procedural illustration",
+            "size": 40,
+            "bounds": [
+              964.0,
+              1127.6080078125,
+              1386.375,
+              1184.7181640625001
+            ]
+          },
+          {
+            "text": "Separate, explicitly labeled layer.",
+            "size": 36,
+            "bounds": [
+              964.0,
+              1199.7181640625001,
+              1522.875,
+              1251.1173046875
+            ]
+          },
+          {
+            "text": "Unknowns stay explicit. Observation and illustration stay separate.",
+            "size": 30,
+            "bounds": [
+              60.0,
+              1435.6080078125,
+              996.515625,
+              1478.4406250000002
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          462.0,
-          945.65625,
-          499.266796875
+        "shapes": [
+          [
+            60,
+            244.93132812500016,
+            650,
+            484.93132812500016
+          ],
+          [
+            850,
+            244.93132812500016,
+            1740,
+            934.9313281250002
+          ],
+          [
+            60,
+            1105.6080078125,
+            860,
+            1385.6080078125
+          ],
+          [
+            940,
+            1105.6080078125,
+            1740,
+            1385.6080078125
+          ]
         ],
         "main_label_pixels": 40,
-        "title_pixels": 50,
-        "footer_pixels": 28,
-        "height_rule": "Fixed 600px canvas with verified bounds"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       },
       "narrow": {
         "width": 960,
-        "height": 1000,
-        "panel_height": 200,
-        "panel_geometry": [
+        "height": 2237,
+        "composition": "evidence passport and clock boundary",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              210,
-              872,
-              370
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                210.0,
-                279.0,
-                273.886
-              ],
-              "body": [
-                88.0,
-                289.886,
-                564.25,
-                353.772
-              ]
-            }
+            "text": "Tornado Atlas",
+            "size": 56,
+            "bounds": [
+              60.0,
+              30.0,
+              440.640625,
+              109.95421875000011
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              434,
-              872,
-              594
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                434.0,
-                445.0,
-                497.886
-              ],
-              "body": [
-                88.0,
-                513.886,
-                480.141,
-                577.772
-              ]
-            }
+            "text": "EVIDENCE PASSPORT AND CLOCK BOUNDARY",
+            "size": 30,
+            "bounds": [
+              60.0,
+              144.9542187500001,
+              745.4375,
+              187.7868359375002
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              658,
-              872,
-              818
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                658.0,
-                323.547,
-                721.886
-              ],
-              "body": [
-                88.0,
-                737.886,
-                495.5,
-                801.772
-              ]
-            }
+            "text": "Source record -> observation",
+            "size": 48,
+            "bounds": [
+              60.0,
+              247.7868359375002,
+              732.21875,
+              316.31902343750016
+            ]
+          },
+          {
+            "text": "Evidence passport",
+            "size": 48,
+            "bounds": [
+              88.0,
+              370.7868359375002,
+              526.40625,
+              439.31902343750016
+            ]
+          },
+          {
+            "text": "Independent fields, not one verified badge",
+            "size": 32,
+            "bounds": [
+              88.0,
+              450.7868359375002,
+              737.0,
+              496.4749609375001
+            ]
+          },
+          {
+            "text": "Intake",
+            "size": 42,
+            "bounds": [
+              88.0,
+              532.7868359375002,
+              208.265625,
+              592.7525000000003
+            ]
+          },
+          {
+            "text": "Assertion",
+            "size": 42,
+            "bounds": [
+              88.0,
+              609.7868359375002,
+              275.65625,
+              669.7525000000003
+            ]
+          },
+          {
+            "text": "Time registration",
+            "size": 42,
+            "bounds": [
+              88.0,
+              686.7868359375002,
+              423.296875,
+              746.7525000000003
+            ]
+          },
+          {
+            "text": "Spatial registration",
+            "size": 42,
+            "bounds": [
+              88.0,
+              763.7868359375002,
+              460.703125,
+              823.7525000000003
+            ]
+          },
+          {
+            "text": "Availability",
+            "size": 42,
+            "bounds": [
+              88.0,
+              840.7868359375002,
+              300.78125,
+              900.7525000000003
+            ]
+          },
+          {
+            "text": "Rights",
+            "size": 42,
+            "bounds": [
+              88.0,
+              917.7868359375002,
+              211.59375,
+              977.7525000000003
+            ]
+          },
+          {
+            "text": "Time and viewpoint may remain\nunknown.",
+            "size": 44,
+            "bounds": [
+              60.0,
+              1092.7868359375002,
+              735.625,
+              1218.4291796875002
+            ]
+          },
+          {
+            "text": "Capture / publication / player clocks have\ndifferent roles.",
+            "size": 42,
+            "bounds": [
+              60.0,
+              1263.4291796875002,
+              886.859375,
+              1383.3605078125001
+            ]
+          },
+          {
+            "text": "Documentary evidence",
+            "size": 48,
+            "bounds": [
+              84.0,
+              1455.3605078125001,
+              621.09375,
+              1523.8926953125
+            ]
+          },
+          {
+            "text": "Inspect the source dossier and its\nlimits.",
+            "size": 44,
+            "bounds": [
+              84.0,
+              1538.8926953125,
+              783.84375,
+              1664.5350390625001
+            ]
+          },
+          {
+            "text": "Procedural illustration",
+            "size": 48,
+            "bounds": [
+              84.0,
+              1785.3605078125001,
+              594.078125,
+              1853.8926953125
+            ]
+          },
+          {
+            "text": "Labeled separately; not a source\nobservation.",
+            "size": 44,
+            "bounds": [
+              84.0,
+              1868.8926953125,
+              764.484375,
+              1994.5350390625001
+            ]
+          },
+          {
+            "text": "Unknowns stay explicit. Observation and\nillustration stay separate.",
+            "size": 36,
+            "bounds": [
+              60.0,
+              2093.3605078125,
+              753.5625,
+              2196.1587890625
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          870.0,
-          753.5625,
-          965.82890625
+        "shapes": [
+          [
+            60,
+            342.7868359375002,
+            900,
+            1032.7868359375002
+          ],
+          [
+            60,
+            1433.3605078125001,
+            900,
+            1713.3605078125001
+          ],
+          [
+            60,
+            1763.3605078125001,
+            900,
+            2043.3605078125001
+          ]
         ],
         "main_label_pixels": 48,
-        "title_pixels": 52,
-        "footer_pixels": 36,
-        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       }
     },
     "shipment": {
       "wide": {
         "width": 1800,
-        "height": 600,
-        "panel_height": 230,
-        "panel_geometry": [
+        "height": 1378,
+        "composition": "atomic transaction and lost-reply sequence",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              220,
-              552,
-              410
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                220.0,
-                247.0,
-                273.238
-              ],
-              "body": [
-                88.0,
-                289.238,
-                410.578,
-                342.477
-              ]
-            }
+            "text": "Shipment Exception Workspace",
+            "size": 54,
+            "bounds": [
+              60.0,
+              30.0,
+              901.609375,
+              107.09871093750007
+            ]
           },
           {
-            "padded_panel": [
-              668,
-              220,
-              1132,
-              410
-            ],
-            "labels": {
-              "heading": [
-                668.0,
-                220.0,
-                966.0,
-                273.238
-              ],
-              "body": [
-                668.0,
-                289.238,
-                1051.344,
-                342.477
-              ]
-            }
+            "text": "ATOMIC TRANSACTION AND LOST-REPLY SEQUENCE",
+            "size": 30,
+            "bounds": [
+              60.0,
+              142.09871093750007,
+              848.0625,
+              184.93132812500016
+            ]
           },
           {
-            "padded_panel": [
-              1248,
-              220,
-              1712,
-              410
-            ],
-            "labels": {
-              "heading": [
-                1248.0,
-                220.0,
-                1443.297,
-                273.238
-              ],
-              "body": [
-                1248.0,
-                289.238,
-                1576.656,
-                342.477
-              ]
-            }
+            "text": "Operator",
+            "size": 46,
+            "bounds": [
+              60.0,
+              244.93132812500016,
+              256.125,
+              310.6080078125001
+            ]
+          },
+          {
+            "text": "Server transaction",
+            "size": 46,
+            "bounds": [
+              1300.0,
+              244.93132812500016,
+              1708.4375,
+              310.6080078125001
+            ]
+          },
+          {
+            "text": "Assign Casey; expect version 2",
+            "size": 44,
+            "bounds": [
+              410.0,
+              334.93132812500016,
+              1062.296875,
+              397.75250000000005
+            ]
+          },
+          {
+            "text": "ONE ATOMIC COMMIT",
+            "size": 34,
+            "bounds": [
+              820.0,
+              514.9313281250002,
+              1188.96875,
+              563.4749609375001
+            ]
+          },
+          {
+            "text": "Record v3 + history event + saved receipt",
+            "size": 42,
+            "bounds": [
+              820.0,
+              579.9313281250002,
+              1652.1875,
+              639.8969921875001
+            ]
+          },
+          {
+            "text": "Reply lost after commit",
+            "size": 44,
+            "bounds": [
+              460.0,
+              799.9313281250002,
+              951.71875,
+              862.7525000000002
+            ]
+          },
+          {
+            "text": "Retry: original key + body",
+            "size": 44,
+            "bounds": [
+              420.0,
+              894.9313281250002,
+              952.84375,
+              957.7525000000002
+            ]
+          },
+          {
+            "text": "Authorized receipt replay; no new event",
+            "size": 42,
+            "bounds": [
+              600.0,
+              1029.9313281250002,
+              1391.390625,
+              1089.8969921875
+            ]
+          },
+          {
+            "text": "Historical v3 response is separate from the later current v4 state.",
+            "size": 42,
+            "bounds": [
+              60.0,
+              1184.9313281250002,
+              1354.34375,
+              1244.8969921875002
+            ]
+          },
+          {
+            "text": "A lost reply follows the commit. Later resolution reaches v4.",
+            "size": 30,
+            "bounds": [
+              60.0,
+              1294.8969921875002,
+              900.203125,
+              1337.7296093750003
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          462.0,
-          857.5,
-          499.266796875
+        "shapes": [
+          [
+            790,
+            489.93132812500016,
+            1720,
+            719.9313281250002
+          ]
         ],
         "main_label_pixels": 40,
-        "title_pixels": 50,
-        "footer_pixels": 28,
-        "height_rule": "Fixed 600px canvas with verified bounds"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       },
       "narrow": {
         "width": 960,
-        "height": 1000,
-        "panel_height": 200,
-        "panel_geometry": [
+        "height": 1992,
+        "composition": "atomic transaction and lost-reply sequence",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              210,
-              872,
-              370
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                210.0,
-                279.0,
-                273.886
-              ],
-              "body": [
-                88.0,
-                289.886,
-                477.875,
-                353.772
-              ]
-            }
+            "text": "Shipment Exception\nWorkspace",
+            "size": 56,
+            "bounds": [
+              60.0,
+              30.0,
+              605.875,
+              189.9084375
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              434,
-              872,
-              594
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                434.0,
-                445.0,
-                497.886
-              ],
-              "body": [
-                88.0,
-                513.886,
-                552.203,
-                577.772
-              ]
-            }
+            "text": "ATOMIC TRANSACTION AND LOST-REPLY SEQUENCE",
+            "size": 30,
+            "bounds": [
+              60.0,
+              224.9084375,
+              848.0625,
+              267.7410546875001
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              658,
-              872,
-              818
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                658.0,
-                323.547,
-                721.886
-              ],
-              "body": [
-                88.0,
-                737.886,
-                485.578,
-                801.772
-              ]
-            }
+            "text": "Operator",
+            "size": 44,
+            "bounds": [
+              60.0,
+              327.7410546875001,
+              248.171875,
+              390.5622265625002
+            ]
+          },
+          {
+            "text": "Server",
+            "size": 44,
+            "bounds": [
+              625.0,
+              327.7410546875001,
+              765.875,
+              390.5622265625002
+            ]
+          },
+          {
+            "text": "Casey assignment\nExpected version 2",
+            "size": 46,
+            "bounds": [
+              160.0,
+              417.7410546875001,
+              576.65625,
+              549.0944140625002
+            ]
+          },
+          {
+            "text": "ONE ATOMIC COMMIT",
+            "size": 36,
+            "bounds": [
+              190.0,
+              647.7410546875001,
+              583.734375,
+              699.1401953125
+            ]
+          },
+          {
+            "text": "Record -> version 3\nOne history event\nSaved response receipt",
+            "size": 44,
+            "bounds": [
+              190.0,
+              712.7410546875001,
+              682.03125,
+              901.2045703125
+            ]
+          },
+          {
+            "text": "Reply lost after commit",
+            "size": 42,
+            "bounds": [
+              235.0,
+              1042.7410546875,
+              703.828125,
+              1102.7067187500002
+            ]
+          },
+          {
+            "text": "Explicit retry\nSame key + body",
+            "size": 46,
+            "bounds": [
+              160.0,
+              1152.7410546875,
+              538.296875,
+              1284.0944140625002
+            ]
+          },
+          {
+            "text": "Current authorization\nMatching retained receipt",
+            "size": 42,
+            "bounds": [
+              160.0,
+              1342.7410546875,
+              669.390625,
+              1462.6723828125
+            ]
+          },
+          {
+            "text": "Return historical response\nRetry adds zero events",
+            "size": 46,
+            "bounds": [
+              140.0,
+              1547.7410546875,
+              721.15625,
+              1679.0944140625002
+            ]
+          },
+          {
+            "text": "Later resolution: version 4, four events.",
+            "size": 42,
+            "bounds": [
+              60.0,
+              1739.0944140625002,
+              835.390625,
+              1799.060078125
+            ]
+          },
+          {
+            "text": "A lost reply follows the commit. Later resolution\nreaches v4.",
+            "size": 36,
+            "bounds": [
+              60.0,
+              1849.060078125,
+              871.9375,
+              1951.858359375
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          870.0,
-          871.9375,
-          965.82890625
+        "shapes": [
+          [
+            160,
+            622.7410546875001,
+            810,
+            967.7410546875001
+          ]
         ],
         "main_label_pixels": 48,
-        "title_pixels": 52,
-        "footer_pixels": 36,
-        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       }
     },
     "freight": {
       "wide": {
         "width": 1800,
-        "height": 600,
-        "panel_height": 230,
-        "panel_geometry": [
-          {
-            "padded_panel": [
-              88,
-              220,
-              552,
-              410
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                220.0,
-                247.0,
-                273.238
-              ],
-              "body": [
-                88.0,
-                289.238,
-                413.203,
-                342.477
-              ]
-            }
+        "height": 1120,
+        "kind": "retained numerical figure",
+        "composition": "held-out curves and baseline comparison",
+        "reused_exact_bytes": true,
+        "provenance": {
+          "wide.png": {
+            "repository": "freight-forecast",
+            "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+            "path": "docs/freight-forecast-obscur-wide.png",
+            "sha256": "9bb19c8ac5b3517dc7bb7d48ebc6959482d057bb6ccec2a5d0d8e43c473238be"
           },
-          {
-            "padded_panel": [
-              668,
-              220,
-              1132,
-              410
-            ],
-            "labels": {
-              "heading": [
-                668.0,
-                220.0,
-                966.0,
-                273.238
-              ],
-              "body": [
-                668.0,
-                289.238,
-                1012.344,
-                342.477
-              ]
-            }
-          },
-          {
-            "padded_panel": [
-              1248,
-              220,
-              1712,
-              410
-            ],
-            "labels": {
-              "heading": [
-                1248.0,
-                220.0,
-                1443.297,
-                273.238
-              ],
-              "body": [
-                1248.0,
-                289.238,
-                1566.766,
-                342.477
-              ]
-            }
+          "wide.svg": {
+            "repository": "freight-forecast",
+            "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+            "path": "docs/freight-forecast-obscur-wide.svg",
+            "sha256": "fcbfb285d54e452e7d41b8d4c10a39374dd97f9f9f1071fe8bf0a1af83f4c4f5"
           }
-        ],
-        "footer_bounds": [
-          60.0,
-          462.0,
-          883.765625,
-          499.266796875
-        ],
-        "main_label_pixels": 40,
-        "title_pixels": 50,
-        "footer_pixels": 28,
-        "height_rule": "Fixed 600px canvas with verified bounds"
+        }
       },
       "narrow": {
         "width": 960,
-        "height": 1000,
-        "panel_height": 200,
-        "panel_geometry": [
-          {
-            "padded_panel": [
-              88,
-              210,
-              872,
-              370
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                210.0,
-                279.0,
-                273.886
-              ],
-              "body": [
-                88.0,
-                289.886,
-                479.234,
-                353.772
-              ]
-            }
+        "height": 1800,
+        "kind": "retained numerical figure",
+        "composition": "held-out curves and baseline comparison",
+        "reused_exact_bytes": true,
+        "provenance": {
+          "narrow.png": {
+            "repository": "freight-forecast",
+            "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+            "path": "docs/freight-forecast-obscur.png",
+            "sha256": "549814372e328363ab6e539cb2972e266d1aea75a35f9e41482f9c7d91489a27"
           },
-          {
-            "padded_panel": [
-              88,
-              434,
-              872,
-              594
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                434.0,
-                445.0,
-                497.886
-              ],
-              "body": [
-                88.0,
-                513.886,
-                501.203,
-                577.772
-              ]
-            }
-          },
-          {
-            "padded_panel": [
-              88,
-              658,
-              872,
-              818
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                658.0,
-                323.547,
-                721.886
-              ],
-              "body": [
-                88.0,
-                737.886,
-                471.5,
-                801.772
-              ]
-            }
+          "narrow.svg": {
+            "repository": "freight-forecast",
+            "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+            "path": "docs/freight-forecast-obscur.svg",
+            "sha256": "c9dffaa95a84e3b1acfec1ef078bd3217e0b41fe06f8b3acff525e35981b07f3"
           }
-        ],
-        "footer_bounds": [
-          60.0,
-          870.0,
-          808.625,
-          965.82890625
-        ],
-        "main_label_pixels": 48,
-        "title_pixels": 52,
-        "footer_pixels": 36,
-        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
+        }
       }
     },
     "adaptive": {
       "wide": {
         "width": 1800,
-        "height": 600,
-        "panel_height": 230,
-        "panel_geometry": [
+        "height": 1253,
+        "composition": "revision lanes and adoption gate",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              220,
-              552,
-              410
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                220.0,
-                247.0,
-                273.238
-              ],
-              "body": [
-                88.0,
-                289.238,
-                369.125,
-                342.477
-              ]
-            }
+            "text": "Adaptive Timing Engine",
+            "size": 54,
+            "bounds": [
+              60.0,
+              30.0,
+              686.796875,
+              107.09871093750007
+            ]
           },
           {
-            "padded_panel": [
-              668,
-              220,
-              1132,
-              410
-            ],
-            "labels": {
-              "heading": [
-                668.0,
-                220.0,
-                966.0,
-                273.238
-              ],
-              "body": [
-                668.0,
-                289.238,
-                1035.906,
-                342.477
-              ]
-            }
+            "text": "REVISION LANES AND ADOPTION GATE",
+            "size": 30,
+            "bounds": [
+              60.0,
+              142.09871093750007,
+              639.53125,
+              184.93132812500016
+            ]
           },
           {
-            "padded_panel": [
-              1248,
-              220,
-              1712,
-              410
-            ],
-            "labels": {
-              "heading": [
-                1248.0,
-                220.0,
-                1443.297,
-                273.238
-              ],
-              "body": [
-                1248.0,
-                289.238,
-                1602.172,
-                342.477
-              ]
-            }
+            "text": "Retained example: 101 requests",
+            "size": 40,
+            "bounds": [
+              60.0,
+              244.93132812500016,
+              667.59375,
+              302.0414843750002
+            ]
+          },
+          {
+            "text": "Incoming\nrequests",
+            "size": 40,
+            "bounds": [
+              60.0,
+              344.93132812500016,
+              237.0,
+              459.15164062500025
+            ]
+          },
+          {
+            "text": "Physical work",
+            "size": 40,
+            "bounds": [
+              60.0,
+              579.9313281250002,
+              329.75,
+              637.0414843750002
+            ]
+          },
+          {
+            "text": "Current\nanswer",
+            "size": 40,
+            "bounds": [
+              60.0,
+              814.9313281250002,
+              207.515625,
+              929.1516406250001
+            ]
+          },
+          {
+            "text": "Payload 0 admitted",
+            "size": 40,
+            "bounds": [
+              444.0,
+              356.93132812500016,
+              814.859375,
+              414.0414843750002
+            ]
+          },
+          {
+            "text": "Latest waiting value: 100",
+            "size": 40,
+            "bounds": [
+              964.0,
+              356.93132812500016,
+              1440.203125,
+              414.0414843750002
+            ]
+          },
+          {
+            "text": "Compute 0 -> return",
+            "size": 40,
+            "bounds": [
+              444.0,
+              581.9313281250002,
+              833.125,
+              639.0414843750002
+            ]
+          },
+          {
+            "text": "Old result is rejected.",
+            "size": 36,
+            "bounds": [
+              444.0,
+              654.0414843750002,
+              807.0,
+              705.4406250000002
+            ]
+          },
+          {
+            "text": "Compute 100 -> return",
+            "size": 40,
+            "bounds": [
+              1144.0,
+              581.9313281250002,
+              1576.125,
+              639.0414843750002
+            ]
+          },
+          {
+            "text": "Adopt revision 101",
+            "size": 40,
+            "bounds": [
+              1144.0,
+              816.9313281250002,
+              1491.78125,
+              874.0414843750002
+            ]
+          },
+          {
+            "text": "Payload 100 is the current\nanswer.",
+            "size": 36,
+            "bounds": [
+              1144.0,
+              889.0414843750002,
+              1586.953125,
+              991.8397656250002
+            ]
+          },
+          {
+            "text": "2 computations; 99 waiting replacements; 1 obsolete result rejected.",
+            "size": 38,
+            "bounds": [
+              60.0,
+              1064.9313281250002,
+              1274.75,
+              1119.1859765625002
+            ]
+          },
+          {
+            "text": "Physical completion and adoption of the current answer are separate.",
+            "size": 30,
+            "bounds": [
+              60.0,
+              1169.1859765625002,
+              1038.78125,
+              1212.01859375
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          462.0,
-          988.890625,
-          499.266796875
+        "shapes": [
+          [
+            420,
+            334.93132812500016,
+            870,
+            494.93132812500016
+          ],
+          [
+            940,
+            334.93132812500016,
+            1620,
+            439.93132812500016
+          ],
+          [
+            420,
+            559.9313281250002,
+            1020,
+            729.9313281250002
+          ],
+          [
+            1120,
+            559.9313281250002,
+            1685,
+            729.9313281250002
+          ],
+          [
+            1120,
+            794.9313281250002,
+            1685,
+            1034.9313281250002
+          ]
         ],
         "main_label_pixels": 40,
-        "title_pixels": 50,
-        "footer_pixels": 28,
-        "height_rule": "Fixed 600px canvas with verified bounds"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       },
       "narrow": {
         "width": 960,
-        "height": 1000,
-        "panel_height": 200,
-        "panel_geometry": [
+        "height": 2185,
+        "composition": "revision lanes and adoption gate",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              210,
-              872,
-              370
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                210.0,
-                279.0,
-                273.886
-              ],
-              "body": [
-                88.0,
-                289.886,
-                426.547,
-                353.772
-              ]
-            }
+            "text": "Adaptive Timing Engine",
+            "size": 56,
+            "bounds": [
+              60.0,
+              30.0,
+              706.703125,
+              109.95421875000011
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              434,
-              872,
-              594
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                434.0,
-                445.0,
-                497.886
-              ],
-              "body": [
-                88.0,
-                513.886,
-                527.891,
-                577.772
-              ]
-            }
+            "text": "REVISION LANES AND ADOPTION GATE",
+            "size": 30,
+            "bounds": [
+              60.0,
+              144.9542187500001,
+              639.53125,
+              187.7868359375002
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              658,
-              872,
-              818
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                658.0,
-                323.547,
-                721.886
-              ],
-              "body": [
-                88.0,
-                737.886,
-                511.188,
-                801.772
-              ]
-            }
+            "text": "Retained example: 101 requests",
+            "size": 48,
+            "bounds": [
+              60.0,
+              247.7868359375002,
+              784.125,
+              316.31902343750016
+            ]
+          },
+          {
+            "text": "Physical computation",
+            "size": 42,
+            "bounds": [
+              60.0,
+              347.7868359375002,
+              498.90625,
+              407.7525000000003
+            ]
+          },
+          {
+            "text": "Payload 0 runs",
+            "size": 48,
+            "bounds": [
+              84.0,
+              444.7868359375002,
+              429.390625,
+              513.3190234375002
+            ]
+          },
+          {
+            "text": "New requests can replace waiting\nwork.",
+            "size": 44,
+            "bounds": [
+              84.0,
+              528.3190234375002,
+              789.734375,
+              653.9613671875002
+            ]
+          },
+          {
+            "text": "Waiting value: 100",
+            "size": 48,
+            "bounds": [
+              274.0,
+              764.7868359375002,
+              698.96875,
+              833.3190234375002
+            ]
+          },
+          {
+            "text": "99 waiting replacements.",
+            "size": 44,
+            "bounds": [
+              274.0,
+              848.3190234375002,
+              798.84375,
+              911.1401953125
+            ]
+          },
+          {
+            "text": "Payload 0 returns",
+            "size": 48,
+            "bounds": [
+              84.0,
+              1064.7868359375002,
+              492.8125,
+              1133.3190234375002
+            ]
+          },
+          {
+            "text": "Obsolete result is rejected.",
+            "size": 44,
+            "bounds": [
+              84.0,
+              1148.3190234375002,
+              641.328125,
+              1211.1401953125
+            ]
+          },
+          {
+            "text": "Payload 100 runs and returns",
+            "size": 48,
+            "bounds": [
+              84.0,
+              1334.7868359375002,
+              758.8125,
+              1403.3190234375002
+            ]
+          },
+          {
+            "text": "Physical completion is reconciled.",
+            "size": 44,
+            "bounds": [
+              84.0,
+              1418.3190234375002,
+              791.046875,
+              1481.1401953125
+            ]
+          },
+          {
+            "text": "Adoption gate: is this still current?",
+            "size": 48,
+            "bounds": [
+              60.0,
+              1627.7868359375002,
+              862.71875,
+              1696.3190234375002
+            ]
+          },
+          {
+            "text": "Adopt the current answer",
+            "size": 48,
+            "bounds": [
+              84.0,
+              1763.3190234375002,
+              672.078125,
+              1831.8512109375001
+            ]
+          },
+          {
+            "text": "Payload 100; revision 101.",
+            "size": 44,
+            "bounds": [
+              84.0,
+              1846.8512109375001,
+              614.40625,
+              1909.6723828125
+            ]
+          },
+          {
+            "text": "Physical completion and adoption of the current\nanswer are separate.",
+            "size": 36,
+            "bounds": [
+              60.0,
+              2041.3190234375002,
+              878.78125,
+              2144.1173046875
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          870.0,
-          878.78125,
-          965.82890625
+        "shapes": [
+          [
+            60,
+            422.7868359375002,
+            900,
+            692.7868359375002
+          ],
+          [
+            250,
+            742.7868359375002,
+            900,
+            962.7868359375002
+          ],
+          [
+            60,
+            1042.7868359375002,
+            900,
+            1272.7868359375002
+          ],
+          [
+            60,
+            1312.7868359375002,
+            900,
+            1582.7868359375002
+          ],
+          [
+            60,
+            1741.3190234375002,
+            900,
+            1991.3190234375002
+          ]
         ],
         "main_label_pixels": 48,
-        "title_pixels": 52,
-        "footer_pixels": 36,
-        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       }
     },
     "themes": {
       "wide": {
         "width": 1800,
-        "height": 600,
-        "panel_height": 230,
-        "panel_geometry": [
+        "height": 1387,
+        "composition": "semantic role to host-field mappings",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              220,
-              552,
-              410
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                220.0,
-                247.0,
-                273.238
-              ],
-              "body": [
-                88.0,
-                289.238,
-                325.688,
-                342.477
-              ]
-            }
+            "text": "Clair and Obscur",
+            "size": 54,
+            "bounds": [
+              60.0,
+              30.0,
+              502.0,
+              107.09871093750007
+            ]
           },
           {
-            "padded_panel": [
-              668,
-              220,
-              1132,
-              410
-            ],
-            "labels": {
-              "heading": [
-                668.0,
-                220.0,
-                966.0,
-                273.238
-              ],
-              "body": [
-                668.0,
-                289.238,
-                1003.484,
-                342.477
-              ]
-            }
+            "text": "SEMANTIC ROLE TO HOST-FIELD MAPPINGS",
+            "size": 30,
+            "bounds": [
+              60.0,
+              142.09871093750007,
+              714.09375,
+              184.93132812500016
+            ]
           },
           {
-            "padded_panel": [
-              1248,
-              220,
-              1712,
-              410
-            ],
-            "labels": {
-              "heading": [
-                1248.0,
-                220.0,
-                1443.297,
-                273.238
-              ],
-              "body": [
-                1248.0,
-                289.238,
-                1608.234,
-                342.477
-              ]
-            }
+            "text": "Chrome adapter: role names become host fields",
+            "size": 44,
+            "bounds": [
+              60.0,
+              244.93132812500016,
+              1077.890625,
+              307.75250000000005
+            ]
+          },
+          {
+            "text": "canvas",
+            "size": 48,
+            "bounds": [
+              90.0,
+              399.75250000000005,
+              256.28125,
+              468.2846875
+            ]
+          },
+          {
+            "text": "frame",
+            "size": 48,
+            "bounds": [
+              90.0,
+              645.7525,
+              226.5625,
+              714.2846875
+            ]
+          },
+          {
+            "text": "panel",
+            "size": 48,
+            "bounds": [
+              670.0,
+              399.75250000000005,
+              798.46875,
+              468.2846875
+            ]
+          },
+          {
+            "text": "toolbar",
+            "size": 48,
+            "bounds": [
+              670.0,
+              645.7525,
+              835.0,
+              714.2846875
+            ]
+          },
+          {
+            "text": "text",
+            "size": 48,
+            "bounds": [
+              1250.0,
+              399.75250000000005,
+              1338.296875,
+              468.2846875
+            ]
+          },
+          {
+            "text": "tab_text",
+            "size": 48,
+            "bounds": [
+              1250.0,
+              645.7525,
+              1436.53125,
+              714.2846875
+            ]
+          },
+          {
+            "text": "One source vocabulary; host-specific adapters.",
+            "size": 44,
+            "bounds": [
+              60.0,
+              807.7525,
+              1050.234375,
+              870.5736718750001
+            ]
+          },
+          {
+            "text": "Package + manifest",
+            "size": 40,
+            "bounds": [
+              84.0,
+              929.7525,
+              465.703125,
+              986.8626562500001
+            ]
+          },
+          {
+            "text": "Inspectable output",
+            "size": 36,
+            "bounds": [
+              84.0,
+              1001.8626562500001,
+              402.171875,
+              1053.261796875
+            ]
+          },
+          {
+            "text": "Browser preview",
+            "size": 40,
+            "bounds": [
+              674.0,
+              929.7525,
+              998.296875,
+              986.8626562500001
+            ]
+          },
+          {
+            "text": "Independent package\nchoice",
+            "size": 36,
+            "bounds": [
+              674.0,
+              1001.8626562500001,
+              1044.34375,
+              1104.6609375
+            ]
+          },
+          {
+            "text": "Native acceptance",
+            "size": 40,
+            "bounds": [
+              1264.0,
+              929.7525,
+              1623.46875,
+              986.8626562500001
+            ]
+          },
+          {
+            "text": "Separate host checks",
+            "size": 36,
+            "bounds": [
+              1264.0,
+              1001.8626562500001,
+              1634.0,
+              1053.261796875
+            ]
+          },
+          {
+            "text": "Mapping illustration. Current preview and retained downloads keep separate palette histories.",
+            "size": 36,
+            "bounds": [
+              60.0,
+              1202.7525,
+              1652.46875,
+              1254.151640625
+            ]
+          },
+          {
+            "text": "Preview checks and native acceptance remain separate.",
+            "size": 30,
+            "bounds": [
+              60.0,
+              1304.151640625,
+              851.4375,
+              1346.9842578125001
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          462.0,
-          809.625,
-          499.266796875
+        "shapes": [
+          [
+            60,
+            367.75250000000005,
+            540,
+            487.75250000000005
+          ],
+          [
+            60,
+            612.7525,
+            540,
+            732.7525
+          ],
+          [
+            640,
+            367.75250000000005,
+            1120,
+            487.75250000000005
+          ],
+          [
+            640,
+            612.7525,
+            1120,
+            732.7525
+          ],
+          [
+            1220,
+            367.75250000000005,
+            1700,
+            487.75250000000005
+          ],
+          [
+            1220,
+            612.7525,
+            1700,
+            732.7525
+          ],
+          [
+            60,
+            907.7525,
+            560,
+            1157.7525
+          ],
+          [
+            650,
+            907.7525,
+            1150,
+            1157.7525
+          ],
+          [
+            1240,
+            907.7525,
+            1740,
+            1157.7525
+          ]
         ],
         "main_label_pixels": 40,
-        "title_pixels": 50,
-        "footer_pixels": 28,
-        "height_rule": "Fixed 600px canvas with verified bounds"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       },
       "narrow": {
         "width": 960,
-        "height": 1000,
-        "panel_height": 200,
-        "panel_geometry": [
+        "height": 2023,
+        "composition": "semantic role to host-field mappings",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              210,
-              872,
-              370
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                210.0,
-                279.0,
-                273.886
-              ],
-              "body": [
-                88.0,
-                289.886,
-                373.406,
-                353.772
-              ]
-            }
+            "text": "Clair and Obscur",
+            "size": 56,
+            "bounds": [
+              60.0,
+              30.0,
+              516.0,
+              109.95421875000011
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              434,
-              872,
-              594
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                434.0,
-                445.0,
-                497.886
-              ],
-              "body": [
-                88.0,
-                513.886,
-                489.172,
-                577.772
-              ]
-            }
+            "text": "SEMANTIC ROLE TO HOST-FIELD MAPPINGS",
+            "size": 30,
+            "bounds": [
+              60.0,
+              144.9542187500001,
+              714.09375,
+              187.7868359375002
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              658,
-              872,
-              818
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                658.0,
-                323.547,
-                721.886
-              ],
-              "body": [
-                88.0,
-                737.886,
-                521.875,
-                801.772
-              ]
-            }
+            "text": "Chrome adapter: role names become\nhost fields",
+            "size": 44,
+            "bounds": [
+              60.0,
+              247.7868359375002,
+              843.640625,
+              373.4291796875002
+            ]
+          },
+          {
+            "text": "canvas",
+            "size": 48,
+            "bounds": [
+              85.0,
+              463.4291796875002,
+              251.28125,
+              531.9613671875002
+            ]
+          },
+          {
+            "text": "frame",
+            "size": 48,
+            "bounds": [
+              585.0,
+              463.4291796875002,
+              721.5625,
+              531.9613671875002
+            ]
+          },
+          {
+            "text": "panel",
+            "size": 48,
+            "bounds": [
+              85.0,
+              618.4291796875002,
+              213.46875,
+              686.9613671875002
+            ]
+          },
+          {
+            "text": "toolbar",
+            "size": 48,
+            "bounds": [
+              585.0,
+              618.4291796875002,
+              750.0,
+              686.9613671875002
+            ]
+          },
+          {
+            "text": "text",
+            "size": 48,
+            "bounds": [
+              85.0,
+              773.4291796875002,
+              173.296875,
+              841.9613671875002
+            ]
+          },
+          {
+            "text": "tab_text",
+            "size": 48,
+            "bounds": [
+              585.0,
+              773.4291796875002,
+              771.53125,
+              841.9613671875002
+            ]
+          },
+          {
+            "text": "One source vocabulary; host-specific\nadapters.",
+            "size": 44,
+            "bounds": [
+              60.0,
+              953.4291796875002,
+              841.65625,
+              1079.0715234375002
+            ]
+          },
+          {
+            "text": "Package: inspect the generated\nmanifest",
+            "size": 44,
+            "bounds": [
+              60.0,
+              1129.0715234375002,
+              733.859375,
+              1254.7138671875002
+            ]
+          },
+          {
+            "text": "Browser: select a package\nindependently of page appearance",
+            "size": 44,
+            "bounds": [
+              60.0,
+              1294.7138671875002,
+              791.0625,
+              1420.3562109375002
+            ]
+          },
+          {
+            "text": "Native: separate installation and restart\nchecks",
+            "size": 44,
+            "bounds": [
+              60.0,
+              1505.3562109375002,
+              896.046875,
+              1630.9985546875002
+            ]
+          },
+          {
+            "text": "Mapping illustration. Current preview and\nretained downloads keep separate palette\nhistories.",
+            "size": 36,
+            "bounds": [
+              60.0,
+              1675.9985546875002,
+              774.453125,
+              1830.1959765625002
+            ]
+          },
+          {
+            "text": "Preview checks and native acceptance remain\nseparate.",
+            "size": 36,
+            "bounds": [
+              60.0,
+              1880.1959765625002,
+              849.921875,
+              1982.9942578125
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          870.0,
-          849.921875,
-          965.82890625
+        "shapes": [
+          [
+            60,
+            433.4291796875002,
+            390,
+            543.4291796875002
+          ],
+          [
+            560,
+            433.4291796875002,
+            900,
+            543.4291796875002
+          ],
+          [
+            60,
+            588.4291796875002,
+            390,
+            698.4291796875002
+          ],
+          [
+            560,
+            588.4291796875002,
+            900,
+            698.4291796875002
+          ],
+          [
+            60,
+            743.4291796875002,
+            390,
+            853.4291796875002
+          ],
+          [
+            560,
+            743.4291796875002,
+            900,
+            853.4291796875002
+          ]
         ],
         "main_label_pixels": 48,
-        "title_pixels": 52,
-        "footer_pixels": 36,
-        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       }
     },
     "calendar": {
       "wide": {
         "width": 1800,
-        "height": 600,
-        "panel_height": 230,
-        "panel_geometry": [
+        "height": 1360,
+        "composition": "event to JSON and CSV documents",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              220,
-              552,
-              410
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                220.0,
-                247.0,
-                273.238
-              ],
-              "body": [
-                88.0,
-                289.238,
-                399.391,
-                342.477
-              ]
-            }
+            "text": "Calendar Tracker AI",
+            "size": 54,
+            "bounds": [
+              60.0,
+              30.0,
+              580.984375,
+              107.09871093750007
+            ]
           },
           {
-            "padded_panel": [
-              668,
-              220,
-              1132,
-              410
-            ],
-            "labels": {
-              "heading": [
-                668.0,
-                220.0,
-                966.0,
-                273.238
-              ],
-              "body": [
-                668.0,
-                289.238,
-                953.219,
-                342.477
-              ]
-            }
+            "text": "EVENT TO JSON AND CSV DOCUMENTS",
+            "size": 30,
+            "bounds": [
+              60.0,
+              142.09871093750007,
+              654.953125,
+              184.93132812500016
+            ]
           },
           {
-            "padded_panel": [
-              1248,
-              220,
-              1712,
-              410
-            ],
-            "labels": {
-              "heading": [
-                1248.0,
-                220.0,
-                1443.297,
-                273.238
-              ],
-              "body": [
-                1248.0,
-                289.238,
-                1602.391,
-                342.477
-              ]
-            }
+            "text": "Lab review | 2026-11-01 09:00",
+            "size": 46,
+            "bounds": [
+              60.0,
+              244.93132812500016,
+              733.421875,
+              310.6080078125001
+            ]
+          },
+          {
+            "text": "Calendar JSON",
+            "size": 46,
+            "bounds": [
+              88.0,
+              395.6080078125001,
+              430.0,
+              461.2846875
+            ]
+          },
+          {
+            "text": "{\n\"schema_version\": 1,\n\"next_id\": 2,\n\"events\": [{\"id\": 1,\n\"title\": \"Lab review\",\n\"starts_at\":\n\"2026-11-01 09:00\"}]\n}",
+            "size": 36,
+            "bounds": [
+              88.0,
+              480.6080078125001,
+              452.0,
+              891.8011328124999
+            ]
+          },
+          {
+            "text": "Separate CSV export",
+            "size": 46,
+            "bounds": [
+              1008.0,
+              395.6080078125001,
+              1477.34375,
+              461.2846875
+            ]
+          },
+          {
+            "text": "id",
+            "size": 32,
+            "bounds": [
+              1010.0,
+              480.6080078125001,
+              1038.0,
+              526.2961328125001
+            ]
+          },
+          {
+            "text": "1",
+            "size": 34,
+            "bounds": [
+              1010.0,
+              535.6080078125001,
+              1024.0,
+              584.151640625
+            ]
+          },
+          {
+            "text": "title",
+            "size": 32,
+            "bounds": [
+              1100.0,
+              480.6080078125001,
+              1157.0625,
+              526.2961328125001
+            ]
+          },
+          {
+            "text": "Lab review",
+            "size": 34,
+            "bounds": [
+              1100.0,
+              535.6080078125001,
+              1275.171875,
+              584.151640625
+            ]
+          },
+          {
+            "text": "starts_at",
+            "size": 32,
+            "bounds": [
+              1385.0,
+              480.6080078125001,
+              1518.46875,
+              526.2961328125001
+            ]
+          },
+          {
+            "text": "2026-11-01\n09:00",
+            "size": 34,
+            "bounds": [
+              1385.0,
+              535.6080078125001,
+              1564.0,
+              632.6952734375001
+            ]
+          },
+          {
+            "text": "Persistence boundary",
+            "size": 46,
+            "bounds": [
+              60.0,
+              992.6080078125001,
+              546.921875,
+              1058.2846875
+            ]
+          },
+          {
+            "text": "Temporary file -> replace JSON -> adopt in-memory state",
+            "size": 44,
+            "bounds": [
+              60.0,
+              1082.6080078125,
+              1258.0,
+              1145.4291796875
+            ]
+          },
+          {
+            "text": "A failed write keeps the prior state. CSV refuses an existing destination.",
+            "size": 38,
+            "bounds": [
+              60.0,
+              1172.6080078125,
+              1334.25,
+              1226.86265625
+            ]
+          },
+          {
+            "text": "Single-writer coursework app. No online calendar or AI service.",
+            "size": 30,
+            "bounds": [
+              60.0,
+              1276.86265625,
+              951.140625,
+              1319.6952734375002
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          462.0,
-          907.171875,
-          499.266796875
+        "shapes": [
+          [
+            60,
+            370.6080078125001,
+            860,
+            927.6080078125001
+          ],
+          [
+            980,
+            370.6080078125001,
+            1740,
+            660.6080078125001
+          ]
         ],
         "main_label_pixels": 40,
-        "title_pixels": 50,
-        "footer_pixels": 28,
-        "height_rule": "Fixed 600px canvas with verified bounds"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       },
       "narrow": {
         "width": 960,
-        "height": 1000,
-        "panel_height": 200,
-        "panel_geometry": [
+        "height": 1888,
+        "composition": "event to JSON and CSV documents",
+        "labels": [
           {
-            "padded_panel": [
-              88,
-              210,
-              872,
-              370
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                210.0,
-                279.0,
-                273.886
-              ],
-              "body": [
-                88.0,
-                289.886,
-                466.469,
-                353.772
-              ]
-            }
+            "text": "Calendar Tracker AI",
+            "size": 56,
+            "bounds": [
+              60.0,
+              30.0,
+              600.8125,
+              109.95421875000011
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              434,
-              872,
-              594
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                434.0,
-                445.0,
-                497.886
-              ],
-              "body": [
-                88.0,
-                513.886,
-                434.453,
-                577.772
-              ]
-            }
+            "text": "EVENT TO JSON AND CSV DOCUMENTS",
+            "size": 30,
+            "bounds": [
+              60.0,
+              144.9542187500001,
+              654.953125,
+              187.7868359375002
+            ]
           },
           {
-            "padded_panel": [
-              88,
-              658,
-              872,
-              818
-            ],
-            "labels": {
-              "heading": [
-                88.0,
-                658.0,
-                323.547,
-                721.886
-              ],
-              "body": [
-                88.0,
-                737.886,
-                514.469,
-                801.772
-              ]
-            }
+            "text": "Lab review | 2026-11-01 09:00",
+            "size": 46,
+            "bounds": [
+              60.0,
+              247.7868359375002,
+              733.421875,
+              313.4635156250001
+            ]
+          },
+          {
+            "text": "Calendar JSON",
+            "size": 46,
+            "bounds": [
+              88.0,
+              398.4635156250001,
+              430.0,
+              464.14019531250005
+            ]
+          },
+          {
+            "text": "{\n\"schema_version\": 1,\n\"next_id\": 2,\n\"events\": [{\"id\": 1,\n\"title\": \"Lab review\",\n\"starts_at\":\n\"2026-11-01 09:00\"}]\n}",
+            "size": 38,
+            "bounds": [
+              88.0,
+              483.4635156250001,
+              469.0,
+              917.5007031250002
+            ]
+          },
+          {
+            "text": "Separate CSV export",
+            "size": 46,
+            "bounds": [
+              88.0,
+              1038.4635156250001,
+              557.34375,
+              1104.1401953125
+            ]
+          },
+          {
+            "text": "id",
+            "size": 32,
+            "bounds": [
+              90.0,
+              1123.4635156250001,
+              118.0,
+              1169.151640625
+            ]
+          },
+          {
+            "text": "1",
+            "size": 38,
+            "bounds": [
+              90.0,
+              1178.4635156250001,
+              105.0,
+              1232.7181640625001
+            ]
+          },
+          {
+            "text": "title",
+            "size": 32,
+            "bounds": [
+              180.0,
+              1123.4635156250001,
+              237.0625,
+              1169.151640625
+            ]
+          },
+          {
+            "text": "Lab review",
+            "size": 38,
+            "bounds": [
+              180.0,
+              1178.4635156250001,
+              372.953125,
+              1232.7181640625001
+            ]
+          },
+          {
+            "text": "starts_at",
+            "size": 32,
+            "bounds": [
+              465.0,
+              1123.4635156250001,
+              598.46875,
+              1169.151640625
+            ]
+          },
+          {
+            "text": "2026-11-01\n09:00",
+            "size": 38,
+            "bounds": [
+              465.0,
+              1178.4635156250001,
+              662.0,
+              1286.9728125000001
+            ]
+          },
+          {
+            "text": "Persistence boundary",
+            "size": 46,
+            "bounds": [
+              60.0,
+              1368.4635156250001,
+              546.921875,
+              1434.1401953125
+            ]
+          },
+          {
+            "text": "Temporary file -> replace JSON\n-> adopt in-memory state",
+            "size": 46,
+            "bounds": [
+              60.0,
+              1458.4635156250001,
+              745.359375,
+              1589.816875
+            ]
+          },
+          {
+            "text": "A failed write keeps the prior state.",
+            "size": 42,
+            "bounds": [
+              60.0,
+              1634.816875,
+              752.609375,
+              1694.7825390624998
+            ]
+          },
+          {
+            "text": "Single-writer coursework app. No online\ncalendar or AI service.",
+            "size": 36,
+            "bounds": [
+              60.0,
+              1744.7825390624998,
+              749.25,
+              1847.5808203124998
+            ]
           }
         ],
-        "footer_bounds": [
-          60.0,
-          870.0,
-          749.25,
-          965.82890625
+        "shapes": [
+          [
+            60,
+            373.4635156250001,
+            900,
+            953.4635156250001
+          ],
+          [
+            60,
+            1013.4635156250001,
+            900,
+            1303.4635156250001
+          ]
         ],
         "main_label_pixels": 48,
-        "title_pixels": 52,
-        "footer_pixels": 36,
-        "height_rule": "Starts at 1000px and expands from measured footer bounds with 32px padding"
+        "kind": "conceptual mechanism",
+        "new_project_execution": false
       }
     }
   },
@@ -1915,58 +2954,59 @@
     }
   },
   "font_binaries_distributed": false,
-  "svg_labels": "outlined Inter glyphs",
+  "svg_labels": "New compositions: outlined Inter glyphs. Reused figures retain their exact source typography.",
   "renderer_versions": {
     "python": "3.12.14",
     "matplotlib": "3.11.1",
     "fonttools": "4.63.0"
   },
   "inputs_sha256_lf": {
-    "assets/profile-explainers-input.json": "65725b6d57fed054058b9be4fdb1068e0f752a6bed86a846214b900d50adff63",
+    "assets/profile-explainers-input.json": "47d56c78e6e985fc41d566698fbfdc9dd0aca88ecfdad2af1c04e9483cd36523",
     "assets/profile-figure-tokens.json": "6d42e0e87513cbcfc5417b3862e805897c91dda9b3083af946a8e0af823eda87",
-    "scripts/render_project_explainers.py": "cd36a33b7ef5b13658dd3d7ab15b7ad6dec1a3f954e1dfcdebdecd408353337b",
+    "scripts/render_project_explainers.py": "fc251bb957f83a0a4ad778375734b824d28720b1569a7450c56dd6326e108b10",
+    "scripts/profile_mechanisms.py": "1dfe4146e1ccfff72d8ced51fafdd135032f250f13dcbd3e3503ab6ef0538113",
     "requirements-figures.txt": "3bc78c01a3305d85d889b7ae16b9022a5dc38e5fd705ab1aec26b7cd00988024"
   },
   "outputs_sha256": {
-    "assets/explainers/runtime-obscur-wide.png": "6418028854518ad6b0a1cb18749ae8b26e726ec53fdbb6d579bc412f87d91518",
-    "assets/explainers/runtime-obscur-wide.svg": "9c7e12cdf23fe5caae46f192990abb46363cfe53e772bc78dea8a8b89c6f1781",
-    "assets/explainers/runtime-obscur-narrow.png": "652942001a709d835e051813aa77c637acd1cefe5ad643ede1ca923d9904ccdc",
-    "assets/explainers/runtime-obscur-narrow.svg": "4e16b882ccc3aecc868095524d40bbca2c4ce7b46862ea2ec3e19551f16acf49",
-    "assets/explainers/ragged-obscur-wide.png": "296e06b8265624c71c3525914a0c8943b206d209874b6cacbdea1494bafd278f",
-    "assets/explainers/ragged-obscur-wide.svg": "3a9293ddd0657ccc0b08b19cc6455935aff1dfed9024f4ca2f653c936431cab5",
-    "assets/explainers/ragged-obscur-narrow.png": "48cf1b84da6a140069a396e179c4711453d0352c9f6dd35d1e028ed8ead6bfe5",
-    "assets/explainers/ragged-obscur-narrow.svg": "f29be8a15797378fcc0c355de27db518cd748cb70aa1da50b2297e33d24c3aeb",
-    "assets/explainers/mcts-obscur-wide.png": "951135844561ee1259c61f7ad392d42527a43ad4a49779435bfa27e993d53feb",
-    "assets/explainers/mcts-obscur-wide.svg": "6ed89c9332b3dd603c21498aa5d71d71f84e0266f8678b10c8a07db23104dbc8",
-    "assets/explainers/mcts-obscur-narrow.png": "e65a49a260f00bd2b022e540eae339923a26ef3c220c360c559edcb3d0cdd8b4",
-    "assets/explainers/mcts-obscur-narrow.svg": "c15d31140ff92406258c513edead98d1e71d83ad665393d266e4c5d596a5c102",
-    "assets/explainers/solver-obscur-wide.png": "7d4d1470ded56f16ce2f7c184976a710fead88cb6fb7091c537d0713d10161f8",
-    "assets/explainers/solver-obscur-wide.svg": "e5cc732391ade9a5fddcfd75a47926610b0d642000c3df26777d4524a88054a4",
-    "assets/explainers/solver-obscur-narrow.png": "5dd78a520c7776d5171da6c13222b22940007894a379f0e719b59ed3c6a38d77",
-    "assets/explainers/solver-obscur-narrow.svg": "b36df202affbeb583c2b681c4c579f0684216c7602c76d2f60b0127641dbc31a",
-    "assets/explainers/atlas-obscur-wide.png": "f34828240ba5a574d73139ef40493afa6923561aad0be7deae3ac1bbf1ed4f40",
-    "assets/explainers/atlas-obscur-wide.svg": "6341aa9e441a5c4cd3d7f60734812aadeaaee2b586fdda335f597f2f8c59e37b",
-    "assets/explainers/atlas-obscur-narrow.png": "142e2d1f7758a8fe89dd7e18308d8cd08aff3611439155ce698d14570b1904de",
-    "assets/explainers/atlas-obscur-narrow.svg": "06e89aba8822f4f7519f1e28eedd493c6df4afd755379e74afe60a825f5c9c8c",
-    "assets/explainers/shipment-obscur-wide.png": "a7948b62b23cfbdf5cbf53c4fb078ee8af34b15240f8e9b4f5ca1ace18c0bb8a",
-    "assets/explainers/shipment-obscur-wide.svg": "25227a0ec461310b0f42eae4543cbb0ccf244074a3c1f1430d4e324b015ea432",
-    "assets/explainers/shipment-obscur-narrow.png": "90d23d484abcd4adf1641b597f3c75566be726acfd2b4d06c9b51f3a80285464",
-    "assets/explainers/shipment-obscur-narrow.svg": "a247050fa7f1ff607ab64854a1ab1caeedf7a832aa508f482531e457f51d2168",
-    "assets/explainers/freight-obscur-wide.png": "23e14c23a4a0371a6be9732c761facb95d1111390b2356e08e7c9bb83a23b3f2",
-    "assets/explainers/freight-obscur-wide.svg": "4e84b6bf35843b4788d5650725adf258e68a92513eeec5e11dbd874da6252544",
-    "assets/explainers/freight-obscur-narrow.png": "b81939615a85be4d6fc9a0edafebfcdf12da8a9c3f43e11cce99fdfd8896196f",
-    "assets/explainers/freight-obscur-narrow.svg": "1f7438c951c194c9ecda04a88d84231f23ff494f3532a8ad8b406021622b1a4e",
-    "assets/explainers/adaptive-obscur-wide.png": "166ae334f9ec476e72acd8e49e2fb2dc63170d1ca67d45124844a55ef20fe418",
-    "assets/explainers/adaptive-obscur-wide.svg": "df8580e175dd53edd8e79880d2d9a148186b5ff26bea7aeef971e2bb045203e7",
-    "assets/explainers/adaptive-obscur-narrow.png": "bcc36ef603bfcfd2219edbc0dc9f2969876d82a114edefdcdd0aad0c2d6fd48c",
-    "assets/explainers/adaptive-obscur-narrow.svg": "f788c60e21fe0ec64ec7c87df6beca3a492271694ad23638bc2d4c6e08f46d5a",
-    "assets/explainers/themes-obscur-wide.png": "51cc94bc3059f63f333c5178a6e8fc68b0dcecb0649f783a67b82252655d7df6",
-    "assets/explainers/themes-obscur-wide.svg": "234b8767ea4dad056cbd12d2e7b062450bb92b4122763fc270a681fc268a398e",
-    "assets/explainers/themes-obscur-narrow.png": "143ad0d2e9300535af332dc035b24e7f99bff28de1f3be3f646b010bd282a246",
-    "assets/explainers/themes-obscur-narrow.svg": "906cffd6c2f306006542977615c3496c3dc87356d3427a43a8dad0a4f45be015",
-    "assets/explainers/calendar-obscur-wide.png": "4e0b0a045db1bf7e630b346e7dd457cd636f69616c25befebdd6302f4d79a330",
-    "assets/explainers/calendar-obscur-wide.svg": "0c9682f507b723bbfb5c255bfad1a7f40ef4838be8a871b93407db31c3a284e2",
-    "assets/explainers/calendar-obscur-narrow.png": "5fe2026e69c9b3f7aa00105fb6f2a3e95794da9b237ec4f4cfe4634444e5482a",
-    "assets/explainers/calendar-obscur-narrow.svg": "42d6cd4c280f9d39a4d979317b9deffa1ec01f6ac942ccd08bd9c7b7a4bee0bb"
+    "assets/explainers/runtime-obscur-wide.png": "beecfe5bf341b489596c430da66bf8524c0ae2daeb8ecc5e2494a51ebe0548c1",
+    "assets/explainers/runtime-obscur-wide.svg": "16d0e013a6d995bb76aadc8b1c5e291f82e585d6d7f0350053eadd7d8412e5b5",
+    "assets/explainers/runtime-obscur-narrow.png": "a71c670296ae77951a8f953dd8f9e0fca32ba71ecf4c03887fedcbcc52459876",
+    "assets/explainers/runtime-obscur-narrow.svg": "b4c898dc19c1b94329b754b24c536646a00bf4224cf45036786a9c14cc5022aa",
+    "assets/explainers/ragged-obscur-wide.png": "108403fa1d1eef675d70ceb583d33c55d52fdbb26e787da1b1ba3e9038e2f229",
+    "assets/explainers/ragged-obscur-wide.svg": "8831e61ed7075b2aeceac58a4b000e5e617a55c619bace5daf2aac1d33a81cdd",
+    "assets/explainers/ragged-obscur-narrow.png": "9cf0b7b0f0ba676fc2331f0d4af531d6d9b22038be7b19550cff7e2a6eb941b1",
+    "assets/explainers/ragged-obscur-narrow.svg": "22c8410d9417cf123d4f0b0fabf1d4560103006bb246e2c4a8f39223219ee4a0",
+    "assets/explainers/mcts-obscur-wide.png": "92d8d1b625ef19955a971eef9a3279c6d1b6d61ccdec4e2fca3a6f0ba517a79b",
+    "assets/explainers/mcts-obscur-wide.svg": "5d58c87608a8b4415d39698cdf81e2b18f57318db47b73cf13ae62c0d62fbda3",
+    "assets/explainers/mcts-obscur-narrow.png": "9c1ecb602abb369d48c4823b86c275764ba46fe59e96ed81778d08b3d829f732",
+    "assets/explainers/mcts-obscur-narrow.svg": "903d528061098e1223502a56eb0509152ac435f195f7af8666f30c5f247f00c4",
+    "assets/explainers/solver-obscur-wide.png": "a53111c32b57e1961576cf0799ba298f7b23723186feea0870a85dd8efa8a503",
+    "assets/explainers/solver-obscur-wide.svg": "1dc0445b52208ec81fdc330a50cd0dcf3489a50013380da7b6a5c8866ac19461",
+    "assets/explainers/solver-obscur-narrow.png": "cdb1aacf8b3bb2b84cda0a058f34344bed6a449a2f3992168e38c34032434e5a",
+    "assets/explainers/solver-obscur-narrow.svg": "538b3bfc37051607f89d36488ca33e677b5d5753c90e2d5f552c5613db8d65d4",
+    "assets/explainers/atlas-obscur-wide.png": "c764746fc7eb72348ede4ae99872666c0c444657430ecd5506eedfec85a830ae",
+    "assets/explainers/atlas-obscur-wide.svg": "c05009335a1aea44e9e44997048062d2b16fa0ae07d42eec77974b5a218100ac",
+    "assets/explainers/atlas-obscur-narrow.png": "68751f3e637763a11d66fa1868c13f2bdac4714a1a8f267fa2733d30383b5ee5",
+    "assets/explainers/atlas-obscur-narrow.svg": "11c091669a08f358d682f47dd42d45835b6178dfcddbc2cfc40ad5eebc7e9db9",
+    "assets/explainers/shipment-obscur-wide.png": "6f1f9e3f5ba3eebea57fe33cbf7fd667b903b4918eb240324ee32deb1e44ca01",
+    "assets/explainers/shipment-obscur-wide.svg": "af865e7753c82183008c60924fe74a2b38071369c601096c44e55dc4de61b972",
+    "assets/explainers/shipment-obscur-narrow.png": "3aa58115b034e69124597caa1904829887df3351d6813ab29f1dcea340612b5e",
+    "assets/explainers/shipment-obscur-narrow.svg": "f3d8ec1c4a637ae5a23f1622cf17bd496e063add3f329540a9fd1627115e2887",
+    "assets/explainers/freight-obscur-wide.png": "9bb19c8ac5b3517dc7bb7d48ebc6959482d057bb6ccec2a5d0d8e43c473238be",
+    "assets/explainers/freight-obscur-wide.svg": "fcbfb285d54e452e7d41b8d4c10a39374dd97f9f9f1071fe8bf0a1af83f4c4f5",
+    "assets/explainers/freight-obscur-narrow.png": "549814372e328363ab6e539cb2972e266d1aea75a35f9e41482f9c7d91489a27",
+    "assets/explainers/freight-obscur-narrow.svg": "c9dffaa95a84e3b1acfec1ef078bd3217e0b41fe06f8b3acff525e35981b07f3",
+    "assets/explainers/adaptive-obscur-wide.png": "a18c4cc07deb73a8e9328126a5ff69a157d3fc868e889d55838884832365bc9d",
+    "assets/explainers/adaptive-obscur-wide.svg": "7598ab60c38c6fb9dfc82fd2c6cee97743e7ab0eb1427d4a6b6381ad266c9dcf",
+    "assets/explainers/adaptive-obscur-narrow.png": "78910ecebdb239d4081cb1b8a9e22fe016c4c942a4cc9adaa207177ee329b5a5",
+    "assets/explainers/adaptive-obscur-narrow.svg": "2dda3c4aea7faa24c7303133d2ec971056f668e2c0ec82967df178a864a5d010",
+    "assets/explainers/themes-obscur-wide.png": "07553a01c9e2a253b1fae08ce29b257f1b1da760c78308335c0e86a821a3dad7",
+    "assets/explainers/themes-obscur-wide.svg": "3edf00982b8a0458dc6c12ea92a45435b8fa86f161b623a7a747820bc23202a1",
+    "assets/explainers/themes-obscur-narrow.png": "5ed63fa517eae17b22eff0be4b332ed744cad4e4caad7bb8c34c303c3d3c12b2",
+    "assets/explainers/themes-obscur-narrow.svg": "76139e9a3b1644f33c2368343fbc1611d80163e48c616844530445d2b85a59c2",
+    "assets/explainers/calendar-obscur-wide.png": "08cf3e8c3e2d7bdd5d963fb257aa1d5e76864c620db4c66167fc4bc3981aa04a",
+    "assets/explainers/calendar-obscur-wide.svg": "2b460ea2b9d49ac110e9c14f727c396af3f4c09bebf08fd85af617c47ddfe056",
+    "assets/explainers/calendar-obscur-narrow.png": "ab5108e5e5cf3d7256cb6d0913eaa1e250517c8887662b4551fc90cc3ea1b1d6",
+    "assets/explainers/calendar-obscur-narrow.svg": "059f7f24dec999484b4f932f9f3bf438c4965103a26af2b64460d7e514d4689b"
   }
 }

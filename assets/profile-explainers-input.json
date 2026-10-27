@@ -1,116 +1,288 @@
 {
   "schema_version": 1,
-  "kind": "Compact conceptual mechanisms derived from retained public project sources, not new trials",
+  "kind": "Project-specific conceptual diagrams and unchanged retained figure editions. No new underlying project execution.",
   "projects": [
     {
       "id": "runtime",
       "title": "Heterogeneous Batch Runtime",
       "repository": "heterogeneous-batch-runtime",
       "source_revision": "e84f4acdca294309f3e36c586a3872e85558f8de",
-      "source_paths": ["README.md", "docs/contracts.md", "src/runtime.cpp"],
-      "cards": ["Values + mask", "Own input + output", "7.0 after return"],
+      "source_paths": [
+        "README.md",
+        "docs/contracts.md",
+        "src/runtime.cpp"
+      ],
       "footer": "Cancellation intent does not establish physical completion.",
       "essential_text": "For values [2, -3, 5] and mask [1, 0, 1], the ordinary uncancelled sum is 7.0. Running storage stays owned until physical return.",
-      "page": "https://t92t1914.github.io/heterogeneous-batch-runtime/"
+      "page": "https://t92t1914.github.io/heterogeneous-batch-runtime/",
+      "composition": "mask cells and storage lifetime",
+      "renderer": "project-specific",
+      "figure_class": "conceptual mechanism",
+      "alt": "Masked cells omit -3 and sum 2 plus 5 to 7.0. A separate ownership rail extends through cancellation intent until physical return."
     },
     {
       "id": "ragged",
       "title": "Ragged Pooling for PyTorch",
       "repository": "ragged-pool",
       "source_revision": "ddf8002cfd351723ff7a9e6c7471a966b8fe33db",
-      "source_paths": ["README.md", "docs/contract.md"],
-      "cards": ["Unequal groups", "Softmax weights", "One vector per group"],
+      "source_paths": [
+        "README.md",
+        "docs/contract.md"
+      ],
       "footer": "First-order training illustration. Empty groups return zeros.",
       "essential_text": "Weights [0.25, 0.75] combine [2, 0] and [0, 4] into [0.5, 3]. Empty groups return zero vectors. This conceptual training route does not describe every qualified derivative composition.",
-      "page": "https://t92t1914.github.io/ragged-pool/"
+      "page": "https://t92t1914.github.io/ragged-pool/",
+      "composition": "grouped vectors and gradient return",
+      "renderer": "reuse",
+      "figure_class": "conceptual mechanism",
+      "reused_artifacts": {
+        "wide.png": {
+          "repository": "ragged-pool",
+          "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+          "path": "docs/ragged-pool-obscur.png",
+          "sha256": "108403fa1d1eef675d70ceb583d33c55d52fdbb26e787da1b1ba3e9038e2f229"
+        },
+        "wide.svg": {
+          "repository": "ragged-pool",
+          "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+          "path": "docs/ragged-pool-obscur.svg",
+          "sha256": "8831e61ed7075b2aeceac58a4b000e5e617a55c619bace5daf2aac1d33a81cdd"
+        },
+        "narrow.png": {
+          "repository": "ragged-pool",
+          "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+          "path": "docs/ragged-pool-obscur-narrow.png",
+          "sha256": "9cf0b7b0f0ba676fc2331f0d4af531d6d9b22038be7b19550cff7e2a6eb941b1"
+        },
+        "narrow.svg": {
+          "repository": "ragged-pool",
+          "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+          "path": "docs/ragged-pool-obscur-narrow.svg",
+          "sha256": "22c8410d9417cf123d4f0b0fabf1d4560103006bb246e2c4a8f39223219ee4a0"
+        }
+      },
+      "alt": "Unequal groups feed softmax-weighted vector summaries. An empty group returns zeros, and the conceptual first-order gradient arrow returns to values and scores."
     },
     {
       "id": "mcts",
       "title": "MCTS Combat Engine",
       "repository": "mcts-combat-engine",
       "source_revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
-      "source_paths": ["docs/visual-example.md", "docs/visual-example-data.json"],
-      "cards": ["Saved model state", "10,000 simulations", "Spark: reward 0.532"],
+      "source_paths": [
+        "docs/visual-example.md",
+        "docs/visual-example-data.json"
+      ],
       "footer": "Retained shaped reward, not win probability or a new search.",
       "essential_text": "The retained decision ranks Spark at mean shaped reward 0.532 after 10,000 simulations. This is one modeled decision, not an encounter win rate.",
-      "page": "https://t92t1914.github.io/mcts-combat-engine/"
+      "page": "https://t92t1914.github.io/mcts-combat-engine/",
+      "composition": "reward bars and separate visits",
+      "renderer": "reuse",
+      "figure_class": "retained numerical figure",
+      "reused_artifacts": {
+        "wide.png": {
+          "repository": "mcts-combat-engine",
+          "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+          "path": "docs/mcts-decision-obscur-wide.png",
+          "sha256": "92d8d1b625ef19955a971eef9a3279c6d1b6d61ccdec4e2fca3a6f0ba517a79b"
+        },
+        "wide.svg": {
+          "repository": "mcts-combat-engine",
+          "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+          "path": "docs/mcts-decision-obscur-wide.svg",
+          "sha256": "5d58c87608a8b4415d39698cdf81e2b18f57318db47b73cf13ae62c0d62fbda3"
+        },
+        "narrow.png": {
+          "repository": "mcts-combat-engine",
+          "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+          "path": "docs/mcts-decision-obscur.png",
+          "sha256": "9c1ecb602abb369d48c4823b86c275764ba46fe59e96ed81778d08b3d829f732"
+        },
+        "narrow.svg": {
+          "repository": "mcts-combat-engine",
+          "revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+          "path": "docs/mcts-decision-obscur.svg",
+          "sha256": "903d528061098e1223502a56eb0509152ac435f195f7af8666f30c5f247f00c4"
+        }
+      },
+      "alt": "Retained action-reward bars and separate visit counts for one 10000-simulation modeled decision. Spark has mean shaped reward 0.532, not a win probability."
     },
     {
       "id": "solver",
       "title": "Exact Blackjack Solver",
       "repository": "exact-blackjack-solver",
       "source_revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
-      "source_paths": ["docs/visual-example.md", "docs/visual-example-data.json"],
-      "cards": ["Hard 16 vs ten", "Remaining cards", "Hit / stand"],
+      "source_paths": [
+        "docs/visual-example.md",
+        "docs/visual-example-data.json"
+      ],
       "footer": "Exact hit/stand examples. The original split route is approximate.",
       "essential_text": "In the retained six-deck examples, hit 10 + 6 and stand on 8 + 5 + 3 against a dealer ten. Both expected returns remain negative. These exact hit/stand examples are separate from the original approximate split route.",
-      "page": "https://t92t1914.github.io/exact-blackjack-solver/#model-route"
+      "page": "https://t92t1914.github.io/exact-blackjack-solver/#model-route",
+      "composition": "paired composition and expected-return comparison",
+      "renderer": "reuse",
+      "figure_class": "retained numerical figure",
+      "reused_artifacts": {
+        "wide.png": {
+          "repository": "exact-blackjack-solver",
+          "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+          "path": "docs/blackjack-composition-obscur-wide.png",
+          "sha256": "a53111c32b57e1961576cf0799ba298f7b23723186feea0870a85dd8efa8a503"
+        },
+        "wide.svg": {
+          "repository": "exact-blackjack-solver",
+          "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+          "path": "docs/blackjack-composition-obscur-wide.svg",
+          "sha256": "1dc0445b52208ec81fdc330a50cd0dcf3489a50013380da7b6a5c8866ac19461"
+        },
+        "narrow.png": {
+          "repository": "exact-blackjack-solver",
+          "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+          "path": "docs/blackjack-composition-obscur.png",
+          "sha256": "cdb1aacf8b3bb2b84cda0a058f34344bed6a449a2f3992168e38c34032434e5a"
+        },
+        "narrow.svg": {
+          "repository": "exact-blackjack-solver",
+          "revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+          "path": "docs/blackjack-composition-obscur.svg",
+          "sha256": "538b3bfc37051607f89d36488ca33e677b5d5753c90e2d5f552c5613db8d65d4"
+        }
+      },
+      "alt": "Two hard-16 hands against a dealer ten have different remaining-card compositions and exact hit/stand expected returns. Hit 10 plus 6 and stand on 8 plus 5 plus 3; both returns remain negative."
     },
     {
       "id": "atlas",
       "title": "Tornado Atlas",
       "repository": "tornado-atlas",
       "source_revision": "24baed6b9160932c654c4f99af1c39081494acf9",
-      "source_paths": ["README.md", "docs/archive-dossiers.md", "docs/reconstruction-plan.md"],
-      "cards": ["Credited observation", "Time + viewpoint", "Evidence + replay"],
+      "source_paths": [
+        "README.md",
+        "docs/archive-dossiers.md",
+        "docs/reconstruction-plan.md"
+      ],
       "footer": "Unknowns stay explicit. Observation and illustration stay separate.",
       "essential_text": "A credited source carries its clock, viewpoint and uncertainty into the evidence route. A source clock alone does not register historical appearance, and an illustrative model is labeled separately.",
-      "page": "https://t92t1914.github.io/tornado-atlas/"
+      "page": "https://t92t1914.github.io/tornado-atlas/",
+      "composition": "evidence passport and clock boundary",
+      "renderer": "project-specific",
+      "figure_class": "conceptual mechanism",
+      "alt": "A source record links to an observation passport with independent intake, assertion, time, spatial, availability and rights fields. Clock roles and procedural illustration remain separate from documentary evidence."
     },
     {
       "id": "shipment",
       "title": "Shipment Exception Workspace",
       "repository": "shipment-exception-workspace",
       "source_revision": "67d10a531371b1f37b8dfbb7d4ed4fa5bdd3093c",
-      "source_paths": ["README.md", "docs/operator-walkthrough.md", "docs/DESIGN.md"],
-      "cards": ["Casey, expect v2", "Commit v3 + receipt", "Retry same intent"],
+      "source_paths": [
+        "README.md",
+        "docs/operator-walkthrough.md",
+        "docs/DESIGN.md"
+      ],
       "footer": "A lost reply follows the commit. Later resolution reaches v4.",
       "essential_text": "After version 2, Casey assignment commits version 3 with its history event and saved response. A still-authorized retry of the original key and body recovers that response without another event. A later resolution reaches version 4. Current server authorization remains authoritative.",
-      "page": "https://t92t1914.github.io/shipment-exception-workspace/"
+      "page": "https://t92t1914.github.io/shipment-exception-workspace/",
+      "composition": "atomic transaction and lost-reply sequence",
+      "renderer": "project-specific",
+      "figure_class": "conceptual mechanism",
+      "alt": "Operator and server sequence: an expected-version-2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit; an authorized same-key/body retry returns the historical response without another event."
     },
     {
       "id": "freight",
       "title": "Freight Forecast",
       "repository": "freight-forecast",
       "source_revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
-      "source_paths": ["README.md", "docs/visual-example.md"],
-      "cards": ["Past months only", "Chronological test", "Monthly forecast"],
+      "source_paths": [
+        "README.md",
+        "docs/visual-example.md"
+      ],
       "footer": "On the separate BTS index, carrying the last observation won.",
       "essential_text": "Earlier observations supply the forecast features, and later months test the predictions. The synthetic series and BTS index remain separate. On BTS, carrying forward the last observation beat the learned model.",
-      "page": "https://t92t1914.github.io/freight-forecast/"
+      "page": "https://t92t1914.github.io/freight-forecast/",
+      "composition": "held-out curves and baseline comparison",
+      "renderer": "reuse",
+      "figure_class": "retained numerical figure",
+      "reused_artifacts": {
+        "wide.png": {
+          "repository": "freight-forecast",
+          "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+          "path": "docs/freight-forecast-obscur-wide.png",
+          "sha256": "9bb19c8ac5b3517dc7bb7d48ebc6959482d057bb6ccec2a5d0d8e43c473238be"
+        },
+        "wide.svg": {
+          "repository": "freight-forecast",
+          "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+          "path": "docs/freight-forecast-obscur-wide.svg",
+          "sha256": "fcbfb285d54e452e7d41b8d4c10a39374dd97f9f9f1071fe8bf0a1af83f4c4f5"
+        },
+        "narrow.png": {
+          "repository": "freight-forecast",
+          "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+          "path": "docs/freight-forecast-obscur.png",
+          "sha256": "549814372e328363ab6e539cb2972e266d1aea75a35f9e41482f9c7d91489a27"
+        },
+        "narrow.svg": {
+          "repository": "freight-forecast",
+          "revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+          "path": "docs/freight-forecast-obscur.svg",
+          "sha256": "c9dffaa95a84e3b1acfec1ef078bd3217e0b41fe06f8b3acff525e35981b07f3"
+        }
+      },
+      "alt": "Retained 24-month held-out synthetic time series compares observations, model and seasonal baseline with a separate mean-absolute-error comparison. The BTS result is separate."
     },
     {
       "id": "adaptive",
       "title": "Adaptive Timing Engine",
       "repository": "adaptive-timing-engine",
       "source_revision": "0e63441b6ce772244c507054bf9d10539ba4475a",
-      "source_paths": ["docs/visual-example.md", "docs/visual-example-data.json", "docs/revision-file.md"],
-      "cards": ["Newer revision", "Older work finishes", "Adopt current only"],
+      "source_paths": [
+        "docs/visual-example.md",
+        "docs/visual-example-data.json",
+        "docs/revision-file.md"
+      ],
       "footer": "Physical completion and adoption of the current answer are separate.",
       "essential_text": "A newer request can replace waiting work without claiming that an older running calculation has stopped. The retained worker example computes payloads 0 and 100 and rejects the obsolete result, retaining payload 100 at revision 101.",
-      "page": "https://t92t1914.github.io/adaptive-timing-engine/"
+      "page": "https://t92t1914.github.io/adaptive-timing-engine/",
+      "composition": "revision lanes and adoption gate",
+      "renderer": "project-specific",
+      "figure_class": "conceptual mechanism",
+      "alt": "Retained worker example separates incoming requests, physical computation and answer adoption. Payload 0 returns stale; latest payload 100 is computed and adopted at revision 101. There are two computations and 99 waiting replacements."
     },
     {
       "id": "themes",
       "title": "Clair and Obscur",
       "repository": "clair-obscur-themes",
       "source_revision": "bfe50ba72860da600cd3923a9a454c79c158ba37",
-      "source_paths": ["README.md", "docs/acceptance.md", "tokens.json", "tokens-monochrome.json"],
-      "cards": ["Shared roles", "Platform mapping", "Preview + package"],
+      "source_paths": [
+        "README.md",
+        "docs/acceptance.md",
+        "tokens.json",
+        "tokens-monochrome.json",
+        "themeforge/chrome.py"
+      ],
       "footer": "Preview checks and native acceptance remain separate.",
       "essential_text": "Named surface, text and focus roles map to each platform's package. Preview behavior does not establish native installation, restart persistence or complete host compatibility.",
-      "page": "https://t92t1914.github.io/clair-obscur-themes/"
+      "page": "https://t92t1914.github.io/clair-obscur-themes/",
+      "composition": "semantic role to host-field mappings",
+      "renderer": "project-specific",
+      "figure_class": "conceptual mechanism",
+      "alt": "Chrome adapter mapping shows canvas to frame, panel to toolbar and text to tab_text, followed by distinct package, browser-preview and native-acceptance boundaries."
     },
     {
       "id": "calendar",
       "title": "Calendar Tracker AI",
       "repository": "calendar-tracker-ai",
       "source_revision": "8a42a32aa73dcdc9582773c960da5b43297dd3ea",
-      "source_paths": ["README.md", "calendar_tracker.py", "test_calendar_tracker.py"],
-      "cards": ["Title + local time", "Validate + save", "Local JSON + CSV"],
+      "source_paths": [
+        "README.md",
+        "calendar_tracker.py",
+        "test_calendar_tracker.py"
+      ],
       "footer": "Single-writer coursework app. No online calendar or AI service.",
       "essential_text": "The local text-menu application validates an event, saves schema-1 JSON and exports a new CSV. It does not connect to an online calendar, handle time zones or supply an AI service.",
-      "page": "https://t92t1914.github.io/calendar-tracker-ai/"
+      "page": "https://t92t1914.github.io/calendar-tracker-ai/",
+      "composition": "event to JSON and CSV documents",
+      "renderer": "project-specific",
+      "figure_class": "conceptual mechanism",
+      "alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before in-memory adoption; failed writes retain the prior state."
     }
   ]
 }
