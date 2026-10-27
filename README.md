@@ -48,9 +48,9 @@ reduced complete request cost for two and eight images within each provider,
 with CPU still faster in every tested batch. GPU sanitizer and
 hardware counter acceptance remain open. HIP and SYCL are not implemented.
 
-[Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) Â·
-[Read the CPU comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-results.md) Â·
-[Read the CUDA followup](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-cuda-results.md) Â·
+[Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) ·
+[Read the CPU comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-results.md) ·
+[Read the CUDA followup](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-cuda-results.md) ·
 [Inspect the backend contract](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/backend-discovery.md)
 
 <picture>
@@ -61,8 +61,8 @@ hardware counter acceptance remain open. HIP and SYCL are not implemented.
 For values `[2, -3, 5]` and mask `[1, 0, 1]`, the ordinary uncancelled sum is
 `7.0`. Running storage stays owned until physical return. This conceptual
 illustration adds no timing or CPU/GPU result.
-[Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) Â·
-[Source and limits](PROFILE_EXPLAINERS.md) Â·
+[Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) ·
+[Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/runtime-obscur-wide.png)
 
 ### Ragged Pooling for PyTorch
@@ -117,10 +117,10 @@ The [Linux CPU training examples](https://github.com/T92T1914/ragged-pool/blob/1
 In this conceptual example, weights `[0.25, 0.75]` combine `[2, 0]` and `[0, 4]`
 into `[0.5, 3]`. Empty groups return zeros. The illustration explains the first-order
 training mechanism, while the supported derivative boundaries remain above.
-[Explore the project](https://t92t1914.github.io/ragged-pool/) Â·
-[Source and limits](PROFILE_EXPLAINERS.md) Â·
-[Full-size infographic](assets/explainers/ragged-obscur-wide.png) Â·
-[Detailed Obscur diagram](https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur.png) Â·
+[Explore the project](https://t92t1914.github.io/ragged-pool/) ·
+[Source and limits](PROFILE_EXPLAINERS.md) ·
+[Full-size infographic](assets/explainers/ragged-obscur-wide.png) ·
+[Detailed Obscur diagram](https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur.png) ·
 [Clair alternate](https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-clair.png)
 
 ### MCTS Combat Engine
@@ -150,8 +150,8 @@ A separate [installed Linux consumer](https://github.com/T92T1914/mcts-combat-en
 records and replays through an existing local Docker daemon, with resource
 accounting limited to its owned container and descendants.
 
-[Explore the decisions](https://t92t1914.github.io/mcts-combat-engine/) Â·
-[Read the encounter finding](https://github.com/T92T1914/mcts-combat-engine/blob/2a8d2ac354415d765542d61b195dd01baf9c475c/docs/encounter-outcomes.md) Â·
+[Explore the decisions](https://t92t1914.github.io/mcts-combat-engine/) ·
+[Read the encounter finding](https://github.com/T92T1914/mcts-combat-engine/blob/2a8d2ac354415d765542d61b195dd01baf9c475c/docs/encounter-outcomes.md) ·
 [Use the managed consumer](https://github.com/T92T1914/mcts-combat-engine/blob/2a8d2ac354415d765542d61b195dd01baf9c475c/docs/managed-encounters.md)
 
 <picture>
@@ -162,8 +162,8 @@ accounting limited to its owned container and descendants.
 The retained decision ranks Spark at mean shaped reward `0.532` after `10,000`
 simulations. This compact explanation reuses that one modeled decision. It adds no
 search run and does not describe an encounter win rate.
-[Explore the project](https://t92t1914.github.io/mcts-combat-engine/) Â·
-[Source and limits](PROFILE_EXPLAINERS.md) Â·
+[Explore the project](https://t92t1914.github.io/mcts-combat-engine/) ·
+[Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/mcts-obscur-wide.png)
 
 <details>
@@ -220,8 +220,8 @@ Installed calculation and replay commands preserve reusable records. The browser
 inspector reads saved results without calculation or upload. Same engine replay
 and independent mathematical checks remain different kinds of evidence.
 
-[Explore the models](https://t92t1914.github.io/exact-blackjack-solver/#model-route) Â·
-[Calculate and replay the H17 request](https://github.com/T92T1914/exact-blackjack-solver#a-complete-h17-ace-calculation) Â·
+[Explore the models](https://t92t1914.github.io/exact-blackjack-solver/#model-route) ·
+[Calculate and replay the H17 request](https://github.com/T92T1914/exact-blackjack-solver#a-complete-h17-ace-calculation) ·
 [Read the completion evidence](https://github.com/T92T1914/exact-blackjack-solver/blob/259aa8aedf84510887d8dbf3e5bf928c1447458a/docs/ace-terminal-reuse.md)
 
 <picture>
@@ -232,8 +232,8 @@ and independent mathematical checks remain different kinds of evidence.
 The retained six-deck examples hit `10 + 6` and stand on `8 + 5 + 3` against a
 dealer ten. Both expected returns remain negative. These exact hit/stand examples
 are separate from the original approximate split route.
-[Explore the project](https://t92t1914.github.io/exact-blackjack-solver/#model-route) Â·
-[Source and limits](PROFILE_EXPLAINERS.md) Â·
+[Explore the project](https://t92t1914.github.io/exact-blackjack-solver/#model-route) ·
+[Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/solver-obscur-wide.png)
 
 <details>
@@ -272,8 +272,8 @@ The local research desk exports reviewed publication candidates without private
 notes. The museum is usable now. Registered changing appearance and calibrated
 historical damage remain unfinished research goals.
 
-[Visit the museum](https://t92t1914.github.io/tornado-atlas/) Â·
-[Explore the record collection](https://t92t1914.github.io/tornado-atlas/atlas.html) Â·
+[Visit the museum](https://t92t1914.github.io/tornado-atlas/) ·
+[Explore the record collection](https://t92t1914.github.io/tornado-atlas/atlas.html) ·
 [Inspect the evidence dossiers](https://t92t1914.github.io/tornado-atlas/dossier.html)
 
 <picture>
@@ -284,8 +284,8 @@ historical damage remain unfinished research goals.
 A source's clock and viewpoint inform what can be said about a historical event.
 A clock claim alone does not register changing appearance. Unknowns remain
 explicit, and an illustrative model is labeled separately.
-[Explore the project](https://t92t1914.github.io/tornado-atlas/) Â·
-[Source and limits](PROFILE_EXPLAINERS.md) Â·
+[Explore the project](https://t92t1914.github.io/tornado-atlas/) ·
+[Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/atlas-obscur-wide.png)
 
 ## Supporting projects
@@ -336,8 +336,8 @@ Casey assignment commits version 3, its history event and saved response togethe
 When that reply is lost, a still-authorized retry with the original key and body
 recovers the saved response without another event. Later resolution reaches
 version 4. This conceptual explanation follows the installed walkthrough.
-[Explore the project](https://t92t1914.github.io/shipment-exception-workspace/) Â·
-[Source and limits](PROFILE_EXPLAINERS.md) Â·
+[Explore the project](https://t92t1914.github.io/shipment-exception-workspace/) ·
+[Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/shipment-obscur-wide.png)
 
 ### Freight Forecast
@@ -359,8 +359,8 @@ public example contains no real issued forecast.
 Earlier observations supply the features and later months test the predictions.
 This conceptual route keeps the synthetic series separate from the BTS index,
 where the simpler last-observation baseline won.
-[Explore the project](https://t92t1914.github.io/freight-forecast/) Â·
-[Source and limits](PROFILE_EXPLAINERS.md) Â·
+[Explore the project](https://t92t1914.github.io/freight-forecast/) ·
+[Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/freight-obscur-wide.png)
 
 <details>
@@ -397,8 +397,8 @@ human behavior.
 A newer request can replace waiting work without claiming that an older running
 calculation has stopped. The retained worker example computes payloads `0` and
 `100`, rejects the obsolete result and retains payload `100` at revision `101`.
-[Explore the project](https://t92t1914.github.io/adaptive-timing-engine/) Â·
-[Source and limits](PROFILE_EXPLAINERS.md) Â·
+[Explore the project](https://t92t1914.github.io/adaptive-timing-engine/) ·
+[Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/adaptive-obscur-wide.png)
 
 <details>
@@ -437,8 +437,8 @@ separate checks.
 Named surface, text and focus roles map to each platform's package. A working
 preview does not establish native installation, restart persistence or complete
 host compatibility.
-[Explore the project](https://t92t1914.github.io/clair-obscur-themes/) Â·
-[Source and limits](PROFILE_EXPLAINERS.md) Â·
+[Explore the project](https://t92t1914.github.io/clair-obscur-themes/) ·
+[Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/themes-obscur-wide.png)
 
 ### Calendar Tracker AI
@@ -456,8 +456,8 @@ time-zone handling or an AI service.
 
 A validated event goes into schema-1 JSON, and export writes a separate new CSV.
 The repository includes the local setup and version history.
-[Explore the project](https://t92t1914.github.io/calendar-tracker-ai/) Â·
-[Source and limits](PROFILE_EXPLAINERS.md) Â·
+[Explore the project](https://t92t1914.github.io/calendar-tracker-ai/) ·
+[Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full-size infographic](assets/explainers/calendar-obscur-wide.png)
 
 ## How I approach the work
