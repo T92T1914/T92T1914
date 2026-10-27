@@ -48,21 +48,21 @@ reduced complete request cost for two and eight images within each provider,
 with CPU still faster in every tested batch. GPU sanitizer and
 hardware counter acceptance remain open. HIP and SYCL are not implemented.
 
-[Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) ·
-[Read the CPU comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-results.md) ·
-[Read the CUDA followup](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-cuda-results.md) ·
+[Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) Â·
+[Read the CPU comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-results.md) Â·
+[Read the CUDA followup](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-cuda-results.md) Â·
 [Inspect the backend contract](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/backend-discovery.md)
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/runtime-obscur-narrow.png">
-  <img src="assets/explainers/runtime-obscur-wide.png" alt="Conceptual masked sum: values and a mask enter an owned request, and the uncancelled computation returns 7.0. Cancellation intent alone does not establish physical completion." width="900">
+  <img src="assets/explainers/runtime-obscur-wide.png" alt="Masked cells omit -3 and sum 2 plus 5 to 7.0. A separate ownership rail extends through cancellation intent until physical return." width="900">
 </picture>
 
 For values `[2, -3, 5]` and mask `[1, 0, 1]`, the ordinary uncancelled sum is
 `7.0`. Running storage stays owned until physical return. This conceptual
 illustration adds no timing or CPU/GPU result.
-[Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) ·
-[Source and limits](PROFILE_EXPLAINERS.md) ·
+[Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) Â·
+[Source and limits](PROFILE_EXPLAINERS.md) Â·
 [Full-size infographic](assets/explainers/runtime-obscur-wide.png)
 
 ### Ragged Pooling for PyTorch
@@ -111,16 +111,16 @@ The [Linux CPU training examples](https://github.com/T92T1914/ragged-pool/blob/1
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/ragged-obscur-narrow.png">
-  <img src="assets/explainers/ragged-obscur-wide.png" alt="Conceptual pooling route: unequal groups receive softmax weights and produce one vector per group. Empty groups return zero vectors. This is a first-order training illustration, separate from broader qualified routes." width="900">
+  <img src="assets/explainers/ragged-obscur-wide.png" alt="Unequal groups feed softmax-weighted vector summaries. An empty group returns zeros, and the conceptual first-order gradient arrow returns to values and scores." width="900">
 </picture>
 
 In this conceptual example, weights `[0.25, 0.75]` combine `[2, 0]` and `[0, 4]`
 into `[0.5, 3]`. Empty groups return zeros. The illustration explains the first-order
 training mechanism, while the supported derivative boundaries remain above.
-[Explore the project](https://t92t1914.github.io/ragged-pool/) ·
-[Source and limits](PROFILE_EXPLAINERS.md) ·
-[Full-size infographic](assets/explainers/ragged-obscur-wide.png) ·
-[Detailed Obscur diagram](https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur.png) ·
+[Explore the project](https://t92t1914.github.io/ragged-pool/) Â·
+[Source and limits](PROFILE_EXPLAINERS.md) Â·
+[Full-size infographic](assets/explainers/ragged-obscur-wide.png) Â·
+[Detailed Obscur diagram](https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur.png) Â·
 [Clair alternate](https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-clair.png)
 
 ### MCTS Combat Engine
@@ -150,20 +150,20 @@ A separate [installed Linux consumer](https://github.com/T92T1914/mcts-combat-en
 records and replays through an existing local Docker daemon, with resource
 accounting limited to its owned container and descendants.
 
-[Explore the decisions](https://t92t1914.github.io/mcts-combat-engine/) ·
-[Read the encounter finding](https://github.com/T92T1914/mcts-combat-engine/blob/2a8d2ac354415d765542d61b195dd01baf9c475c/docs/encounter-outcomes.md) ·
+[Explore the decisions](https://t92t1914.github.io/mcts-combat-engine/) Â·
+[Read the encounter finding](https://github.com/T92T1914/mcts-combat-engine/blob/2a8d2ac354415d765542d61b195dd01baf9c475c/docs/encounter-outcomes.md) Â·
 [Use the managed consumer](https://github.com/T92T1914/mcts-combat-engine/blob/2a8d2ac354415d765542d61b195dd01baf9c475c/docs/managed-encounters.md)
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/mcts-obscur-narrow.png">
-  <img src="assets/explainers/mcts-obscur-wide.png" alt="Conceptual search route using a retained decision: a saved modeled state receives 10,000 simulations and selects Spark at mean shaped reward 0.532. The reward is not a win probability." width="900">
+  <img src="assets/explainers/mcts-obscur-wide.png" alt="Retained action-reward bars and separate visit counts for one 10000-simulation modeled decision. Spark has mean shaped reward 0.532, not a win probability." width="900">
 </picture>
 
 The retained decision ranks Spark at mean shaped reward `0.532` after `10,000`
 simulations. This compact explanation reuses that one modeled decision. It adds no
 search run and does not describe an encounter win rate.
-[Explore the project](https://t92t1914.github.io/mcts-combat-engine/) ·
-[Source and limits](PROFILE_EXPLAINERS.md) ·
+[Explore the project](https://t92t1914.github.io/mcts-combat-engine/) Â·
+[Source and limits](PROFILE_EXPLAINERS.md) Â·
 [Full-size infographic](assets/explainers/mcts-obscur-wide.png)
 
 <details>
@@ -220,20 +220,20 @@ Installed calculation and replay commands preserve reusable records. The browser
 inspector reads saved results without calculation or upload. Same engine replay
 and independent mathematical checks remain different kinds of evidence.
 
-[Explore the models](https://t92t1914.github.io/exact-blackjack-solver/#model-route) ·
-[Calculate and replay the H17 request](https://github.com/T92T1914/exact-blackjack-solver#a-complete-h17-ace-calculation) ·
+[Explore the models](https://t92t1914.github.io/exact-blackjack-solver/#model-route) Â·
+[Calculate and replay the H17 request](https://github.com/T92T1914/exact-blackjack-solver#a-complete-h17-ace-calculation) Â·
 [Read the completion evidence](https://github.com/T92T1914/exact-blackjack-solver/blob/259aa8aedf84510887d8dbf3e5bf928c1447458a/docs/ace-terminal-reuse.md)
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/solver-obscur-narrow.png">
-  <img src="assets/explainers/solver-obscur-wide.png" alt="Conceptual composition route: hard 16 against a dealer ten is evaluated with the cards remaining. The retained examples hit ten and six, but stand on eight, five and three. Exact hit and stand are separate from the original approximate split path." width="900">
+  <img src="assets/explainers/solver-obscur-wide.png" alt="Two hard-16 hands against a dealer ten have different remaining-card compositions and exact hit/stand expected returns. Hit 10 plus 6 and stand on 8 plus 5 plus 3; both returns remain negative." width="900">
 </picture>
 
 The retained six-deck examples hit `10 + 6` and stand on `8 + 5 + 3` against a
 dealer ten. Both expected returns remain negative. These exact hit/stand examples
 are separate from the original approximate split route.
-[Explore the project](https://t92t1914.github.io/exact-blackjack-solver/#model-route) ·
-[Source and limits](PROFILE_EXPLAINERS.md) ·
+[Explore the project](https://t92t1914.github.io/exact-blackjack-solver/#model-route) Â·
+[Source and limits](PROFILE_EXPLAINERS.md) Â·
 [Full-size infographic](assets/explainers/solver-obscur-wide.png)
 
 <details>
@@ -272,20 +272,20 @@ The local research desk exports reviewed publication candidates without private
 notes. The museum is usable now. Registered changing appearance and calibrated
 historical damage remain unfinished research goals.
 
-[Visit the museum](https://t92t1914.github.io/tornado-atlas/) ·
-[Explore the record collection](https://t92t1914.github.io/tornado-atlas/atlas.html) ·
+[Visit the museum](https://t92t1914.github.io/tornado-atlas/) Â·
+[Explore the record collection](https://t92t1914.github.io/tornado-atlas/atlas.html) Â·
 [Inspect the evidence dossiers](https://t92t1914.github.io/tornado-atlas/dossier.html)
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/atlas-obscur-narrow.png">
-  <img src="assets/explainers/atlas-obscur-wide.png" alt="Conceptual evidence route: a credited observation carries time and viewpoint limits into evidence and replay. Unknowns stay explicit, and observation stays separate from illustration." width="900">
+  <img src="assets/explainers/atlas-obscur-wide.png" alt="A source record links to an observation passport with independent intake, assertion, time, spatial, availability and rights fields. Clock roles and procedural illustration remain separate from documentary evidence." width="900">
 </picture>
 
 A source's clock and viewpoint inform what can be said about a historical event.
 A clock claim alone does not register changing appearance. Unknowns remain
 explicit, and an illustrative model is labeled separately.
-[Explore the project](https://t92t1914.github.io/tornado-atlas/) ·
-[Source and limits](PROFILE_EXPLAINERS.md) ·
+[Explore the project](https://t92t1914.github.io/tornado-atlas/) Â·
+[Source and limits](PROFILE_EXPLAINERS.md) Â·
 [Full-size infographic](assets/explainers/atlas-obscur-wide.png)
 
 ## Supporting projects
@@ -329,15 +329,15 @@ use synthetic records. There is no carrier integration or production deployment.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/shipment-obscur-narrow.png">
-  <img src="assets/explainers/shipment-obscur-wide.png" alt="Conceptual retry route from the installed synthetic walkthrough. Casey assignment expects version 2 and commits version 3 with history and a receipt. Its response is lost, a still-authorized same-intent retry adds no event, and later resolution reaches version 4." width="900">
+  <img src="assets/explainers/shipment-obscur-wide.png" alt="Operator and server sequence: an expected-version-2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit; an authorized same-key/body retry returns the historical response without another event." width="900">
 </picture>
 
 Casey assignment commits version 3, its history event and saved response together.
 When that reply is lost, a still-authorized retry with the original key and body
 recovers the saved response without another event. Later resolution reaches
 version 4. This conceptual explanation follows the installed walkthrough.
-[Explore the project](https://t92t1914.github.io/shipment-exception-workspace/) ·
-[Source and limits](PROFILE_EXPLAINERS.md) ·
+[Explore the project](https://t92t1914.github.io/shipment-exception-workspace/) Â·
+[Source and limits](PROFILE_EXPLAINERS.md) Â·
 [Full-size infographic](assets/explainers/shipment-obscur-wide.png)
 
 ### Freight Forecast
@@ -353,14 +353,14 @@ public example contains no real issued forecast.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/freight-obscur-narrow.png">
-  <img src="assets/explainers/freight-obscur-wide.png" alt="Conceptual forecasting route: earlier months supply features, later months test the predictions and the model returns a monthly forecast. On the separate BTS index, carrying forward the last observation beat the learned model." width="900">
+  <img src="assets/explainers/freight-obscur-wide.png" alt="Retained 24-month held-out synthetic time series compares observations, model and seasonal baseline with a separate mean-absolute-error comparison. The BTS result is separate." width="900">
 </picture>
 
 Earlier observations supply the features and later months test the predictions.
 This conceptual route keeps the synthetic series separate from the BTS index,
 where the simpler last-observation baseline won.
-[Explore the project](https://t92t1914.github.io/freight-forecast/) ·
-[Source and limits](PROFILE_EXPLAINERS.md) ·
+[Explore the project](https://t92t1914.github.io/freight-forecast/) Â·
+[Source and limits](PROFILE_EXPLAINERS.md) Â·
 [Full-size infographic](assets/explainers/freight-obscur-wide.png)
 
 <details>
@@ -391,14 +391,14 @@ human behavior.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/adaptive-obscur-narrow.png">
-  <img src="assets/explainers/adaptive-obscur-wide.png" alt="Conceptual scheduling route: a newer revision arrives, older physical work may finish and only the current answer is adopted. Physical completion and current-answer adoption remain separate." width="900">
+  <img src="assets/explainers/adaptive-obscur-wide.png" alt="Retained worker example separates incoming requests, physical computation and answer adoption. Payload 0 returns stale; latest payload 100 is computed and adopted at revision 101. There are two computations and 99 waiting replacements." width="900">
 </picture>
 
 A newer request can replace waiting work without claiming that an older running
 calculation has stopped. The retained worker example computes payloads `0` and
 `100`, rejects the obsolete result and retains payload `100` at revision `101`.
-[Explore the project](https://t92t1914.github.io/adaptive-timing-engine/) ·
-[Source and limits](PROFILE_EXPLAINERS.md) ·
+[Explore the project](https://t92t1914.github.io/adaptive-timing-engine/) Â·
+[Source and limits](PROFILE_EXPLAINERS.md) Â·
 [Full-size infographic](assets/explainers/adaptive-obscur-wide.png)
 
 <details>
@@ -431,14 +431,14 @@ separate checks.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/themes-obscur-narrow.png">
-  <img src="assets/explainers/themes-obscur-wide.png" alt="Conceptual theme route: named surface, text and focus roles map into platform packages and previews. Preview checks and native installation acceptance remain separate." width="900">
+  <img src="assets/explainers/themes-obscur-wide.png" alt="Chrome adapter mapping shows canvas to frame, panel to toolbar and text to tab_text, followed by distinct package, browser-preview and native-acceptance boundaries." width="900">
 </picture>
 
 Named surface, text and focus roles map to each platform's package. A working
 preview does not establish native installation, restart persistence or complete
 host compatibility.
-[Explore the project](https://t92t1914.github.io/clair-obscur-themes/) ·
-[Source and limits](PROFILE_EXPLAINERS.md) ·
+[Explore the project](https://t92t1914.github.io/clair-obscur-themes/) Â·
+[Source and limits](PROFILE_EXPLAINERS.md) Â·
 [Full-size infographic](assets/explainers/themes-obscur-wide.png)
 
 ### Calendar Tracker AI
@@ -451,13 +451,13 @@ time-zone handling or an AI service.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/calendar-obscur-narrow.png">
-  <img src="assets/explainers/calendar-obscur-wide.png" alt="Conceptual local calendar route: a title and local date/time are validated and saved to schema-1 JSON, then inspected or exported to a new CSV. This is a local single-writer program, not an online calendar or AI service." width="900">
+  <img src="assets/explainers/calendar-obscur-wide.png" alt="A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before in-memory adoption; failed writes retain the prior state." width="900">
 </picture>
 
 A validated event goes into schema-1 JSON, and export writes a separate new CSV.
 The repository includes the local setup and version history.
-[Explore the project](https://t92t1914.github.io/calendar-tracker-ai/) ·
-[Source and limits](PROFILE_EXPLAINERS.md) ·
+[Explore the project](https://t92t1914.github.io/calendar-tracker-ai/) Â·
+[Source and limits](PROFILE_EXPLAINERS.md) Â·
 [Full-size infographic](assets/explainers/calendar-obscur-wide.png)
 
 ## How I approach the work
