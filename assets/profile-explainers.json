@@ -1,0 +1,1892 @@
+{
+  "schema_version": 1,
+  "new_project_execution": false,
+  "model": {
+    "schema_version": 1,
+    "kind": "Compact conceptual mechanisms derived from retained public project sources, not new trials",
+    "projects": [
+      {
+        "id": "runtime",
+        "title": "Heterogeneous Batch Runtime",
+        "repository": "heterogeneous-batch-runtime",
+        "source_revision": "e84f4acdca294309f3e36c586a3872e85558f8de",
+        "source_paths": [
+          "README.md",
+          "docs/contracts.md",
+          "src/runtime.cpp"
+        ],
+        "cards": [
+          "Values + mask",
+          "Own input + output",
+          "7.0 after return"
+        ],
+        "footer": "Cancellation intent does not establish physical completion.",
+        "essential_text": "For values [2, -3, 5] and mask [1, 0, 1], the ordinary uncancelled sum is 7.0. Running storage stays owned until physical return.",
+        "page": "https://t92t1914.github.io/heterogeneous-batch-runtime/"
+      },
+      {
+        "id": "ragged",
+        "title": "Ragged Pooling for PyTorch",
+        "repository": "ragged-pool",
+        "source_revision": "ddf8002cfd351723ff7a9e6c7471a966b8fe33db",
+        "source_paths": [
+          "README.md",
+          "docs/contract.md"
+        ],
+        "cards": [
+          "Unequal groups",
+          "Softmax weights",
+          "One vector per group"
+        ],
+        "footer": "First-order training illustration. Empty groups return zeros.",
+        "essential_text": "Weights [0.25, 0.75] combine [2, 0] and [0, 4] into [0.5, 3]. Empty groups return zero vectors. This conceptual training route does not describe every qualified derivative composition.",
+        "page": "https://t92t1914.github.io/ragged-pool/"
+      },
+      {
+        "id": "mcts",
+        "title": "MCTS Combat Engine",
+        "repository": "mcts-combat-engine",
+        "source_revision": "bb9a56fcdd9ce95d55bf9fbed8bfc11f17bcd8e3",
+        "source_paths": [
+          "docs/visual-example.md",
+          "docs/visual-example-data.json"
+        ],
+        "cards": [
+          "Saved model state",
+          "10,000 simulations",
+          "Spark: reward 0.532"
+        ],
+        "footer": "Retained shaped reward, not win probability or a new search.",
+        "essential_text": "The retained decision ranks Spark at mean shaped reward 0.532 after 10,000 simulations. This is one modeled decision, not an encounter win rate.",
+        "page": "https://t92t1914.github.io/mcts-combat-engine/"
+      },
+      {
+        "id": "solver",
+        "title": "Exact Blackjack Solver",
+        "repository": "exact-blackjack-solver",
+        "source_revision": "4f2128eb9692bade742e6684ddc27919b2c63633",
+        "source_paths": [
+          "docs/visual-example.md",
+          "docs/visual-example-data.json"
+        ],
+        "cards": [
+          "Hard 16 vs ten",
+          "Remaining cards",
+          "Hit / stand"
+        ],
+        "footer": "Exact hit/stand examples. The original split route is approximate.",
+        "essential_text": "In the retained six-deck examples, hit 10 + 6 and stand on 8 + 5 + 3 against a dealer ten. Both expected returns remain negative. These exact hit/stand examples are separate from the original approximate split route.",
+        "page": "https://t92t1914.github.io/exact-blackjack-solver/#model-route"
+      },
+      {
+        "id": "atlas",
+        "title": "Tornado Atlas",
+        "repository": "tornado-atlas",
+        "source_revision": "24baed6b9160932c654c4f99af1c39081494acf9",
+        "source_paths": [
+          "README.md",
+          "docs/archive-dossiers.md",
+          "docs/reconstruction-plan.md"
+        ],
+        "cards": [
+          "Credited observation",
+          "Time + viewpoint",
+          "Evidence + replay"
+        ],
+        "footer": "Unknowns stay explicit. Observation and illustration stay separate.",
+        "essential_text": "A credited source carries its clock, viewpoint and uncertainty into the evidence route. A source clock alone does not register historical appearance, and an illustrative model is labeled separately.",
+        "page": "https://t92t1914.github.io/tornado-atlas/"
+      },
+      {
+        "id": "shipment",
+        "title": "Shipment Exception Workspace",
+        "repository": "shipment-exception-workspace",
+        "source_revision": "67d10a531371b1f37b8dfbb7d4ed4fa5bdd3093c",
+        "source_paths": [
+          "README.md",
+          "docs/operator-walkthrough.md",
+          "docs/DESIGN.md"
+        ],
+        "cards": [
+          "Casey, expect v2",
+          "Commit v3 + receipt",
+          "Retry same intent"
+        ],
+        "footer": "A lost reply follows the commit. Later resolution reaches v4.",
+        "essential_text": "After version 2, Casey assignment commits version 3 with its history event and saved response. A still-authorized retry of the original key and body recovers that response without another event. A later resolution reaches version 4. Current server authorization remains authoritative.",
+        "page": "https://t92t1914.github.io/shipment-exception-workspace/"
+      },
+      {
+        "id": "freight",
+        "title": "Freight Forecast",
+        "repository": "freight-forecast",
+        "source_revision": "146ecc8efafe172deb41fb067b51329c1c4e8b8d",
+        "source_paths": [
+          "README.md",
+          "docs/visual-example.md"
+        ],
+        "cards": [
+          "Past months only",
+          "Chronological test",
+          "Monthly forecast"
+        ],
+        "footer": "On the separate BTS index, carrying the last observation won.",
+        "essential_text": "Earlier observations supply the forecast features, and later months test the predictions. The synthetic series and BTS index remain separate. On BTS, carrying forward the last observation beat the learned model.",
+        "page": "https://t92t1914.github.io/freight-forecast/"
+      },
+      {
+        "id": "adaptive",
+        "title": "Adaptive Timing Engine",
+        "repository": "adaptive-timing-engine",
+        "source_revision": "0e63441b6ce772244c507054bf9d10539ba4475a",
+        "source_paths": [
+          "docs/visual-example.md",
+          "docs/visual-example-data.json",
+          "docs/revision-file.md"
+        ],
+        "cards": [
+          "Newer revision",
+          "Older work finishes",
+          "Adopt current only"
+        ],
+        "footer": "Physical completion and adoption of the current answer are separate.",
+        "essential_text": "A newer request can replace waiting work without claiming that an older running calculation has stopped. The retained worker example computes payloads 0 and 100 and rejects the obsolete result, retaining payload 100 at revision 101.",
+        "page": "https://t92t1914.github.io/adaptive-timing-engine/"
+      },
+      {
+        "id": "themes",
+        "title": "Clair and Obscur",
+        "repository": "clair-obscur-themes",
+        "source_revision": "bfe50ba72860da600cd3923a9a454c79c158ba37",
+        "source_paths": [
+          "README.md",
+          "docs/acceptance.md",
+          "tokens.json",
+          "tokens-monochrome.json"
+        ],
+        "cards": [
+          "Shared roles",
+          "Platform mapping",
+          "Preview + package"
+        ],
+        "footer": "Preview checks and native acceptance remain separate.",
+        "essential_text": "Named surface, text and focus roles map to each platform's package. Preview behavior does not establish native installation, restart persistence or complete host compatibility.",
+        "page": "https://t92t1914.github.io/clair-obscur-themes/"
+      },
+      {
+        "id": "calendar",
+        "title": "Calendar Tracker AI",
+        "repository": "calendar-tracker-ai",
+        "source_revision": "8a42a32aa73dcdc9582773c960da5b43297dd3ea",
+        "source_paths": [
+          "README.md",
+          "calendar_tracker.py",
+          "test_calendar_tracker.py"
+        ],
+        "cards": [
+          "Title + local time",
+          "Validate + save",
+          "Local JSON + CSV"
+        ],
+        "footer": "Single-writer coursework app. No online calendar or AI service.",
+        "essential_text": "The local text-menu application validates an event, saves schema-1 JSON and exports a new CSV. It does not connect to an online calendar, handle time zones or supply an AI service.",
+        "page": "https://t92t1914.github.io/calendar-tracker-ai/"
+      }
+    ]
+  },
+  "adapter": {
+    "schema_version": 1,
+    "source": {
+      "repository": "T92T1914/clair-obscur-themes",
+      "revision": "7a57fe750ff50205a17e1d342106a0d3f2777159",
+      "path": "tokens.json",
+      "scope": "The existing profile header's pinned family, limited to this renderer's Obscur roles"
+    },
+    "appearance": "Obscur",
+    "roles": {
+      "canvas": "#090909",
+      "panel": "#151515",
+      "text": "#f4f4f4",
+      "muted": "#bcbcbc",
+      "border": "#858585",
+      "accent": "#b3c8d8"
+    }
+  },
+  "layouts": {
+    "runtime": {
+      "wide": {
+        "width": 1800,
+        "height": 600,
+        "panel_height": 230,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              220,
+              552,
+              410
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                220.0,
+                247.0,
+                273.238
+              ],
+              "body": [
+                88.0,
+                289.238,
+                361.969,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              668,
+              220,
+              1132,
+              410
+            ],
+            "labels": {
+              "heading": [
+                668.0,
+                220.0,
+                966.0,
+                273.238
+              ],
+              "body": [
+                668.0,
+                289.238,
+                1034.0,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              1248,
+              220,
+              1712,
+              410
+            ],
+            "labels": {
+              "heading": [
+                1248.0,
+                220.0,
+                1443.297,
+                273.238
+              ],
+              "body": [
+                1248.0,
+                289.238,
+                1524.203,
+                342.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          462.0,
+          841.75,
+          499.266796875
+        ]
+      },
+      "narrow": {
+        "width": 960,
+        "height": 1000,
+        "panel_height": 200,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              210,
+              872,
+              370
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                210.0,
+                247.0,
+                263.238
+              ],
+              "body": [
+                88.0,
+                279.238,
+                361.969,
+                332.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              434,
+              872,
+              594
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                434.0,
+                386.0,
+                487.238
+              ],
+              "body": [
+                88.0,
+                503.238,
+                454.0,
+                556.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              658,
+              872,
+              818
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                658.0,
+                283.297,
+                711.238
+              ],
+              "body": [
+                88.0,
+                727.238,
+                364.203,
+                780.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          870.0,
+          841.75,
+          907.266796875
+        ]
+      }
+    },
+    "ragged": {
+      "wide": {
+        "width": 1800,
+        "height": 600,
+        "panel_height": 230,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              220,
+              552,
+              410
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                220.0,
+                247.0,
+                273.238
+              ],
+              "body": [
+                88.0,
+                289.238,
+                390.344,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              668,
+              220,
+              1132,
+              410
+            ],
+            "labels": {
+              "heading": [
+                668.0,
+                220.0,
+                966.0,
+                273.238
+              ],
+              "body": [
+                668.0,
+                289.238,
+                982.531,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              1248,
+              220,
+              1712,
+              410
+            ],
+            "labels": {
+              "heading": [
+                1248.0,
+                220.0,
+                1443.297,
+                273.238
+              ],
+              "body": [
+                1248.0,
+                289.238,
+                1653.172,
+                342.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          462.0,
+          839.15625,
+          499.266796875
+        ]
+      },
+      "narrow": {
+        "width": 960,
+        "height": 1000,
+        "panel_height": 200,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              210,
+              872,
+              370
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                210.0,
+                247.0,
+                263.238
+              ],
+              "body": [
+                88.0,
+                279.238,
+                390.344,
+                332.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              434,
+              872,
+              594
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                434.0,
+                386.0,
+                487.238
+              ],
+              "body": [
+                88.0,
+                503.238,
+                402.531,
+                556.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              658,
+              872,
+              818
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                658.0,
+                283.297,
+                711.238
+              ],
+              "body": [
+                88.0,
+                727.238,
+                493.172,
+                780.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          870.0,
+          839.15625,
+          907.266796875
+        ]
+      }
+    },
+    "mcts": {
+      "wide": {
+        "width": 1800,
+        "height": 600,
+        "panel_height": 230,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              220,
+              552,
+              410
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                220.0,
+                247.0,
+                273.238
+              ],
+              "body": [
+                88.0,
+                289.238,
+                435.453,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              668,
+              220,
+              1132,
+              410
+            ],
+            "labels": {
+              "heading": [
+                668.0,
+                220.0,
+                966.0,
+                273.238
+              ],
+              "body": [
+                668.0,
+                289.238,
+                1018.969,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              1248,
+              220,
+              1712,
+              410
+            ],
+            "labels": {
+              "heading": [
+                1248.0,
+                220.0,
+                1443.297,
+                273.238
+              ],
+              "body": [
+                1248.0,
+                289.238,
+                1632.406,
+                342.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          462.0,
+          875.96875,
+          499.266796875
+        ]
+      },
+      "narrow": {
+        "width": 960,
+        "height": 1000,
+        "panel_height": 200,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              210,
+              872,
+              370
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                210.0,
+                247.0,
+                263.238
+              ],
+              "body": [
+                88.0,
+                279.238,
+                435.453,
+                332.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              434,
+              872,
+              594
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                434.0,
+                386.0,
+                487.238
+              ],
+              "body": [
+                88.0,
+                503.238,
+                438.969,
+                556.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              658,
+              872,
+              818
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                658.0,
+                283.297,
+                711.238
+              ],
+              "body": [
+                88.0,
+                727.238,
+                472.406,
+                780.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          870.0,
+          875.96875,
+          907.266796875
+        ]
+      }
+    },
+    "solver": {
+      "wide": {
+        "width": 1800,
+        "height": 600,
+        "panel_height": 230,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              220,
+              552,
+              410
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                220.0,
+                247.0,
+                273.238
+              ],
+              "body": [
+                88.0,
+                289.238,
+                355.953,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              668,
+              220,
+              1132,
+              410
+            ],
+            "labels": {
+              "heading": [
+                668.0,
+                220.0,
+                966.0,
+                273.238
+              ],
+              "body": [
+                668.0,
+                289.238,
+                983.156,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              1248,
+              220,
+              1712,
+              410
+            ],
+            "labels": {
+              "heading": [
+                1248.0,
+                220.0,
+                1443.297,
+                273.238
+              ],
+              "body": [
+                1248.0,
+                289.238,
+                1442.203,
+                342.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          462.0,
+          917.703125,
+          499.266796875
+        ]
+      },
+      "narrow": {
+        "width": 960,
+        "height": 1000,
+        "panel_height": 200,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              210,
+              872,
+              370
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                210.0,
+                247.0,
+                263.238
+              ],
+              "body": [
+                88.0,
+                279.238,
+                355.953,
+                332.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              434,
+              872,
+              594
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                434.0,
+                386.0,
+                487.238
+              ],
+              "body": [
+                88.0,
+                503.238,
+                403.156,
+                556.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              658,
+              872,
+              818
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                658.0,
+                283.297,
+                711.238
+              ],
+              "body": [
+                88.0,
+                727.238,
+                282.203,
+                780.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          870.0,
+          737.0625,
+          944.53359375
+        ]
+      }
+    },
+    "atlas": {
+      "wide": {
+        "width": 1800,
+        "height": 600,
+        "panel_height": 230,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              220,
+              552,
+              410
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                220.0,
+                247.0,
+                273.238
+              ],
+              "body": [
+                88.0,
+                289.238,
+                484.391,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              668,
+              220,
+              1132,
+              410
+            ],
+            "labels": {
+              "heading": [
+                668.0,
+                220.0,
+                966.0,
+                273.238
+              ],
+              "body": [
+                668.0,
+                289.238,
+                993.281,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              1248,
+              220,
+              1712,
+              410
+            ],
+            "labels": {
+              "heading": [
+                1248.0,
+                220.0,
+                1443.297,
+                273.238
+              ],
+              "body": [
+                1248.0,
+                289.238,
+                1585.766,
+                342.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          462.0,
+          945.65625,
+          499.266796875
+        ]
+      },
+      "narrow": {
+        "width": 960,
+        "height": 1000,
+        "panel_height": 200,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              210,
+              872,
+              370
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                210.0,
+                247.0,
+                263.238
+              ],
+              "body": [
+                88.0,
+                279.238,
+                484.391,
+                332.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              434,
+              872,
+              594
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                434.0,
+                386.0,
+                487.238
+              ],
+              "body": [
+                88.0,
+                503.238,
+                413.281,
+                556.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              658,
+              872,
+              818
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                658.0,
+                283.297,
+                711.238
+              ],
+              "body": [
+                88.0,
+                727.238,
+                425.766,
+                780.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          870.0,
+          813.640625,
+          944.53359375
+        ]
+      }
+    },
+    "shipment": {
+      "wide": {
+        "width": 1800,
+        "height": 600,
+        "panel_height": 230,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              220,
+              552,
+              410
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                220.0,
+                247.0,
+                273.238
+              ],
+              "body": [
+                88.0,
+                289.238,
+                410.578,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              668,
+              220,
+              1132,
+              410
+            ],
+            "labels": {
+              "heading": [
+                668.0,
+                220.0,
+                966.0,
+                273.238
+              ],
+              "body": [
+                668.0,
+                289.238,
+                1051.344,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              1248,
+              220,
+              1712,
+              410
+            ],
+            "labels": {
+              "heading": [
+                1248.0,
+                220.0,
+                1443.297,
+                273.238
+              ],
+              "body": [
+                1248.0,
+                289.238,
+                1576.656,
+                342.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          462.0,
+          857.5,
+          499.266796875
+        ]
+      },
+      "narrow": {
+        "width": 960,
+        "height": 1000,
+        "panel_height": 200,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              210,
+              872,
+              370
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                210.0,
+                247.0,
+                263.238
+              ],
+              "body": [
+                88.0,
+                279.238,
+                410.578,
+                332.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              434,
+              872,
+              594
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                434.0,
+                386.0,
+                487.238
+              ],
+              "body": [
+                88.0,
+                503.238,
+                471.344,
+                556.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              658,
+              872,
+              818
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                658.0,
+                283.297,
+                711.238
+              ],
+              "body": [
+                88.0,
+                727.238,
+                416.656,
+                780.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          870.0,
+          857.5,
+          907.266796875
+        ]
+      }
+    },
+    "freight": {
+      "wide": {
+        "width": 1800,
+        "height": 600,
+        "panel_height": 230,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              220,
+              552,
+              410
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                220.0,
+                247.0,
+                273.238
+              ],
+              "body": [
+                88.0,
+                289.238,
+                413.203,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              668,
+              220,
+              1132,
+              410
+            ],
+            "labels": {
+              "heading": [
+                668.0,
+                220.0,
+                966.0,
+                273.238
+              ],
+              "body": [
+                668.0,
+                289.238,
+                1012.344,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              1248,
+              220,
+              1712,
+              410
+            ],
+            "labels": {
+              "heading": [
+                1248.0,
+                220.0,
+                1443.297,
+                273.238
+              ],
+              "body": [
+                1248.0,
+                289.238,
+                1566.766,
+                342.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          462.0,
+          883.765625,
+          499.266796875
+        ]
+      },
+      "narrow": {
+        "width": 960,
+        "height": 1000,
+        "panel_height": 200,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              210,
+              872,
+              370
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                210.0,
+                247.0,
+                263.238
+              ],
+              "body": [
+                88.0,
+                279.238,
+                413.203,
+                332.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              434,
+              872,
+              594
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                434.0,
+                386.0,
+                487.238
+              ],
+              "body": [
+                88.0,
+                503.238,
+                432.344,
+                556.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              658,
+              872,
+              818
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                658.0,
+                283.297,
+                711.238
+              ],
+              "body": [
+                88.0,
+                727.238,
+                406.766,
+                780.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          870.0,
+          883.765625,
+          907.266796875
+        ]
+      }
+    },
+    "adaptive": {
+      "wide": {
+        "width": 1800,
+        "height": 600,
+        "panel_height": 230,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              220,
+              552,
+              410
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                220.0,
+                247.0,
+                273.238
+              ],
+              "body": [
+                88.0,
+                289.238,
+                369.125,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              668,
+              220,
+              1132,
+              410
+            ],
+            "labels": {
+              "heading": [
+                668.0,
+                220.0,
+                966.0,
+                273.238
+              ],
+              "body": [
+                668.0,
+                289.238,
+                1035.906,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              1248,
+              220,
+              1712,
+              410
+            ],
+            "labels": {
+              "heading": [
+                1248.0,
+                220.0,
+                1443.297,
+                273.238
+              ],
+              "body": [
+                1248.0,
+                289.238,
+                1602.172,
+                342.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          462.0,
+          988.890625,
+          499.266796875
+        ]
+      },
+      "narrow": {
+        "width": 960,
+        "height": 1000,
+        "panel_height": 200,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              210,
+              872,
+              370
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                210.0,
+                247.0,
+                263.238
+              ],
+              "body": [
+                88.0,
+                279.238,
+                369.125,
+                332.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              434,
+              872,
+              594
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                434.0,
+                386.0,
+                487.238
+              ],
+              "body": [
+                88.0,
+                503.238,
+                455.906,
+                556.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              658,
+              872,
+              818
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                658.0,
+                283.297,
+                711.238
+              ],
+              "body": [
+                88.0,
+                727.238,
+                442.172,
+                780.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          870.0,
+          856.875,
+          944.53359375
+        ]
+      }
+    },
+    "themes": {
+      "wide": {
+        "width": 1800,
+        "height": 600,
+        "panel_height": 230,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              220,
+              552,
+              410
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                220.0,
+                247.0,
+                273.238
+              ],
+              "body": [
+                88.0,
+                289.238,
+                325.688,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              668,
+              220,
+              1132,
+              410
+            ],
+            "labels": {
+              "heading": [
+                668.0,
+                220.0,
+                966.0,
+                273.238
+              ],
+              "body": [
+                668.0,
+                289.238,
+                1003.484,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              1248,
+              220,
+              1712,
+              410
+            ],
+            "labels": {
+              "heading": [
+                1248.0,
+                220.0,
+                1443.297,
+                273.238
+              ],
+              "body": [
+                1248.0,
+                289.238,
+                1608.234,
+                342.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          462.0,
+          809.625,
+          499.266796875
+        ]
+      },
+      "narrow": {
+        "width": 960,
+        "height": 1000,
+        "panel_height": 200,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              210,
+              872,
+              370
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                210.0,
+                247.0,
+                263.238
+              ],
+              "body": [
+                88.0,
+                279.238,
+                325.688,
+                332.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              434,
+              872,
+              594
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                434.0,
+                386.0,
+                487.238
+              ],
+              "body": [
+                88.0,
+                503.238,
+                423.484,
+                556.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              658,
+              872,
+              818
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                658.0,
+                283.297,
+                711.238
+              ],
+              "body": [
+                88.0,
+                727.238,
+                448.234,
+                780.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          870.0,
+          809.625,
+          907.266796875
+        ]
+      }
+    },
+    "calendar": {
+      "wide": {
+        "width": 1800,
+        "height": 600,
+        "panel_height": 230,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              220,
+              552,
+              410
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                220.0,
+                247.0,
+                273.238
+              ],
+              "body": [
+                88.0,
+                289.238,
+                399.391,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              668,
+              220,
+              1132,
+              410
+            ],
+            "labels": {
+              "heading": [
+                668.0,
+                220.0,
+                966.0,
+                273.238
+              ],
+              "body": [
+                668.0,
+                289.238,
+                953.219,
+                342.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              1248,
+              220,
+              1712,
+              410
+            ],
+            "labels": {
+              "heading": [
+                1248.0,
+                220.0,
+                1443.297,
+                273.238
+              ],
+              "body": [
+                1248.0,
+                289.238,
+                1602.391,
+                342.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          462.0,
+          907.171875,
+          499.266796875
+        ]
+      },
+      "narrow": {
+        "width": 960,
+        "height": 1000,
+        "panel_height": 200,
+        "panel_geometry": [
+          {
+            "padded_panel": [
+              88,
+              210,
+              872,
+              370
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                210.0,
+                247.0,
+                263.238
+              ],
+              "body": [
+                88.0,
+                279.238,
+                399.391,
+                332.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              434,
+              872,
+              594
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                434.0,
+                386.0,
+                487.238
+              ],
+              "body": [
+                88.0,
+                503.238,
+                373.219,
+                556.477
+              ]
+            }
+          },
+          {
+            "padded_panel": [
+              88,
+              658,
+              872,
+              818
+            ],
+            "labels": {
+              "heading": [
+                88.0,
+                658.0,
+                283.297,
+                711.238
+              ],
+              "body": [
+                88.0,
+                727.238,
+                442.391,
+                780.477
+              ]
+            }
+          }
+        ],
+        "footer_bounds": [
+          60.0,
+          870.0,
+          793.734375,
+          944.53359375
+        ]
+      }
+    }
+  },
+  "typography": {
+    "Regular": {
+      "postscript": "Inter-Regular",
+      "weight": 400,
+      "italic": false,
+      "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82"
+    },
+    "SemiBold": {
+      "postscript": "Inter-SemiBold",
+      "weight": 600,
+      "italic": false,
+      "sha256": "78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3"
+    },
+    "Bold": {
+      "postscript": "Inter-Bold",
+      "weight": 700,
+      "italic": false,
+      "sha256": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f"
+    }
+  },
+  "font_binaries_distributed": false,
+  "svg_labels": "outlined Inter glyphs",
+  "renderer_versions": {
+    "python": "3.12.14",
+    "matplotlib": "3.11.1",
+    "fonttools": "4.63.0"
+  },
+  "inputs_sha256_lf": {
+    "assets/profile-explainers-input.json": "65725b6d57fed054058b9be4fdb1068e0f752a6bed86a846214b900d50adff63",
+    "assets/profile-figure-tokens.json": "6d42e0e87513cbcfc5417b3862e805897c91dda9b3083af946a8e0af823eda87",
+    "scripts/render_project_explainers.py": "a38535f21cafef445bac7bd72a8867c1f37a4b14f5e8a72ff3d6bce1757d00fa",
+    "requirements-figures.txt": "3bc78c01a3305d85d889b7ae16b9022a5dc38e5fd705ab1aec26b7cd00988024"
+  },
+  "outputs_sha256": {
+    "assets/explainers/runtime-obscur-wide.png": "6418028854518ad6b0a1cb18749ae8b26e726ec53fdbb6d579bc412f87d91518",
+    "assets/explainers/runtime-obscur-wide.svg": "9c7e12cdf23fe5caae46f192990abb46363cfe53e772bc78dea8a8b89c6f1781",
+    "assets/explainers/runtime-obscur-narrow.png": "09c8bd6f17f1c911a937a9b0b35198bf2d67954e8ccc3812e240090642c43c5c",
+    "assets/explainers/runtime-obscur-narrow.svg": "fb80ed046a1bc80a22e561dd7cc1bd343ac05fa0961c442268fca3799b89e822",
+    "assets/explainers/ragged-obscur-wide.png": "296e06b8265624c71c3525914a0c8943b206d209874b6cacbdea1494bafd278f",
+    "assets/explainers/ragged-obscur-wide.svg": "3a9293ddd0657ccc0b08b19cc6455935aff1dfed9024f4ca2f653c936431cab5",
+    "assets/explainers/ragged-obscur-narrow.png": "5df8f28e16570b69896e4796c7a82426a7ed657634dc03af1a5e0b2d2935f41a",
+    "assets/explainers/ragged-obscur-narrow.svg": "1459871807cf2ccd29740c9ab124a4e543208086c2785fb0903bb6111a43df75",
+    "assets/explainers/mcts-obscur-wide.png": "951135844561ee1259c61f7ad392d42527a43ad4a49779435bfa27e993d53feb",
+    "assets/explainers/mcts-obscur-wide.svg": "6ed89c9332b3dd603c21498aa5d71d71f84e0266f8678b10c8a07db23104dbc8",
+    "assets/explainers/mcts-obscur-narrow.png": "a9d1149d7c5bbb255b23ea9307305be9ee41eb9a0aa9112872f8011685fa223c",
+    "assets/explainers/mcts-obscur-narrow.svg": "150bf4b82f1f9ed86d7ad6fde5fc2cdbbdc39aa32dc5c8625ede4385692f1a53",
+    "assets/explainers/solver-obscur-wide.png": "7d4d1470ded56f16ce2f7c184976a710fead88cb6fb7091c537d0713d10161f8",
+    "assets/explainers/solver-obscur-wide.svg": "e5cc732391ade9a5fddcfd75a47926610b0d642000c3df26777d4524a88054a4",
+    "assets/explainers/solver-obscur-narrow.png": "f55b11adff06aff9a180fa428b19974d879eacaf30017576131c18381a085658",
+    "assets/explainers/solver-obscur-narrow.svg": "dd95e9a4fdf11c43dc047b40a3c9641c15f362904acf43701e10e1422624b3f2",
+    "assets/explainers/atlas-obscur-wide.png": "f34828240ba5a574d73139ef40493afa6923561aad0be7deae3ac1bbf1ed4f40",
+    "assets/explainers/atlas-obscur-wide.svg": "6341aa9e441a5c4cd3d7f60734812aadeaaee2b586fdda335f597f2f8c59e37b",
+    "assets/explainers/atlas-obscur-narrow.png": "625f03877ce048e9417295136b7d0f1f880994bb911e76feea53f9e55b19746f",
+    "assets/explainers/atlas-obscur-narrow.svg": "fad66de28a2f6a984ceffcf636b85e2a5a82bf4d40a02bdb8467ec3196f740ac",
+    "assets/explainers/shipment-obscur-wide.png": "a7948b62b23cfbdf5cbf53c4fb078ee8af34b15240f8e9b4f5ca1ace18c0bb8a",
+    "assets/explainers/shipment-obscur-wide.svg": "25227a0ec461310b0f42eae4543cbb0ccf244074a3c1f1430d4e324b015ea432",
+    "assets/explainers/shipment-obscur-narrow.png": "4224d0a649140a1f2b2446212f26700ba1a9cf9551e802c5db0e3bbbcff58bc9",
+    "assets/explainers/shipment-obscur-narrow.svg": "8d7e157f54cd4588b0cecace8a3a51e5d13b14b4918cb82a120f311aa624b7c1",
+    "assets/explainers/freight-obscur-wide.png": "23e14c23a4a0371a6be9732c761facb95d1111390b2356e08e7c9bb83a23b3f2",
+    "assets/explainers/freight-obscur-wide.svg": "4e84b6bf35843b4788d5650725adf258e68a92513eeec5e11dbd874da6252544",
+    "assets/explainers/freight-obscur-narrow.png": "ee5aba8323c141413b89caa41e7bb6090e6a62eac11ae95f177243672dc9772b",
+    "assets/explainers/freight-obscur-narrow.svg": "7e8489f1e2c2584a19ef6da407f2cc1c3bd6f24638ebc63353f3131d31f2a207",
+    "assets/explainers/adaptive-obscur-wide.png": "166ae334f9ec476e72acd8e49e2fb2dc63170d1ca67d45124844a55ef20fe418",
+    "assets/explainers/adaptive-obscur-wide.svg": "df8580e175dd53edd8e79880d2d9a148186b5ff26bea7aeef971e2bb045203e7",
+    "assets/explainers/adaptive-obscur-narrow.png": "409232714e5bd0c3e5ffb3edb08c88548b895a5aece1ba0f2ca3d6a7c9dd7d19",
+    "assets/explainers/adaptive-obscur-narrow.svg": "81356ebc1e2e6cf7b42f0db4534310a56619399196ce47814802f9af9f8312f4",
+    "assets/explainers/themes-obscur-wide.png": "51cc94bc3059f63f333c5178a6e8fc68b0dcecb0649f783a67b82252655d7df6",
+    "assets/explainers/themes-obscur-wide.svg": "234b8767ea4dad056cbd12d2e7b062450bb92b4122763fc270a681fc268a398e",
+    "assets/explainers/themes-obscur-narrow.png": "a44ecd0d4bcda3a01322c1d28322c9fbe51c9a482d50a1d09a13544c88a7dd76",
+    "assets/explainers/themes-obscur-narrow.svg": "2a2a038744aa34c447a6e7eab79f99105daa1dfc237e4b566e745760df2d001e",
+    "assets/explainers/calendar-obscur-wide.png": "4e0b0a045db1bf7e630b346e7dd457cd636f69616c25befebdd6302f4d79a330",
+    "assets/explainers/calendar-obscur-wide.svg": "0c9682f507b723bbfb5c255bfad1a7f40ef4838be8a871b93407db31c3a284e2",
+    "assets/explainers/calendar-obscur-narrow.png": "227b9f41e7438f07a77ab4c6a53867ce20ed70e116589a066c0e0af54203495e",
+    "assets/explainers/calendar-obscur-narrow.svg": "73a36923390f8819f7616cbb32d11cec32b893b3da273f2f45eb2a91dfcf5ce8"
+  }
+}

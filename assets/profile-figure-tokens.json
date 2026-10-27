@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "source": {
+    "repository": "T92T1914/clair-obscur-themes",
+    "revision": "7a57fe750ff50205a17e1d342106a0d3f2777159",
+    "path": "tokens.json",
+    "scope": "The existing profile header's pinned family, limited to this renderer's Obscur roles"
+  },
+  "appearance": "Obscur",
+  "roles": {
+    "canvas": "#090909",
+    "panel": "#151515",
+    "text": "#f4f4f4",
+    "muted": "#bcbcbc",
+    "border": "#858585",
+    "accent": "#b3c8d8"
+  }
+}
