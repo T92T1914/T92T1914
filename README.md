@@ -319,6 +319,13 @@ passed HTTPS, reviewer access and provider restart checks on October 27, 2026.
 The [acceptance record](https://github.com/T92T1914/shipment-exception-workspace/blob/d3b86fda7f7857e1ec6097f4218ecdea8909e07f/docs/hosted-demo.md)
 keeps those results separate from the installed operator walkthrough and its limits.
 
+The [local capacity and recovery study](https://github.com/T92T1914/shipment-exception-workspace/blob/8cb3de10985287187aa743271bb7e43a28d13eff/docs/capacity-study.md)
+measured growing synthetic queues on Windows and PostgreSQL. The declared
+workload targets were met without an application optimization. A separate
+controlled database interruption checked records, audit events and saved
+responses through recovery. The study retains the outage error and its other
+limits. These local measurements are separate from the hosted demo.
+
 A [local restore guide](https://github.com/T92T1914/shipment-exception-workspace/blob/b2ff568e49ef037a7a585f0ee39be79a11d81f6f/docs/backup-and-restore.md) records a trusted synthetic
 workspace restored through direct loopback into a separate empty database on
 the same cluster. Data and database structure matched before application
