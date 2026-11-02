@@ -314,8 +314,10 @@ deliberately interrupted committed response. The
 describes the supported local PostgreSQL route.
 
 A separate public reviewer mode refuses business writes and receipt replay on
-the server. Local HTTPS staging passed. A public hosted URL and provider restart
-acceptance remain unfinished, so the installed walkthrough is the available demo.
+the server. The [hosted synthetic demo](https://shipment-employer-demo.onrender.com/)
+passed HTTPS, reviewer access and provider restart checks on October 27, 2026.
+The [acceptance record](https://github.com/T92T1914/shipment-exception-workspace/blob/d3b86fda7f7857e1ec6097f4218ecdea8909e07f/docs/hosted-demo.md)
+keeps those results separate from the installed operator walkthrough and its limits.
 
 A [local restore guide](https://github.com/T92T1914/shipment-exception-workspace/blob/b2ff568e49ef037a7a585f0ee39be79a11d81f6f/docs/backup-and-restore.md) records a trusted synthetic
 workspace restored through direct loopback into a separate empty database on
