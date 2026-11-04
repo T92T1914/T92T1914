@@ -302,8 +302,13 @@ retry that is still authorized can recover a committed result after a response
 is lost.
 
 Participating tabs recheck the shared session, clear old account state after
-observed changes and discard delayed results from the previous context.
-Recovery does not automatically repeat uncertain writes.
+observed changes and discard delayed results from the previous context. In the
+[v0.9.1 source](https://github.com/T92T1914/shipment-exception-workspace/blob/e631e638a4e73f7a8104fababc753f5761fd930c/docs/dependency-outages.md), narrowly
+classified database outages receive an unavailable response. Operators can
+check their current session and explicitly retry an eligible uncertain change
+with its original request key and body. A failed authoritative session check
+clears private workspace state and retires the local retry, but an earlier write
+may already be saved. Recovery does not automatically repeat uncertain writes.
 
 The [v0.9.0 release](https://github.com/T92T1914/shipment-exception-workspace/releases/tag/v0.9.0)
 provides the installable application with its built frontend. The
@@ -333,7 +338,7 @@ startup, without initializing, migrating or seeding the target. That Windows x64
 result uses PostgreSQL 18.1, CPython 3.13.3 and the v0.8.0 wheel and tools. It does
 not establish production backups or disaster recovery.
 
-The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/618aa4f18394064004318ea3619ae2412d609c8c/README.md)
+The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/e631e638a4e73f7a8104fababc753f5761fd930c/README.md)
 use synthetic records. There is no carrier integration or production deployment.
 
 <picture>
