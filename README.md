@@ -75,6 +75,15 @@ exports for packed and padded inputs. The eager packed and padded CPU routes
 also support second order gradients, including small training examples with
 penalties on input gradients. Compiled training remains first order.
 
+The [v0.2.0 release](https://github.com/T92T1914/ragged-pool/releases/tag/v0.2.0)
+provides a Windows x64 CPU wheel that installs without a compiler. It requires
+CPython 3.11.8 and the exact PyTorch 2.9.1+cpu build, installed separately. The
+[installation guide](https://github.com/T92T1914/ragged-pool/blob/84302af085b83f6bda8e76ffa676569b26e46cb4/docs/install.md)
+runs the training example from the installed package, and the
+[release notes](https://github.com/T92T1914/ragged-pool/blob/84302af085b83f6bda8e76ffa676569b26e46cb4/docs/releases/v0.2.0.md)
+list what the assets contain. The CPU wheel does not include the optional CUDA
+companion below.
+
 An optional CUDA companion supports eager packed training in float32 and float64.
 The tested Windows RTX 4090 route passed installed gradient and model update
 checks and six native diagnostic runs on the eager consumer. A separate fixed
