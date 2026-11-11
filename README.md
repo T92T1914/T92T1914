@@ -436,10 +436,15 @@ calculation has stopped. The retained worker example computes payloads `0` and
 visual theme family with downloadable packages and previews, installation guidance
 and recovery instructions. Package and browser preview checks remain separate from complete
 native compatibility, restart persistence, signing and store approval. The shared
-palette also supplies a [Garmin watch face candidate](https://github.com/T92T1914/clair-obscur-themes/blob/4574e0350dbb6fc626e4e07b606c177188166861/docs/garmin-watchface.md)
-and [phone icons](https://github.com/T92T1914/clair-obscur-themes/blob/4574e0350dbb6fc626e4e07b606c177188166861/docs/samsung-icons.md).
-An earlier watch version has simulator acceptance. The current watch source has
-its own unexecuted simulator and device checks. A scoped earlier phone theme was
+palette also supplies a [Garmin watch face candidate](https://github.com/T92T1914/clair-obscur-themes/blob/6d9647ed350076019143b75bdfa6d72a9b72ce15/docs/garmin-watchface.md)
+and [phone icons](https://github.com/T92T1914/clair-obscur-themes/blob/6d9647ed350076019143b75bdfa6d72a9b72ce15/docs/samsung-icons.md).
+The current 0.12.0 watch face has simulator results for its active views and a
+bounded simulator check of its corrected always-on cycle. It was transferred
+once to the target watch on November 4, 2026, with an exact readback.
+Activation and normal running on the watch are user-reported, not independently
+recorded. Always-on dim and wake behavior on the watch, live field values,
+physical reload, power, extended runtime and wrist readability remain unchecked.
+A scoped earlier phone theme was
 applied, while full icon assignment, launcher behavior and restoration remain
 separate checks.
 
