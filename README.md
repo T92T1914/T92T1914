@@ -190,13 +190,13 @@ The figure reuses saved evidence. It does not add a new experiment.</p>
 <details>
 <summary>Open the detailed saved decision figure and its appearance alternatives</summary>
 
-<a href="https://github.com/T92T1914/mcts-combat-engine/blob/main/docs/visual-example.md">
+<a href="https://github.com/T92T1914/mcts-combat-engine/blob/1f2ba0672a5438cd8c6436cb84f1d243fb149527/docs/visual-example.md">
   <picture>
-    <source media="(min-width: 1024px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-obscur-wide.png">
-    <source media="(min-width: 1024px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-clair-wide.png">
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-obscur.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-clair.png">
-    <img src="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/main/docs/mcts-decision-clair.png" alt="One recorded decision after 10,000 simulations. Spark has mean shaped reward 0.532, Pass 0.506 and Weakness Mark 0.495. Exact visits are 5,724, 2,445 and 1,831 respectively. Reward is not a win probability." width="900">
+    <source media="(min-width: 1024px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/1f2ba0672a5438cd8c6436cb84f1d243fb149527/docs/mcts-decision-obscur-wide.png">
+    <source media="(min-width: 1024px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/1f2ba0672a5438cd8c6436cb84f1d243fb149527/docs/mcts-decision-clair-wide.png">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/1f2ba0672a5438cd8c6436cb84f1d243fb149527/docs/mcts-decision-obscur.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/1f2ba0672a5438cd8c6436cb84f1d243fb149527/docs/mcts-decision-clair.png">
+    <img src="https://raw.githubusercontent.com/T92T1914/mcts-combat-engine/1f2ba0672a5438cd8c6436cb84f1d243fb149527/docs/mcts-decision-clair.png" alt="One recorded decision after 10,000 simulations. Spark has mean shaped reward 0.532, Pass 0.506 and Weakness Mark 0.495. Exact visits are 5,724, 2,445 and 1,831 respectively. Reward is not a win probability." width="900">
   </picture>
 </a>
 
@@ -380,13 +380,13 @@ where the simpler last-observation baseline won.
 <details>
 <summary>Open the retained synthetic forecast figure and appearance alternatives</summary>
 
-<a href="https://github.com/T92T1914/freight-forecast/blob/main/docs/visual-example.md">
+<a href="https://github.com/T92T1914/freight-forecast/blob/c0fec6035e8b93609b422d692b6a4a975d0d6707/docs/visual-example.md">
   <picture>
-    <source media="(min-width: 1024px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/freight-forecast-obscur-wide.png">
-    <source media="(min-width: 1024px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/freight-forecast-clair-wide.png">
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/freight-forecast-obscur.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/freight-forecast-clair.png">
-    <img src="https://raw.githubusercontent.com/T92T1914/freight-forecast/main/docs/freight-forecast-clair.png" alt="Recorded synthetic shipments over 24 test months. Model mean absolute error is 226 moves per month versus 327 for the seasonal baseline. Each prediction uses prior observations." width="900">
+    <source media="(min-width: 1024px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/freight-forecast/c0fec6035e8b93609b422d692b6a4a975d0d6707/docs/freight-forecast-obscur-wide.png">
+    <source media="(min-width: 1024px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/freight-forecast/c0fec6035e8b93609b422d692b6a4a975d0d6707/docs/freight-forecast-clair-wide.png">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/freight-forecast/c0fec6035e8b93609b422d692b6a4a975d0d6707/docs/freight-forecast-obscur.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/freight-forecast/c0fec6035e8b93609b422d692b6a4a975d0d6707/docs/freight-forecast-clair.png">
+    <img src="https://raw.githubusercontent.com/T92T1914/freight-forecast/c0fec6035e8b93609b422d692b6a4a975d0d6707/docs/freight-forecast-clair.png" alt="Recorded synthetic shipments over 24 test months. Model mean absolute error is 226 moves per month versus 327 for the seasonal baseline. Each prediction uses prior observations." width="900">
   </picture>
 </a>
 
@@ -418,13 +418,13 @@ calculation has stopped. The retained worker example computes payloads `0` and
 <details>
 <summary>Open the retained worker figure and appearance alternatives</summary>
 
-<a href="https://github.com/T92T1914/adaptive-timing-engine/blob/main/docs/visual-example.md">
+<a href="https://github.com/T92T1914/adaptive-timing-engine/blob/f7aa539372120217e5739dfb0d2dcbd5120888d5/docs/visual-example.md">
   <picture>
-    <source media="(min-width: 1024px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/main/docs/adaptive-timing-obscur-wide.png">
-    <source media="(min-width: 1024px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/main/docs/adaptive-timing-clair-wide.png">
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/main/docs/adaptive-timing-obscur.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/main/docs/adaptive-timing-clair.png">
-    <img src="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/main/docs/adaptive-timing-clair.png" alt="Recorded worker example: 101 requests, two calculations, 99 replacements and one stale completion. The final result is payload 100 at revision 101." width="900">
+    <source media="(min-width: 1024px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/f7aa539372120217e5739dfb0d2dcbd5120888d5/docs/adaptive-timing-obscur-wide.png">
+    <source media="(min-width: 1024px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/f7aa539372120217e5739dfb0d2dcbd5120888d5/docs/adaptive-timing-clair-wide.png">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/f7aa539372120217e5739dfb0d2dcbd5120888d5/docs/adaptive-timing-obscur.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/f7aa539372120217e5739dfb0d2dcbd5120888d5/docs/adaptive-timing-clair.png">
+    <img src="https://raw.githubusercontent.com/T92T1914/adaptive-timing-engine/f7aa539372120217e5739dfb0d2dcbd5120888d5/docs/adaptive-timing-clair.png" alt="Recorded worker example: 101 requests, two calculations, 99 replacements and one stale completion. The final result is payload 100 at revision 101." width="900">
   </picture>
 </a>
 
