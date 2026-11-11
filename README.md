@@ -302,27 +302,32 @@ retry that is still authorized can recover a committed result after a response
 is lost.
 
 Participating tabs recheck the shared session, clear old account state after
-observed changes and discard delayed results from the previous context. In the
-[v0.9.1 source](https://github.com/T92T1914/shipment-exception-workspace/blob/e631e638a4e73f7a8104fababc753f5761fd930c/docs/dependency-outages.md), narrowly
+observed changes and discard delayed results from the previous context. In
+[v0.9.1](https://github.com/T92T1914/shipment-exception-workspace/blob/e631e638a4e73f7a8104fababc753f5761fd930c/docs/dependency-outages.md), narrowly
 classified database outages receive an unavailable response. Operators can
 check their current session and explicitly retry an eligible uncertain change
 with its original request key and body. A failed authoritative session check
 clears private workspace state and retires the local retry, but an earlier write
 may already be saved. Recovery does not automatically repeat uncertain writes.
 
-The [v0.9.0 release](https://github.com/T92T1914/shipment-exception-workspace/releases/tag/v0.9.0)
-provides the installable application with its built frontend. The
+The [v0.9.1 release](https://github.com/T92T1914/shipment-exception-workspace/releases/tag/v0.9.1)
+provides the installable application with its built frontend, and the
+[installation guide](https://github.com/T92T1914/shipment-exception-workspace/blob/d896ee50cac361a2e59a9d8abc09e0bd116c8ddb/docs/install.md)
+describes the supported local PostgreSQL route for that package. Version 0.9.1
+keeps schema 4, so an existing schema-4 local workspace needs no migration. The
 [operator walkthrough](https://github.com/T92T1914/shipment-exception-workspace/blob/618aa4f18394064004318ea3619ae2412d609c8c/docs/operator-walkthrough.md)
-shows creation, a competing edit, stale-version refusal and recovery after a
-deliberately interrupted committed response. The
-[installation guide](https://github.com/T92T1914/shipment-exception-workspace/blob/618aa4f18394064004318ea3619ae2412d609c8c/docs/install.md)
-describes the supported local PostgreSQL route.
+was recorded on an installed v0.9.0 candidate. It shows creation, a competing
+edit, stale-version refusal and recovery after a deliberately interrupted
+committed response.
 
 A separate public reviewer mode refuses business writes and receipt replay on
 the server. The [hosted synthetic demo](https://shipment-employer-demo.onrender.com/)
-passed HTTPS, reviewer access and provider restart checks on October 27, 2026.
-The [acceptance record](https://github.com/T92T1914/shipment-exception-workspace/blob/d3b86fda7f7857e1ec6097f4218ecdea8909e07f/docs/hosted-demo.md)
-keeps those results separate from the installed operator walkthrough and its limits.
+passed HTTPS, reviewer access and provider restart checks on October 27, 2026,
+while it ran v0.9.0. The project records its later upgrade to v0.9.1
+separately, in the release notes. The
+[acceptance record](https://github.com/T92T1914/shipment-exception-workspace/blob/d896ee50cac361a2e59a9d8abc09e0bd116c8ddb/docs/hosted-demo.md)
+keeps the original results separate from the installed operator walkthrough
+and its limits.
 
 The [local capacity and recovery study](https://github.com/T92T1914/shipment-exception-workspace/blob/8cb3de10985287187aa743271bb7e43a28d13eff/docs/capacity-study.md)
 measured growing synthetic queues on Windows and PostgreSQL. The declared
