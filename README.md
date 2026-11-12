@@ -63,7 +63,7 @@ For values `[2, -3, 5]` and mask `[1, 0, 1]`, the ordinary uncancelled sum is
 illustration adds no timing or CPU/GPU result.
 [Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
-[Full-size infographic](assets/explainers/runtime-obscur-wide.png)
+[Full size infographic](assets/explainers/runtime-obscur-wide.png)
 
 ### Ragged Pooling for PyTorch
 
@@ -111,15 +111,15 @@ The [Linux CPU training examples](https://github.com/T92T1914/ragged-pool/blob/1
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/ragged-obscur-narrow.png">
-  <img src="assets/explainers/ragged-obscur-wide.png" alt="Unequal groups feed softmax-weighted vector summaries. An empty group returns zeros, and the conceptual first-order gradient arrow returns to values and scores." width="900">
+  <img src="assets/explainers/ragged-obscur-wide.png" alt="Unequal groups feed softmax weighted vector summaries. An empty group returns zeros, and the conceptual first order gradient arrow returns to values and scores." width="900">
 </picture>
 
 In this conceptual example, weights `[0.25, 0.75]` combine `[2, 0]` and `[0, 4]`
-into `[0.5, 3]`. Empty groups return zeros. The illustration explains the first-order
+into `[0.5, 3]`. Empty groups return zeros. The illustration explains the first order
 training mechanism, while the supported derivative boundaries remain above.
 [Explore the project](https://t92t1914.github.io/ragged-pool/) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
-[Full-size infographic](assets/explainers/ragged-obscur-wide.png) ·
+[Full size infographic](assets/explainers/ragged-obscur-wide.png) ·
 [Detailed Obscur diagram](https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur.png) ·
 [Clair alternate](https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-clair.png)
 
@@ -164,7 +164,7 @@ simulations. This compact explanation reuses that one modeled decision. It adds 
 search run and does not describe an encounter win rate.
 [Explore the project](https://t92t1914.github.io/mcts-combat-engine/) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
-[Full-size infographic](assets/explainers/mcts-obscur-wide.png)
+[Full size infographic](assets/explainers/mcts-obscur-wide.png)
 
 <details>
 <summary>See all sixteen states in the frozen root allocation study</summary>
@@ -226,15 +226,15 @@ and independent mathematical checks remain different kinds of evidence.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/solver-obscur-narrow.png">
-  <img src="assets/explainers/solver-obscur-wide.png" alt="Two hard-16 hands against a dealer ten have different remaining-card compositions and exact hit/stand expected returns. Hit 10 plus 6 and stand on 8 plus 5 plus 3; both returns remain negative." width="900">
+  <img src="assets/explainers/solver-obscur-wide.png" alt="Two hard 16 hands against a dealer ten have different remaining card compositions and exact hit/stand expected returns. Hit 10 plus 6 and stand on 8 plus 5 plus 3; both returns remain negative." width="900">
 </picture>
 
-The retained six-deck examples hit `10 + 6` and stand on `8 + 5 + 3` against a
+The retained six deck examples hit `10 + 6` and stand on `8 + 5 + 3` against a
 dealer ten. Both expected returns remain negative. These exact hit/stand examples
 are separate from the original approximate split route.
 [Explore the project](https://t92t1914.github.io/exact-blackjack-solver/#model-route) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
-[Full-size infographic](assets/explainers/solver-obscur-wide.png)
+[Full size infographic](assets/explainers/solver-obscur-wide.png)
 
 <details>
 <summary>Open the retained completion and composition figures</summary>
@@ -287,7 +287,7 @@ A clock claim alone does not register changing appearance. Unknowns remain
 explicit, and an illustrative model is labeled separately.
 [Explore the project](https://t92t1914.github.io/tornado-atlas/) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
-[Full-size infographic](assets/explainers/atlas-obscur-wide.png)
+[Full size infographic](assets/explainers/atlas-obscur-wide.png)
 
 ## Supporting projects
 
@@ -344,16 +344,16 @@ use synthetic records. There is no carrier integration or production deployment.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/shipment-obscur-narrow.png">
-  <img src="assets/explainers/shipment-obscur-wide.png" alt="Operator and server sequence: an expected-version-2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit; an authorized same-key/body retry returns the historical response without another event." width="900">
+  <img src="assets/explainers/shipment-obscur-wide.png" alt="Operator and server sequence: an expected version 2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit; an authorized same key and body retry returns the historical response without another event." width="900">
 </picture>
 
 Casey assignment commits version 3, its history event and saved response together.
-When that reply is lost, a still-authorized retry with the original key and body
+When that reply is lost, a still authorized retry with the original key and body
 recovers the saved response without another event. Later resolution reaches
 version 4. This conceptual explanation follows the installed walkthrough.
 [Explore the project](https://t92t1914.github.io/shipment-exception-workspace/) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
-[Full-size infographic](assets/explainers/shipment-obscur-wide.png)
+[Full size infographic](assets/explainers/shipment-obscur-wide.png)
 
 ### Freight Forecast
 
@@ -373,10 +373,10 @@ public example contains no real issued forecast.
 
 Earlier observations supply the features and later months test the predictions.
 This conceptual route keeps the synthetic series separate from the BTS index,
-where the simpler last-observation baseline won.
+where the simpler last observation baseline won.
 [Explore the project](https://t92t1914.github.io/freight-forecast/) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
-[Full-size infographic](assets/explainers/freight-obscur-wide.png)
+[Full size infographic](assets/explainers/freight-obscur-wide.png)
 
 <details>
 <summary>Open the retained synthetic forecast figure and appearance alternatives</summary>
@@ -414,7 +414,7 @@ calculation has stopped. The retained worker example computes payloads `0` and
 `100`, rejects the obsolete result and retains payload `100` at revision `101`.
 [Explore the project](https://t92t1914.github.io/adaptive-timing-engine/) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
-[Full-size infographic](assets/explainers/adaptive-obscur-wide.png)
+[Full size infographic](assets/explainers/adaptive-obscur-wide.png)
 
 <details>
 <summary>Open the retained worker figure and appearance alternatives</summary>
@@ -454,26 +454,26 @@ preview does not establish native installation, restart persistence or complete
 host compatibility.
 [Explore the project](https://t92t1914.github.io/clair-obscur-themes/) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
-[Full-size infographic](assets/explainers/themes-obscur-wide.png)
+[Full size infographic](assets/explainers/themes-obscur-wide.png)
 
 ### Calendar Tracker AI
 
 [Calendar Tracker AI](https://github.com/T92T1914/calendar-tracker-ai) is a small
-Python text-menu application for a CSCI498 version control lab. It adds, lists,
+Python text menu application for a CSCI498 version control lab. It adds, lists,
 edits, deletes and searches local events, saves JSON and exports a new CSV.
-It is a single-writer coursework application without online calendar integration,
-time-zone handling or an AI service.
+It is a single writer coursework application without online calendar integration,
+time zone handling or an AI service.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/calendar-obscur-narrow.png">
-  <img src="assets/explainers/calendar-obscur-wide.png" alt="A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before in-memory adoption; failed writes retain the prior state." width="900">
+  <img src="assets/explainers/calendar-obscur-wide.png" alt="A synthetic Lab review event becomes schema 1 JSON and a separate CSV row. Temporary file replacement happens before in-memory adoption; failed writes retain the prior state." width="900">
 </picture>
 
-A validated event goes into schema-1 JSON, and export writes a separate new CSV.
+A validated event goes into schema 1 JSON, and export writes a separate new CSV.
 The repository includes the local setup and version history.
 [Explore the project](https://t92t1914.github.io/calendar-tracker-ai/) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
-[Full-size infographic](assets/explainers/calendar-obscur-wide.png)
+[Full size infographic](assets/explainers/calendar-obscur-wide.png)
 
 ## How I approach the work
 

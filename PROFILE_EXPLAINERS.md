@@ -3,7 +3,7 @@
 Each visible profile figure uses the structure that explains its project. The
 shared Obscur palette connects tensor groups, reward bars, decision comparisons,
 timelines, an evidence passport and file examples without imposing one layout.
-Each project section also supplies ordinary text and full-size/source links.
+Each project section also supplies ordinary text and full size/source links.
 
 | Project | Profile explanation | What its webpage adds |
 | --- | --- | --- |
@@ -19,7 +19,7 @@ Each project section also supplies ordinary text and full-size/source links.
 | [Calendar](https://t92t1914.github.io/calendar-tracker-ai/) | An event represented as JSON and CSV | Complete file examples, validation, atomic replacement, export escaping and local setup |
 
 The [input model](assets/profile-explainers-input.json) identifies the source
-revision, paths and figure class. Four retained families are copied byte-for-byte
+revision, paths and figure class. Four retained families are copied byte for byte
 from pinned public figures. Their exact source paths and SHA256 values are in
 `reused_artifacts`. Original numerical values, scales, typography and limits stay
 attached. Re-rendering this collection performs no underlying project execution.
@@ -52,10 +52,10 @@ and consumers explicitly. `--check` validates all forty committed PNG/SVG files
 without plotting dependencies or executing any project.
 
 The phone editions have their own layout or reuse the accepted narrow source.
-Full-size routes remain available for fine numerical labels. The detailed MCTS
-study remains collapsed. Ragged's first-order illustration is narrower than the
+Full size routes remain available for fine numerical labels. The detailed MCTS
+study remains collapsed. Ragged's first order illustration is narrower than the
 library's qualified derivative routes. MCTS reward is shaped reward, not win
 probability. Solver's exact hit/stand example remains separate from its original
 approximate split path. Freight's synthetic data remains separate from BTS.
 Shipment's static page does not host its application. Calendar is a local
-text-menu coursework program without an online calendar or AI service.
+text menu coursework program without an online calendar or AI service.
