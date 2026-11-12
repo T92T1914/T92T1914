@@ -439,10 +439,10 @@ native compatibility, restart persistence, signing and store approval. The share
 palette also supplies a [Garmin watch face candidate](https://github.com/T92T1914/clair-obscur-themes/blob/6d9647ed350076019143b75bdfa6d72a9b72ce15/docs/garmin-watchface.md)
 and [phone icons](https://github.com/T92T1914/clair-obscur-themes/blob/6d9647ed350076019143b75bdfa6d72a9b72ce15/docs/samsung-icons.md).
 The current 0.12.0 watch face has simulator results for its active views and a
-bounded simulator check of its corrected always-on cycle. It was transferred
+bounded simulator check of its corrected always on cycle. It was transferred
 once to the target watch on November 4, 2026, with an exact readback.
-Activation and normal running on the watch are user-reported, not independently
-recorded. Always-on dim and wake behavior on the watch, live field values,
+Activation and normal running on the watch are user reported, not independently
+recorded. Always on dim and wake behavior on the watch, live field values,
 physical reload, power, extended runtime and wrist readability remain unchecked.
 A scoped earlier phone theme was
 applied, while full icon assignment, launcher behavior and restoration remain
