@@ -314,10 +314,10 @@ The [v0.9.1 release](https://github.com/T92T1914/shipment-exception-workspace/re
 provides the installable application with its built frontend, and the
 [installation guide](https://github.com/T92T1914/shipment-exception-workspace/blob/d896ee50cac361a2e59a9d8abc09e0bd116c8ddb/docs/install.md)
 describes the supported local PostgreSQL route for that package. Version 0.9.1
-keeps schema 4, so an existing schema-4 local workspace needs no migration. The
+keeps schema 4, so an existing schema 4 local workspace needs no migration. The
 [operator walkthrough](https://github.com/T92T1914/shipment-exception-workspace/blob/618aa4f18394064004318ea3619ae2412d609c8c/docs/operator-walkthrough.md)
 was recorded on an installed v0.9.0 candidate. It shows creation, a competing
-edit, stale-version refusal and recovery after a deliberately interrupted
+edit, stale version refusal and recovery after a deliberately interrupted
 committed response.
 
 A separate public reviewer mode refuses business writes and receipt replay on
