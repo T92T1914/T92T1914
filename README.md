@@ -263,9 +263,10 @@ are separate from the original approximate split route.
 
 I have always been interested in tornadoes. I wanted a way to study where they
 went, what was documented and what we can actually say about how they looked.
-Atlas combines a searchable NOAA record collection with six historical exhibits:
-El Reno, Joplin, Blackwell, Tuscaloosa and Birmingham, Newcastle and Moore, and
-Udall. Maps, photographs and evidence dossiers connect observations to their sources.
+Atlas combines a searchable NOAA record collection with seven historical accounts:
+El Reno, Joplin, Blackwell, Tuscaloosa and Birmingham, Newcastle and Moore,
+Udall, and Greensburg. Maps, photographs and evidence dossiers connect
+observations to their sources.
 
 Reported times, camera observations and illustrative models remain separate.
 The local research desk exports reviewed publication candidates without private
