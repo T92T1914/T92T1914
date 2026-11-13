@@ -235,7 +235,7 @@ and independent mathematical checks remain different kinds of evidence.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/solver-obscur-narrow.png">
-  <img src="assets/explainers/solver-obscur-wide.png" alt="Two hard 16 hands against a dealer ten have different remaining card compositions and exact hit/stand expected returns. Hit 10 plus 6 and stand on 8 plus 5 plus 3; both returns remain negative." width="900">
+  <img src="assets/explainers/solver-obscur-wide.png" alt="Two hard 16 hands against a dealer ten have different remaining card compositions and exact hit/stand expected returns. Hit 10 plus 6 and stand on 8 plus 5 plus 3. Both returns remain negative." width="900">
 </picture>
 
 The retained six deck examples hit `10 + 6` and stand on `8 + 5 + 3` against a
@@ -358,7 +358,7 @@ use synthetic records. There is no carrier integration or production deployment.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/shipment-obscur-narrow.png">
-  <img src="assets/explainers/shipment-obscur-wide.png" alt="Operator and server sequence: an expected version 2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit; an authorized same key and body retry returns the historical response without another event." width="900">
+  <img src="assets/explainers/shipment-obscur-wide.png" alt="Operator and server sequence: an expected version 2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit. An authorized same key and body retry returns the historical response without another event." width="900">
 </picture>
 
 Casey assignment commits version 3, its history event and saved response together.
@@ -420,7 +420,7 @@ human behavior.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/adaptive-obscur-narrow.png">
-  <img src="assets/explainers/adaptive-obscur-wide.png" alt="Retained worker example separates incoming requests, physical computation and answer adoption. Payload 0 returns stale; latest payload 100 is computed and adopted at revision 101. There are two computations and 99 waiting replacements." width="900">
+  <img src="assets/explainers/adaptive-obscur-wide.png" alt="Retained worker example separates incoming requests, physical computation and answer adoption. Payload 0 returns stale. Latest payload 100 is computed and adopted at revision 101. There are two computations and 99 waiting replacements." width="900">
 </picture>
 
 A newer request can replace waiting work without claiming that an older running
@@ -485,7 +485,7 @@ time zone handling or an AI service.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/calendar-obscur-narrow.png">
-  <img src="assets/explainers/calendar-obscur-wide.png" alt="A synthetic Lab review event becomes schema 1 JSON and a separate CSV row. Temporary file replacement happens before in-memory adoption; failed writes retain the prior state." width="900">
+  <img src="assets/explainers/calendar-obscur-wide.png" alt="A synthetic Lab review event becomes schema 1 JSON and a separate CSV row. Temporary file replacement happens before in memory adoption. Failed writes retain the prior state." width="900">
 </picture>
 
 A validated event goes into schema 1 JSON, and export writes a separate new CSV.
