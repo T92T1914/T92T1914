@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:description>{"kind": "conceptual mechanism", "new_project_execution": false, "project": {"alt": "Operator and server sequence: an expected-version-2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit; an authorized same-key/body retry returns the historical response without another event.", "composition": "atomic transaction and lost-reply sequence", "essential_text": "After version 2, Casey assignment commits version 3 with its history event and saved response. A still-authorized retry of the original key and body recovers that response without another event. A later resolution reaches version 4. Current server authorization remains authoritative.", "figure_class": "conceptual mechanism", "footer": "A lost reply follows the commit. Later resolution reaches v4.", "id": "shipment", "page": "https://t92t1914.github.io/shipment-exception-workspace/", "renderer": "project-specific", "repository": "shipment-exception-workspace", "source_paths": ["README.md", "docs/operator-walkthrough.md", "docs/DESIGN.md"], "source_revision": "67d10a531371b1f37b8dfbb7d4ed4fa5bdd3093c", "title": "Shipment Exception Workspace"}}</dc:description>
+    <dc:description>{"kind": "conceptual mechanism", "new_project_execution": false, "project": {"alt": "Operator and server sequence: an expected-version-2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit; an authorized same-key/body retry returns the historical response without another event.", "composition": "atomic transaction and lost reply sequence", "essential_text": "After version 2, Casey assignment commits version 3 with its history event and saved response. A still-authorized retry of the original key and body recovers that response without another event. A later resolution reaches version 4. Current server authorization remains authoritative.", "figure_class": "conceptual mechanism", "footer": "A lost reply follows the commit. Later resolution reaches v4.", "id": "shipment", "page": "https://t92t1914.github.io/shipment-exception-workspace/", "renderer": "project-specific", "repository": "shipment-exception-workspace", "source_paths": ["README.md", "docs/operator-walkthrough.md", "docs/DESIGN.md"], "source_revision": "67d10a531371b1f37b8dfbb7d4ed4fa5bdd3093c", "title": "Shipment Exception Workspace"}}</dc:description>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -557,7 +557,7 @@ z
     </g>
    </g>
    <g id="text_2">
-    <!-- ATOMIC TRANSACTION AND -->
+    <!-- ATOMIC TRANSACTION AND LOST -->
     <g style="fill: #ffffff" transform="translate(43.2 194.500252) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-SemiBold-2" d="M 156 0 
@@ -784,6 +784,15 @@ L 1303 3934
 L 1303 722 
 z
 " transform="scale(0.015625)"/>
+      <path id="Inter-SemiBold-119" d="M 469 0 
+L 469 4656 
+L 1303 4656 
+L 1303 703 
+L 3359 703 
+L 3359 0 
+L 469 0 
+z
+" transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#Inter-SemiBold-2"/>
      <use xlink:href="#Inter-SemiBold-19b" transform="translate(64.015625 0)"/>
@@ -807,26 +816,15 @@ z
      <use xlink:href="#Inter-SemiBold-2" transform="translate(1180.6875 0)"/>
      <use xlink:href="#Inter-SemiBold-12c" transform="translate(1253.4375 0)"/>
      <use xlink:href="#Inter-SemiBold-54" transform="translate(1329.359375 0)"/>
+     <use xlink:href="#Inter-SemiBold-6f1" transform="translate(1401.578125 0)"/>
+     <use xlink:href="#Inter-SemiBold-119" transform="translate(1426.78125 0)"/>
+     <use xlink:href="#Inter-SemiBold-141" transform="translate(1480.5 0)"/>
+     <use xlink:href="#Inter-SemiBold-18d" transform="translate(1557.359375 0)"/>
+     <use xlink:href="#Inter-SemiBold-19b" transform="translate(1621.71875 0)"/>
     </g>
-    <!-- LOST-REPLY SEQUENCE -->
+    <!-- REPLY SEQUENCE -->
     <g style="fill: #ffffff" transform="translate(43.2 236.893542) scale(0.3024 -0.3024)">
      <defs>
-      <path id="Inter-SemiBold-119" d="M 469 0 
-L 469 4656 
-L 1303 4656 
-L 1303 703 
-L 3359 703 
-L 3359 0 
-L 469 0 
-z
-" transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-5bf" d="M 2534 2659 
-L 2534 1987 
-L 441 1987 
-L 441 2659 
-L 2534 2659 
-z
-" transform="scale(0.015625)"/>
       <path id="Inter-SemiBold-5f" d="M 469 0 
 L 469 4656 
 L 3494 4656 
@@ -933,25 +931,20 @@ Q 2922 -69 2356 -69
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Inter-SemiBold-119"/>
-     <use xlink:href="#Inter-SemiBold-141" transform="translate(53.71875 0)"/>
-     <use xlink:href="#Inter-SemiBold-18d" transform="translate(130.578125 0)"/>
-     <use xlink:href="#Inter-SemiBold-19b" transform="translate(194.9375 0)"/>
-     <use xlink:href="#Inter-SemiBold-5bf" transform="translate(255.046875 0)"/>
-     <use xlink:href="#Inter-SemiBold-180" transform="translate(301.578125 0)"/>
-     <use xlink:href="#Inter-SemiBold-5f" transform="translate(366.8125 0)"/>
-     <use xlink:href="#Inter-SemiBold-177" transform="translate(427.359375 0)"/>
-     <use xlink:href="#Inter-SemiBold-119" transform="translate(491.859375 0)"/>
-     <use xlink:href="#Inter-SemiBold-1d8" transform="translate(541.515625 0)"/>
-     <use xlink:href="#Inter-SemiBold-6f1" transform="translate(612.859375 0)"/>
-     <use xlink:href="#Inter-SemiBold-18d" transform="translate(638.0625 0)"/>
-     <use xlink:href="#Inter-SemiBold-5f" transform="translate(703.109375 0)"/>
-     <use xlink:href="#Inter-SemiBold-17e" transform="translate(763.65625 0)"/>
-     <use xlink:href="#Inter-SemiBold-1a8" transform="translate(840.953125 0)"/>
-     <use xlink:href="#Inter-SemiBold-5f" transform="translate(914.53125 0)"/>
-     <use xlink:href="#Inter-SemiBold-12c" transform="translate(975.078125 0)"/>
-     <use xlink:href="#Inter-SemiBold-49" transform="translate(1051 0)"/>
-     <use xlink:href="#Inter-SemiBold-5f" transform="translate(1124.6875 0)"/>
+     <use xlink:href="#Inter-SemiBold-180"/>
+     <use xlink:href="#Inter-SemiBold-5f" transform="translate(65.234375 0)"/>
+     <use xlink:href="#Inter-SemiBold-177" transform="translate(125.78125 0)"/>
+     <use xlink:href="#Inter-SemiBold-119" transform="translate(190.28125 0)"/>
+     <use xlink:href="#Inter-SemiBold-1d8" transform="translate(239.9375 0)"/>
+     <use xlink:href="#Inter-SemiBold-6f1" transform="translate(311.28125 0)"/>
+     <use xlink:href="#Inter-SemiBold-18d" transform="translate(336.484375 0)"/>
+     <use xlink:href="#Inter-SemiBold-5f" transform="translate(401.53125 0)"/>
+     <use xlink:href="#Inter-SemiBold-17e" transform="translate(462.078125 0)"/>
+     <use xlink:href="#Inter-SemiBold-1a8" transform="translate(539.375 0)"/>
+     <use xlink:href="#Inter-SemiBold-5f" transform="translate(612.953125 0)"/>
+     <use xlink:href="#Inter-SemiBold-12c" transform="translate(673.5 0)"/>
+     <use xlink:href="#Inter-SemiBold-49" transform="translate(749.421875 0)"/>
+     <use xlink:href="#Inter-SemiBold-5f" transform="translate(823.109375 0)"/>
     </g>
    </g>
    <g id="text_3">

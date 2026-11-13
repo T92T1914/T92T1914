@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:description>{"kind": "conceptual mechanism", "new_project_execution": false, "project": {"alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before in-memory adoption; failed writes retain the prior state.", "composition": "event to JSON and CSV documents", "essential_text": "The local text-menu application validates an event, saves schema-1 JSON and exports a new CSV. It does not connect to an online calendar, handle time zones or supply an AI service.", "figure_class": "conceptual mechanism", "footer": "Single-writer coursework app. No online calendar or AI service.", "id": "calendar", "page": "https://t92t1914.github.io/calendar-tracker-ai/", "renderer": "project-specific", "repository": "calendar-tracker-ai", "source_paths": ["README.md", "calendar_tracker.py", "test_calendar_tracker.py"], "source_revision": "8a42a32aa73dcdc9582773c960da5b43297dd3ea", "title": "Calendar Tracker AI"}}</dc:description>
+    <dc:description>{"kind": "conceptual mechanism", "new_project_execution": false, "project": {"alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before in memory adoption; failed writes retain the prior state.", "composition": "event to JSON and CSV documents", "essential_text": "The local text-menu application validates an event, saves schema-1 JSON and exports a new CSV. It does not connect to an online calendar, handle time zones or supply an AI service.", "figure_class": "conceptual mechanism", "footer": "Single-writer coursework app. No online calendar or AI service.", "id": "calendar", "page": "https://t92t1914.github.io/calendar-tracker-ai/", "renderer": "project-specific", "repository": "calendar-tracker-ai", "source_paths": ["README.md", "calendar_tracker.py", "test_calendar_tracker.py"], "source_revision": "8a42a32aa73dcdc9582773c960da5b43297dd3ea", "title": "Calendar Tracker AI"}}</dc:description>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -2525,7 +2525,7 @@ z
     </g>
    </g>
    <g id="text_14">
-    <!-- Temporary file -&gt; replace JSON -&gt; adopt in-memory state -->
+    <!-- Temporary file -&gt; replace JSON -&gt; adopt state in memory -->
     <g style="fill: #ffffff" transform="translate(43.2 872.160581) scale(0.3168 -0.3168)">
      <defs>
       <path id="Inter-Regular-19b" d="M 306 4131 
@@ -2747,13 +2747,6 @@ L 1159 0
 L 563 0 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-Regular-5b3" d="M 2494 2247 
-L 2494 1728 
-L 450 1728 
-L 450 2247 
-L 2494 2247 
-z
-" transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#Inter-Regular-19b"/>
      <use xlink:href="#Inter-Regular-266" transform="translate(56.734375 0)"/>
@@ -2793,21 +2786,21 @@ z
      <use xlink:href="#Inter-Regular-34b" transform="translate(1818.0625 0)"/>
      <use xlink:href="#Inter-Regular-379" transform="translate(1879.296875 0)"/>
      <use xlink:href="#Inter-Regular-6f1" transform="translate(1912.015625 0)"/>
-     <use xlink:href="#Inter-Regular-2b1" transform="translate(1940.140625 0)"/>
-     <use xlink:href="#Inter-Regular-305" transform="translate(1964.359375 0)"/>
-     <use xlink:href="#Inter-Regular-5b3" transform="translate(2023.4375 0)"/>
-     <use xlink:href="#Inter-Regular-2fe" transform="translate(2069.4375 0)"/>
-     <use xlink:href="#Inter-Regular-266" transform="translate(2157.03125 0)"/>
-     <use xlink:href="#Inter-Regular-2fe" transform="translate(2215.328125 0)"/>
-     <use xlink:href="#Inter-Regular-316" transform="translate(2302.921875 0)"/>
-     <use xlink:href="#Inter-Regular-354" transform="translate(2362.890625 0)"/>
-     <use xlink:href="#Inter-Regular-3e6" transform="translate(2402.09375 0)"/>
-     <use xlink:href="#Inter-Regular-6f1" transform="translate(2458.296875 0)"/>
-     <use xlink:href="#Inter-Regular-367" transform="translate(2486.421875 0)"/>
-     <use xlink:href="#Inter-Regular-379" transform="translate(2539.203125 0)"/>
-     <use xlink:href="#Inter-Regular-1fb" transform="translate(2572.40625 0)"/>
-     <use xlink:href="#Inter-Regular-379" transform="translate(2628.5625 0)"/>
-     <use xlink:href="#Inter-Regular-266" transform="translate(2660.3125 0)"/>
+     <use xlink:href="#Inter-Regular-367" transform="translate(1940.140625 0)"/>
+     <use xlink:href="#Inter-Regular-379" transform="translate(1992.921875 0)"/>
+     <use xlink:href="#Inter-Regular-1fb" transform="translate(2026.125 0)"/>
+     <use xlink:href="#Inter-Regular-379" transform="translate(2082.28125 0)"/>
+     <use xlink:href="#Inter-Regular-266" transform="translate(2114.03125 0)"/>
+     <use xlink:href="#Inter-Regular-6f1" transform="translate(2172.328125 0)"/>
+     <use xlink:href="#Inter-Regular-2b1" transform="translate(2200.453125 0)"/>
+     <use xlink:href="#Inter-Regular-305" transform="translate(2224.671875 0)"/>
+     <use xlink:href="#Inter-Regular-6f1" transform="translate(2283.75 0)"/>
+     <use xlink:href="#Inter-Regular-2fe" transform="translate(2311.875 0)"/>
+     <use xlink:href="#Inter-Regular-266" transform="translate(2399.46875 0)"/>
+     <use xlink:href="#Inter-Regular-2fe" transform="translate(2457.765625 0)"/>
+     <use xlink:href="#Inter-Regular-316" transform="translate(2545.359375 0)"/>
+     <use xlink:href="#Inter-Regular-354" transform="translate(2605.328125 0)"/>
+     <use xlink:href="#Inter-Regular-3e6" transform="translate(2644.53125 0)"/>
     </g>
    </g>
    <g id="text_15">
@@ -3047,6 +3040,13 @@ z
     <!-- Single-writer coursework app. No online calendar or AI service. -->
     <g style="fill: #cccccc" transform="translate(43.2 1014.435127) scale(0.3024 -0.3024)">
      <defs>
+      <path id="Inter-Regular-5b3" d="M 2494 2247 
+L 2494 1728 
+L 450 1728 
+L 450 2247 
+L 2494 2247 
+z
+" transform="scale(0.015625)"/>
       <path id="Inter-Regular-c5" d="M 1156 4656 
 L 1156 0 
 L 563 0 
