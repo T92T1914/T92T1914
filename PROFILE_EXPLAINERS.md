@@ -30,6 +30,12 @@ spacing shows order, not elapsed time. Atlas labels independent fields without
 grading a historical source. Theme mapping names do not regenerate retained
 packages or equate browser preview with native installation.
 
+The six drawn compositions use the monochrome Obscur palette, which is black with
+white lettering and gray for secondary marks. The values come from
+`tokens-monochrome.json` version 1.0.0 in `clair-obscur-themes` at revision
+`4693831`. No label is smaller than 42 px, which is about 30 pt at 100 dpi. The four reused families keep
+the palette and type they were made with, so they are not on this palette yet.
+
 ## Maintain the figures
 
 The [rendering record](assets/profile-explainers.json) records input/output hashes,

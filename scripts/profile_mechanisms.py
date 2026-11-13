@@ -4,6 +4,8 @@ import json
 import math
 import struct
 
+FLOOR = 42  # Obscur sets no label under 30 pt, which is 42 px at 100 dpi
+
 
 class Diagram:
     def __init__(self, root, project, roles, fonts, narrow, height=1100):
@@ -28,7 +30,7 @@ class Diagram:
         return max((r['bounds'][3] for r in self.labels), default=0)
 
     def text(self, x, y, value, size=None, face='Regular', role='text', width=None):
-        size = size or self.size
+        size = max(size or self.size, FLOOR)
         label = self.ax.text(x, y, value, fontproperties=self.fonts[face](size),
                              va='top', color=self.roles[role], linespacing=1.18, zorder=5)
         self.fig.canvas.draw()
@@ -61,7 +63,7 @@ class Diagram:
 
     def panel(self, x, y, w, h, *, dashed=False, fill='panel'):
         from matplotlib.patches import FancyBboxPatch
-        self.ax.add_patch(FancyBboxPatch((x,y),w,h,boxstyle='round,pad=0,rounding_size=12',
+        self.ax.add_patch(FancyBboxPatch((x,y),w,h,boxstyle='round,pad=0,rounding_size=18',
             facecolor=self.roles[fill],edgecolor=self.roles['border'],linewidth=2,
             linestyle='--' if dashed else '-',zorder=1))
         self.shapes.append([x,y,x+w,y+h])
@@ -165,7 +167,7 @@ def adaptive(d):
         d.box(250,y,650,'Waiting value: 100','99 waiting replacements.',h=220);y+=255
         d.arrow((130,y-225),(130,y+35))
         d.box(60,y+45,840,'Payload 0 returns','Obsolete result is rejected.',h=230);y+=300
-        d.arrow((480,y-75),(480,y-10))
+        d.arrow((480,y-22),(480,y+12))
         d.box(60,y+15,840,'Payload 100 runs and returns','Physical completion is reconciled.',h=270);y+=330
         d.text(60,y,'Adoption gate: is this still current?',48,'Bold',width=840)
         d.box(60,d.bottom+45,840,'Adopt the current answer','Payload 100; revision 101.',h=250)
@@ -176,11 +178,11 @@ def adaptive(d):
             d.line((370,yy+45),(1700,yy+45),role='muted',z=0)
         d.box(420,y-10,450,'Payload 0 admitted',h=160,size=40)
         d.box(940,y-10,680,'Latest waiting value: 100',h=105,size=40)
-        d.box(420,y+215,600,'Compute 0 -> return','Old result is rejected.',h=170,size=40)
-        d.box(1120,y+215,565,'Compute 100 -> return',h=170,size=40)
-        d.arrow((1020,y+300),(1100,y+300))
+        d.box(420,y+215,600,'Compute 0 -> return','Old result is rejected.',h=195,size=42)
+        d.box(1120,y+215,565,'Compute 100 -> return',h=195,size=42)
+        d.arrow((1020,y+312),(1100,y+312))
         d.box(1120,y+450,565,'Adopt revision 101','Payload 100 is the current answer.',h=240,size=40)
-        d.arrow((1400,y+390),(1400,y+440))
+        d.arrow((1400,y+415),(1400,y+440))
         d.text(60,y+720,'2 computations; 99 waiting replacements; 1 obsolete result rejected.',38,
                width=d.w-120)
 
@@ -194,18 +196,18 @@ def atlas(d):
         d.box(60,y,590,'A credited source record','Locator, creator and inspection coverage.',h=240)
         d.arrow((650,y+120),(810,y+120))
         px,pw=850,890
-    d.panel(px,y,pw,690)
+    d.panel(px,y,pw,750)
     d.text(px+28,y+28,'Evidence passport',48,'Bold',width=pw-56)
     d.text(px+28,y+108,'Independent fields, not one verified badge',32,role='muted',width=pw-56)
     for i,label in enumerate(['Intake','Assertion','Time registration','Spatial registration','Availability','Rights']):
-        yy=y+190+i*77
+        yy=y+250+i*77
         d.text(px+28,yy,label,42,width=pw-290)
         d.line((px+pw-230,yy+25),(px+pw-35,yy+25),dashed=True)
     if not d.narrow:
         d.text(60,y+330,'Clock roles',46,'SemiBold')
         d.text(60,y+410,'Capture time\nPublication time\nPlayer-relative time',40,width=600)
         d.text(60,y+600,'A clock alone does not register a viewpoint.',38,role='muted',width=650)
-    y+=750
+    y+=810
     d.text(60,y,'Time and viewpoint may remain unknown.',44 if d.narrow else 46,
            'SemiBold',width=d.w-120);y=d.bottom+45
     if d.narrow:
@@ -307,19 +309,19 @@ def calendar(d):
     d.panel(x,y,w,json_height)
     csvy=y+json_height+60 if d.narrow else y
     csvx,csvw=(60,840) if d.narrow else (980,760)
-    d.panel(csvx,csvy,csvw,290)
+    d.panel(csvx,csvy,csvw,345)
     d.text(csvx+28,csvy+25,'Separate CSV export',46,'Bold',width=csvw-56)
     widths=[90,285,csvw-405]
     labels=[('id','1'),('title','Lab review'),('starts_at','2026-11-01\n09:00')]
     xx=csvx+20
     for col,((heading,value),cw) in enumerate(zip(labels,widths)):
-        d.text(xx+10,csvy+110,heading,32,'SemiBold',width=cw-15)
-        d.text(xx+10,csvy+165,value,38 if d.narrow else 34,width=cw-15)
-        if col:d.line((xx-7,csvy+100),(xx-7,csvy+265))
+        d.text(xx+10,csvy+105,heading,32,'SemiBold',width=cw-15)
+        d.text(xx+10,csvy+188,value,38 if d.narrow else 34,width=cw-15)
+        if col:d.line((xx-7,csvy+100),(xx-7,csvy+320))
         xx+=cw
-    d.line((csvx+20,csvy+150),(csvx+csvw-20,csvy+150))
+    d.line((csvx+20,csvy+172),(csvx+csvw-20,csvy+172))
     if not d.narrow:d.arrow((875,y+240),(960,y+240))
-    y=max(y+json_height,csvy+290)+65
+    y=max(y+json_height,csvy+345)+65
     d.text(60,y,'Persistence boundary',46,'SemiBold');y+=90
     if d.narrow:
         d.text(60,y,'Temporary file -> replace JSON\n-> adopt in-memory state',46,width=840)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1296pt" height="979.2pt" viewBox="0 0 1296 979.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1296pt" height="1056.96pt" viewBox="0 0 1296 1056.96" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -21,68 +21,68 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 979.2 
-L 1296 979.2 
+   <path d="M 0 1056.96 
+L 1296 1056.96 
 L 1296 0 
 L 0 0 
 z
-" style="fill: #090909"/>
+"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 51.84 266.837766 
-L 610.56 266.837766 
-Q 619.2 266.837766 619.2 275.477766 
-L 619.2 659.237766 
-Q 619.2 667.877766 610.56 667.877766 
-L 51.84 667.877766 
-Q 43.2 667.877766 43.2 659.237766 
-L 43.2 275.477766 
-Q 43.2 266.837766 51.84 266.837766 
+    <path d="M 56.16 279.173559 
+L 606.24 279.173559 
+Q 619.2 279.173559 619.2 292.133559 
+L 619.2 716.213559 
+Q 619.2 729.173559 606.24 729.173559 
+L 56.16 729.173559 
+Q 43.2 729.173559 43.2 716.213559 
+L 43.2 292.133559 
+Q 43.2 279.173559 56.16 279.173559 
 z
-" clip-path="url(#p0def453674)" style="fill: #151515; stroke: #858585; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#pfa33463e10)" style="fill: #151515; stroke: #999999; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
-    <path d="M 714.24 266.837766 
-L 1244.16 266.837766 
-Q 1252.8 266.837766 1252.8 275.477766 
-L 1252.8 466.997766 
-Q 1252.8 475.637766 1244.16 475.637766 
-L 714.24 475.637766 
-Q 705.6 475.637766 705.6 466.997766 
-L 705.6 275.477766 
-Q 705.6 266.837766 714.24 266.837766 
+    <path d="M 718.56 279.173559 
+L 1239.84 279.173559 
+Q 1252.8 279.173559 1252.8 292.133559 
+L 1252.8 514.613559 
+Q 1252.8 527.573559 1239.84 527.573559 
+L 718.56 527.573559 
+Q 705.6 527.573559 705.6 514.613559 
+L 705.6 292.133559 
+Q 705.6 279.173559 718.56 279.173559 
 z
-" clip-path="url(#p0def453674)" style="fill: #151515; stroke: #858585; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#pfa33463e10)" style="fill: #151515; stroke: #999999; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
-    <path d="M 779.76 338.837766 
-L 779.76 457.637766 
-" clip-path="url(#p0def453674)" style="fill: none; stroke: #858585; stroke-width: 3; stroke-linecap: square"/>
+    <path d="M 779.76 351.173559 
+L 779.76 509.573559 
+" clip-path="url(#pfa33463e10)" style="fill: none; stroke: #999999; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
-    <path d="M 984.96 338.837766 
-L 984.96 457.637766 
-" clip-path="url(#p0def453674)" style="fill: none; stroke: #858585; stroke-width: 3; stroke-linecap: square"/>
+    <path d="M 984.96 351.173559 
+L 984.96 509.573559 
+" clip-path="url(#pfa33463e10)" style="fill: none; stroke: #999999; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
-    <path d="M 720 374.837766 
-L 1238.4 374.837766 
-" clip-path="url(#p0def453674)" style="fill: none; stroke: #858585; stroke-width: 3; stroke-linecap: square"/>
+    <path d="M 720 403.013559 
+L 1238.4 403.013559 
+" clip-path="url(#pfa33463e10)" style="fill: none; stroke: #999999; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="patch_4">
-    <path d="M 631.998413 439.637766 
-Q 660.600107 439.637766 686.406717 439.637766 
-" clip-path="url(#p0def453674)" style="fill: none; stroke: #b3c8d8; stroke-width: 2.5; stroke-linecap: round"/>
-    <path d="M 676.406717 434.637766 
-L 686.406717 439.637766 
-L 676.406717 444.637766 
+    <path d="M 631.998413 451.973559 
+Q 660.600107 451.973559 686.406717 451.973559 
+" clip-path="url(#pfa33463e10)" style="fill: none; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 676.406717 446.973559 
+L 686.406717 451.973559 
+L 676.406717 456.973559 
 z
-" clip-path="url(#p0def453674)" style="fill: #b3c8d8; stroke: #b3c8d8; stroke-width: 2.5; stroke-linecap: round"/>
+" clip-path="url(#pfa33463e10)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
    </g>
    <g id="text_1">
     <!-- Calendar Tracker AI -->
-    <g style="fill: #f4f4f4" transform="translate(43.2 63.479911) scale(0.3888 -0.3888)">
+    <g style="fill: #ffffff" transform="translate(43.2 63.479911) scale(0.3888 -0.3888)">
      <defs>
       <path id="Inter-Bold-49" d="M 2456 -63 
 Q 1834 -63 1346 218 
@@ -353,7 +353,7 @@ z
    </g>
    <g id="text_2">
     <!-- EVENT TO JSON AND CSV DOCUMENTS -->
-    <g style="fill: #b3c8d8" transform="translate(43.2 125.572627) scale(0.216 -0.216)">
+    <g style="fill: #ffffff" transform="translate(43.2 134.877248) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-SemiBold-5f" d="M 469 0 
 L 469 4656 
@@ -648,7 +648,7 @@ z
    </g>
    <g id="text_3">
     <!-- Lab review | 2026-11-01 09:00 -->
-    <g style="fill: #f4f4f4" transform="translate(43.2 212.041561) scale(0.3312 -0.3312)">
+    <g style="fill: #ffffff" transform="translate(43.2 224.377355) scale(0.3312 -0.3312)">
      <defs>
       <path id="Inter-SemiBold-119" d="M 469 0 
 L 469 4656 
@@ -1045,7 +1045,7 @@ z
    </g>
    <g id="text_4">
     <!-- Calendar JSON -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 320.513245) scale(0.3312 -0.3312)">
+    <g style="fill: #ffffff" transform="translate(63.36 332.849039) scale(0.3312 -0.3312)">
      <defs>
       <path id="Inter-Bold-10a" d="M 1772 -63 
 Q 1047 -63 630 317 
@@ -1163,7 +1163,7 @@ z
    </g>
    <g id="text_5">
     <!-- { -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 372.781181) scale(0.2592 -0.2592)">
+    <g style="fill: #ffffff" transform="translate(63.36 389.574211) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-5a3" d="M 2344 -872 
 Q 1675 -872 1403 -581 
@@ -1198,7 +1198,7 @@ z
      <use xlink:href="#Inter-Regular-5a3"/>
     </g>
     <!-- "schema_version": 1, -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 409.015013) scale(0.2592 -0.2592)">
+    <g style="fill: #ffffff" transform="translate(63.36 431.847014) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-5cd" d="M 725 2884 
 L 656 4656 
@@ -1564,7 +1564,7 @@ z
      <use xlink:href="#Inter-Regular-5dd" transform="translate(945.78125 0)"/>
     </g>
     <!-- "next_id": 2, -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 446.022394) scale(0.2592 -0.2592)">
+    <g style="fill: #ffffff" transform="translate(63.36 475.022292) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-3e1" d="M 203 0 
 L 1431 1794 
@@ -1689,7 +1689,7 @@ z
      <use xlink:href="#Inter-Regular-5dd" transform="translate(549.90625 0)"/>
     </g>
     <!-- "events": [{"id": 1, -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 483.297075) scale(0.2592 -0.2592)">
+    <g style="fill: #ffffff" transform="translate(63.36 518.50942) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-59f" d="M 706 -872 
 L 706 4941 
@@ -1725,7 +1725,7 @@ z
      <use xlink:href="#Inter-Regular-5dd" transform="translate(816.4375 0)"/>
     </g>
     <!-- "title": "Lab review", -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 520.037156) scale(0.2592 -0.2592)">
+    <g style="fill: #ffffff" transform="translate(63.36 561.372848) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-2e0" d="M 1056 4656 
 L 1056 0 
@@ -1830,7 +1830,7 @@ z
      <use xlink:href="#Inter-Regular-5dd" transform="translate(918.890625 0)"/>
     </g>
     <!-- "starts_at": -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 557.955788) scale(0.2592 -0.2592)">
+    <g style="fill: #ffffff" transform="translate(63.36 605.611252) scale(0.3024 -0.3024)">
      <use xlink:href="#Inter-Regular-5cd"/>
      <use xlink:href="#Inter-Regular-367" transform="translate(46.578125 0)"/>
      <use xlink:href="#Inter-Regular-379" transform="translate(99.359375 0)"/>
@@ -1845,7 +1845,7 @@ z
      <use xlink:href="#Inter-Regular-5e1" transform="translate(493.515625 0)"/>
     </g>
     <!-- "2026-11-01 09:00"}] -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 594.825469) scale(0.2592 -0.2592)">
+    <g style="fill: #ffffff" transform="translate(63.36 648.62588) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-53d" d="M 2019 -63 
 Q 1241 -63 811 562 
@@ -2038,13 +2038,13 @@ z
      <use xlink:href="#Inter-Regular-5a1" transform="translate(968.203125 0)"/>
     </g>
     <!-- } -->
-    <g style="fill: #f4f4f4" transform="translate(63.36 631.83285) scale(0.2592 -0.2592)">
+    <g style="fill: #ffffff" transform="translate(63.36 691.801158) scale(0.3024 -0.3024)">
      <use xlink:href="#Inter-Regular-5a4"/>
     </g>
    </g>
    <g id="text_6">
     <!-- Separate CSV export -->
-    <g style="fill: #f4f4f4" transform="translate(725.76 317.312508) scale(0.3312 -0.3312)">
+    <g style="fill: #ffffff" transform="translate(725.76 329.648302) scale(0.3312 -0.3312)">
      <defs>
       <path id="Inter-Bold-34b" d="M 400 -1306 
 L 400 3494 
@@ -2186,7 +2186,7 @@ z
    </g>
    <g id="text_7">
     <!-- id -->
-    <g style="fill: #f4f4f4" transform="translate(727.2 371.152491) scale(0.2304 -0.2304)">
+    <g style="fill: #ffffff" transform="translate(727.2 387.736636) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-SemiBold-255" d="M 1719 -63 
 Q 1306 -63 979 148 
@@ -2227,13 +2227,13 @@ z
    </g>
    <g id="text_8">
     <!-- 1 -->
-    <g style="fill: #f4f4f4" transform="translate(727.2 412.018073) scale(0.2448 -0.2448)">
+    <g style="fill: #ffffff" transform="translate(727.2 447.120998) scale(0.3024 -0.3024)">
      <use xlink:href="#Inter-Regular-53e"/>
     </g>
    </g>
    <g id="text_9">
     <!-- title -->
-    <g style="fill: #f4f4f4" transform="translate(792 371.136291) scale(0.2304 -0.2304)">
+    <g style="fill: #ffffff" transform="translate(792 387.715373) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-SemiBold-379" d="M 2047 3494 
 L 2047 2856 
@@ -2275,7 +2275,7 @@ z
    </g>
    <g id="text_10">
     <!-- Lab review -->
-    <g style="fill: #f4f4f4" transform="translate(792 412.155773) scale(0.2448 -0.2448)">
+    <g style="fill: #ffffff" transform="translate(792 447.291098) scale(0.3024 -0.3024)">
      <use xlink:href="#Inter-Regular-119"/>
      <use xlink:href="#Inter-Regular-1fb" transform="translate(56.546875 0)"/>
      <use xlink:href="#Inter-Regular-242" transform="translate(112.703125 0)"/>
@@ -2290,7 +2290,7 @@ z
    </g>
    <g id="text_11">
     <!-- starts_at -->
-    <g style="fill: #f4f4f4" transform="translate(997.2 369.095091) scale(0.2304 -0.2304)">
+    <g style="fill: #ffffff" transform="translate(997.2 385.036298) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-SemiBold-367" d="M 1753 -72 
 Q 1150 -72 758 186 
@@ -2342,7 +2342,7 @@ z
    </g>
    <g id="text_12">
     <!-- 2026-11-01 -->
-    <g style="fill: #f4f4f4" transform="translate(997.2 412.018073) scale(0.2448 -0.2448)">
+    <g style="fill: #ffffff" transform="translate(997.2 447.120998) scale(0.3024 -0.3024)">
      <use xlink:href="#Inter-Regular-53f"/>
      <use xlink:href="#Inter-Regular-53d" transform="translate(60.984375 0)"/>
      <use xlink:href="#Inter-Regular-53f" transform="translate(124.078125 0)"/>
@@ -2355,7 +2355,7 @@ z
      <use xlink:href="#Inter-Regular-53e" transform="translate(483.515625 0)"/>
     </g>
     <!-- 09:00 -->
-    <g style="fill: #f4f4f4" transform="translate(997.2 446.986702) scale(0.2448 -0.2448)">
+    <g style="fill: #ffffff" transform="translate(997.2 490.317539) scale(0.3024 -0.3024)">
      <use xlink:href="#Inter-Regular-53d"/>
      <use xlink:href="#Inter-Regular-548" transform="translate(63.09375 0)"/>
      <use xlink:href="#Inter-Regular-5e2" transform="translate(125.109375 0)"/>
@@ -2365,7 +2365,7 @@ z
    </g>
    <g id="text_13">
     <!-- Persistence boundary -->
-    <g style="fill: #f4f4f4" transform="translate(43.2 747.499233) scale(0.3312 -0.3312)">
+    <g style="fill: #ffffff" transform="translate(43.2 808.795027) scale(0.3312 -0.3312)">
      <defs>
       <path id="Inter-SemiBold-177" d="M 469 0 
 L 469 4656 
@@ -2526,7 +2526,7 @@ z
    </g>
    <g id="text_14">
     <!-- Temporary file -&gt; replace JSON -&gt; adopt in-memory state -->
-    <g style="fill: #f4f4f4" transform="translate(43.2 810.864788) scale(0.3168 -0.3168)">
+    <g style="fill: #ffffff" transform="translate(43.2 872.160581) scale(0.3168 -0.3168)">
      <defs>
       <path id="Inter-Regular-19b" d="M 306 4131 
 L 306 4656 
@@ -2812,7 +2812,7 @@ z
    </g>
    <g id="text_15">
     <!-- A failed write keeps the prior state. CSV refuses an existing destination. -->
-    <g style="fill: #bcbcbc" transform="translate(43.2 871.277864) scale(0.2736 -0.2736)">
+    <g style="fill: #cccccc" transform="translate(43.2 935.415773) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-2" d="M 163 0 
 L 1853 4656 
@@ -3045,7 +3045,7 @@ z
    </g>
    <g id="text_16">
     <!-- Single-writer coursework app. No online calendar or AI service. -->
-    <g style="fill: #bcbcbc" transform="translate(43.2 940.545605) scale(0.216 -0.216)">
+    <g style="fill: #cccccc" transform="translate(43.2 1014.435127) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-c5" d="M 1156 4656 
 L 1156 0 
@@ -3123,8 +3123,8 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p0def453674">
-   <rect x="0" y="0" width="1296" height="979.2"/>
+  <clipPath id="pfa33463e10">
+   <rect x="0" y="0" width="1296" height="1056.96"/>
   </clipPath>
  </defs>
 </svg>
