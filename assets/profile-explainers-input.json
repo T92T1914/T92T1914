@@ -282,7 +282,7 @@
       "composition": "event to JSON and CSV documents",
       "renderer": "project-specific",
       "figure_class": "conceptual mechanism",
-      "alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before in memory adoption; failed writes retain the prior state."
+      "alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before adoption in memory; failed writes retain the prior state."
     }
   ]
 }

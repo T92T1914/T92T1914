@@ -285,7 +285,7 @@
         "composition": "event to JSON and CSV documents",
         "renderer": "project-specific",
         "figure_class": "conceptual mechanism",
-        "alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before in memory adoption; failed writes retain the prior state."
+        "alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before adoption in memory; failed writes retain the prior state."
       }
     ]
   },
@@ -2961,7 +2961,7 @@
     "fonttools": "4.63.0"
   },
   "inputs_sha256_lf": {
-    "assets/profile-explainers-input.json": "023d0c4e83445a4c32e67bcea2894a3fc298445d2418e52ca51b3c8d5478792b",
+    "assets/profile-explainers-input.json": "dd084f0ee5de0f2c6eaf1978f2b3536607afb5cba874ccc7bd26b41362094e10",
     "assets/profile-figure-tokens.json": "65e87d918e76744e0c222c3db1452e149091affabad37764531a79bcbf6fe81f",
     "scripts/render_project_explainers.py": "fc251bb957f83a0a4ad778375734b824d28720b1569a7450c56dd6326e108b10",
     "scripts/profile_mechanisms.py": "a091d311488987b56f470a11daa3c7b3c55f30c692c20ed64a5f54bb6b9a267f",
@@ -3004,9 +3004,9 @@
     "assets/explainers/themes-obscur-wide.svg": "aa2f87a4bf003b17c3d91c79461919a06e036a8eb0f688173d710ccce012a475",
     "assets/explainers/themes-obscur-narrow.png": "88b0a052ee5924b98eea434e2fa621039c8bb1191f4d1cdb8fddc429d170df8f",
     "assets/explainers/themes-obscur-narrow.svg": "16bdb33f2d41e4728539f7b46e3230047ae474bafe0fbde4bdb89cd607561aa1",
-    "assets/explainers/calendar-obscur-wide.png": "836f4ff3af5ff89f8a4dd44a6d292cec9c9f1b5fb591f3949c547376c3a1730c",
-    "assets/explainers/calendar-obscur-wide.svg": "f0dc144715ddfe4d1a95e44ea3844e82b83442d7f56877e58da5228e1c82f978",
-    "assets/explainers/calendar-obscur-narrow.png": "7348c60395f97f370f9b8f98deb7978ee180300647e356e678af128d6bc7b701",
-    "assets/explainers/calendar-obscur-narrow.svg": "fcff82b77c273b1af61c661cab4301c22ac0ed759fa20ac4c72c41f61500208d"
+    "assets/explainers/calendar-obscur-wide.png": "4659e95e89d04eb0ef55569d675746d3484d04a7e2a1c583e543e0ee1f168c2b",
+    "assets/explainers/calendar-obscur-wide.svg": "bb899f0ef36043bb4fcbe971b1e51f5f8cb7bc1b3cdf3fcf1b1fc6ed835971c8",
+    "assets/explainers/calendar-obscur-narrow.png": "d6ca8c25b5f87088ec8c01db80e7aa557cbd1a6b64f5d4a592c4efcf4976beb3",
+    "assets/explainers/calendar-obscur-narrow.svg": "3d5887bd5daad256a5645df99a7ee37dcf7d957e92705f23bfcfe11e7a2d3cce"
   }
 }

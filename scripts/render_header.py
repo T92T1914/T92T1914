@@ -30,7 +30,7 @@ PALETTES = {
         "border": "#999999",
     },
 }
-BAR_FILL = {"clair": ("accent", "0.18"), "obscur": ("control", "1")}
+BAR_FILL = {"clair": ("accent", ' fill-opacity="0.18"'), "obscur": ("control", "")}
 PALETTE_SOURCES = {
     "clair": TOKEN_SOURCE,
     "obscur": (
@@ -76,7 +76,7 @@ def render(appearance):
       <circle cx="391" cy="103" r="6"/><circle cx="445" cy="83" r="6"/>
     </g>
     <!-- A distribution without a fabricated scale or numeric claim. -->
-    <g fill="{c[bar_fill]}" fill-opacity="{bar_opacity}" stroke-width="3">
+    <g fill="{c[bar_fill]}"{bar_opacity} stroke-width="3">
       <rect x="518" y="145" width="17" height="20" rx="3"/>
       <rect x="543" y="121" width="17" height="44" rx="3"/>
       <rect x="568" y="85" width="17" height="80" rx="3"/>
