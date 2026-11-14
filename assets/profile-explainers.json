@@ -41,27 +41,27 @@
         "reused_artifacts": {
           "wide.png": {
             "repository": "ragged-pool",
-            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "revision": "aef163e504f80107f7aa46ac21bbe32a719ead3b",
             "path": "docs/ragged-pool-obscur.png",
-            "sha256": "108403fa1d1eef675d70ceb583d33c55d52fdbb26e787da1b1ba3e9038e2f229"
+            "sha256": "326819856e97d9489970a70eb7625b270e0dd6847088945c51c4b2650dc183eb"
           },
           "wide.svg": {
             "repository": "ragged-pool",
-            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "revision": "aef163e504f80107f7aa46ac21bbe32a719ead3b",
             "path": "docs/ragged-pool-obscur.svg",
-            "sha256": "8831e61ed7075b2aeceac58a4b000e5e617a55c619bace5daf2aac1d33a81cdd"
+            "sha256": "9b6189fb2b1717181fa68ffaa35925c0164d2fd4f13b9fecb9f42848428d1e95"
           },
           "narrow.png": {
             "repository": "ragged-pool",
-            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "revision": "aef163e504f80107f7aa46ac21bbe32a719ead3b",
             "path": "docs/ragged-pool-obscur-narrow.png",
-            "sha256": "9cf0b7b0f0ba676fc2331f0d4af531d6d9b22038be7b19550cff7e2a6eb941b1"
+            "sha256": "60265dca1630e7821cdee39f380a857e81f18cf91c7ebd1fa827c38edc4d8d8a"
           },
           "narrow.svg": {
             "repository": "ragged-pool",
-            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "revision": "aef163e504f80107f7aa46ac21bbe32a719ead3b",
             "path": "docs/ragged-pool-obscur-narrow.svg",
-            "sha256": "22c8410d9417cf123d4f0b0fabf1d4560103006bb246e2c4a8f39223219ee4a0"
+            "sha256": "263c300db009a846ad1250e30222de7fefc20b48466212316963631c9b73556d"
           }
         },
         "alt": "Unequal groups feed softmax-weighted vector summaries. An empty group returns zeros, and the conceptual first-order gradient arrow returns to values and scores."
@@ -800,44 +800,44 @@
     },
     "ragged": {
       "wide": {
-        "width": 1600,
-        "height": 1120,
+        "width": 1800,
+        "height": 897,
         "kind": "conceptual mechanism",
         "composition": "grouped vectors and gradient return",
         "reused_exact_bytes": true,
         "provenance": {
           "wide.png": {
             "repository": "ragged-pool",
-            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "revision": "aef163e504f80107f7aa46ac21bbe32a719ead3b",
             "path": "docs/ragged-pool-obscur.png",
-            "sha256": "108403fa1d1eef675d70ceb583d33c55d52fdbb26e787da1b1ba3e9038e2f229"
+            "sha256": "326819856e97d9489970a70eb7625b270e0dd6847088945c51c4b2650dc183eb"
           },
           "wide.svg": {
             "repository": "ragged-pool",
-            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "revision": "aef163e504f80107f7aa46ac21bbe32a719ead3b",
             "path": "docs/ragged-pool-obscur.svg",
-            "sha256": "8831e61ed7075b2aeceac58a4b000e5e617a55c619bace5daf2aac1d33a81cdd"
+            "sha256": "9b6189fb2b1717181fa68ffaa35925c0164d2fd4f13b9fecb9f42848428d1e95"
           }
         }
       },
       "narrow": {
-        "width": 900,
-        "height": 1590,
+        "width": 960,
+        "height": 1576,
         "kind": "conceptual mechanism",
         "composition": "grouped vectors and gradient return",
         "reused_exact_bytes": true,
         "provenance": {
           "narrow.png": {
             "repository": "ragged-pool",
-            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "revision": "aef163e504f80107f7aa46ac21bbe32a719ead3b",
             "path": "docs/ragged-pool-obscur-narrow.png",
-            "sha256": "9cf0b7b0f0ba676fc2331f0d4af531d6d9b22038be7b19550cff7e2a6eb941b1"
+            "sha256": "60265dca1630e7821cdee39f380a857e81f18cf91c7ebd1fa827c38edc4d8d8a"
           },
           "narrow.svg": {
             "repository": "ragged-pool",
-            "revision": "91470d74a0559a5f6f0168deb27f27f87152d66a",
+            "revision": "aef163e504f80107f7aa46ac21bbe32a719ead3b",
             "path": "docs/ragged-pool-obscur-narrow.svg",
-            "sha256": "22c8410d9417cf123d4f0b0fabf1d4560103006bb246e2c4a8f39223219ee4a0"
+            "sha256": "263c300db009a846ad1250e30222de7fefc20b48466212316963631c9b73556d"
           }
         }
       }
@@ -2961,7 +2961,7 @@
     "fonttools": "4.63.0"
   },
   "inputs_sha256_lf": {
-    "assets/profile-explainers-input.json": "dd084f0ee5de0f2c6eaf1978f2b3536607afb5cba874ccc7bd26b41362094e10",
+    "assets/profile-explainers-input.json": "7f2d4118b349b172d304881c5f604265b83faf9441de8181db12853c6e296fc3",
     "assets/profile-figure-tokens.json": "65e87d918e76744e0c222c3db1452e149091affabad37764531a79bcbf6fe81f",
     "scripts/render_project_explainers.py": "fc251bb957f83a0a4ad778375734b824d28720b1569a7450c56dd6326e108b10",
     "scripts/profile_mechanisms.py": "a091d311488987b56f470a11daa3c7b3c55f30c692c20ed64a5f54bb6b9a267f",
@@ -2972,10 +2972,10 @@
     "assets/explainers/runtime-obscur-wide.svg": "dfcb8f2eb9d9756515c5c55c1e0871bd3512a138a509e440f1b99c7dc51652fc",
     "assets/explainers/runtime-obscur-narrow.png": "37e7fb16abd8f7235433db694824966016a2ee0bd93d28e70f3da92e76e7452c",
     "assets/explainers/runtime-obscur-narrow.svg": "58a47ddaaa67365f4953f8f6f67d6a7e0a4f7d7df81aa67b9523b78e92f08de9",
-    "assets/explainers/ragged-obscur-wide.png": "108403fa1d1eef675d70ceb583d33c55d52fdbb26e787da1b1ba3e9038e2f229",
-    "assets/explainers/ragged-obscur-wide.svg": "8831e61ed7075b2aeceac58a4b000e5e617a55c619bace5daf2aac1d33a81cdd",
-    "assets/explainers/ragged-obscur-narrow.png": "9cf0b7b0f0ba676fc2331f0d4af531d6d9b22038be7b19550cff7e2a6eb941b1",
-    "assets/explainers/ragged-obscur-narrow.svg": "22c8410d9417cf123d4f0b0fabf1d4560103006bb246e2c4a8f39223219ee4a0",
+    "assets/explainers/ragged-obscur-wide.png": "326819856e97d9489970a70eb7625b270e0dd6847088945c51c4b2650dc183eb",
+    "assets/explainers/ragged-obscur-wide.svg": "9b6189fb2b1717181fa68ffaa35925c0164d2fd4f13b9fecb9f42848428d1e95",
+    "assets/explainers/ragged-obscur-narrow.png": "60265dca1630e7821cdee39f380a857e81f18cf91c7ebd1fa827c38edc4d8d8a",
+    "assets/explainers/ragged-obscur-narrow.svg": "263c300db009a846ad1250e30222de7fefc20b48466212316963631c9b73556d",
     "assets/explainers/mcts-obscur-wide.png": "92d8d1b625ef19955a971eef9a3279c6d1b6d61ccdec4e2fca3a6f0ba517a79b",
     "assets/explainers/mcts-obscur-wide.svg": "5d58c87608a8b4415d39698cdf81e2b18f57318db47b73cf13ae62c0d62fbda3",
     "assets/explainers/mcts-obscur-narrow.png": "9c1ecb602abb369d48c4823b86c275764ba46fe59e96ed81778d08b3d829f732",
