@@ -4,6 +4,7 @@ import json
 import math
 import struct
 
+SPACED = {'atlas'}  # families already on the 1.3 line spacing Obscur asks for
 FLOOR = 42  # Obscur sets no label under 30 pt, which is 42 px at 100 dpi
 
 
@@ -32,7 +33,7 @@ class Diagram:
     def text(self, x, y, value, size=None, face='Regular', role='text', width=None):
         size = max(size or self.size, FLOOR)
         label = self.ax.text(x, y, value, fontproperties=self.fonts[face](size),
-                             va='top', color=self.roles[role], linespacing=1.18, zorder=5)
+                             va='top', color=self.roles[role], linespacing=1.3 if self.project['id'] in SPACED else 1.18, zorder=5)
         self.fig.canvas.draw()
         if width:
             lines = []
@@ -193,8 +194,8 @@ def atlas(d):
         d.text(60,y,'Source record -> observation',48,'SemiBold',width=840);y+=95
         px,pw=60,840
     else:
-        d.box(60,y,590,'A credited source record','Locator, creator and inspection coverage.',h=240)
-        d.arrow((650,y+120),(810,y+120))
+        d.box(60,y,590,'A credited source record','Locator, creator and inspection coverage.',h=280)
+        d.arrow((650,y+140),(810,y+140))
         px,pw=850,890
     d.panel(px,y,pw,750)
     d.text(px+28,y+28,'Evidence passport',48,'Bold',width=pw-56)
@@ -206,17 +207,17 @@ def atlas(d):
     if not d.narrow:
         d.text(60,y+330,'Clock roles',46,'SemiBold')
         d.text(60,y+410,'Capture time\nPublication time\nPlayer relative time',40,width=600)
-        d.text(60,y+600,'A clock alone does not register a viewpoint.',38,role='muted',width=650)
-    y+=810
+        d.text(60,d.bottom+40,'A clock alone does not register a viewpoint.',38,role='muted',width=650)
+    y=max(y+810,d.bottom+60)
     d.text(60,y,'Time and viewpoint may remain unknown.',44 if d.narrow else 46,
            'SemiBold',width=d.w-120);y=d.bottom+45
     if d.narrow:
         d.text(60,y,'Capture / publication / player clocks have different roles.',42,width=840);y=d.bottom+50
-        d.box(60,y,840,'Documentary evidence','Inspect the source dossier and its limits.',h=280)
-        d.box(60,y+330,840,'Procedural illustration','Labeled separately; not a source observation.',h=280,dashed=True)
+        d.box(60,y,840,'Documentary evidence','Inspect the source dossier and its limits.',h=330)
+        d.box(60,y+380,840,'Procedural illustration','Labeled separately; not a source observation.',h=330,dashed=True)
     else:
-        d.box(60,y,800,'Documentary evidence','Inspect the dossier and unresolved context.',h=280)
-        d.box(940,y,800,'Procedural illustration','Separate, explicitly labeled layer.',h=280,dashed=True)
+        d.box(60,y,800,'Documentary evidence','Inspect the dossier and unresolved context.',h=330)
+        d.box(940,y,800,'Procedural illustration','Separate, explicitly labeled layer.',h=330,dashed=True)
 
 
 def shipment(d):
