@@ -4,7 +4,7 @@ import json
 import math
 import struct
 
-SPACED = {'atlas'}  # families already on the 1.3 line spacing Obscur asks for
+SPACED = {'atlas', 'shipment'}  # families already on the 1.3 line spacing Obscur asks for
 FLOOR = 42  # Obscur sets no label under 30 pt, which is 42 px at 100 dpi
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="691.2pt" height="1502.64pt" viewBox="0 0 691.2 1502.64" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="691.2pt" height="1545.84pt" viewBox="0 0 691.2 1545.84" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -21,8 +21,8 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 1502.64 
-L 691.2 1502.64 
+   <path d="M 0 1545.84 
+L 691.2 1545.84 
 L 691.2 0 
 L 0 0 
 z
@@ -30,81 +30,81 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 128.16 503.884631 
-L 570.24 503.884631 
-Q 583.2 503.884631 583.2 516.844631 
-L 583.2 739.324631 
-Q 583.2 752.284631 570.24 752.284631 
-L 128.16 752.284631 
-Q 115.2 752.284631 115.2 739.324631 
-L 115.2 516.844631 
-Q 115.2 503.884631 128.16 503.884631 
+    <path d="M 128.16 524.374594 
+L 570.24 524.374594 
+Q 583.2 524.374594 583.2 537.334594 
+L 583.2 759.814594 
+Q 583.2 772.774594 570.24 772.774594 
+L 128.16 772.774594 
+Q 115.2 772.774594 115.2 759.814594 
+L 115.2 537.334594 
+Q 115.2 524.374594 128.16 524.374594 
 z
-" clip-path="url(#p0f89cc7221)" style="fill: #151515; stroke: #999999; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p501dedbd0e)" style="fill: #151515; stroke: #999999; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
-    <path d="M 64.8 356.284631 
-L 64.8 1184.284631 
-" clip-path="url(#p0f89cc7221)" style="fill: none; stroke-dasharray: 11.1,4.8; stroke-dashoffset: 0; stroke: #999999; stroke-width: 3"/>
+    <path d="M 64.8 376.774594 
+L 64.8 1204.774594 
+" clip-path="url(#p501dedbd0e)" style="fill: none; stroke-dasharray: 11.1,4.8; stroke-dashoffset: 0; stroke: #999999; stroke-width: 3"/>
    </g>
    <g id="line2d_2">
-    <path d="M 626.4 356.284631 
-L 626.4 1184.284631 
-" clip-path="url(#p0f89cc7221)" style="fill: none; stroke-dasharray: 11.1,4.8; stroke-dashoffset: 0; stroke: #999999; stroke-width: 3"/>
+    <path d="M 626.4 376.774594 
+L 626.4 1204.774594 
+" clip-path="url(#p501dedbd0e)" style="fill: none; stroke-dasharray: 11.1,4.8; stroke-dashoffset: 0; stroke: #999999; stroke-width: 3"/>
    </g>
    <g id="line2d_3">
-    <path d="M 165.6 770.284631 
-L 194.4 799.084631 
-" clip-path="url(#p0f89cc7221)" style="fill: none; stroke: #ffffff; stroke-width: 3; stroke-linecap: square"/>
+    <path d="M 165.6 790.774594 
+L 194.4 819.574594 
+" clip-path="url(#p501dedbd0e)" style="fill: none; stroke: #ffffff; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_4">
-    <path d="M 165.6 799.084631 
-L 194.4 770.284631 
-" clip-path="url(#p0f89cc7221)" style="fill: none; stroke: #ffffff; stroke-width: 3; stroke-linecap: square"/>
+    <path d="M 165.6 819.574594 
+L 194.4 790.774594 
+" clip-path="url(#p501dedbd0e)" style="fill: none; stroke: #ffffff; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="patch_3">
-    <path d="M 66.80094 460.684631 
-Q 345.599295 460.684631 621.602565 460.684631 
-" clip-path="url(#p0f89cc7221)" style="fill: none; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
-    <path d="M 611.602565 455.684631 
-L 621.602565 460.684631 
-L 611.602565 465.684631 
+    <path d="M 66.80094 481.174594 
+Q 345.599295 481.174594 621.602565 481.174594 
+" clip-path="url(#p501dedbd0e)" style="fill: none; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 611.602565 476.174594 
+L 621.602565 481.174594 
+L 611.602565 486.174594 
 z
-" clip-path="url(#p0f89cc7221)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
+" clip-path="url(#p501dedbd0e)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
    </g>
    <g id="patch_4">
-    <path d="M 624.400818 784.684631 
-Q 403.198914 784.684631 184.792095 784.684631 
-" clip-path="url(#p0f89cc7221)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
-    <path d="M 194.792095 789.684631 
-L 184.792095 784.684631 
-L 194.792095 779.684631 
+    <path d="M 624.400818 805.174594 
+Q 403.198914 805.174594 184.792095 805.174594 
+" clip-path="url(#p501dedbd0e)" style="fill: none; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 194.792095 810.174594 
+L 184.792095 805.174594 
+L 194.792095 800.174594 
 z
-" clip-path="url(#p0f89cc7221)" style="fill: #ffffff; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
+" clip-path="url(#p501dedbd0e)" style="fill: #ffffff; stroke-dasharray: 9.25,4; stroke-dashoffset: 0; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
    </g>
    <g id="patch_5">
-    <path d="M 66.80094 986.284631 
-Q 345.599295 986.284631 621.602565 986.284631 
-" clip-path="url(#p0f89cc7221)" style="fill: none; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
-    <path d="M 611.602565 981.284631 
-L 621.602565 986.284631 
-L 611.602565 991.284631 
+    <path d="M 66.80094 1006.774594 
+Q 345.599295 1006.774594 621.602565 1006.774594 
+" clip-path="url(#p501dedbd0e)" style="fill: none; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 611.602565 1001.774594 
+L 621.602565 1006.774594 
+L 611.602565 1011.774594 
 z
-" clip-path="url(#p0f89cc7221)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
+" clip-path="url(#p501dedbd0e)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
    </g>
    <g id="patch_6">
-    <path d="M 624.39906 1141.084631 
-Q 345.600705 1141.084631 69.597435 1141.084631 
-" clip-path="url(#p0f89cc7221)" style="fill: none; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
-    <path d="M 79.597435 1146.084631 
-L 69.597435 1141.084631 
-L 79.597435 1136.084631 
+    <path d="M 624.39906 1161.574594 
+Q 345.600705 1161.574594 69.597435 1161.574594 
+" clip-path="url(#p501dedbd0e)" style="fill: none; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 79.597435 1166.574594 
+L 69.597435 1161.574594 
+L 79.597435 1156.574594 
 z
-" clip-path="url(#p0f89cc7221)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
+" clip-path="url(#p501dedbd0e)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round"/>
    </g>
    <g id="text_1">
     <!-- Shipment Exception -->
-    <g style="fill: #ffffff" transform="translate(43.2 61.745569) scale(0.4032 -0.4032)">
+    <g style="fill: #ffffff" transform="translate(43.2 64.672706) scale(0.4032 -0.4032)">
      <defs>
       <path id="Inter-Bold-18d" d="M 2128 -69 
 Q 1288 -69 786 317 
@@ -414,7 +414,7 @@ z
      <use xlink:href="#Inter-Bold-305" transform="translate(914.53125 0)"/>
     </g>
     <!-- Workspace -->
-    <g style="fill: #ffffff" transform="translate(43.2 118.503056) scale(0.4032 -0.4032)">
+    <g style="fill: #ffffff" transform="translate(43.2 127.284469) scale(0.4032 -0.4032)">
      <defs>
       <path id="Inter-Bold-1cb" d="M 1403 0 
 L 153 4656 
@@ -558,7 +558,7 @@ z
    </g>
    <g id="text_2">
     <!-- ATOMIC TRANSACTION AND LOST -->
-    <g style="fill: #ffffff" transform="translate(43.2 194.500252) scale(0.3024 -0.3024)">
+    <g style="fill: #ffffff" transform="translate(43.2 208.404155) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-SemiBold-2" d="M 156 0 
 L 1781 4656 
@@ -823,7 +823,7 @@ z
      <use xlink:href="#Inter-SemiBold-19b" transform="translate(1621.71875 0)"/>
     </g>
     <!-- REPLY SEQUENCE -->
-    <g style="fill: #ffffff" transform="translate(43.2 236.893542) scale(0.3024 -0.3024)">
+    <g style="fill: #ffffff" transform="translate(43.2 255.188152) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-SemiBold-5f" d="M 469 0 
 L 469 4656 
@@ -949,7 +949,7 @@ z
    </g>
    <g id="text_3">
     <!-- Operator -->
-    <g style="fill: #ffffff" transform="translate(43.2 322.547428) scale(0.3168 -0.3168)">
+    <g style="fill: #ffffff" transform="translate(43.2 345.337284) scale(0.3168 -0.3168)">
      <defs>
       <path id="Inter-SemiBold-34b" d="M 431 -1306 
 L 431 3494 
@@ -1134,7 +1134,7 @@ z
    </g>
    <g id="text_4">
     <!-- Server -->
-    <g style="fill: #ffffff" transform="translate(450 325.601578) scale(0.3168 -0.3168)">
+    <g style="fill: #ffffff" transform="translate(450 348.391434) scale(0.3168 -0.3168)">
      <defs>
       <path id="Inter-SemiBold-3d4" d="M 1422 0 
 L 122 3494 
@@ -1161,7 +1161,7 @@ z
    </g>
    <g id="text_5">
     <!-- Casey assignment -->
-    <g style="fill: #ffffff" transform="translate(115.2 388.798186) scale(0.3312 -0.3312)">
+    <g style="fill: #ffffff" transform="translate(115.2 411.692583) scale(0.3312 -0.3312)">
      <defs>
       <path id="Inter-Regular-49" d="M 2447 -63 
 Q 1850 -63 1383 226 
@@ -1476,7 +1476,7 @@ z
      <use xlink:href="#Inter-Regular-379" transform="translate(833.96875 0)"/>
     </g>
     <!-- Expected version 2 -->
-    <g style="fill: #ffffff" transform="translate(115.2 436.279458) scale(0.3312 -0.3312)">
+    <g style="fill: #ffffff" transform="translate(115.2 463.982723) scale(0.3312 -0.3312)">
      <defs>
       <path id="Inter-Regular-5f" d="M 563 0 
 L 563 4656 
@@ -1720,7 +1720,7 @@ z
    </g>
    <g id="text_6">
     <!-- ONE ATOMIC COMMIT -->
-    <g style="fill: #ffffff" transform="translate(136.8 554.47207) scale(0.3024 -0.3024)">
+    <g style="fill: #ffffff" transform="translate(136.8 577.157386) scale(0.3024 -0.3024)">
      <use xlink:href="#Inter-SemiBold-141"/>
      <use xlink:href="#Inter-SemiBold-12c" transform="translate(76.859375 0)"/>
      <use xlink:href="#Inter-SemiBold-5f" transform="translate(152.78125 0)"/>
@@ -1742,7 +1742,7 @@ z
    </g>
    <g id="text_7">
     <!-- Record -&gt; version 3 -->
-    <g style="fill: #ffffff" transform="translate(136.8 603.016903) scale(0.3168 -0.3168)">
+    <g style="fill: #ffffff" transform="translate(136.8 625.806759) scale(0.3168 -0.3168)">
      <defs>
       <path id="Inter-Regular-180" d="M 563 0 
 L 563 4656 
@@ -1849,7 +1849,7 @@ z
      <use xlink:href="#Inter-Regular-541" transform="translate(861.515625 0)"/>
     </g>
     <!-- One history event -->
-    <g style="fill: #ffffff" transform="translate(136.8 645.139547) scale(0.3168 -0.3168)">
+    <g style="fill: #ffffff" transform="translate(136.8 672.529191) scale(0.3168 -0.3168)">
      <defs>
       <path id="Inter-Regular-141" d="M 2450 -63 
 Q 1853 -63 1386 226 
@@ -1919,7 +1919,7 @@ z
      <use xlink:href="#Inter-Regular-379" transform="translate(801.3125 0)"/>
     </g>
     <!-- Saved response receipt -->
-    <g style="fill: #ffffff" transform="translate(136.8 690.432666) scale(0.3168 -0.3168)">
+    <g style="fill: #ffffff" transform="translate(136.8 722.422097) scale(0.3168 -0.3168)">
      <defs>
       <path id="Inter-Regular-18d" d="M 2053 -81 
 Q 1297 -81 850 276 
@@ -1988,7 +1988,7 @@ z
    </g>
    <g id="text_8">
     <!-- Reply lost after commit -->
-    <g style="fill: #ffffff" transform="translate(169.2 836.252058) scale(0.3024 -0.3024)">
+    <g style="fill: #ffffff" transform="translate(169.2 858.937373) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-SemiBold-2e0" d="M 1244 4656 
 L 1244 0 
@@ -2170,7 +2170,7 @@ z
    </g>
    <g id="text_9">
     <!-- Explicit retry -->
-    <g style="fill: #ffffff" transform="translate(115.2 918.127561) scale(0.3312 -0.3312)">
+    <g style="fill: #ffffff" transform="translate(115.2 941.021958) scale(0.3312 -0.3312)">
      <defs>
       <path id="Inter-Regular-2e0" d="M 1056 4656 
 L 1056 0 
@@ -2196,7 +2196,7 @@ z
      <use xlink:href="#Inter-Regular-3e6" transform="translate(532.765625 0)"/>
     </g>
     <!-- Same key + body -->
-    <g style="fill: #ffffff" transform="translate(115.2 965.181895) scale(0.3312 -0.3312)">
+    <g style="fill: #ffffff" transform="translate(115.2 992.885161) scale(0.3312 -0.3312)">
      <defs>
       <path id="Inter-Regular-2d7" d="M 494 0 
 L 494 4656 
@@ -2283,7 +2283,7 @@ z
    </g>
    <g id="text_10">
     <!-- Current authorization -->
-    <g style="fill: #ffffff" transform="translate(115.2 1055.04217) scale(0.3024 -0.3024)">
+    <g style="fill: #ffffff" transform="translate(115.2 1077.727486) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-393" d="M 1678 -44 
 Q 1150 -44 822 284 
@@ -2343,7 +2343,7 @@ z
      <use xlink:href="#Inter-Regular-305" transform="translate(943.796875 0)"/>
     </g>
     <!-- Matching retained receipt -->
-    <g style="fill: #ffffff" transform="translate(115.2 1095.146198) scale(0.3024 -0.3024)">
+    <g style="fill: #ffffff" transform="translate(115.2 1122.22222) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-124" d="M 563 0 
 L 563 4656 
@@ -2403,7 +2403,7 @@ z
    </g>
    <g id="text_11">
     <!-- Return historical response -->
-    <g style="fill: #ffffff" transform="translate(100.8 1202.770786) scale(0.3312 -0.3312)">
+    <g style="fill: #ffffff" transform="translate(100.8 1225.665183) scale(0.3312 -0.3312)">
      <defs>
       <path id="Inter-SemiBold-393" d="M 1628 -44 
 Q 1088 -44 759 300 
@@ -2488,7 +2488,7 @@ z
      <use xlink:href="#Inter-SemiBold-266" transform="translate(1209.796875 0)"/>
     </g>
     <!-- Retry adds zero events -->
-    <g style="fill: #ffffff" transform="translate(100.8 1249.418883) scale(0.3312 -0.3312)">
+    <g style="fill: #ffffff" transform="translate(100.8 1277.122148) scale(0.3312 -0.3312)">
      <defs>
       <path id="Inter-SemiBold-255" d="M 1719 -63 
 Q 1306 -63 979 148 
@@ -2564,7 +2564,7 @@ z
    </g>
    <g id="text_12">
     <!-- Later resolution: version 4, four events. -->
-    <g style="fill: #ffffff" transform="translate(43.2 1338.113152) scale(0.3024 -0.3024)">
+    <g style="fill: #ffffff" transform="translate(43.2 1370.416205) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-119" d="M 563 0 
 L 563 4656 
@@ -2705,7 +2705,7 @@ z
    </g>
    <g id="text_13">
     <!-- A lost reply follows the commit. Later -->
-    <g style="fill: #cccccc" transform="translate(43.2 1416.794667) scale(0.3024 -0.3024)">
+    <g style="fill: #cccccc" transform="translate(43.2 1453.488427) scale(0.3024 -0.3024)">
      <defs>
       <path id="Inter-Regular-2" d="M 163 0 
 L 1853 4656 
@@ -2796,7 +2796,7 @@ z
      <use xlink:href="#Inter-Regular-354" transform="translate(1710.0625 0)"/>
     </g>
     <!-- resolution reaches v4. -->
-    <g style="fill: #cccccc" transform="translate(43.2 1462.767145) scale(0.3024 -0.3024)">
+    <g style="fill: #cccccc" transform="translate(43.2 1503.851611) scale(0.3024 -0.3024)">
      <use xlink:href="#Inter-Regular-354"/>
      <use xlink:href="#Inter-Regular-266" transform="translate(35.984375 0)"/>
      <use xlink:href="#Inter-Regular-367" transform="translate(94.28125 0)"/>
@@ -2824,8 +2824,8 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p0f89cc7221">
-   <rect x="0" y="0" width="691.2" height="1502.64"/>
+  <clipPath id="p501dedbd0e">
+   <rect x="0" y="0" width="691.2" height="1545.84"/>
   </clipPath>
  </defs>
 </svg>
