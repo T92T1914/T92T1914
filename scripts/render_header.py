@@ -1,7 +1,8 @@
 """Render the profile's illustrative Clair and Obscur header with Python 3.
 
 Run from any directory. Use --check to verify the committed renditions.
-The original assets/signals.svg remains unchanged. These motifs are not data.
+These motifs are not data. assets/signals.svg is a static file with no renderer. It was
+recolored once onto the Obscur tokens and uses no gradient, opacity or hue.
 There is no visible text, font dependency, animation, or external resource.
 """
 
@@ -21,10 +22,21 @@ PALETTES = {
         "canvas": "#f8f7f3", "panel": "#fdfcf8", "divider": "#b8b6ae",
         "muted": "#595854", "accent": "#365f78", "control": "#ecebe6",
     },
+    # Obscur values come from tokens-monochrome.json 1.0.0, as recorded in the desk's
+    # obscur.md at clair-obscur-themes 4693831. No hue and no interpolated gray.
     "obscur": {
-        "canvas": "#090909", "panel": "#151515", "divider": "#494949",
-        "muted": "#bcbcbc", "accent": "#b3c8d8", "control": "#252525",
+        "canvas": "#000000", "panel": "#151515", "divider": "#505050",
+        "muted": "#cccccc", "accent": "#ffffff", "control": "#252525",
+        "border": "#999999",
     },
+}
+BAR_FILL = {"clair": ("accent", ' fill-opacity="0.18"'), "obscur": ("control", "")}
+PALETTE_SOURCES = {
+    "clair": TOKEN_SOURCE,
+    "obscur": (
+        "https://github.com/T92T1914/clair-obscur-themes/blob/"
+        "4693831b51f2b3fa268d830fd9b977fb70c83e3d/tokens-monochrome.json"
+    ),
 }
 DESCRIPTION = (
     "Illustrative motifs for forecasting, search, probability, concurrent work "
@@ -34,15 +46,17 @@ DESCRIPTION = (
 
 def render(appearance):
     c = PALETTES[appearance]
+    quiet = c.get("border", c["divider"])
+    bar_fill, bar_opacity = BAR_FILL[appearance]
     panels = "\n".join(
         f'  <rect x="{24 + i * 232}" y="28" width="224" height="184" rx="12" '
-        f'fill="{c["panel"]}" stroke="{c["divider"]}"/>'
+        f'fill="{c["panel"]}" stroke="{quiet}"/>'
         for i in range(5)
     )
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" fill="none">
   <title>Systems, models and archives</title>
   <desc>{DESCRIPTION}</desc>
-  <metadata>Appearance: {appearance}. Palette: {TOKEN_SOURCE}. Renderer: scripts/render_header.py.</metadata>
+  <metadata>Appearance: {appearance}. Palette: {PALETTE_SOURCES[appearance]}. Renderer: scripts/render_header.py.</metadata>
   <rect width="1200" height="240" rx="16" fill="{c['canvas']}"/>
 {panels}
   <g stroke="{c['divider']}" stroke-width="2">
@@ -55,14 +69,14 @@ def render(appearance):
     <path d="M191 107C202 88 210 77 223 84" stroke-dasharray="3 9"/>
     <circle cx="153" cy="87" r="6" fill="{c['accent']}" stroke="{c['panel']}" stroke-width="2"/>
     <!-- Distinct search branches, with one path emphasized. -->
-    <path d="M285 119L337 81L391 66M337 81L391 103L445 83M285 119L337 147L391 130M337 147L391 158M391 103L445 133" stroke="{c['divider']}"/>
+    <path d="M285 119L337 81L391 66M337 81L391 103L445 83M285 119L337 147L391 130M337 147L391 158M391 103L445 133" stroke="{quiet}"/>
     <path d="M285 119L337 81L391 103L445 83"/>
     <g fill="{c['panel']}">
       <circle cx="285" cy="119" r="6"/><circle cx="337" cy="81" r="6"/>
       <circle cx="391" cy="103" r="6"/><circle cx="445" cy="83" r="6"/>
     </g>
     <!-- A distribution without a fabricated scale or numeric claim. -->
-    <g fill="{c['accent']}" fill-opacity="0.18" stroke-width="3">
+    <g fill="{c[bar_fill]}"{bar_opacity} stroke-width="3">
       <rect x="518" y="145" width="17" height="20" rx="3"/>
       <rect x="543" y="121" width="17" height="44" rx="3"/>
       <rect x="568" y="85" width="17" height="80" rx="3"/>

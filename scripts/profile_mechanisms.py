@@ -205,7 +205,7 @@ def atlas(d):
         d.line((px+pw-230,yy+25),(px+pw-35,yy+25),dashed=True)
     if not d.narrow:
         d.text(60,y+330,'Clock roles',46,'SemiBold')
-        d.text(60,y+410,'Capture time\nPublication time\nPlayer-relative time',40,width=600)
+        d.text(60,y+410,'Capture time\nPublication time\nPlayer relative time',40,width=600)
         d.text(60,y+600,'A clock alone does not register a viewpoint.',38,role='muted',width=650)
     y+=810
     d.text(60,y,'Time and viewpoint may remain unknown.',44 if d.narrow else 46,
@@ -324,10 +324,10 @@ def calendar(d):
     y=max(y+json_height,csvy+345)+65
     d.text(60,y,'Persistence boundary',46,'SemiBold');y+=90
     if d.narrow:
-        d.text(60,y,'Temporary file -> replace JSON\n-> adopt in-memory state',46,width=840)
+        d.text(60,y,'Temporary file -> replace JSON\n-> adopt state in memory',46,width=840)
         y=d.bottom+45;d.text(60,y,'A failed write keeps the prior state.',42,role='muted',width=840)
     else:
-        d.text(60,y,'Temporary file -> replace JSON -> adopt in-memory state',44,width=d.w-120)
+        d.text(60,y,'Temporary file -> replace JSON -> adopt state in memory',44,width=d.w-120)
         d.text(60,y+90,'A failed write keeps the prior state. CSV refuses an existing destination.',38,role='muted',width=d.w-120)
 
 

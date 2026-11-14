@@ -180,7 +180,7 @@
       "footer": "A lost reply follows the commit. Later resolution reaches v4.",
       "essential_text": "After version 2, Casey assignment commits version 3 with its history event and saved response. A still-authorized retry of the original key and body recovers that response without another event. A later resolution reaches version 4. Current server authorization remains authoritative.",
       "page": "https://t92t1914.github.io/shipment-exception-workspace/",
-      "composition": "atomic transaction and lost-reply sequence",
+      "composition": "atomic transaction and lost reply sequence",
       "renderer": "project-specific",
       "figure_class": "conceptual mechanism",
       "alt": "Operator and server sequence: an expected-version-2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit; an authorized same-key/body retry returns the historical response without another event."
@@ -282,7 +282,7 @@
       "composition": "event to JSON and CSV documents",
       "renderer": "project-specific",
       "figure_class": "conceptual mechanism",
-      "alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before in-memory adoption; failed writes retain the prior state."
+      "alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before adoption in memory; failed writes retain the prior state."
     }
   ]
 }

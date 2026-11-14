@@ -183,7 +183,7 @@
         "footer": "A lost reply follows the commit. Later resolution reaches v4.",
         "essential_text": "After version 2, Casey assignment commits version 3 with its history event and saved response. A still-authorized retry of the original key and body recovers that response without another event. A later resolution reaches version 4. Current server authorization remains authoritative.",
         "page": "https://t92t1914.github.io/shipment-exception-workspace/",
-        "composition": "atomic transaction and lost-reply sequence",
+        "composition": "atomic transaction and lost reply sequence",
         "renderer": "project-specific",
         "figure_class": "conceptual mechanism",
         "alt": "Operator and server sequence: an expected-version-2 Casey assignment commits record v3, one history event and a response receipt atomically. The reply is lost after commit; an authorized same-key/body retry returns the historical response without another event."
@@ -285,7 +285,7 @@
         "composition": "event to JSON and CSV documents",
         "renderer": "project-specific",
         "figure_class": "conceptual mechanism",
-        "alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before in-memory adoption; failed writes retain the prior state."
+        "alt": "A synthetic Lab review event becomes schema-1 JSON and a separate CSV row. Temporary-file replacement happens before adoption in memory; failed writes retain the prior state."
       }
     ]
   },
@@ -1067,12 +1067,12 @@
             ]
           },
           {
-            "text": "Capture time\nPublication time\nPlayer-relative time",
+            "text": "Capture time\nPublication time\nPlayer relative time",
             "size": 42,
             "bounds": [
               60.0,
               672.0643750000002,
-              442.40625,
+              437.0625,
               851.9613671875002
             ]
           },
@@ -1392,7 +1392,7 @@
       "wide": {
         "width": 1800,
         "height": 1412,
-        "composition": "atomic transaction and lost-reply sequence",
+        "composition": "atomic transaction and lost reply sequence",
         "labels": [
           {
             "text": "Shipment Exception Workspace",
@@ -1405,12 +1405,12 @@
             ]
           },
           {
-            "text": "ATOMIC TRANSACTION AND LOST-REPLY SEQUENCE",
+            "text": "ATOMIC TRANSACTION AND LOST REPLY SEQUENCE",
             "size": 42,
             "bounds": [
               60.0,
               142.09871093750007,
-              1159.078125,
+              1152.5625,
               202.06437500000015
             ]
           },
@@ -1530,7 +1530,7 @@
       "narrow": {
         "width": 960,
         "height": 2087,
-        "composition": "atomic transaction and lost-reply sequence",
+        "composition": "atomic transaction and lost reply sequence",
         "labels": [
           {
             "text": "Shipment Exception\nWorkspace",
@@ -1543,12 +1543,12 @@
             ]
           },
           {
-            "text": "ATOMIC TRANSACTION AND\nLOST-REPLY SEQUENCE",
+            "text": "ATOMIC TRANSACTION AND LOST\nREPLY SEQUENCE",
             "size": 42,
             "bounds": [
               60.0,
               224.9084375,
-              651.921875,
+              772.453125,
               344.8397656249999
             ]
           },
@@ -2699,12 +2699,12 @@
             ]
           },
           {
-            "text": "Temporary file -> replace JSON -> adopt in-memory state",
+            "text": "Temporary file -> replace JSON -> adopt state in memory",
             "size": 44,
             "bounds": [
               60.0,
               1167.7410546875,
-              1258.0,
+              1250.0,
               1230.5622265625002
             ]
           },
@@ -2883,7 +2883,7 @@
             ]
           },
           {
-            "text": "Temporary file -> replace JSON\n-> adopt in-memory state",
+            "text": "Temporary file -> replace JSON\n-> adopt state in memory",
             "size": 46,
             "bounds": [
               60.0,
@@ -2961,10 +2961,10 @@
     "fonttools": "4.63.0"
   },
   "inputs_sha256_lf": {
-    "assets/profile-explainers-input.json": "47d56c78e6e985fc41d566698fbfdc9dd0aca88ecfdad2af1c04e9483cd36523",
+    "assets/profile-explainers-input.json": "dd084f0ee5de0f2c6eaf1978f2b3536607afb5cba874ccc7bd26b41362094e10",
     "assets/profile-figure-tokens.json": "65e87d918e76744e0c222c3db1452e149091affabad37764531a79bcbf6fe81f",
     "scripts/render_project_explainers.py": "fc251bb957f83a0a4ad778375734b824d28720b1569a7450c56dd6326e108b10",
-    "scripts/profile_mechanisms.py": "f99add227104816fa8bd525869d386dd84b51aaccd8b5969ff813fe8695df12d",
+    "scripts/profile_mechanisms.py": "a091d311488987b56f470a11daa3c7b3c55f30c692c20ed64a5f54bb6b9a267f",
     "requirements-figures.txt": "3bc78c01a3305d85d889b7ae16b9022a5dc38e5fd705ab1aec26b7cd00988024"
   },
   "outputs_sha256": {
@@ -2984,14 +2984,14 @@
     "assets/explainers/solver-obscur-wide.svg": "1dc0445b52208ec81fdc330a50cd0dcf3489a50013380da7b6a5c8866ac19461",
     "assets/explainers/solver-obscur-narrow.png": "cdb1aacf8b3bb2b84cda0a058f34344bed6a449a2f3992168e38c34032434e5a",
     "assets/explainers/solver-obscur-narrow.svg": "538b3bfc37051607f89d36488ca33e677b5d5753c90e2d5f552c5613db8d65d4",
-    "assets/explainers/atlas-obscur-wide.png": "94cff777bdf744d537e304acbeb5be6914bddd6dbf2def4512d9832a814e7b66",
-    "assets/explainers/atlas-obscur-wide.svg": "c3b3ef075c5842b1d648c403eade4caf75f49f7ad5a01b934e912f6d90867324",
+    "assets/explainers/atlas-obscur-wide.png": "852f2fae0d15f1a36414ddc946026634a17e215dfef25ef387d9324cadef193f",
+    "assets/explainers/atlas-obscur-wide.svg": "d1c9c4c03f39ee947e0828e6a4d8da0a118042e06af7dae0d236e4e1be629dfc",
     "assets/explainers/atlas-obscur-narrow.png": "7dc3c4966ef9b3db26226346af405b0720d1387c1452fb844e4937efc8dc8b63",
     "assets/explainers/atlas-obscur-narrow.svg": "a8eae40b7d0d0705284d4bd66f2b114f9be57287f649d860472b42a73210587e",
-    "assets/explainers/shipment-obscur-wide.png": "62c00525a6683f47dcfd2629db7416e25a8ab5adda66003aa31b0a3c9a030fcb",
-    "assets/explainers/shipment-obscur-wide.svg": "8a31e18ef2ed692244f0414ffbcb6b7b043a93c8a4ec20320455d81d7fc6adc7",
-    "assets/explainers/shipment-obscur-narrow.png": "77a776a43ad97f1eb34069e67e3f3c247b0932724e295729b71d758dc706b73e",
-    "assets/explainers/shipment-obscur-narrow.svg": "73418db7ff70e8cae3e568dd0292541027cbc18de1dec9fc3971d1518f08078f",
+    "assets/explainers/shipment-obscur-wide.png": "056ebf2b72892b9681bd5381c7d46d27c8dd091a4d1a15b738b141416d612e32",
+    "assets/explainers/shipment-obscur-wide.svg": "b3c962bfca2098b377e449ad59afe90dc704812656f224a37afebb0d9466f1b6",
+    "assets/explainers/shipment-obscur-narrow.png": "378143a0db81ec6a03491da4a7098f71c2ac5f28557fadf878ec947ea3e92a05",
+    "assets/explainers/shipment-obscur-narrow.svg": "baef005b79234a7446ba51e5e4fed648178f5859001f0bd6e83afe914d84df6e",
     "assets/explainers/freight-obscur-wide.png": "9bb19c8ac5b3517dc7bb7d48ebc6959482d057bb6ccec2a5d0d8e43c473238be",
     "assets/explainers/freight-obscur-wide.svg": "fcbfb285d54e452e7d41b8d4c10a39374dd97f9f9f1071fe8bf0a1af83f4c4f5",
     "assets/explainers/freight-obscur-narrow.png": "549814372e328363ab6e539cb2972e266d1aea75a35f9e41482f9c7d91489a27",
@@ -3004,9 +3004,9 @@
     "assets/explainers/themes-obscur-wide.svg": "aa2f87a4bf003b17c3d91c79461919a06e036a8eb0f688173d710ccce012a475",
     "assets/explainers/themes-obscur-narrow.png": "88b0a052ee5924b98eea434e2fa621039c8bb1191f4d1cdb8fddc429d170df8f",
     "assets/explainers/themes-obscur-narrow.svg": "16bdb33f2d41e4728539f7b46e3230047ae474bafe0fbde4bdb89cd607561aa1",
-    "assets/explainers/calendar-obscur-wide.png": "3eb192cdd985942b15cd970dfaeb80482b2fc2808f2b35c57333f774712ba8e4",
-    "assets/explainers/calendar-obscur-wide.svg": "67d4672bb6a1f37a980ab97fc6ff328ca0504d96fca4d0869b65845edcd4dd19",
-    "assets/explainers/calendar-obscur-narrow.png": "94b0614786325e63e54c644226bfb37afa86782725a82a4f35f3993ca1035d53",
-    "assets/explainers/calendar-obscur-narrow.svg": "0de49c82c106b130c878d69950f5d2fa6db4493404c68f21bbfd4d765a44792c"
+    "assets/explainers/calendar-obscur-wide.png": "4659e95e89d04eb0ef55569d675746d3484d04a7e2a1c583e543e0ee1f168c2b",
+    "assets/explainers/calendar-obscur-wide.svg": "bb899f0ef36043bb4fcbe971b1e51f5f8cb7bc1b3cdf3fcf1b1fc6ed835971c8",
+    "assets/explainers/calendar-obscur-narrow.png": "d6ca8c25b5f87088ec8c01db80e7aa557cbd1a6b64f5d4a592c4efcf4976beb3",
+    "assets/explainers/calendar-obscur-narrow.svg": "3d5887bd5daad256a5645df99a7ee37dcf7d957e92705f23bfcfe11e7a2d3cce"
   }
 }
