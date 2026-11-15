@@ -214,7 +214,7 @@ def atlas(d):
     if d.narrow:
         d.text(60,y,'Capture / publication / player clocks have different roles.',42,width=840);y=d.bottom+50
         d.box(60,y,840,'Documentary evidence','Inspect the source dossier and its limits.',h=330)
-        d.box(60,y+380,840,'Procedural illustration','Labeled separately; not a source observation.',h=330,dashed=True)
+        d.box(60,y+380,840,'Procedural illustration','Labeled separately. Not a source observation.',h=330,dashed=True)
     else:
         d.box(60,y,800,'Documentary evidence','Inspect the dossier and unresolved context.',h=330)
         d.box(940,y,800,'Procedural illustration','Separate, explicitly labeled layer.',h=330,dashed=True)

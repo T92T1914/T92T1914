@@ -1343,12 +1343,12 @@
             ]
           },
           {
-            "text": "Labeled separately; not a source\nobservation.",
+            "text": "Labeled separately. Not a source\nobservation.",
             "size": 44,
             "bounds": [
               84.0,
               2108.26171875,
-              764.484375,
+              769.546875,
               2246.68125
             ]
           },
@@ -2964,7 +2964,7 @@
     "assets/profile-explainers-input.json": "7f2d4118b349b172d304881c5f604265b83faf9441de8181db12853c6e296fc3",
     "assets/profile-figure-tokens.json": "65e87d918e76744e0c222c3db1452e149091affabad37764531a79bcbf6fe81f",
     "scripts/render_project_explainers.py": "fc251bb957f83a0a4ad778375734b824d28720b1569a7450c56dd6326e108b10",
-    "scripts/profile_mechanisms.py": "02bfbd3de5099fbd35cb28707bab0f40f14d7718a8cf6b12b0d1d984a0e83f7c",
+    "scripts/profile_mechanisms.py": "dada438fe3fc3dac164aaf26e7e40d1df2ad2d3252a660e7ea95de31e51d5192",
     "requirements-figures.txt": "3bc78c01a3305d85d889b7ae16b9022a5dc38e5fd705ab1aec26b7cd00988024"
   },
   "outputs_sha256": {
@@ -2986,8 +2986,8 @@
     "assets/explainers/solver-obscur-narrow.svg": "538b3bfc37051607f89d36488ca33e677b5d5753c90e2d5f552c5613db8d65d4",
     "assets/explainers/atlas-obscur-wide.png": "f518fc9d5b2e6b99e6d52c7b923d146b532836f9787bd15157d22ecfa273f7a0",
     "assets/explainers/atlas-obscur-wide.svg": "5fc91d2ade9333dfb7cf09884da621b4a809b0cd707d55151416cd746e33fdb1",
-    "assets/explainers/atlas-obscur-narrow.png": "4696fd4083ad5461c32668f1861b57c827e06f5b2ce6860eaacfe2f700ab5537",
-    "assets/explainers/atlas-obscur-narrow.svg": "8d648108a2e0242648d4c2873895baf4745009d4784f58c3567b6c335398af69",
+    "assets/explainers/atlas-obscur-narrow.png": "1238cf1d77ce8d6e05d8435bab7e0f838e8139620cc2035b42ea8b6c7883a940",
+    "assets/explainers/atlas-obscur-narrow.svg": "529326404d251ee886965986fe997c7e3e83ab6785214e88ca7793e56b9eede0",
     "assets/explainers/shipment-obscur-wide.png": "a54b34405c9bb45e56c3b9a6eb76760c80f677980bdddc5a808ec4a84e983018",
     "assets/explainers/shipment-obscur-wide.svg": "b7950b3e77293d4492c7da19f16aeb430662533d83ed55e1dcc3ad5e628b2d33",
     "assets/explainers/shipment-obscur-narrow.png": "6c24ba3e5a165226954be9275ea4728e36b93f765db4e7277a92407745808c4d",
