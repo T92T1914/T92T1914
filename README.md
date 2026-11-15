@@ -129,7 +129,7 @@ training mechanism, while the supported derivative boundaries remain above.
 [Explore the project](https://t92t1914.github.io/ragged-pool/) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full size infographic](assets/explainers/ragged-obscur-wide.png) ·
-[Detailed Obscur diagram](https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-obscur.png) ·
+[Detailed Obscur diagram](https://raw.githubusercontent.com/T92T1914/ragged-pool/aef163e504f80107f7aa46ac21bbe32a719ead3b/docs/ragged-pool-obscur.png) ·
 [Clair alternate](https://raw.githubusercontent.com/T92T1914/ragged-pool/91470d74a0559a5f6f0168deb27f27f87152d66a/docs/ragged-pool-clair.png)
 
 ### MCTS Combat Engine
