@@ -4,7 +4,7 @@ import json
 import math
 import struct
 
-SPACED = {'atlas', 'shipment', 'calendar', 'adaptive', 'runtime'}  # families already on the 1.3 line spacing Obscur asks for
+SPACED = {'atlas', 'shipment', 'calendar', 'adaptive', 'runtime', 'themes'}  # families already on the 1.3 line spacing Obscur asks for
 FLOOR = 42  # Obscur sets no label under 30 pt, which is 42 px at 100 dpi
 
 
@@ -281,7 +281,7 @@ def themes(d):
             d.panel(xx,y+245,480,120);d.text(xx+30,y+278,field,48,'SemiBold')
     y+=520 if d.narrow else 440
     if d.narrow:
-        d.text(60,y,'One source vocabulary; host-specific adapters.',44,width=840);y=d.bottom+50
+        d.text(60,y,'One source vocabulary. Host specific adapters.',44,width=840);y=d.bottom+50
         d.text(60,y,'Package: inspect the generated manifest',44,'SemiBold',width=840)
         y=d.bottom+40
         d.text(60,y,'Browser: select a package independently of page appearance',44,width=840)
@@ -290,10 +290,10 @@ def themes(d):
         d.text(60,y+35,'Native: separate installation and restart checks',44,'SemiBold',width=840)
 
     else:
-        d.text(60,y,'One source vocabulary; host-specific adapters.',44);y+=100
-        d.box(60,y,500,'Package + manifest','Inspectable output',h=250,size=40)
-        d.box(650,y,500,'Browser preview','Independent package choice',h=250,size=40)
-        d.box(1240,y,500,'Native acceptance','Separate host checks',h=250,size=40,dashed=True)
+        d.text(60,y,'One source vocabulary. Host specific adapters.',44);y+=100
+        d.box(60,y,500,'Package + manifest','Inspectable output',h=270,size=40)
+        d.box(650,y,500,'Browser preview','Independent package choice',h=270,size=40)
+        d.box(1240,y,500,'Native acceptance','Separate host checks',h=270,size=40,dashed=True)
     d.text(60,max(d.bottom,max(s[3] for s in d.shapes))+45,
            'Mapping illustration. Current preview and retained downloads keep separate palette histories.',
            36,role='muted',width=d.w-120)
