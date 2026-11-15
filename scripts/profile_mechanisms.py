@@ -4,7 +4,7 @@ import json
 import math
 import struct
 
-SPACED = {'atlas', 'shipment', 'calendar'}  # families already on the 1.3 line spacing Obscur asks for
+SPACED = {'atlas', 'shipment', 'calendar', 'adaptive'}  # families already on the 1.3 line spacing Obscur asks for
 FLOOR = 42  # Obscur sets no label under 30 pt, which is 42 px at 100 dpi
 
 
@@ -171,7 +171,7 @@ def adaptive(d):
         d.arrow((480,y-22),(480,y+12))
         d.box(60,y+15,840,'Payload 100 runs and returns','Physical completion is reconciled.',h=270);y+=330
         d.text(60,y,'Adoption gate: is this still current?',48,'Bold',width=840)
-        d.box(60,d.bottom+45,840,'Adopt the current answer','Payload 100; revision 101.',h=250)
+        d.box(60,d.bottom+45,840,'Adopt the current answer','Payload 100. Revision 101.',h=250)
     else:
         labels=['Incoming requests','Physical work','Current answer']
         for i,label in enumerate(labels):
@@ -182,9 +182,9 @@ def adaptive(d):
         d.box(420,y+215,600,'Compute 0 -> return','Old result is rejected.',h=195,size=42)
         d.box(1120,y+215,565,'Compute 100 -> return',h=195,size=42)
         d.arrow((1020,y+312),(1100,y+312))
-        d.box(1120,y+450,565,'Adopt revision 101','Payload 100 is the current answer.',h=240,size=40)
+        d.box(1120,y+450,565,'Adopt revision 101','Payload 100 is the current answer.',h=262,size=40)
         d.arrow((1400,y+415),(1400,y+440))
-        d.text(60,y+720,'2 computations; 99 waiting replacements; 1 obsolete result rejected.',38,
+        d.text(60,y+745,'2 computations. 99 waiting replacements. 1 obsolete result rejected.',38,
                width=d.w-120)
 
 
