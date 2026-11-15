@@ -45,8 +45,15 @@ The CUDA followup records GPU operator placement. These results do not measure
 recognition accuracy or establish general GPU superiority. A later
 [batching study](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/5d51afd321fc56e1e316ec3ce202d03cd6279146/docs/batching-results.md)
 reduced complete request cost for two and eight images within each provider,
-with CPU still faster in every tested batch. GPU sanitizer and
-hardware counter acceptance remain open. HIP and SYCL are not implemented.
+with CPU still faster in every tested batch. A
+[transfer and fixed cost model](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/aa7fcafe5dde9f33707e0c1029a8bd67bc9ec240/docs/cost-model.md)
+fits the retained CUDA calls on two image sizes and tests each fit on the third.
+It predicts the large uploads within 14%, but it misses most of the smallest
+copies by 40% or more and overshoots the large stencil download by 84%. One
+fixed cost and one rate per byte cannot describe the complete calls of all three
+workloads, and its worst complete call miss is 50%. The project keeps every miss.
+GPU sanitizer and hardware counter acceptance remain open. HIP and SYCL are not
+implemented.
 
 [Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) ·
 [Read the CPU comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-results.md) ·
