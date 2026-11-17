@@ -104,7 +104,7 @@
           "sha256": "903d528061098e1223502a56eb0509152ac435f195f7af8666f30c5f247f00c4"
         }
       },
-      "alt": "Retained action-reward bars and separate visit counts for one 10000-simulation modeled decision. Spark has mean shaped reward 0.532, not a win probability."
+      "alt": "Retained action and reward bars and separate visit counts for one 10000 simulation modeled decision. Spark has mean shaped reward 0.532, not a win probability."
     },
     {
       "id": "solver",
@@ -197,7 +197,7 @@
       "footer": "On the separate BTS index, carrying the last observation won.",
       "essential_text": "Earlier observations supply the forecast features, and later months test the predictions. The synthetic series and BTS index remain separate. On BTS, carrying forward the last observation beat the learned model.",
       "page": "https://t92t1914.github.io/freight-forecast/",
-      "composition": "held-out curves and baseline comparison",
+      "composition": "held out curves and baseline comparison",
       "renderer": "reuse",
       "figure_class": "retained numerical figure",
       "reused_artifacts": {
@@ -226,7 +226,7 @@
           "sha256": "c9dffaa95a84e3b1acfec1ef078bd3217e0b41fe06f8b3acff525e35981b07f3"
         }
       },
-      "alt": "Retained 24-month held-out synthetic time series compares observations, model and seasonal baseline with a separate mean-absolute-error comparison. The BTS result is separate."
+      "alt": "Retained 24 month held out synthetic time series compares observations, model and seasonal baseline with a separate mean absolute error comparison. The BTS result is separate."
     },
     {
       "id": "adaptive",
@@ -264,7 +264,7 @@
       "composition": "semantic role to host-field mappings",
       "renderer": "project-specific",
       "figure_class": "conceptual mechanism",
-      "alt": "Chrome adapter mapping shows canvas to frame, panel to toolbar and text to tab_text, followed by distinct package, browser-preview and native-acceptance boundaries."
+      "alt": "Chrome adapter mapping shows canvas to frame, panel to toolbar and text to tab_text, followed by distinct package, browser preview and native acceptance boundaries."
     },
     {
       "id": "calendar",

@@ -172,7 +172,7 @@ accounting limited to its owned container and descendants.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/mcts-obscur-narrow.png">
-  <img src="assets/explainers/mcts-obscur-wide.png" alt="Retained action-reward bars and separate visit counts for one 10000-simulation modeled decision. Spark has mean shaped reward 0.532, not a win probability." width="900">
+  <img src="assets/explainers/mcts-obscur-wide.png" alt="Retained action and reward bars and separate visit counts for one 10000 simulation modeled decision. Spark has mean shaped reward 0.532, not a win probability." width="900">
 </picture>
 
 The retained decision ranks Spark at mean shaped reward `0.532` after `10,000`
@@ -389,7 +389,7 @@ public example contains no real issued forecast.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/freight-obscur-narrow.png">
-  <img src="assets/explainers/freight-obscur-wide.png" alt="Retained 24-month held-out synthetic time series compares observations, model and seasonal baseline with a separate mean-absolute-error comparison. The BTS result is separate." width="900">
+  <img src="assets/explainers/freight-obscur-wide.png" alt="Retained 24 month held out synthetic time series compares observations, model and seasonal baseline with a separate mean absolute error comparison. The BTS result is separate." width="900">
 </picture>
 
 Earlier observations supply the features and later months test the predictions.
@@ -472,7 +472,7 @@ separate checks.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/themes-obscur-narrow.png">
-  <img src="assets/explainers/themes-obscur-wide.png" alt="Chrome adapter mapping shows canvas to frame, panel to toolbar and text to tab_text, followed by distinct package, browser-preview and native-acceptance boundaries." width="900">
+  <img src="assets/explainers/themes-obscur-wide.png" alt="Chrome adapter mapping shows canvas to frame, panel to toolbar and text to tab_text, followed by distinct package, browser preview and native acceptance boundaries." width="900">
 </picture>
 
 Named surface, text and focus roles map to each platform's package. A working

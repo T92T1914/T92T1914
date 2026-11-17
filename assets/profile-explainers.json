@@ -107,7 +107,7 @@
             "sha256": "903d528061098e1223502a56eb0509152ac435f195f7af8666f30c5f247f00c4"
           }
         },
-        "alt": "Retained action-reward bars and separate visit counts for one 10000-simulation modeled decision. Spark has mean shaped reward 0.532, not a win probability."
+        "alt": "Retained action and reward bars and separate visit counts for one 10000 simulation modeled decision. Spark has mean shaped reward 0.532, not a win probability."
       },
       {
         "id": "solver",
@@ -200,7 +200,7 @@
         "footer": "On the separate BTS index, carrying the last observation won.",
         "essential_text": "Earlier observations supply the forecast features, and later months test the predictions. The synthetic series and BTS index remain separate. On BTS, carrying forward the last observation beat the learned model.",
         "page": "https://t92t1914.github.io/freight-forecast/",
-        "composition": "held-out curves and baseline comparison",
+        "composition": "held out curves and baseline comparison",
         "renderer": "reuse",
         "figure_class": "retained numerical figure",
         "reused_artifacts": {
@@ -229,7 +229,7 @@
             "sha256": "c9dffaa95a84e3b1acfec1ef078bd3217e0b41fe06f8b3acff525e35981b07f3"
           }
         },
-        "alt": "Retained 24-month held-out synthetic time series compares observations, model and seasonal baseline with a separate mean-absolute-error comparison. The BTS result is separate."
+        "alt": "Retained 24 month held out synthetic time series compares observations, model and seasonal baseline with a separate mean absolute error comparison. The BTS result is separate."
       },
       {
         "id": "adaptive",
@@ -267,7 +267,7 @@
         "composition": "semantic role to host-field mappings",
         "renderer": "project-specific",
         "figure_class": "conceptual mechanism",
-        "alt": "Chrome adapter mapping shows canvas to frame, panel to toolbar and text to tab_text, followed by distinct package, browser-preview and native-acceptance boundaries."
+        "alt": "Chrome adapter mapping shows canvas to frame, panel to toolbar and text to tab_text, followed by distinct package, browser preview and native acceptance boundaries."
       },
       {
         "id": "calendar",
@@ -1681,7 +1681,7 @@
         "width": 1800,
         "height": 1120,
         "kind": "retained numerical figure",
-        "composition": "held-out curves and baseline comparison",
+        "composition": "held out curves and baseline comparison",
         "reused_exact_bytes": true,
         "provenance": {
           "wide.png": {
@@ -1702,7 +1702,7 @@
         "width": 960,
         "height": 1800,
         "kind": "retained numerical figure",
-        "composition": "held-out curves and baseline comparison",
+        "composition": "held out curves and baseline comparison",
         "reused_exact_bytes": true,
         "provenance": {
           "narrow.png": {
@@ -2961,7 +2961,7 @@
     "fonttools": "4.63.0"
   },
   "inputs_sha256_lf": {
-    "assets/profile-explainers-input.json": "7f2d4118b349b172d304881c5f604265b83faf9441de8181db12853c6e296fc3",
+    "assets/profile-explainers-input.json": "5d6e1e2c03c12ec4f6ca93aa4ee5a1d01c7cde6ecc97284a5cbe3eaf04074331",
     "assets/profile-figure-tokens.json": "65e87d918e76744e0c222c3db1452e149091affabad37764531a79bcbf6fe81f",
     "scripts/render_project_explainers.py": "fc251bb957f83a0a4ad778375734b824d28720b1569a7450c56dd6326e108b10",
     "scripts/profile_mechanisms.py": "76c9eddb23016559ca140fde3e15b01ce81f12733d415bf106b5c765cf4ec6ec",
@@ -3000,10 +3000,10 @@
     "assets/explainers/adaptive-obscur-wide.svg": "58ed18e3ec40963a5189516324dc6cf7fcd596064642c6c9161ab70361ddc15e",
     "assets/explainers/adaptive-obscur-narrow.png": "375859208a361150eccf869388c6c6da9556b2e2fc0119f5b942bf2358728828",
     "assets/explainers/adaptive-obscur-narrow.svg": "fff63f615bcf3c625996cbd7e061ff33ab34ed6ef23c443f81af7321f603190c",
-    "assets/explainers/themes-obscur-wide.png": "8548617924253027225a2d6f979d243fb8d8c4a41c37ef7e1e15368884931311",
-    "assets/explainers/themes-obscur-wide.svg": "05ac3768eece84bee6e950e69a19adf907a41ab52fda78f244dbbd3ca92652c6",
-    "assets/explainers/themes-obscur-narrow.png": "66e379c1a7172a6c3113fdf49f47c08362f3caac882fc7b9f89c47af5fe2425e",
-    "assets/explainers/themes-obscur-narrow.svg": "706c81e3247d0b7125da89e523b46b2941cb55f50bf4cf4b95f6581664f7da30",
+    "assets/explainers/themes-obscur-wide.png": "e15a89fbdbc776f5992afc43b52284df5f9e57364046306045d4e0d6310bc116",
+    "assets/explainers/themes-obscur-wide.svg": "cc387aed56efd710acc0f32f94271c7f3fba43f8a79c24ced7d9ef96afb2cdf2",
+    "assets/explainers/themes-obscur-narrow.png": "b3f0ad6ed38c34c1a1edb03b356a3e58e28a8c0cbc76fc25e52793b3cb7aa32b",
+    "assets/explainers/themes-obscur-narrow.svg": "13a2e8ca1094a38a485ad2a04a541be68df96c3076d005ca55e3ced363e13ef6",
     "assets/explainers/calendar-obscur-wide.png": "49f0c1851ad77b84c4ebe1589691191769f075186d79745bb9705d2009e0cca2",
     "assets/explainers/calendar-obscur-wide.svg": "8bb7d9ac985417c09cb188449deef73e17122965530231ca91c9e1522e29859a",
     "assets/explainers/calendar-obscur-narrow.png": "619b22830b1ce63493f33f89c39a1af48a5f85d764e4c7c410ba78f2b1c3553c",
