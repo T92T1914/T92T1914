@@ -52,8 +52,11 @@ It predicts the large uploads within 14%, but it misses most of the smallest
 copies by 40% or more and overshoots the large stencil download by 84%. One
 fixed cost and one rate per byte cannot describe the complete calls of all three
 workloads, and its worst complete call miss is 50%. The project keeps every miss.
-GPU sanitizer and hardware counter acceptance remain open. HIP and SYCL are not
-implemented.
+GPU sanitizer and hardware counter acceptance remain open. HIP is not implemented.
+An optional [SYCL backend](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/23de9b31fa89956fe2e8c278dcd601d656772424/docs/sycl.md)
+runs all three workloads on the RTX 4090 through the oneAPI CUDA backend, checked
+against the scalar reference there, and measures no time. A hosted workflow only
+builds it. Every run was on NVIDIA hardware, so no second vendor is shown.
 
 [Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) ·
 [Read the CPU comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-results.md) ·
