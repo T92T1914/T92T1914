@@ -363,6 +363,16 @@ startup, without initializing, migrating or seeding the target. That Windows x64
 result uses PostgreSQL 18.1, CPython 3.13.3 and the v0.8.0 wheel and tools. It does
 not establish production backups or disaster recovery.
 
+Two parts of the design are checked by removing a guard and watching a test
+fail. The [write route isolation audit](https://github.com/T92T1914/shipment-exception-workspace/blob/f74410728d700f93e689256a1b96a1bf5885fea4/docs/DESIGN.md#write-route-isolation)
+holds a real database lock until PostgreSQL reports the competing work waiting,
+then reruns the race without that lock or conflict clause. Logout holds no lock,
+so its check pins the stated limit. The [concurrent history check](https://github.com/T92T1914/shipment-exception-workspace/blob/f74410728d700f93e689256a1b96a1bf5885fea4/docs/DESIGN.md#checking-concurrent-histories-against-a-model)
+records sixteen seeded histories of several clients with dropped answers,
+retries and stale versions, and compares each with a sequential model. Removing
+the version check, the receipt clause or the row lock is each caught. It is a
+sampled run, so a pass is not a proof.
+
 The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/e631e638a4e73f7a8104fababc753f5761fd930c/README.md)
 use synthetic records. There is no carrier integration or production deployment.
 
