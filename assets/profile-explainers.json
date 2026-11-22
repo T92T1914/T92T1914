@@ -1435,12 +1435,12 @@
             ]
           },
           {
-            "text": "Assign Casey; expect version 2",
+            "text": "Assign Casey. Expect version 2.",
             "size": 44,
             "bounds": [
               410.0,
               366.00312499999995,
-              1062.296875,
+              1074.34375,
               435.212890625
             ]
           },
@@ -1485,12 +1485,12 @@
             ]
           },
           {
-            "text": "Authorized receipt replay; no new event",
+            "text": "Authorized receipt replay. No new event.",
             "size": 42,
             "bounds": [
               600.0,
               1061.003125,
-              1391.390625,
+              1407.546875,
               1127.0669921875
             ]
           },
@@ -2964,7 +2964,7 @@
     "assets/profile-explainers-input.json": "5d6e1e2c03c12ec4f6ca93aa4ee5a1d01c7cde6ecc97284a5cbe3eaf04074331",
     "assets/profile-figure-tokens.json": "65e87d918e76744e0c222c3db1452e149091affabad37764531a79bcbf6fe81f",
     "scripts/render_project_explainers.py": "fc251bb957f83a0a4ad778375734b824d28720b1569a7450c56dd6326e108b10",
-    "scripts/profile_mechanisms.py": "76c9eddb23016559ca140fde3e15b01ce81f12733d415bf106b5c765cf4ec6ec",
+    "scripts/profile_mechanisms.py": "36489ab1ce3df44f0a8b278d8c616f65b04b5aad1609417a758b08ecbfcaeb0d",
     "requirements-figures.txt": "3bc78c01a3305d85d889b7ae16b9022a5dc38e5fd705ab1aec26b7cd00988024"
   },
   "outputs_sha256": {
@@ -2988,8 +2988,8 @@
     "assets/explainers/atlas-obscur-wide.svg": "5fc91d2ade9333dfb7cf09884da621b4a809b0cd707d55151416cd746e33fdb1",
     "assets/explainers/atlas-obscur-narrow.png": "1238cf1d77ce8d6e05d8435bab7e0f838e8139620cc2035b42ea8b6c7883a940",
     "assets/explainers/atlas-obscur-narrow.svg": "529326404d251ee886965986fe997c7e3e83ab6785214e88ca7793e56b9eede0",
-    "assets/explainers/shipment-obscur-wide.png": "a54b34405c9bb45e56c3b9a6eb76760c80f677980bdddc5a808ec4a84e983018",
-    "assets/explainers/shipment-obscur-wide.svg": "b7950b3e77293d4492c7da19f16aeb430662533d83ed55e1dcc3ad5e628b2d33",
+    "assets/explainers/shipment-obscur-wide.png": "2a7a31219109078ebbee3867cb0c1820f0aeaefcd8c2de791093dad6bebf3aac",
+    "assets/explainers/shipment-obscur-wide.svg": "8d04031d389de1e21c334cbefca24fa09e65ee171c4807d9f7461ecd7360c2fc",
     "assets/explainers/shipment-obscur-narrow.png": "6c24ba3e5a165226954be9275ea4728e36b93f765db4e7277a92407745808c4d",
     "assets/explainers/shipment-obscur-narrow.svg": "15adb95261150e8eaca65f9377d8a615485a728e9695fa265c7217d637ffc3a0",
     "assets/explainers/freight-obscur-wide.png": "9bb19c8ac5b3517dc7bb7d48ebc6959482d057bb6ccec2a5d0d8e43c473238be",

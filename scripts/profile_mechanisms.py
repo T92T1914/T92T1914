@@ -248,7 +248,7 @@ def shipment(d):
         d.text(60,y,'Operator',46,'SemiBold');d.text(1300,y,'Server transaction',46,'SemiBold',width=450);y+=90
         d.line((left,y),(left,y+820),dashed=True,z=0)
         d.line((right,y),(right,y+820),dashed=True,z=0)
-        d.text(410,y,'Assign Casey; expect version 2',44,width=970)
+        d.text(410,y,'Assign Casey. Expect version 2.',44,width=970)
         d.arrow((left,y+95),(right,y+95))
         d.panel(790,y+155,930,230)
         d.text(820,y+180,'ONE ATOMIC COMMIT',34,'SemiBold','accent')
@@ -259,7 +259,7 @@ def shipment(d):
         d.text(460,y+465,'Reply lost after commit',44,'SemiBold')
         d.text(420,y+560,'Retry: original key + body',44)
         d.arrow((left,y+640),(right,y+640))
-        d.text(600,y+695,'Authorized receipt replay; no new event',42,width=1080)
+        d.text(600,y+695,'Authorized receipt replay. No new event.',42,width=1080)
         d.arrow((right,y+790),(left,y+790))
         d.text(60,y+850,'Historical v3 response is separate from the later current v4 state.',42,width=d.w-120)
 
