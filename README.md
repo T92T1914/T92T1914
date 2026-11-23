@@ -425,6 +425,10 @@ examines scheduling when work becomes obsolete. An
 runs finite local revisions through CPU analysis, keeping physical completion
 separate from adoption of the current answer. Saved receipts can be checked
 without executing the work. The trace explorer retains its generated workloads.
+A [queue model](https://github.com/T92T1914/adaptive-timing-engine/blob/84ef33951baace37653fb6cd8f88ea7d27fe0f03/docs/queue-model.md)
+predicts how many requests the worker computes and keeps, then sets that beside
+the real worker on a virtual clock. All 30 Poisson comparisons agree, evenly
+spaced and bursty arrivals miss, and the project names each miss.
 These studies do not establish real time guarantees or a validated model of
 human behavior.
 
