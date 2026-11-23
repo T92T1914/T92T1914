@@ -388,9 +388,9 @@ Synthetic shipments and the separate Bureau of Transportation Statistics freight
 activity index stay distinct.
 On that index, carrying forward the last observation beat the learned model.
 It still did when each month used only the values published at the time, with
-1.878 against 1.551 mean absolute error on first releases. On seven component
-series the model beat it on one. Those vintage dates trail the real release, so
-the replay is slightly kinder than the real wait.
+1.551 against 1.878 mean absolute error for the model on first releases. On
+seven component series the model beat it on one. Those vintage dates trail the
+real release, so the replay is slightly kind to the model.
 The forecast ledger separates issuance, source revisions and corrections. Its
 public example contains no real issued forecast. I issued the first real record
 on November 16, 2026, for December 2026, and nothing is scored until the
