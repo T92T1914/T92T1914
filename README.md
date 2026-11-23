@@ -485,7 +485,10 @@ recorded. Always on dim and wake behavior on the watch, live field values,
 physical reload, power, extended runtime and wrist readability remain unchecked.
 A scoped earlier phone theme was
 applied, while full icon assignment, launcher behavior and restoration remain
-separate checks.
+separate checks. A separate [Clone Hero skin candidate](https://github.com/T92T1914/clair-obscur-themes/blob/d96a4a084d0441faa4cf4647aaa37a187dc6f33d/docs/clone-hero.md)
+has four color profiles, two video highways and two still highways, built from
+the same tokens. It has its own version, and native play in the game is not
+checked yet.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/themes-obscur-narrow.png">
