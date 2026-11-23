@@ -363,6 +363,16 @@ startup, without initializing, migrating or seeding the target. That Windows x64
 result uses PostgreSQL 18.1, CPython 3.13.3 and the v0.8.0 wheel and tools. It does
 not establish production backups or disaster recovery.
 
+Two parts of the design are checked by removing a guard and watching a test
+fail. The [write route isolation audit](https://github.com/T92T1914/shipment-exception-workspace/blob/f74410728d700f93e689256a1b96a1bf5885fea4/docs/DESIGN.md#write-route-isolation)
+holds a real database lock until PostgreSQL reports the competing work waiting,
+then reruns the race without that lock or conflict clause. Logout holds no lock,
+so its check pins the stated limit. The [concurrent history check](https://github.com/T92T1914/shipment-exception-workspace/blob/f74410728d700f93e689256a1b96a1bf5885fea4/docs/DESIGN.md#checking-concurrent-histories-against-a-model)
+records sixteen seeded histories of several clients with dropped answers,
+retries and stale versions, and compares each with a sequential model. Removing
+the version check, the receipt clause or the row lock is each caught. It is a
+sampled run, so a pass is not a proof.
+
 The [accepted workflow and limits](https://github.com/T92T1914/shipment-exception-workspace/blob/e631e638a4e73f7a8104fababc753f5761fd930c/README.md)
 use synthetic records. There is no carrier integration or production deployment.
 
@@ -432,6 +442,10 @@ examines scheduling when work becomes obsolete. An
 runs finite local revisions through CPU analysis, keeping physical completion
 separate from adoption of the current answer. Saved receipts can be checked
 without executing the work. The trace explorer retains its generated workloads.
+A [queue model](https://github.com/T92T1914/adaptive-timing-engine/blob/84ef33951baace37653fb6cd8f88ea7d27fe0f03/docs/queue-model.md)
+predicts how many requests the worker computes and keeps, then sets that beside
+the real worker on a virtual clock. All 30 Poisson comparisons agree, evenly
+spaced and bursty arrivals miss, and the project names each miss.
 These studies do not establish real time guarantees or a validated model of
 human behavior.
 
@@ -478,7 +492,10 @@ recorded. Always on dim and wake behavior on the watch, live field values,
 physical reload, power, extended runtime and wrist readability remain unchecked.
 A scoped earlier phone theme was
 applied, while full icon assignment, launcher behavior and restoration remain
-separate checks.
+separate checks. A separate [Clone Hero skin candidate](https://github.com/T92T1914/clair-obscur-themes/blob/d96a4a084d0441faa4cf4647aaa37a187dc6f33d/docs/clone-hero.md)
+has four color profiles, two video highways and two still highways, built from
+the same tokens. It has its own version, and native play in the game is not
+checked yet.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/themes-obscur-narrow.png">
