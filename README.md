@@ -397,8 +397,14 @@ chronological evaluation to a FastAPI service, containers and monitoring.
 Synthetic shipments and the separate Bureau of Transportation Statistics freight
 activity index stay distinct.
 On that index, carrying forward the last observation beat the learned model.
+It still did when each month used only the values published at the time, with
+1.551 against 1.878 mean absolute error for the model on first releases. On
+seven component series the model beat it on one. Those vintage dates trail the
+real release, so the replay is slightly kind to the model.
 The forecast ledger separates issuance, source revisions and corrections. Its
-public example contains no real issued forecast.
+public example contains no real issued forecast. I issued the first real record
+on November 16, 2026, for December 2026, and nothing is scored until the
+February 2027 release.
 
 <picture>
   <source media="(max-width: 680px)" srcset="assets/explainers/freight-obscur-narrow.png">
@@ -409,6 +415,7 @@ Earlier observations supply the features and later months test the predictions.
 This conceptual route keeps the synthetic series separate from the BTS index,
 where the simpler last observation baseline won.
 [Explore the project](https://t92t1914.github.io/freight-forecast/) ·
+[Read the real time replay](https://github.com/T92T1914/freight-forecast/blob/74457e7faccb909e955dc82e11014cc7c4062fdc/docs/real-time-evaluation.md) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full size infographic](assets/explainers/freight-obscur-wide.png)
 
