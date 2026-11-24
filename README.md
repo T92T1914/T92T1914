@@ -55,8 +55,13 @@ workloads, and its worst complete call miss is 50%. The project keeps every miss
 GPU sanitizer and hardware counter acceptance remain open. HIP is not implemented.
 An optional [SYCL backend](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/23de9b31fa89956fe2e8c278dcd601d656772424/docs/sycl.md)
 runs all three workloads on the RTX 4090 through the oneAPI CUDA backend, checked
-against the scalar reference there, and measures no time. A hosted workflow only
-builds it. Every run was on NVIDIA hardware, so no second vendor is shown.
+against the scalar reference there, and its tests measure no time. A separate
+[timing comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/cd42a3f0039c5a66f489430baeeaf8888ee4f6ef/docs/sycl-cuda-results.md),
+measured on a working desktop with its load stated, found the SYCL complete call's
+median 0.7 to 11.3 percent below the CUDA call's in all nine conditions of two
+runs. In each condition SYCL was slower in 34 to 60 of the 120 back to back pairs.
+A hosted workflow only builds it. Every run was on NVIDIA hardware, so no second
+vendor is shown.
 
 [Explore the project](https://t92t1914.github.io/heterogeneous-batch-runtime/) ·
 [Read the CPU comparison](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/e9346dac005e8dc4558b029cd813e260dce0236a/docs/inference-results.md) ·
