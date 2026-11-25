@@ -451,6 +451,9 @@ A [queue model](https://github.com/T92T1914/adaptive-timing-engine/blob/84ef3395
 predicts how many requests the worker computes and keeps, then sets that beside
 the real worker on a virtual clock. All 30 Poisson comparisons agree, evenly
 spaced and bursty arrivals miss, and the project names each miss.
+A [GPU queue study](https://github.com/T92T1914/adaptive-timing-engine/blob/942518f/docs/gpu-queue-study.md)
+puts a real calculation on an RTX 4090 under the worker and sets predictions
+written beforehand beside what it did. Most of them miss.
 These studies do not establish real time guarantees or a validated model of
 human behavior.
 
