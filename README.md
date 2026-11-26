@@ -29,9 +29,13 @@ opportunities, especially work involving C++, Python, research tools and softwar
 
 ### Heterogeneous Batch Runtime
 
-My main systems project is a C++20 runtime with scalar, optimized CPU and optional
+My main systems project is a C++20 runtime that compares three numerical workloads across CPU and GPU execution.
+In its optional image classifier, [batching](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/5d51afd321fc56e1e316ec3ce202d03cd6279146/docs/batching-results.md) reduced complete request cost for two and eight images within each provider, but the CPU stayed faster in every tested batch and the one image CPU result was inconclusive.
+[Project README](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/fb1b5e4b130253cd7c7f6eebf4dc798ec0682bdc/README.md)
+
+The runtime has scalar, optimized CPU and optional
 CUDA paths. Installed consumers can discover compiled backends without confusing
-them with a working device. A separate image classifier connects ONNX Runtime
+them with a working device. That classifier connects ONNX Runtime
 through C++. Each request owns its input and output, and an obsolete result
 cannot replace the current one while its underlying work finishes. Optional
 [model batching](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/5d51afd321fc56e1e316ec3ce202d03cd6279146/docs/model-batching.md)
@@ -42,10 +46,7 @@ The retained inference comparisons check complete output tensors, session reuse
 and memory. Reusing the C++ session reduced repeated call cost, but the direct
 Python CPU baseline was faster at every tested batch size in both collections.
 The CUDA followup records GPU operator placement. These results do not measure
-recognition accuracy or establish general GPU superiority. A later
-[batching study](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/5d51afd321fc56e1e316ec3ce202d03cd6279146/docs/batching-results.md)
-reduced complete request cost for two and eight images within each provider,
-with CPU still faster in every tested batch. A
+recognition accuracy or establish general GPU superiority. A
 [transfer and fixed cost model](https://github.com/T92T1914/heterogeneous-batch-runtime/blob/aa7fcafe5dde9f33707e0c1029a8bd67bc9ec240/docs/cost-model.md)
 fits the retained CUDA calls on two image sizes and tests each fit on the third.
 It predicts the large uploads within 14%, but it misses most of the smallest
@@ -82,8 +83,11 @@ illustration adds no timing or CPU/GPU result.
 
 ### Ragged Pooling for PyTorch
 
-Groups of data do not always have the same length. This small PyTorch component
-combines each group into one vector using softmax weights. C++ handles the CPU
+This small PyTorch component combines each group of items, whatever its length, into one vector using softmax weights.
+Ordinary PyTorch composition already expresses the operation, and the project claims no new algorithm and no general performance advantage.
+[Project README](https://github.com/T92T1914/ragged-pool/blob/4637c19e074d16073e35b100690d3582fa8c43df/README.md)
+
+C++ handles the CPU
 forward and backward operations, and Python connects them to training. The package
 includes readable references, installed training examples and trusted model
 exports for packed and padded inputs. The eager packed and padded CPU routes
@@ -149,21 +153,21 @@ training mechanism, while the supported derivative boundaries remain above.
 
 ### MCTS Combat Engine
 
-Monte Carlo tree search samples possible futures to choose an action in a compact
-turn based model. The Python engine stays separate from the companion that
+This project uses Monte Carlo tree search to choose actions in a small combat simulator.
+On sixteen controlled modeled states at 32 simulations and a one round horizon, an optional root allocation treatment reduced mean first action reference loss by about 53.2 percent, but the later encounter comparison was inconclusive about which policy wins more often and the standard search policy remains the default.
+[Project README](https://github.com/T92T1914/mcts-combat-engine/blob/36c1685adcfcd7644e838a577b85623dfe9c326c/README.md)
+
+The search samples possible futures in a compact turn based model. The Python engine stays separate from the companion that
 records decisions and encounters, replays matching records without search and
 inspects saved evidence.
 
-An optional root allocation treatment reduced mean first action reference loss
-by about 53.2 percent on sixteen controlled modeled states at a one round horizon.
-Two cases had fewer exact best action hits, and five state uncertainty intervals
-included zero. This measures the gap between the selected action and the best
-action under the declared reference objective, not full encounter playing strength
-or search speed.
+In that root allocation study, two cases had fewer exact best action hits, and
+five state uncertainty intervals included zero. Its loss measures the gap between
+the selected action and the best action under the declared reference objective,
+not full encounter playing strength or search speed.
 
-The later prespecified encounter comparison was inconclusive about which policy
-wins more often. Equal allowances per decision produced different total work.
-The standard search policy remains the default.
+That encounter comparison was prespecified. Equal allowances per decision
+produced different total work.
 
 The companion also provides Windows managed capture and passive recovery for a
 small declared workload. It owns worker lifetimes, bounds retained output and
@@ -228,9 +232,13 @@ The figure reuses saved evidence. It does not add a new experiment.</p>
 
 ### Exact Blackjack Solver
 
+This solver computes blackjack action values from the cards left in the shoe, using binary floating point.
+Recomputed with exact fractions on five named small shoes, 16,734 values differed by at most 4.74e-16 units of the original wager, while the default split path remains an approximation.
+[Project README](https://github.com/T92T1914/exact-blackjack-solver/blob/7cd97b5d686089a429b7c31dd610b3f7a034ede5/README.md)
+
 The same hand total does not always mean the same decision when different cards
 remain. This solver follows that distinction through explicit finite shoe models
-and hidden dealer information. The original split path is approximate. Separate
+and hidden dealer information. Separate
 bounded common shoe models preserve shared depletion and combined settlement,
 with their own information and wager conventions.
 
@@ -285,6 +293,10 @@ are separate from the original approximate split route.
 
 ### Tornado Atlas
 
+Tornado Atlas is an interactive museum of historical tornadoes built around source records, documented paths, footage and the questions those records leave open.
+It holds 80,318 NOAA source records for US years 1950 through 2025 with a first detailed exhibit on El Reno, while historically registered 3D storm reconstructions are still ahead.
+[Project README](https://github.com/T92T1914/tornado-atlas/blob/13ad173ff99fea6c13f2f3205792edfca18bbe60/README.md)
+
 I have always been interested in tornadoes. I wanted a way to study where they
 went, what was documented and what we can actually say about how they looked.
 Atlas combines a searchable NOAA record collection with seven historical accounts:
@@ -317,8 +329,11 @@ explicit, and an illustrative model is labeled separately.
 
 ### Shipment Exception Workspace
 
-[Shipment Exception Workspace](https://github.com/T92T1914/shipment-exception-workspace)
-is a local shipment review demo built with React and TypeScript, FastAPI and
+[Shipment Exception Workspace](https://github.com/T92T1914/shipment-exception-workspace) is a local demo for creating, finding, inspecting, assigning and resolving synthetic shipment exceptions.
+On one declared synthetic local Windows and PostgreSQL workload, all 5,400 measured requests completed correctly across 24 fresh state replicates.
+[Project README](https://github.com/T92T1914/shipment-exception-workspace/blob/750823a2592ff658190ea96eb0c9dae5c8de8120/README.md)
+
+The application is built with React and TypeScript, FastAPI and
 PostgreSQL. Operators in the seeded organizations can create exceptions, search
 and filter the queue, then assign or resolve a selected record. Reviewers can
 inspect records and their history without changing them. Each change and its
@@ -396,8 +411,11 @@ version 4. This conceptual explanation follows the installed walkthrough.
 
 ### Freight Forecast
 
-My logistics background is the starting point for
-[Freight Forecast](https://github.com/T92T1914/freight-forecast). It connects
+My logistics background is the starting point for [Freight Forecast](https://github.com/T92T1914/freight-forecast), which forecasts monthly shipment volume on seeded synthetic data and serves the forecasts as a containerized API.
+On 24 held out synthetic months the model's mean absolute error is 226 moves per month against 327 for the seasonal baseline, while a separate study on real index data favors the last observation over the fitted model.
+[Project README](https://github.com/T92T1914/freight-forecast/blob/74457e7faccb909e955dc82e11014cc7c4062fdc/README.md)
+
+The project connects
 chronological evaluation to a FastAPI service, containers and monitoring.
 Synthetic shipments and the separate Bureau of Transportation Statistics freight
 activity index stay distinct.
@@ -441,8 +459,11 @@ where the simpler last observation baseline won.
 
 ### Adaptive Timing Engine
 
-[Adaptive Timing Engine](https://github.com/T92T1914/adaptive-timing-engine)
-examines scheduling when work becomes obsolete. An
+[Adaptive Timing Engine](https://github.com/T92T1914/adaptive-timing-engine) records the completion of an older calculation whose input has changed, without letting it replace the current answer.
+In a gated worker experiment, 101 requests led to two calculations, with 99 waiting requests replaced and one obsolete result rejected.
+[Project README](https://github.com/T92T1914/adaptive-timing-engine/blob/689fe2166e0e6f7fd0ced16f752341aed72c2db4/README.md)
+
+An
 [installed consumer](https://github.com/T92T1914/adaptive-timing-engine/blob/9cadd27c8c72f07c371c54525671c0254a160f20/docs/revision-file.md)
 runs finite local revisions through CPU analysis, keeping physical completion
 separate from adoption of the current answer. Saved receipts can be checked
@@ -486,8 +507,11 @@ calculation has stopped. The retained worker example computes payloads `0` and
 
 ### Clair and Obscur
 
-[Clair and Obscur](https://t92t1914.github.io/clair-obscur-themes/) is a shared
-visual theme family with downloadable packages and previews, installation guidance
+[Clair and Obscur](https://t92t1914.github.io/clair-obscur-themes/) are two appearances built around black and white, covering application themes, phone icons and a Garmin watch face candidate.
+All downloads are labeled as previews while native acceptance remains open.
+[Project README](https://github.com/T92T1914/clair-obscur-themes/blob/926ff3dab09f0a68377d00d0dbb76992d420f2a6/README.md)
+
+The shared visual theme family has downloadable packages and previews, installation guidance
 and recovery instructions. Package and browser preview checks remain separate from complete
 native compatibility, restart persistence, signing and store approval. The shared
 palette also supplies a [Garmin watch face candidate](https://github.com/T92T1914/clair-obscur-themes/blob/6d9647ed350076019143b75bdfa6d72a9b72ce15/docs/garmin-watchface.md)
