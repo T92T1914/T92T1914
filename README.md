@@ -253,7 +253,7 @@ inspector reads saved results without calculation or upload. Same engine replay
 and independent mathematical checks remain different kinds of evidence.
 
 [Explore the models](https://t92t1914.github.io/exact-blackjack-solver/#model-route) ·
-[Calculate and replay the H17 request](https://github.com/T92T1914/exact-blackjack-solver#a-complete-h17-ace-calculation) ·
+[Calculate and replay the H17 request](https://github.com/T92T1914/exact-blackjack-solver/blob/7cd97b5d686089a429b7c31dd610b3f7a034ede5/README.md#a-complete-h17-ace-calculation) ·
 [Read the completion evidence](https://github.com/T92T1914/exact-blackjack-solver/blob/259aa8aedf84510887d8dbf3e5bf928c1447458a/docs/ace-terminal-reuse.md)
 
 <picture>
