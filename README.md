@@ -413,17 +413,27 @@ version 4. This conceptual explanation follows the installed walkthrough.
 
 My logistics background is the starting point for [Freight Forecast](https://github.com/T92T1914/freight-forecast), which forecasts monthly shipment volume on seeded synthetic data and serves the forecasts as a containerized API.
 On 24 held out synthetic months the model's mean absolute error is 226 moves per month against 327 for the seasonal baseline, while a separate study on real index data favors the last observation over the fitted model.
-[Project README](https://github.com/T92T1914/freight-forecast/blob/74457e7faccb909e955dc82e11014cc7c4062fdc/README.md)
+[Project README](https://github.com/T92T1914/freight-forecast/blob/9bc8e84dad7b1a8d9f6b910f2fa81c001e98742e/README.md)
 
 The project connects
 chronological evaluation to a FastAPI service, containers and monitoring.
 Synthetic shipments and the separate Bureau of Transportation Statistics freight
 activity index stay distinct.
 On that index, carrying forward the last observation beat the learned model.
-It still did when each month used only the values published at the time, with
-1.551 against 1.878 mean absolute error for the model on first releases. On
-seven component series the model beat it on one. Those vintage dates trail the
-real release, so the replay is slightly kind to the model.
+It still did in a replay where each forecast saw only the values in the archive
+version it started from, with 1.551 against 1.878 mean absolute error for the
+model on first releases. On seven component series the model beat it on one.
+The dates on those archive versions trail the real release, so the replay is
+slightly kinder to the model than real time would be. All 72 starting versions are dated after the
+month being forecast had ended, so this is not a month of notice. In 8 of them
+the target month was already there, and the replay dropped it before
+forecasting. A later
+[comparison](https://github.com/T92T1914/freight-forecast/blob/9bc8e84dad7b1a8d9f6b910f2fa81c001e98742e/docs/forecast-comparison.md),
+planned after I knew the average errors, could not clearly tell that first
+release gap apart from noise. Only one of its two paired tests flagged it on
+absolute error and neither did on squared error, although a second method in the
+same report kept only the last observation under both, and only narrowly.
+Against the latest values both paired tests flagged the gap under both measures.
 The forecast ledger separates issuance, source revisions and corrections. Its
 public example contains no real issued forecast. I issued the first real record
 on November 16, 2026, for December 2026, and nothing is scored until the
@@ -438,7 +448,7 @@ Earlier observations supply the features and later months test the predictions.
 This conceptual route keeps the synthetic series separate from the BTS index,
 where the simpler last observation baseline won.
 [Explore the project](https://t92t1914.github.io/freight-forecast/) ·
-[Read the real time replay](https://github.com/T92T1914/freight-forecast/blob/74457e7faccb909e955dc82e11014cc7c4062fdc/docs/real-time-evaluation.md) ·
+[Read the real time replay](https://github.com/T92T1914/freight-forecast/blob/9bc8e84dad7b1a8d9f6b910f2fa81c001e98742e/docs/real-time-evaluation.md) ·
 [Source and limits](PROFILE_EXPLAINERS.md) ·
 [Full size infographic](assets/explainers/freight-obscur-wide.png)
 
