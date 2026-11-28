@@ -485,6 +485,11 @@ spaced and bursty arrivals miss, and the project names each miss.
 A [GPU queue study](https://github.com/T92T1914/adaptive-timing-engine/blob/942518f/docs/gpu-queue-study.md)
 puts a real calculation on an RTX 4090 under the worker and sets predictions
 written beforehand beside what it did. Most of them miss.
+Letting the calculation
+[stop itself between chunks](https://github.com/T92T1914/adaptive-timing-engine/blob/4a94bf6c2522608d434af41869162188a3be2d72/docs/gpu-queue-study.md#the-cooperative-stop),
+which is not forced cancellation, lowered the stale share of busy GPU time in
+all 16 cells measured on one shared desktop card. The kept results were not
+fresher in general.
 These studies do not establish real time guarantees or a validated model of
 human behavior.
 
