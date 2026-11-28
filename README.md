@@ -424,7 +424,7 @@ It still did in a replay where each forecast saw only the values in the archive
 version it started from, with 1.551 against 1.878 mean absolute error for the
 model on first releases. On seven component series the model beat it on one.
 The dates on those archive versions trail the real release, so the replay is
-slightly kinder than the real wait. All 72 starting versions are dated after the
+slightly kinder to the model than real time would be. All 72 starting versions are dated after the
 month being forecast had ended, so this is not a month of notice. In 8 of them
 the target month was already there, and the replay dropped it before
 forecasting. A later
